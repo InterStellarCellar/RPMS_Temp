@@ -1,35 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>R4 Questionnaire live validation</title>
-	<style>
-		* { box-sizing: border-box; }
-		body { margin: 0; font-family: system-ui, sans-serif; background: #1e1e1e; color: #ccc; height: 100vh; display: flex; flex-direction: column; }
-		header { padding: 0.5rem 1rem; background: #252526; border-bottom: 1px solid #3c3c3c; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-		header h1 { margin: 0; font-size: 1rem; font-weight: 600; }
-		#editor { flex: 1; min-height: 0; }
-		#status { padding: 0.35rem 1rem; font-size: 0.85rem; background: #252526; border-top: 1px solid #3c3c3c; }
-		#issues { max-height: 8rem; overflow: auto; font-family: ui-monospace, monospace; font-size: 0.75rem; padding: 0.25rem 1rem; background: #1a1a1a; }
-		label { display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer; user-select: none; }
-		button { cursor: pointer; }
-		.ok { color: #89d185; }
-		.bad { color: #f48771; }
-	</style>
-</head>
-<body>
-<header>
-	<h1>R4 Questionnaire — live validation</h1>
-	<label><input type="checkbox" id="optXsd"/> XSD (fhir-single)</label>
-	<label><input type="checkbox" id="optSch"/> Schematron</label>
-	<label><input type="checkbox" id="optBlur"/> Validate on blur only</label>
-	<button type="button" id="btnValidate">Validate now</button>
-</header>
-<div id="editor"></div>
-<div id="status">Ready.</div>
-<div id="issues"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
-<script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R4 Questionnaire live validation</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: #1e1e1e;
+        color: #ccc;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        padding: 0.5rem 1rem;
+        background: #252526;
+        border-bottom: 1px solid #3c3c3c;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      #editor {
+        flex: 1;
+        min-height: 0;
+      }
+      #bottom-panel {
+        display: flex;
+        flex-direction: column;
+        height: 9rem;
+        min-height: 4.5rem;
+        max-height: 70vh;
+        flex-shrink: 0;
+        background: #1a1a1a;
+        border-top: 1px solid #3c3c3c;
+      }
+      #panel-resize-handle {
+        height: 5px;
+        flex-shrink: 0;
+        cursor: row-resize;
+        background: #2d2d2d;
+        border-bottom: 1px solid #3c3c3c;
+      }
+      #panel-resize-handle:hover,
+      #panel-resize-handle.active {
+        background: #007acc;
+      }
+      #status {
+        padding: 0.35rem 1rem;
+        font-size: 0.85rem;
+        background: #252526;
+        border-bottom: 1px solid #3c3c3c;
+        flex-shrink: 0;
+      }
+      #issues {
+        flex: 1;
+        min-height: 0;
+        overflow: auto;
+        font-family: ui-monospace, monospace;
+        font-size: 0.75rem;
+        padding: 0.25rem 1rem;
+        background: #1a1a1a;
+      }
+      #issues .issue {
+        padding: 0.15rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        white-space: pre-wrap;
+        cursor: pointer;
+      }
+      #issues .issue:hover {
+        background: rgba(255, 255, 255, 0.06);
+      }
+      #issues .issue.issue-active {
+        background: rgba(0, 122, 204, 0.25) !important;
+        border-left: 3px solid #007acc;
+        padding-left: 0.35rem;
+        margin-left: -0.35rem;
+      }
+      #issues .sev-information {
+        color: #4fc1ff;
+      }
+      #issues .sev-warning {
+        color: #cca700;
+      }
+      #issues .sev-error {
+        color: #f48771;
+      }
+      #issues .sev-fatal {
+        color: #ff5f5f;
+        font-weight: 600;
+      }
+      #issues .sev-unknown {
+        color: #c8c8c8;
+      }
+      label {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        cursor: pointer;
+        user-select: none;
+      }
+      button {
+        cursor: pointer;
+      }
+      .ok {
+        color: #89d185;
+      }
+      .bad {
+        color: #f48771;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>R4 Questionnaire — live validation</h1>
+      <label><input type="checkbox" id="optXsd" /> XSD (fhir-single)</label>
+      <label><input type="checkbox" id="optSch" /> Schematron</label>
+      <label><input type="checkbox" id="optBlur" /> Validate on blur only</label>
+      <button type="button" id="btnValidate">Validate now</button>
+    </header>
+    <div id="editor"></div>
+    <div id="bottom-panel">
+      <div id="panel-resize-handle" title="Drag to resize issues panel"></div>
+      <div id="status">Ready.</div>
+      <div id="issues"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

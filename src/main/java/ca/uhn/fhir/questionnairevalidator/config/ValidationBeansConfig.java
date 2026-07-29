@@ -2,6 +2,7 @@ package ca.uhn.fhir.questionnairevalidator.config;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.context.support.DefaultProfileValidationSupport;
+import org.hl7.fhir.common.hapi.validation.support.CommonCodeSystemsTerminologyService;
 import org.hl7.fhir.common.hapi.validation.support.InMemoryTerminologyServerValidationSupport;
 import org.hl7.fhir.common.hapi.validation.support.ValidationSupportChain;
 import org.springframework.context.annotation.Bean;
@@ -19,6 +20,7 @@ public class ValidationBeansConfig {
 	public ValidationSupportChain validationSupportChain(FhirContext theFhirContext) {
 		return new ValidationSupportChain(
 				new DefaultProfileValidationSupport(theFhirContext),
-				new InMemoryTerminologyServerValidationSupport(theFhirContext));
+				new InMemoryTerminologyServerValidationSupport(theFhirContext),
+				new CommonCodeSystemsTerminologyService(theFhirContext));
 	}
 }
