@@ -41,6 +41,8 @@
     const bottomPanel = el("bottom-panel");
     if (!box) return;
 
+    let issuePointerDown = null;
+
     if (bottomPanel) {
       bottomPanel.addEventListener("mousedown", function (e) {
         if (e.target.closest("#issues .issue")) {
@@ -49,9 +51,35 @@
       });
     }
 
+    box.addEventListener("mousedown", function (e) {
+      const row = e.target.closest(".issue");
+      if (!row) {
+        issuePointerDown = null;
+        return;
+      }
+      issuePointerDown = { x: e.clientX, y: e.clientY, row: row };
+    });
+
     box.addEventListener("click", function (e) {
       const row = e.target.closest(".issue");
       if (!row) return;
+
+      // Allow highlight + copy: skip navigation when the user selected text or dragged.
+      const selection = window.getSelection();
+      if (selection && selection.toString().length > 0) {
+        issuePointerDown = null;
+        return;
+      }
+      if (issuePointerDown && issuePointerDown.row === row) {
+        const dx = Math.abs(e.clientX - issuePointerDown.x);
+        const dy = Math.abs(e.clientY - issuePointerDown.y);
+        if (dx > 4 || dy > 4) {
+          issuePointerDown = null;
+          return;
+        }
+      }
+      issuePointerDown = null;
+
       const index = Number(row.dataset.issueIndex);
       if (Number.isNaN(index) || !lastIssuePositions[index]) return;
       activeIssueIndex = index;
@@ -626,20 +654,24 @@
     if (abortCtrl) abortCtrl.abort();
     abortCtrl = new AbortController();
 
-    const params = new URLSearchParams();
-    if (el("optXsd").checked) params.set("xsd", "true");
-    if (el("optSch").checked) params.set("schematron", "true");
-
     setStatus("Validating…", undefined);
 
-    fetch("/api/validate-questionnaire?" + params.toString(), {
+    const params = buildTerminologyParams();
+    const url =
+      "/api/validate-questionnaire" + (params.toString() ? "?" + params.toString() : "");
+
+    fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: text,
       signal: abortCtrl.signal,
     })
       .then(function (r) {
-        if (!r.ok) throw new Error("HTTP " + r.status);
+        if (!r.ok) {
+          return r.text().then(function (body) {
+            throw new Error("HTTP " + r.status + (body ? ": " + body : ""));
+          });
+        }
         return r.json();
       })
       .then(function (data) {
@@ -653,6 +685,66 @@
       .catch(function (err) {
         if (err.name === "AbortError") return;
         setStatus("Request failed: " + err.message, false);
+      });
+  }
+
+  function buildTerminologyParams() {
+    const params = new URLSearchParams();
+    const select = el("terminologyServer");
+    const custom = el("terminologyUrl");
+    if (!select) return params;
+    if (select.value === "custom") {
+      const url = custom && custom.value ? custom.value.trim() : "";
+      if (url) params.set("terminologyUrl", url);
+      else params.set("terminologyServer", "none");
+    } else if (select.value) {
+      params.set("terminologyServer", select.value);
+    }
+    return params;
+  }
+
+  function syncCustomUrlVisibility() {
+    const select = el("terminologyServer");
+    const custom = el("terminologyUrl");
+    if (!select || !custom) return;
+    if (select.value === "custom") {
+      custom.classList.remove("hidden");
+    } else {
+      custom.classList.add("hidden");
+    }
+  }
+
+  function loadTerminologyServers() {
+    const select = el("terminologyServer");
+    if (!select) return Promise.resolve();
+    return fetch("/api/terminology-servers")
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (servers) {
+        select.replaceChildren();
+        (servers || []).forEach(function (s) {
+          const opt = document.createElement("option");
+          opt.value = s.id;
+          opt.textContent = s.label;
+          if (s.url) opt.title = s.url;
+          select.appendChild(opt);
+        });
+        const customOpt = document.createElement("option");
+        customOpt.value = "custom";
+        customOpt.textContent = "Custom URL…";
+        select.appendChild(customOpt);
+        if (!select.value) select.value = "none";
+        syncCustomUrlVisibility();
+      })
+      .catch(function (err) {
+        select.replaceChildren();
+        const fallback = document.createElement("option");
+        fallback.value = "none";
+        fallback.textContent = "Local only (failed to load presets)";
+        select.appendChild(fallback);
+        setStatus("Could not load terminology servers: " + err.message, false);
       });
   }
 
@@ -678,6 +770,18 @@
 
     el("btnValidate").addEventListener("click", runValidate);
 
+    el("terminologyServer").addEventListener("change", function () {
+      syncCustomUrlVisibility();
+      scheduleValidate();
+    });
+    el("terminologyUrl").addEventListener("change", scheduleValidate);
+    el("terminologyUrl").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        runValidate();
+      }
+    });
+
     editor.onDidBlurEditorWidget(function () {
       if (skipBlurValidate) {
         skipBlurValidate = false;
@@ -686,6 +790,8 @@
       if (el("optBlur").checked) runValidate();
     });
 
-    runValidate();
+    loadTerminologyServers().then(function () {
+      runValidate();
+    });
   });
 })();

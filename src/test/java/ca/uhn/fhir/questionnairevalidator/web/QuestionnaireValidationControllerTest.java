@@ -51,4 +51,21 @@ class QuestionnaireValidationControllerTest {
 				.andExpect(jsonPath("$.ok").value(false))
 				.andExpect(jsonPath("$.issues[0].message").value(org.hamcrest.Matchers.containsString("Questionnaire")));
 	}
+
+	@Test
+	void listTerminologyServers_returnsPresets() throws Exception {
+		mockMvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get("/api/terminology-servers"))
+				.andExpect(status().isOk())
+				.andExpect(jsonPath("$[0].id").value("none"))
+				.andExpect(jsonPath("$[1].id").value("tx-fhir-org-r4"));
+	}
+
+	@Test
+	void validateWithDisallowedTerminologyHost_returnsBadRequest() throws Exception {
+		mockMvc.perform(post("/api/validate-questionnaire")
+						.param("terminologyUrl", "https://evil.example.com/r4")
+						.contentType(MediaType.APPLICATION_JSON)
+						.content("{\"resourceType\":\"Questionnaire\",\"status\":\"draft\",\"item\":[{\"linkId\":\"1\",\"type\":\"string\"}]}"))
+				.andExpect(status().isBadRequest());
+	}
 }

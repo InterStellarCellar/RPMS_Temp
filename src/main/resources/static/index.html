@@ -76,7 +76,9 @@
         padding: 0.15rem 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         white-space: pre-wrap;
-        cursor: pointer;
+        cursor: text;
+        user-select: text;
+        -webkit-user-select: text;
       }
       #issues .issue:hover {
         background: rgba(255, 255, 255, 0.06);
@@ -110,6 +112,22 @@
         cursor: pointer;
         user-select: none;
       }
+      select,
+      input[type="url"],
+      button {
+        font: inherit;
+        color: #ccc;
+        background: #3c3c3c;
+        border: 1px solid #555;
+        border-radius: 3px;
+        padding: 0.2rem 0.4rem;
+      }
+      input[type="url"] {
+        min-width: 16rem;
+      }
+      input[type="url"].hidden {
+        display: none;
+      }
       button {
         cursor: pointer;
       }
@@ -124,8 +142,17 @@
   <body>
     <header>
       <h1>R4 Questionnaire — live validation</h1>
-      <label><input type="checkbox" id="optXsd" /> XSD (fhir-single)</label>
-      <label><input type="checkbox" id="optSch" /> Schematron</label>
+      <label>
+        Terminology
+        <select id="terminologyServer" title="Remote terminology server"></select>
+      </label>
+      <input
+        type="url"
+        id="terminologyUrl"
+        class="hidden"
+        placeholder="https://tx.fhir.org/r4"
+        title="Custom remote terminology base URL"
+      />
       <label><input type="checkbox" id="optBlur" /> Validate on blur only</label>
       <button type="button" id="btnValidate">Validate now</button>
     </header>
