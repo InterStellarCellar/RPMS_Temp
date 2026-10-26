@@ -523,7 +523,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
         }
       ]
@@ -599,7 +599,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
         }
       ]
@@ -675,7 +675,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
         }
       ]
@@ -751,7 +751,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
         }
       ]
@@ -827,7 +827,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
         }
       ]
@@ -879,7 +879,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
         }
       ]
@@ -931,7 +931,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
         }
       ]

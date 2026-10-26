@@ -14,6 +14,7 @@ import ca.uhn.fhir.validation.ValidationResult;
 import org.hl7.fhir.common.hapi.validation.support.ValidationSupportChain;
 import org.hl7.fhir.common.hapi.validation.validator.FhirInstanceValidator;
 import org.hl7.fhir.instance.model.api.IBaseResource;
+import org.hl7.fhir.r4.model.Questionnaire;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -143,8 +144,12 @@ public class QuestionnaireValidationService {
 			issues.add(toDto(next));
 		}
 		issues = InvariantLocationEnricher.enrich(resource, theJson, issues);
-		response.setIssues(dedupeIssues(issues));
-		response.setOk(result.isSuccessful());
+		if (resource instanceof Questionnaire questionnaire) {
+			issues.addAll(ExpressionFhirPathValidator.validate(questionnaire, theJson, myFhirContext));
+		}
+		issues = dedupeIssues(issues);
+		response.setIssues(issues);
+		response.setOk(result.isSuccessful() && !hasErrorOrFatal(issues));
 		return response;
 	}
 
@@ -298,6 +303,20 @@ public class QuestionnaireValidationService {
 			}
 		}
 		return new CollectingParserErrorHandler.ParseError(theMessage, element, null, offendingValue, null);
+	}
+
+	private static boolean hasErrorOrFatal(List<ValidationIssueDto> theIssues) {
+		for (ValidationIssueDto issue : theIssues) {
+			String severity = issue.getSeverity();
+			if (severity == null) {
+				continue;
+			}
+			String lowered = severity.toLowerCase(Locale.ROOT);
+			if ("error".equals(lowered) || "fatal".equals(lowered)) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	private static ValidationIssueDto toDto(SingleValidationMessage theMsg) {

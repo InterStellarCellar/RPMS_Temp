@@ -32,14 +32,14 @@ terminology packages match the webapp.
 
 | Range | gapKey | What is *not* checked |
 |-------|--------|------------------------|
-| 00–09 | `expression-not-compiled` | FHIRPath / CQL / x-fhir-query in Expression extensions is not compiled or executed |
+| 09 | `expression-not-compiled` | CQL (`text/cql`) in Expression extensions is not compiled or executed. **`text/fhirpath` syntax is checked** — see `expression-fhirpath/` |
 | 10–19 | `type-consistency-unchecked` | `answerOption` / `initial` / `enableWhen.answer[x]` type vs `item.type` (or referenced question) |
 | 20–29 | `extension-semantics-unchecked` | Extension present and typed OK, but meaningless (inverted min/max, invalid regex, wrong itemControl, …) |
 | 30–39 | `unresolved-reference` | Missing ValueSet / definition / Library / derivedFrom / fragment `#id` — no hard error |
 | 40–49 | `authoring-soft-rule` | Spec SHOULD / HAPI-dropped authoring rules (`sdc-rend-1`, prefix dupes, circular enableWhen, …) |
 | 50–59 | `sdc-runtime-not-executed` | Populate / extract / launch / assemble semantics not run at validate time |
 | 60–69 | `authoring-soft-rule` | More soft smells (opaque linkIds, deep nesting, example bindings, …) |
-| 70–79 | `expression-or-sdc-gap` | Expressions that reference missing linkIds; query languages not executed |
+| 70–79 | `expression-or-sdc-gap` | Query languages (`application/x-fhir-query`) not executed; leftover SDC authoring smells |
 | 80–95 | `combo-gap` / soft rules | Combinations of independent gaps still pass |
 
 ## Sources
@@ -49,7 +49,8 @@ terminology packages match the webapp.
 - SDC STU4 expression / populate / extract / behave / render profiles
 - UV Extensions Questionnaire extensions (`minValue`, `maxValue`, `regex`, `mimeType`, …)
 - Prior notes in `sdc/README.md` and `instance-structural/README.md` (dropped `sdc-rend-1`, `dom-2`, …)
-- Manual probes under `dont-commit/examples/` (`6-expression-fhirpath.json`, `min-max-extension.json`)
+- Manual probes under `dont-commit/examples/` (`min-max-extension.json`)
+- Invalid `text/fhirpath` fixtures moved to `expression-fhirpath/` once authoring-time parse landed
 
 ## Explicitly *not* gaps (removed after probing)
 
@@ -71,4 +72,5 @@ Fixtures that **do** produce `error`/`fatal` were deleted rather than weakened, 
 | Must fail `que-*` | `que-invariant/` |
 | Must fail other instance rules | `instance-structural/` |
 | Must fail SDC profile rules | `sdc/` |
+| Must fail embedded FHIRPath | `expression-fhirpath/` |
 | Location line/col quality | `location-quality/` |

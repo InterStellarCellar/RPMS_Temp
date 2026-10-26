@@ -1,0 +1,20 @@
+# expression-fhirpath expectations
+# filename<TAB>minIssues<TAB>messageSubstring
+# Each fixture is valid JSON / clean FHIR parse and must emit the listed authoring-time FHIRPath issue.
+
+00-initialExpression-invalid-fhirpath.json	1	Invalid FHIRPath
+01-calculatedExpression-invalid-fhirpath.json	1	Invalid FHIRPath
+02-enableWhenExpression-invalid-fhirpath.json	1	Invalid FHIRPath
+03-answerExpression-invalid-fhirpath.json	1	Invalid FHIRPath
+04-variable-invalid-fhirpath.json	1	Invalid FHIRPath
+05-candidateExpression-invalid-fhirpath.json	1	Invalid FHIRPath
+06-questionnaire-constraint-invalid-fhirpath.json	1	Invalid FHIRPath
+07-calculatedExpression-div-by-zero-style.json	1	Invalid FHIRPath
+08-initialExpression-text-fhirpath-typo-fn.json	1	Invalid FHIRPath
+52-itemPopulationContext-bad-fhirpath.json	1	Invalid FHIRPath
+53-itemExtractionContext-bad-fhirpath.json	1	Invalid FHIRPath
+71-calculatedExpression-references-missing-linkId.json	1	Invalid FHIRPath
+71-calculatedExpression-references-missing-linkId.json	1	unknown linkId
+74-enableWhenExpression-only-invalid-fhirpath.json	1	Invalid FHIRPath
+80-combo-type-mismatch-and-bad-fhirpath.json	1	Invalid FHIRPath
+89-fhirpath-in-variable-self-ref.json	1	refers to itself

@@ -3,10 +3,8 @@ package ca.uhn.fhir.questionnairevalidator.service;
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.parser.DataFormatException;
 import ca.uhn.fhir.parser.IParser;
-import ca.uhn.fhir.questionnairevalidator.config.ValidationBeansConfig;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidateResponse;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidationIssueDto;
-import org.hl7.fhir.common.hapi.validation.support.ValidationSupportChain;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -63,10 +61,8 @@ class UvExtensionsCorpusTest {
 
 	@BeforeAll
 	static void init() {
-		ValidationBeansConfig config = new ValidationBeansConfig();
-		ourFhirContext = config.fhirContextR4();
-		ValidationSupportChain chain = config.localValidationSupportChain(ourFhirContext);
-		ourService = new QuestionnaireValidationService(ourFhirContext, chain);
+		ourFhirContext = CorpusTestSupport.fhirContext();
+		ourService = CorpusTestSupport.service();
 	}
 
 	record Case(String filename, int minIssues, String messageSubstring) {}

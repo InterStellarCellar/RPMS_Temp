@@ -3,15 +3,6 @@
 # Fixture intentionally looks wrong for gapKey, but validator must not emit error/fatal.
 # Warnings/information are allowed. See README.md for gapKey definitions.
 
-00-initialExpression-invalid-fhirpath.json	0	expression-not-compiled
-01-calculatedExpression-invalid-fhirpath.json	0	expression-not-compiled
-02-enableWhenExpression-invalid-fhirpath.json	0	expression-not-compiled
-03-answerExpression-invalid-fhirpath.json	0	expression-not-compiled
-04-variable-invalid-fhirpath.json	0	expression-not-compiled
-05-candidateExpression-invalid-fhirpath.json	0	expression-not-compiled
-06-questionnaire-constraint-invalid-fhirpath.json	0	expression-not-compiled
-07-calculatedExpression-div-by-zero-style.json	0	expression-not-compiled
-08-initialExpression-text-fhirpath-typo-fn.json	0	expression-not-compiled
 09-enableWhenExpression-cql-not-evaluated.json	0	expression-not-compiled
 10-answerOption-integer-on-string-item.json	0	type-consistency-unchecked
 11-answerOption-coding-on-integer-item.json	0	type-consistency-unchecked
@@ -53,8 +44,6 @@
 49-observationLinkPeriod-without-code.json	0	authoring-soft-rule
 50-observationExtract-true-no-mapping.json	0	sdc-runtime-not-executed
 51-launchContext-unused.json	0	sdc-runtime-not-executed
-52-itemPopulationContext-bad-fhirpath.json	0	sdc-runtime-not-executed
-53-itemExtractionContext-bad-fhirpath.json	0	sdc-runtime-not-executed
 54-assembleContext-unused.json	0	sdc-runtime-not-executed
 55-targetStructureMap-unresolved-no-extract-profile.json	0	sdc-runtime-not-executed
 60-name-missing-machine-id-ok.json	0	authoring-soft-rule
@@ -68,11 +57,8 @@
 68-jurisdiction-example-coding-unchecked.json	0	authoring-soft-rule
 69-item-code-example-binding-unchecked.json	0	authoring-soft-rule
 70-isSubject-true-without-subjectType.json	0	expression-or-sdc-gap
-71-calculatedExpression-references-missing-linkId.json	0	expression-or-sdc-gap
 72-initialExpression-fhir-query-not-executed.json	0	expression-or-sdc-gap
 73-answerExpression-fhir-query-not-executed.json	0	expression-or-sdc-gap
-74-enableWhenExpression-only-invalid-fhirpath.json	0	expression-or-sdc-gap
-80-combo-type-mismatch-and-bad-fhirpath.json	0	combo-gap
 81-combo-unresolved-vs-and-minmax-inverted.json	0	combo-gap
 82-combo-hidden-required-bad-regex.json	0	combo-gap
 83-combo-circular-ew-and-prefix-dup.json	0	combo-gap
@@ -81,7 +67,6 @@
 86-minValue-equals-maxValue.json	0	combo-gap
 87-constraint-key-duplicate.json	0	combo-gap
 88-signatureRequired-no-guidance.json	0	combo-gap
-89-fhirpath-in-variable-self-ref.json	0	combo-gap
 90-answerOption-valueCoding-code-only-no-system-core.json	0	extension-semantics-unchecked
 91-sliderStepValue-larger-than-range.json	0	extension-semantics-unchecked
 92-entryFormat-nonsense-pattern.json	0	extension-semantics-unchecked

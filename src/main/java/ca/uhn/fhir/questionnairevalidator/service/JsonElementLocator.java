@@ -89,6 +89,22 @@ class JsonElementLocator {
 		return null;
 	}
 
+	/**
+	 * Find the first scalar occurrence whose JSON value equals {@code theValue}.
+	 * Used as a fallback when a constructed FHIRPath-like location does not match.
+	 */
+	Occurrence locateByValueText(String theValue) {
+		if (theValue == null) {
+			return null;
+		}
+		for (Occurrence occurrence : myOccurrences) {
+			if (theValue.equals(occurrence.valueText())) {
+				return occurrence;
+			}
+		}
+		return null;
+	}
+
 	List<ValidationIssueDto> toIssues(List<CollectingParserErrorHandler.ParseError> theErrors) {
 		List<ValidationIssueDto> out = new ArrayList<>();
 		for (CollectingParserErrorHandler.ParseError error : theErrors) {

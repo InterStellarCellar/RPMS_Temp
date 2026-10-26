@@ -1,10 +1,7 @@
 package ca.uhn.fhir.questionnairevalidator.service;
 
-import ca.uhn.fhir.context.FhirContext;
-import ca.uhn.fhir.questionnairevalidator.config.ValidationBeansConfig;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidateResponse;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidationIssueDto;
-import org.hl7.fhir.common.hapi.validation.support.ValidationSupportChain;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -49,10 +46,7 @@ class LocationQualityCorpusTest {
 
 	@BeforeAll
 	static void init() {
-		ValidationBeansConfig config = new ValidationBeansConfig();
-		FhirContext ctx = config.fhirContextR4();
-		ValidationSupportChain chain = config.localValidationSupportChain(ctx);
-		ourService = new QuestionnaireValidationService(ctx, chain);
+		ourService = CorpusTestSupport.service();
 	}
 
 	record Case(
