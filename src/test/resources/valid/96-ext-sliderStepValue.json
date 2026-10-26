@@ -1,0 +1,42 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>sliderStepValue</p></div>"
+  },
+  "id": "valid-slider",
+  "title": "sliderStepValue",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "slider"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue",
+          "valueInteger": 1
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 10
+        }
+      ],
+      "linkId": "pain",
+      "type": "integer",
+      "text": "Pain 0-10"
+    }
+  ]
+}

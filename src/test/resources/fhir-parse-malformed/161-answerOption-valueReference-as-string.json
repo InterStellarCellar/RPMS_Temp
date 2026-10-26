@@ -1,0 +1,16 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "reference",
+      "text": "Q",
+      "answerOption": [
+        {
+          "valueReference": "Patient/1"
+        }
+      ]
+    }
+  ]
+}

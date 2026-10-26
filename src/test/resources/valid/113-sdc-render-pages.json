@@ -1,0 +1,80 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Valid SDC render pages</p></div>"
+  },
+  "id": "valid-sdc-render",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-render"
+    ]
+  },
+  "url": "http://example.org/fhir/Questionnaire/valid-sdc-render",
+  "version": "1.0.0",
+  "name": "ValidSdcRender",
+  "title": "Valid SDC render pages",
+  "date": "2024-06-01",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "page"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "p1",
+      "type": "group",
+      "text": "Page 1",
+      "item": [
+        {
+          "linkId": "p1.q",
+          "type": "string",
+          "text": "Name"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "page"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "p2",
+      "type": "group",
+      "text": "Page 2",
+      "item": [
+        {
+          "linkId": "p2.q",
+          "type": "boolean",
+          "text": "OK?"
+        }
+      ]
+    }
+  ]
+}

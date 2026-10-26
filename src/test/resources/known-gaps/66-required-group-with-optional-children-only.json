@@ -1,0 +1,28 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "G",
+      "required": true,
+      "item": [
+        {
+          "linkId": "q1",
+          "type": "string",
+          "text": "Optional child"
+        },
+        {
+          "linkId": "q2",
+          "type": "string",
+          "text": "Also optional"
+        }
+      ]
+    }
+  ]
+}

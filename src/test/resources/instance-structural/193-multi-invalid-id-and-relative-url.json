@@ -1,0 +1,17 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "has spaces!",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Bad id and relative url</div>"
+  },
+  "url": "not-absolute",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

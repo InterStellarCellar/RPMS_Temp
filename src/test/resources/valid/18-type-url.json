@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Item type url</p></div>"
+  },
+  "id": "valid-type-url",
+  "title": "Item type url",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "url",
+      "text": "A url question",
+      "required": true
+    }
+  ]
+}

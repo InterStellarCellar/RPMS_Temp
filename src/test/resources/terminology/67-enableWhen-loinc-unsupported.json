@@ -1,0 +1,39 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Terminology corpus fixture</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "a",
+      "type": "choice",
+      "text": "A",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA33-6",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "b",
+      "type": "string",
+      "text": "B",
+      "enableWhen": [
+        {
+          "question": "a",
+          "operator": "=",
+          "answerCoding": {
+            "system": "http://loinc.org",
+            "code": "0000-0"
+          }
+        }
+      ]
+    }
+  ]
+}

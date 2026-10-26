@@ -1,0 +1,356 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-Smoking",
+  "title": "CNICS Smoking II: Tobacco use, electronic nicotine use",
+  "status": "active",
+  "description": "CNICS Smoking II Questionnaire: Tobacco use, electronic nicotine use. Based on: Kiechl S, Werner P, Egger G, et al. Active and passive smoking, chronic infections, and the risk of carotid atherosclerosis: prospective results from the Bruneck Study. Stroke. 2002;33(9):2170-2176.  Cropsey KL, Willig JH, Mugavero MJ, et al. Cigarette Smokers are Less Likely to Have Undetectable Viral Loads: Results From Four HIV Clinics. J Addict Med. 2016;10(1):13-19.  Hahn AW, Ruderman SA, Nance RM, et al. Vaporized Nicotine (E-Cigarette) and Tobacco Smoking Among People With HIV: Use Patterns and Associations With Depression and Panic Symptoms. J Acquir Immune Defic Syndr. 2023;92(3):197-203.",
+  "item": [
+    {
+      "linkId": "Smoking-0",
+      "text": "Have you smoked more than 20 tobacco cigarettes in your LIFETIME?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Smoking-0-0",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-0-1",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Smoking-1",
+      "text": "Do you currently smoke tobacco cigarettes?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Smoking-1-0",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-1-1",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Smoking-2",
+      "text": "How many years have you smoked tobacco cigarettes?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Smoking-2-0",
+            "display": "0-5 years"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-2-1",
+            "display": "6-10 years"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-2-2",
+            "display": "11-15 years"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-2-3",
+            "display": "16-20 years"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-2-4",
+            "display": "More than 20 years"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Smoking-3",
+      "text": "How many packs of tobacco cigarettes do/did you smoke a day?",
+      "type": "choice",
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Smoking-3-0",
+            "display": "Less than half a pack a day"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-3-1",
+            "display": "Half a pack to 1 pack a day"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-3-2",
+            "display": "Between 1 and 2 packs a day"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-3-3",
+            "display": "More than 2 packs a day"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Smoking-4",
+      "text": "How old were you when you started smoking cigarettes?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Smoking-4-0",
+            "display": "Less than 15 years old"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-4-1",
+            "display": "15-20 years old"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-4-2",
+            "display": "21-25 years old"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-4-3",
+            "display": "26-30 years old"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-4-4",
+            "display": "31-35 years old"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-4-5",
+            "display": "36-40 years old"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-4-6",
+            "display": "More than 40 years old"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Smoking-5",
+      "text": "How many cigarettes do you smoke/did you smoke per day?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Smoking-5-0",
+            "display": "None"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-5-1",
+            "display": "1-5"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-5-2",
+            "display": "6-10"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-5-3",
+            "display": "11-15"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-5-4",
+            "display": "16-20"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-5-5",
+            "display": "21-30"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-5-6",
+            "display": "More than 30"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Smoking-6",
+      "text": "Have you ever used \"E\" (electronic) cigarettes or a nicotine vaping device?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Smoking-6-0",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-6-1",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Smoking-7",
+      "text": "Do you currently use e-cigarettes or a nicotine vaping device?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Smoking-7-0",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-7-1",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Smoking-8",
+      "text": "How many years have you used e-cigarettes or a nicotine vaping device?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Smoking-8-0",
+            "display": "Less than 1 year"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-8-1",
+            "display": "1-2 years"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-8-2",
+            "display": "3-4 years"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-8-3",
+            "display": "4-5 years"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-8-4",
+            "display": "More than 5 years"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Smoking-9",
+      "text": "How often have you used electronic cigarettes or \"vaped\" nicotine in the past year?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Smoking-9-0",
+            "display": "Every day or almost every day"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-9-1",
+            "display": "Once or a few times a week"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-9-2",
+            "display": "Once or a few times a month"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-9-3",
+            "display": "Once or a few times in the past 12 months"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Smoking-9-4",
+            "display": "Never in the past 12 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Smoking-Tobacco-Cigs-Summary",
+      "text": "Summary of tobacco cigarettes use",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='Smoking-0').answer.empty() and %resource.item.where(linkId='Smoking-1').answer.empty(), 'Not answered', iif(%resource.item.where(linkId='Smoking-0').answer.valueCoding.code = 'Smoking-0-0' and (%resource.item.where(linkId='Smoking-1').answer.empty() or %resource.item.where(linkId='Smoking-1').answer.valueCoding.code = 'Smoking-1-0'), 'No', iif(%resource.item.where(linkId='Smoking-0').answer.valueCoding.code = 'Smoking-0-1' and %resource.item.where(linkId='Smoking-1').answer.valueCoding.code = 'Smoking-1-0', 'Previously smoked', iif(%resource.item.where(linkId='Smoking-0').answer.valueCoding.code = 'Smoking-0-1' and %resource.item.where(linkId='Smoking-1').answer.empty(), 'More than 20 cigarettes in lifetime', iif(%resource.item.where(linkId='Smoking-1').answer.valueCoding.code = 'Smoking-1-1', 'Currently', null)))))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "E-Cigarettes-Summary",
+      "text": "Summary of e-cigarette use",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='Smoking-7').answer.empty(), 'Not answered',   iif(%resource.item.where(linkId='Smoking-7').answer.valueCoding.code = 'Smoking-7-0', 'No',     iif(%resource.item.where(linkId='Smoking-7').answer.valueCoding.code = 'Smoking-7-1', 'Yes', null)))"
+          }
+        }
+      ]
+    }
+  ]
+}

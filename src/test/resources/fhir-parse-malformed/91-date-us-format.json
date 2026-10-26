@@ -1,0 +1,12 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "date": "01/02/2020",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

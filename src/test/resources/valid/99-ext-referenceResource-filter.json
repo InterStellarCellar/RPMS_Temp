@@ -1,0 +1,27 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>referenceResource and referenceFilter</p></div>"
+  },
+  "id": "valid-ref-filter",
+  "title": "referenceResource and referenceFilter",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceResource",
+          "valueCode": "Patient"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+          "valueString": "active=true"
+        }
+      ],
+      "linkId": "patient",
+      "type": "reference",
+      "text": "Related patient"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+# filename	minIssues	expectedMessageSubstring (at least minIssues issues must contain this)
+# 00–09: Root required / null
+00-missing-status.json	1	minimum required = 1
+01-status-null.json	1	minimum required = 1
+02-missing-status-with-items.json	1	minimum required = 1
+# 10–19: Item required
+10-missing-linkId.json	1	minimum required = 1
+11-linkId-null.json	1	minimum required = 1
+12-missing-type.json	1	minimum required = 1
+13-type-null.json	1	minimum required = 1
+14-missing-linkId-and-type.json	1	minimum required = 1
+15-nested-missing-linkId.json	1	minimum required = 1
+16-nested-missing-type.json	1	minimum required = 1
+# 20–39: enableWhen structure + link resolution
+20-enableWhen-missing-question.json	1	minimum required = 1
+21-enableWhen-question-null.json	1	minimum required = 1
+22-enableWhen-missing-operator.json	1	minimum required = 1
+23-enableWhen-operator-null.json	1	minimum required = 1
+24-enableWhen-missing-answer.json	1	minimum required = 1
+25-enableWhen-question-unknown-linkId.json	1	linkId
+26-enableWhen-question-typo-linkId.json	1	linkId
+27-nested-enableWhen-missing-question.json	1	minimum required = 1
+28-enableWhen-missing-question-and-operator.json	1	minimum required = 1
+# 40–49: answerOption / initial value[x]
+40-answerOption-missing-value-with-initialSelected.json	1	minimum required = 1
+41-initial-missing-value-with-id.json	1	minimum required = 1
+42-nested-answerOption-missing-value.json	1	minimum required = 1
+# 50–59: Narrative
+50-text-missing-status.json	1	minimum required = 1
+51-text-missing-div.json	1	minimum required = 1
+52-text-txt-2-whitespace-div.json	1	txt-2
+53-text-txt-1-script.json	1	Invalid element name in the XHTML
+54-text-txt-1-head-element.json	1	Invalid element name in the XHTML
+# 60–69: DomainResource
+60-dom-6-no-narrative.json	1	dom-6
+61-dom-3-unreferenced-contained.json	1	dom-3
+# 70–89: Nested datatype invariants
+70-useContext-missing-code.json	1	minimum required = 1
+71-useContext-missing-value.json	1	minimum required = 1
+72-effectivePeriod-per-1.json	1	per-1
+73-initial-quantity-qty-3.json	1	qty-3
+74-initial-attachment-att-1.json	1	att-1
+75-contact-telecom-cpt-2.json	1	cpt-2
+76-useContext-range-rng-2.json	1	rng-2
+# 90–99: Post-parse format / binding
+90-id-invalid-chars.json	1	Invalid Resource id
+91-url-not-absolute.json	1	absolute
+92-derivedFrom-not-absolute.json	1	absolute
+93-answerValueSet-not-absolute.json	1	absolute
+94-meta-profile-not-absolute.json	1	absolute
+95-subjectType-unknown.json	1	Unknown code
+# 190–199: Multi-error combos
+190-multi-missing-status-and-linkId.json	1	minimum required = 1
+191-multi-enableWhen-linkId-and-per-1.json	1	per-1
+191-multi-enableWhen-linkId-and-per-1.json	1	linkId
+192-multi-narrative-status-and-cpt-2.json	1	minimum required = 1
+192-multi-narrative-status-and-cpt-2.json	1	cpt-2
+193-multi-invalid-id-and-relative-url.json	1	Invalid Resource id
+193-multi-invalid-id-and-relative-url.json	1	absolute
+194-multi-missing-type-and-enableWhen-answer.json	1	minimum required = 1

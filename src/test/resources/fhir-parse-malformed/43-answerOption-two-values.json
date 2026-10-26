@@ -1,0 +1,17 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "choice",
+      "text": "Q",
+      "answerOption": [
+        {
+          "valueString": "a",
+          "valueInteger": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>maxLength and readOnly</p></div>"
+  },
+  "id": "valid-maxlen-ro",
+  "title": "maxLength and readOnly",
+  "item": [
+    {
+      "linkId": "short",
+      "type": "string",
+      "text": "Short",
+      "maxLength": 40
+    },
+    {
+      "linkId": "locked",
+      "type": "string",
+      "text": "Locked",
+      "readOnly": true,
+      "initial": [
+        {
+          "valueString": "system-set"
+        }
+      ]
+    }
+  ]
+}

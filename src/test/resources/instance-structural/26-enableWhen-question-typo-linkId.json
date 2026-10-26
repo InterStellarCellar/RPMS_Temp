@@ -1,0 +1,27 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">enableWhen references typo linkId</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "trigger",
+      "type": "boolean",
+      "text": "Trigger"
+    },
+    {
+      "linkId": "q2",
+      "type": "string",
+      "text": "Conditional",
+      "enableWhen": [
+        {
+          "question": "triiger",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ]
+    }
+  ]
+}

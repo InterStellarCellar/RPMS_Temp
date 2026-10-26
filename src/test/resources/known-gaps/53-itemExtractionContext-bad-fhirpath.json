@@ -1,0 +1,48 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-defn"
+    ]
+  },
+  "url": "http://example.org/fhir/Questionnaire/53-itemExtractionContext-bad-fhirpath",
+  "version": "1.0.0",
+  "name": "GapTest",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "G",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "this is not valid FHIRPath ((((%patient.!!!)))"
+          }
+        }
+      ],
+      "item": [
+        {
+          "linkId": "q1",
+          "type": "string",
+          "text": "Q"
+        }
+      ]
+    }
+  ]
+}

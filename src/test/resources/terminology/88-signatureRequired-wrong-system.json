@@ -1,0 +1,28 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Terminology corpus fixture</div>"
+  },
+  "status": "draft",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/signature-type",
+            "code": "not-a-sig"
+          }
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Terminology corpus fixture</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint",
+          "extension": [
+            {
+              "url": "key",
+              "valueId": "ex-1"
+            },
+            {
+              "url": "severity",
+              "valueCode": "not-a-severity"
+            },
+            {
+              "url": "expression",
+              "valueString": "true"
+            },
+            {
+              "url": "human",
+              "valueString": "always"
+            }
+          ]
+        }
+      ],
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-ASSIST-OD",
+  "title": "CNICS overdose-related questions",
+  "status": "active",
+  "description": "CNICS overdose-related questions, an adjunct to the CNICS Modified ASSIST.",
+  "item": [
+    {
+      "linkId": "ASSIST-OD-ever-header",
+      "text": "A drug overdose happens when a drug (or combination of drugs) causes trouble breathing or passing out, requiring help from another person to prevent harm or death.",
+      "type": "display"
+    },
+    {
+      "linkId": "ASSIST-OD-ever",
+      "text": "Have you ever overdosed (OD'd) on drugs? [such as heroin, fentanyl or pain pills; cocaine/crack/meth; anti-anxiety meds, etc.]",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-OD-ever-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-OD-ever-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-OD-recent-header",
+      "text": "A drug overdose happens when a drug (or combination of drugs) causes trouble breathing or passing out, requiring help from another person to prevent harm or death.",
+      "type": "display"
+    },
+    {
+      "linkId": "ASSIST-OD-recent",
+      "text": "In the last 6 months, how many times have you overdosed (OD'd) on drugs? [such as heroin, fentanyl or pain pills; cocaine/crack/meth; anti-anxiety meds, etc.]",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-OD-recent-0",
+            "display": "0"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-OD-recent-1",
+            "display": "1"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-OD-recent-2",
+            "display": "2"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-OD-recent-3",
+            "display": "3"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-OD-recent-4",
+            "display": "4 or more"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-OD-narcan",
+      "text": "Do you have a supply of or prescription for Narcan?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-OD-narcan-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-OD-narcan-1",
+            "display": "No"
+          }
+        }
+      ]
+    }
+  ]
+}

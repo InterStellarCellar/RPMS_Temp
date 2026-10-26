@@ -1,0 +1,11 @@
+# filename	mockMode
+120-tx-validate-http-404-loinc.json	VALIDATE_HTTP_404
+121-tx-validate-http-400-loinc.json	VALIDATE_HTTP_400
+122-tx-validate-http-500-loinc.json	VALIDATE_HTTP_500
+123-tx-empty-search-unknown-custom.json	EMPTY_SEARCH
+124-tx-reject-all-codes-known-loinc.json	REJECT_ALL_CODES
+125-tx-accept-all-should-not-fail-on-bad-code.json	ACCEPT_ALL_CODES
+126-tx-malformed-parameters-loinc.json	VALIDATE_MALFORMED_PARAMETERS
+127-tx-404-item-code.json	VALIDATE_HTTP_404
+128-tx-reject-all-answerOption.json	REJECT_ALL_CODES
+129-tx-empty-search-answerOption-custom.json	EMPTY_SEARCH

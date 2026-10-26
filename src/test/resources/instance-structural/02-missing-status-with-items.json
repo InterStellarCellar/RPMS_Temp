@@ -1,0 +1,25 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Missing status with items</div>"
+  },
+  "title": "Multiple items but no status",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "First"
+    },
+    {
+      "linkId": "2",
+      "type": "integer",
+      "text": "Second"
+    },
+    {
+      "linkId": "3",
+      "type": "boolean",
+      "text": "Third"
+    }
+  ]
+}

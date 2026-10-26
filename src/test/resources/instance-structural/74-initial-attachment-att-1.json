@@ -1,0 +1,22 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Attachment data without contentType</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "attachment",
+      "text": "Upload",
+      "initial": [
+        {
+          "valueAttachment": {
+            "data": "SGVsbG8="
+          }
+        }
+      ]
+    }
+  ]
+}

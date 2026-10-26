@@ -1,0 +1,12 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "name": "myForm",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "string",
+      "text": "Question"
+    }
+  ]
+}

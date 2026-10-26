@@ -1,0 +1,25 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">t</div>"
+  },
+  "status": "draft",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs1",
+      "status": "active"
+    }
+  ],
+  "derivedFrom": [
+    "#vs1"
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-signatureRequired",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/signature-type",
+            "code": "1.2.840.10065.1.12.1.1"
+          }
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

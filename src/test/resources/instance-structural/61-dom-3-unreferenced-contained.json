@@ -1,0 +1,23 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Unreferenced contained</div>"
+  },
+  "status": "draft",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs-orphan",
+      "status": "active",
+      "name": "Orphan"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

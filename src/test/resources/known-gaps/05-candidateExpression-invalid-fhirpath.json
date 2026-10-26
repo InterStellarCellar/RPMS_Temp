@@ -1,0 +1,41 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-behave"
+    ]
+  },
+  "url": "http://example.org/fhir/Questionnaire/05-candidateExpression-invalid-fhirpath",
+  "version": "1.0.0",
+  "name": "GapTest",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "a",
+      "type": "reference",
+      "text": "A",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-candidateExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "Patient.where(((("
+          }
+        }
+      ]
+    }
+  ]
+}

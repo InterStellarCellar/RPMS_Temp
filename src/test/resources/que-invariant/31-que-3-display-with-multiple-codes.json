@@ -1,0 +1,15 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "d1",
+      "type": "display",
+      "text": "Instructions",
+      "code": [
+        { "system": "http://loinc.org", "code": "1234-5" },
+        { "system": "http://snomed.info/sct", "code": "56789" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Multiple initials on repeating item</p></div>"
+  },
+  "id": "valid-multi-initial",
+  "title": "Multiple initials on repeating item",
+  "item": [
+    {
+      "linkId": "tags",
+      "type": "string",
+      "text": "Tags",
+      "repeats": true,
+      "initial": [
+        {
+          "valueString": "a"
+        },
+        {
+          "valueString": "b"
+        }
+      ]
+    }
+  ]
+}

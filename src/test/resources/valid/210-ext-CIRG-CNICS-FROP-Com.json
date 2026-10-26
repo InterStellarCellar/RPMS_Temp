@@ -1,0 +1,103 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-FROP-Com",
+  "title": "Falls Risk for Older People in the Community (FROP-Com)",
+  "status": "active",
+  "description": "FROP-Com questionnaire used for CNICS falls risk (\"Falls 2021\", #213). Based on: Mascarenhas M, Hill KD, Barker A, Burton E. Validity of the Falls Risk for Older People in the Community (FROP-Com) tool to predict falls and fall injuries for older people presenting to the emergency department after falling. Eur J Ageing. 2019;16(3):377-386.",
+  "item": [
+    {
+      "linkId": "FROP-Com-header",
+      "text": "The next questions are about falling.",
+      "type": "display"
+    },
+    {
+      "linkId": "FROP-Com-0",
+      "text": "How many times did you fall in the past 12 months?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "FROP-Com-0-0",
+            "display": "None"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FROP-Com-0-1",
+            "display": "1 fall"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FROP-Com-0-2",
+            "display": "2 falls"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FROP-Com-0-3",
+            "display": "3 or more"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "FROP-Com-1",
+      "text": "Did this fall require you to visit a physician or an emergency department?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "FROP-Com-1-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FROP-Com-1-1",
+            "display": "No"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId = 'FROP-Com-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'FROP-Com-0').answer.valueCoding.code != 'FROP-Com-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "FROP-Com-num-falls-text",
+      "text": "Fall risk (FROP-Com): number of falls",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='FROP-Com-0').answer.valueCoding.code = 'FROP-Com-0-0', 'None', iif(%resource.item.where(linkId='FROP-Com-0').answer.valueCoding.code = 'FROP-Com-0-1', '1', iif(%resource.item.where(linkId='FROP-Com-0').answer.valueCoding.code = 'FROP-Com-0-2', '2', iif(%resource.item.where(linkId='FROP-Com-0').answer.valueCoding.code = 'FROP-Com-0-3', '3 or more', null))))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "FROP-Com-ed-visit-bool",
+      "text": "Fall risk (FROP-Com) Questionnaire: E/D Visit",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId = 'FROP-Com-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'FROP-Com-0').answer.valueCoding.code != 'FROP-Com-0-0' and %resource.item.where(linkId = 'FROP-Com-1').answer.valueCoding.code = 'FROP-Com-1-0'"
+          }
+        }
+      ]
+    }
+  ]
+}

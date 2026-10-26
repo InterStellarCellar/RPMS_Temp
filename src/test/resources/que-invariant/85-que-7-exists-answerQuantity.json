@@ -1,0 +1,19 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    { "linkId": "q1", "type": "quantity", "text": "Weight" },
+    {
+      "linkId": "q2",
+      "type": "string",
+      "text": "Details",
+      "enableWhen": [
+        {
+          "question": "q1",
+          "operator": "exists",
+          "answerQuantity": { "value": 70, "unit": "kg" }
+        }
+      ]
+    }
+  ]
+}

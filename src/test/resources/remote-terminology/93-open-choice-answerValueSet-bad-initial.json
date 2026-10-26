@@ -1,0 +1,24 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">remote-terminology corpus</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "open-choice",
+      "text": "Q",
+      "answerValueSet": "http://example.org/ValueSet/choices",
+      "initial": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/cs",
+            "code": "BAD-INIT"
+          }
+        }
+      ]
+    }
+  ]
+}

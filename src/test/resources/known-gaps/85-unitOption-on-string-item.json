@@ -1,0 +1,32 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "kg"
+          }
+        }
+      ],
+      "linkId": "q1",
+      "type": "quantity",
+      "text": "Q",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "kg"
+          }
+        }
+      ]
+    }
+  ]
+}

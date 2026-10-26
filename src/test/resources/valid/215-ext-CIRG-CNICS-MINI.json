@@ -1,0 +1,595 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-MINI",
+  "title": "CNICS MINI (alcohol dependency)",
+  "status": "active",
+  "description": "CNICS MINI. Based on: Sheehan DV, Lecrubier Y, Sheehan KH, et al. The Mini-International Neuropsychiatric Interview (M.I.N.I.): the development and validation of a structured diagnostic psychiatric interview for DSM-IV and ICD-10. J Clin Psychiatry. 1998;59 Suppl 20:22-33;quiz 34-57.",
+  "item": [
+    {
+      "linkId": "MINI-0",
+      "text": "In the past 12 months, have you had 3 or more alcoholic drinks within a 3 hour period on 3 or more occasions?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-0-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-0-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-1",
+      "text": "In the past 12 months have you had a craving or a strong desire or urge to drink alcohol?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-1-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-1-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-2",
+      "text": "In the past 12 months, did you need to drink a lot more in order to get the same effect that you got when you first started drinking or did you get much less effect with continued use of the same amount?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-2-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-2-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-3",
+      "text": "In the past 12 months, when you cut down on drinking did your hands shake, did you sweat or feel agitated? Did you drink to avoid these symptoms (for example, \"the shakes\", sweating or agitation) or to avoid being hungover?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-3-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-3-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-4",
+      "text": "In the past 12 months, during the times when you drank alcohol, did you end up drinking more than you planned when you started?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-4-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-4-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-5",
+      "text": "In the past 12 months, have you tried to reduce or stop drinking alcohol but failed?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-5-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-5-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-6",
+      "text": "In the past 12 months, on the days that you drank, did you spend substantial time in obtaining alcohol, drinking, or in recovering from the effects of alcohol?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-6-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-6-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-7",
+      "text": "In the past 12 months, did you spend less time working, enjoying hobbies, or being with others because of your drinking?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-7-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-7-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-8",
+      "text": "In the past 12 months, if your drinking caused you health or mental problems, did you still keep on drinking?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-8-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-8-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-9",
+      "text": "In the past 12 months, have you been intoxicated, high, or hungover more than once when you had other responsibilities at school, at work, or at home? Did this cause any problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-9-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-9-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-10",
+      "text": "In the past 12 months, were you intoxicated more than once in any situation where you were physically at risk, for example, driving a car, riding a motorbike, using machinery, boating, etc.?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-10-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-10-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-11",
+      "text": "In the past 12 months, did you have legal problems more than once because of your drinking, for example, an arrest or disorderly conduct?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-11-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-11-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-12",
+      "text": "In the past 12 months, if your drinking caused problems with your family or other people, did you still keep on drinking?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MINI-12-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MINI-12-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-complete",
+      "text": "Is the MINI considered to be completely answered? Criteria: either the answer to the first question is 'No', or all of questions MINI-[2-8] (\"I2\" subset) have responses. This is an internal item for other scores' calculations.",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "((%resource.item.where(linkId = 'MINI-0').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'MINI-0').answer.valueCoding.code = 'MINI-0-1')) or ((%resource.item.where(linkId = 'MINI-0').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'MINI-0').answer.valueCoding.code = 'MINI-0-0')) and (%resource.item.where(linkId = 'MINI-2').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-3').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-4').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-5').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-6').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-7').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-8').answer.valueCoding.code.exists())))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-num-answered",
+      "text": "How many scoreable MINI questions (\"I2\" subset) were answered? Range 0-7. This is an internal item for other scores' calculations.",
+      "type": "integer",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(iif(%resource.item.where(linkId = 'MINI-2').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-3').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-4').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-5').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-6').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-7').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-8').answer.valueCoding.code.exists(), 1, 0))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-score-ignoring-skipped",
+      "text": "Score for the MINI \"I2\" subset of questions (integer). Range 0-7. This is an internal item for other scores' calculations.",
+      "type": "integer",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(iif(%resource.item.where(linkId='MINI-2').answer.empty(), 0, %resource.item.where(linkId='MINI-2').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-3').answer.empty(), 0, %resource.item.where(linkId='MINI-3').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-4').answer.empty(), 0, %resource.item.where(linkId='MINI-4').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-5').answer.empty(), 0, %resource.item.where(linkId='MINI-5').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-6').answer.empty(), 0, %resource.item.where(linkId='MINI-6').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-7').answer.empty(), 0, %resource.item.where(linkId='MINI-7').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-8').answer.empty(), 0, %resource.item.where(linkId='MINI-8').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-score",
+      "text": "Score for the MINI \"I2\" subset of questions (string). Range 0-7. This is the MINI score used in the CNICS provider feedback report. If there are insufficient answers to simply report a score, this reports either 'N/A' (no responses), or '(score) (Incomplete; Number of Questions Answered: (n)'",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='MINI-complete').answer.valueBoolean.toBoolean() = true, %resource.item.where(linkId='MINI-score-ignoring-skipped').answer.valueInteger.toString(), iif(%resource.item.where(linkId='MINI-num-answered').answer.valueInteger.toInteger() > 0, %resource.item.where(linkId='MINI-score-ignoring-skipped').answer.valueInteger.toString() + ' (Incomplete; Number of Questions Answered: ' + %resource.item.where(linkId='MINI-num-answered').answer.valueInteger.toString() + ')', 'N/A'))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MINI-score-interpretation",
+      "text": "Score interpretation for the MINI. Possible values: \"Dependent Drinker\", \"Not a Dependent Drinker\", (empty string due to unanswered questions)",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='MINI-complete').answer.valueBoolean.toBoolean() = false, '', iif(%resource.item.where(linkId='MINI-score-ignoring-skipped').answer.valueInteger.toInteger() >= 3, 'Dependent Drinker', 'Not a Dependent Drinker'))"
+          }
+        }
+      ]
+    }
+  ]
+}

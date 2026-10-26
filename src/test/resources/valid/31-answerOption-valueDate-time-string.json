@@ -1,0 +1,51 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>answerOption date/time/string</p></div>"
+  },
+  "id": "valid-ao-mixed",
+  "title": "answerOption date/time/string",
+  "item": [
+    {
+      "linkId": "d",
+      "type": "choice",
+      "text": "Date choice",
+      "answerOption": [
+        {
+          "valueDate": "2020-01-01"
+        },
+        {
+          "valueDate": "2021-01-01"
+        }
+      ]
+    },
+    {
+      "linkId": "t",
+      "type": "choice",
+      "text": "Time choice",
+      "answerOption": [
+        {
+          "valueTime": "08:00:00"
+        },
+        {
+          "valueTime": "17:00:00"
+        }
+      ]
+    },
+    {
+      "linkId": "s",
+      "type": "choice",
+      "text": "String choice",
+      "answerOption": [
+        {
+          "valueString": "Low"
+        },
+        {
+          "valueString": "High"
+        }
+      ]
+    }
+  ]
+}

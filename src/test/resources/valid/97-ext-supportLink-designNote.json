@@ -1,0 +1,27 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>supportLink and designNote</p></div>"
+  },
+  "id": "valid-support",
+  "title": "supportLink and designNote",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-supportLink",
+          "valueUri": "https://example.org/help/pain"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/designNote",
+          "valueMarkdown": "Author note: keep wording stable across releases."
+        }
+      ],
+      "linkId": "pain",
+      "type": "integer",
+      "text": "Pain score"
+    }
+  ]
+}

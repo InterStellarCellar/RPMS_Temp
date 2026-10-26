@@ -186,9 +186,22 @@
     return { line: line, column: col };
   }
 
+  /**
+   * HAPI location strings often include filters / FHIRPath noise that are not JSON keys:
+   * - extension[0][url='…']  → keep extension[0]
+   * - .value.ofType(boolean) → drop ofType(…)
+   */
+  function normalizeFhirLocation(location) {
+    if (!location || typeof location !== "string") return location;
+    return location
+      .replace(/\[[^\]]*url\s*=\s*['"][^'"]*['"][^\]]*]/gi, "")
+      .replace(/\.ofType\s*\([^)]*\)/gi, "");
+  }
+
   function parseFhirLocation(location) {
     if (!location || typeof location !== "string") return null;
     if (NON_PATH_LOCATIONS[location]) return null;
+    location = normalizeFhirLocation(location);
     const segments = [];
     const re = /([A-Za-z_][A-Za-z0-9_]*)(?:\[(\d+)\])?/g;
     let m;
@@ -199,6 +212,146 @@
       });
     }
     return segments.length ? segments : null;
+  }
+
+  /** Primitive elements store extensions under "_name" in JSON. */
+  function findProp(props, name) {
+    let prop = props.find(function (p) {
+      return p.key === name;
+    });
+    if (prop) return prop;
+    if (name && name.charAt(0) !== "_") {
+      prop = props.find(function (p) {
+        return p.key === "_" + name;
+      });
+    }
+    // FHIRPath "value" / "value[x]" → JSON valueBoolean, valueString, …
+    if (!prop && name === "value") {
+      prop = props.find(function (p) {
+        return p.key === "value" || p.key.indexOf("value") === 0;
+      });
+    }
+    return prop || null;
+  }
+
+  function rangeAtOffset(text, start, end) {
+    const s = offsetToLineCol(text, start);
+    const e = offsetToLineCol(text, end != null ? end : start + 1);
+    return {
+      line: s.line,
+      column: s.column,
+      endLine: e.line,
+      endColumn: e.column,
+    };
+  }
+
+  /**
+   * When HAPI only says "Questionnaire", try to pinpoint extension / meta.profile
+   * from the issue message text.
+   */
+  function resolveFromMessage(text, issue) {
+    const msg = issue && issue.message ? issue.message : "";
+    if (!msg) return null;
+
+    // Wrong-context / extension issues: "The extension http://… is not allowed…"
+    let m = msg.match(/The extension\s+(https?:\/\/\S+?)\s+is not allowed/i);
+    if (!m) {
+      m = msg.match(/Extension\s+'(https?:\/\/[^']+)'/i);
+    }
+    if (m) {
+      const url = m[1].replace(/[.,;:)\]\s]+$/, "");
+      const hit = findExtensionByUrl(text, url);
+      if (hit) return hit;
+    }
+
+    // Profile issues — extract canonical from message (http(s), urn:, file:, whitespace, …)
+    // e.g. "… in profile 'http://…/Patient|4.0.1', but found type…"
+    // e.g. "Invalid profile. Failed to retrieve profile with url=urn:uuid:…"
+    // e.g. "Profile reference 'file:///tmp/…' has not been checked…"
+    m = msg.match(/in profile\s+'([^'|]+)(?:\|[^']*)?'/i);
+    if (!m) {
+      m = msg.match(/Failed to retrieve profile with url=\s*(.+?)\s*$/i);
+    }
+    if (!m) {
+      m = msg.match(/profile with url=\s*(.+?)\s*$/i);
+    }
+    if (!m) {
+      m = msg.match(/Profile reference\s+'([^']+)'/i);
+    }
+    if (m) {
+      const url = m[1].replace(/[.,;:)\]\s]+$/g, "").trim();
+      if (url) {
+        const hit = findProfileUrl(text, url);
+        if (hit) return hit;
+      }
+    }
+    return null;
+  }
+
+  function findExtensionByUrl(text, url) {
+    let nodeStart = skipWs(text, 0);
+    if (text[nodeStart] !== "{") return null;
+    const root = skipObject(text, nodeStart);
+    if (root.end < 0) return null;
+    const extProp = findProp(root.props, "extension");
+    if (!extProp) return null;
+    const arr = skipArray(text, extProp.valueStart);
+    if (arr.end < 0) return null;
+    for (let i = 0; i < arr.elements.length; i++) {
+      const el = arr.elements[i];
+      const elStart = skipWs(text, el.start);
+      if (text[elStart] !== "{") continue;
+      const obj = skipObject(text, elStart);
+      if (obj.end < 0) continue;
+      const urlProp = findProp(obj.props, "url");
+      if (!urlProp) continue;
+      const tok = readString(text, skipWs(text, urlProp.valueStart));
+      if (tok && tok.value === url) {
+        return rangeAtOffset(text, urlProp.keyStart, urlProp.keyEnd);
+      }
+    }
+    // Fall back to the extension array key if URL not found
+    return rangeAtOffset(text, extProp.keyStart, extProp.keyEnd);
+  }
+
+  function findProfileUrl(text, url) {
+    let nodeStart = skipWs(text, 0);
+    if (text[nodeStart] !== "{") return null;
+    const root = skipObject(text, nodeStart);
+    if (root.end < 0) return null;
+    const metaProp = findProp(root.props, "meta");
+    if (!metaProp) return null;
+    const metaStart = skipWs(text, metaProp.valueStart);
+    if (text[metaStart] !== "{") return null;
+    const meta = skipObject(text, metaStart);
+    if (meta.end < 0) return null;
+    const profileProp = findProp(meta.props, "profile");
+    if (!profileProp) {
+      return rangeAtOffset(text, metaProp.keyStart, metaProp.keyEnd);
+    }
+    const arr = skipArray(text, profileProp.valueStart);
+    if (arr.end < 0) {
+      return rangeAtOffset(text, profileProp.keyStart, profileProp.keyEnd);
+    }
+    const want = (url || "").trim();
+    const wantBase = want.split("|")[0];
+    for (let i = 0; i < arr.elements.length; i++) {
+      const el = arr.elements[i];
+      const tok = readString(text, skipWs(text, el.start));
+      if (!tok) continue;
+      const got = (tok.value || "").trim();
+      const gotBase = got.split("|")[0];
+      // Match canonical with or without |version; tolerate whitespace in either side
+      if (
+        got === want ||
+        got.indexOf(want + "|") === 0 ||
+        want.indexOf(gotBase) === 0 ||
+        gotBase === wantBase
+      ) {
+        return rangeAtOffset(text, tok.start, tok.end);
+      }
+    }
+    return rangeAtOffset(text, profileProp.keyStart, profileProp.keyEnd);
   }
 
   function skipWs(text, i) {
@@ -364,65 +517,44 @@
     let current = skipObject(text, nodeStart);
     if (current.end < 0) return null;
 
+    // Bare "Questionnaire" — caller may use message heuristics instead of root `{`.
     if (!path.length) {
-      const start = offsetToLineCol(text, current.start);
-      return {
-        line: start.line,
-        column: start.column,
-        endLine: start.line,
-        endColumn: start.column + 1,
-      };
+      return null;
     }
 
     for (let s = 0; s < path.length; s++) {
       const seg = path[s];
       const isLast = s === path.length - 1;
-      const prop = current.props.find(function (p) {
-        return p.key === seg.name;
-      });
+      let prop = findProp(current.props, seg.name);
 
       if (!prop) {
         const near = findClosestKey(current.props, seg.name);
         if (near) {
-          const start = offsetToLineCol(text, near.keyStart);
-          const end = offsetToLineCol(text, near.keyEnd);
-          return {
-            line: start.line,
-            column: start.column,
-            endLine: end.line,
-            endColumn: end.column,
-          };
+          return rangeAtOffset(text, near.keyStart, near.keyEnd);
         }
-        const start = offsetToLineCol(text, current.start);
-        return {
-          line: start.line,
-          column: start.column,
-          endLine: start.line,
-          endColumn: start.column + 1,
-        };
+        return rangeAtOffset(text, current.start, current.start + 1);
+      }
+
+      // FHIRPath "foo.extension" on a primitive → JSON "_foo.extension"
+      if (!isLast && path[s + 1] && path[s + 1].name === "extension") {
+        const valStart = skipWs(text, prop.valueStart);
+        const ch = text[valStart];
+        if (ch !== "{" && ch !== "[") {
+          const underscore = findProp(current.props, "_" + seg.name);
+          if (underscore) {
+            prop = underscore;
+          }
+        }
       }
 
       if (seg.index != null) {
         const arr = skipArray(text, prop.valueStart);
         if (arr.end < 0 || !arr.elements[seg.index]) {
-          const start = offsetToLineCol(text, prop.keyStart);
-          const end = offsetToLineCol(text, prop.keyEnd);
-          return {
-            line: start.line,
-            column: start.column,
-            endLine: end.line,
-            endColumn: end.column,
-          };
+          return rangeAtOffset(text, prop.keyStart, prop.keyEnd);
         }
         const el = arr.elements[seg.index];
         if (isLast) {
-          const start = offsetToLineCol(text, el.start);
-          return {
-            line: start.line,
-            column: start.column,
-            endLine: start.line,
-            endColumn: start.column + 1,
-          };
+          return rangeAtOffset(text, el.start, el.start + 1);
         }
         const next = skipWs(text, el.start);
         if (text[next] === "{") {
@@ -434,14 +566,7 @@
       }
 
       if (isLast) {
-        const start = offsetToLineCol(text, prop.keyStart);
-        const end = offsetToLineCol(text, prop.keyEnd);
-        return {
-          line: start.line,
-          column: start.column,
-          endLine: end.line,
-          endColumn: end.column,
-        };
+        return rangeAtOffset(text, prop.keyStart, prop.keyEnd);
       }
 
       const next = skipWs(text, prop.valueStart);
@@ -454,14 +579,7 @@
         // Path like Questionnaire.item.linkId without [0] — use first element
         const arr = skipArray(text, next);
         if (arr.end < 0 || !arr.elements.length) {
-          const start = offsetToLineCol(text, prop.keyStart);
-          const end = offsetToLineCol(text, prop.keyEnd);
-          return {
-            line: start.line,
-            column: start.column,
-            endLine: end.line,
-            endColumn: end.column,
-          };
+          return rangeAtOffset(text, prop.keyStart, prop.keyEnd);
         }
         const el0 = arr.elements[0];
         const elStart = skipWs(text, el0.start);
@@ -470,7 +588,8 @@
         if (current.end < 0) return null;
         continue;
       }
-      return null;
+      // Primitive mid-path (e.g. leftover noise): highlight the property key
+      return rangeAtOffset(text, prop.keyStart, prop.keyEnd);
     }
     return null;
   }
@@ -488,6 +607,9 @@
   function resolveIssuePosition(issue, text, model) {
     const fromPath = resolveLocationInJson(text, issue.location);
     if (fromPath) return fromPath;
+
+    const fromMessage = resolveFromMessage(text, issue);
+    if (fromMessage) return fromMessage;
 
     if (hapiPositionLooksPlausible(issue, model)) {
       return {
@@ -599,24 +721,6 @@
     });
   }
 
-  function localJsonCheck(text) {
-    try {
-      JSON.parse(text);
-      return null;
-    } catch (e) {
-      const m = e.message || String(e);
-      return [
-        {
-          severity: "fatal",
-          message: "JSON syntax: " + m,
-          line: 1,
-          column: 1,
-          location: "JSON.parse",
-        },
-      ];
-    }
-  }
-
   function scheduleValidate() {
     if (el("optBlur").checked) return;
     clearTimeout(debounceTimer);
@@ -642,14 +746,10 @@
       return;
     }
 
-    const localIssues = localJsonCheck(text);
-    if (localIssues) {
-      const model = editor.getModel();
-      monaco.editor.setModelMarkers(model, "fhir", issuesToMarkers(localIssues, model, text));
-      setStatus(localIssues.length + " issue(s) (JSON syntax).", false);
-      renderIssueList(localIssues, model, text);
-      return;
-    }
+    // No client-side JSON.parse short-circuit: it can only report the first syntax error and
+    // has no usable position, so malformed JSON goes to the server like everything else. The
+    // server's recovering syntax checker returns every syntax error with a real line/column,
+    // rendered below as markers/issues exactly like FHIR validation results.
 
     if (abortCtrl) abortCtrl.abort();
     abortCtrl = new AbortController();

@@ -1,0 +1,14 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "effectivePeriod": {
+    "start": "nope"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

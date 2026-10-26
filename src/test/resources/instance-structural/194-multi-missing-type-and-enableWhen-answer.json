@@ -1,0 +1,25 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Missing type and enableWhen answer</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "boolean",
+      "text": "Trigger"
+    },
+    {
+      "linkId": "2",
+      "text": "Conditional without type, enableWhen without answer",
+      "enableWhen": [
+        {
+          "question": "1",
+          "operator": "="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">t</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "url": "http://example.org/q/ref",
+  "version": "1.0.0",
+  "name": "SdcTest",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "reference",
+      "text": "Ref",
+      "answerOption": [
+        {
+          "valueReference": {
+            "type": "Patient"
+          }
+        }
+      ]
+    }
+  ]
+}

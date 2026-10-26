@@ -1,0 +1,12 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "text",
+      "text": "Comments",
+      "answerValueSet": "http://example.org/ValueSet/comments"
+    }
+  ]
+}

@@ -1,0 +1,1629 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-PainTracker-Location-Body-Diagram",
+  "name": "PainTracker Pain Location Body Diagram",
+  "title": "PainTracker Pain Location Body Diagram",
+  "status": "draft",
+  "description": "PainTracker Pain Location Body Diagram questionnaire. This is novel to the PainTracker system. It collects and reports body location(s) of pain (e.g. front left anterior lateral forearm), and a single body location for severe pain. It also reports a fibromyalgia score based on how many logical groups (eg right upper arm, and left lower leg) of these locations are selected.",
+  "code": [
+    {
+      "system": "https://cirg.uw.edu",
+      "code": "CIRG-PainTracker-Location-Body-Diagram",
+      "display": "PainTracker Pain Location Body Diagram"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "CIRG-PainTracker-1252",
+      "code": [
+        {
+          "system": "https://cirg.uw.edu",
+          "code": "CIRG-PainTracker-1252"
+        }
+      ],
+      "text": "Below is a list of locations of pain. Please indicate one or more areas where you have felt pain over the past week.",
+      "type": "choice",
+      "repeats": "true",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "6662",
+            "display": "front_posterior_head"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6663",
+            "display": "front_right_brow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6664",
+            "display": "front_left_brow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6665",
+            "display": "front_right_cheek"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6666",
+            "display": "front_left_cheek"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6667",
+            "display": "front_right_jaw"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6668",
+            "display": "front_left_jaw"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6669",
+            "display": "front_anterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6670",
+            "display": "front_right_anterior_shoulder"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6671",
+            "display": "front_left_anterior_shoulder"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6672",
+            "display": "front_right_anterior_lateral_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6673",
+            "display": "front_right_anterior_medial_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6674",
+            "display": "front_right_anterior_lateral_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6675",
+            "display": "front_right_anterior_medial_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6676",
+            "display": "front_right_anterior_lateral_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6677",
+            "display": "front_right_anterior_medial_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6678",
+            "display": "front_right_anterior_lateral_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6679",
+            "display": "front_right_anterior_medial_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6680",
+            "display": "front_right_anterior_thumb"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6681",
+            "display": "front_right_anterior_2nd_-_4th_digits"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6682",
+            "display": "front_right_anterior_5th_digit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6683",
+            "display": "front_left_anterior_lateral_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6684",
+            "display": "front_left_anterior_medial_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6685",
+            "display": "front_left_anterior_lateral_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6686",
+            "display": "front_left_anterior_medial_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6687",
+            "display": "front_left_anterior_lateral_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6688",
+            "display": "front_left_anterior_medial_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6689",
+            "display": "front_left_anterior_lateral_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6690",
+            "display": "front_left_anterior_medial_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6691",
+            "display": "front_left_anterior_thumb"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6692",
+            "display": "front_left_anterior_2nd_-_4th_digits"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6693",
+            "display": "front_left_anterior_5th_digit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6694",
+            "display": "front_anterior_chest"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6695",
+            "display": "front_anterior_upper_abdomen"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6696",
+            "display": "front_anterior_pelvic"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6697",
+            "display": "front_right_anterior_lateral_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6698",
+            "display": "front_right_anterior_medial_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6699",
+            "display": "front_right_anterior_lateral_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6700",
+            "display": "front_right_anterior_medial_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6701",
+            "display": "front_right_patellar_tendon"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6702",
+            "display": "front_right_anterior_lateral_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6703",
+            "display": "front_right_anterior_medial_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6704",
+            "display": "front_right_lateral_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6705",
+            "display": "front_right_medial_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6706",
+            "display": "front_right_top_of_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6707",
+            "display": "front_right_medial_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6708",
+            "display": "front_left_anterior_lateral_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6709",
+            "display": "front_left_anterior_medial_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6710",
+            "display": "front_left_anterior_lateral_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6711",
+            "display": "front_left_anterior_medial_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6712",
+            "display": "front_left_patellar_tendon"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6713",
+            "display": "front_left_anterior_lateral_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6714",
+            "display": "front_left_anterior_medial_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6715",
+            "display": "front_left_lateral_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6716",
+            "display": "front_left_medial_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6717",
+            "display": "front_left_top_of_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6718",
+            "display": "front_left_medial_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6719",
+            "display": "back_posterior_head"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6720",
+            "display": "back_left_posterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6721",
+            "display": "back_midline_posterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6722",
+            "display": "back_right_posterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6723",
+            "display": "back_left_posterior_shoulder"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6724",
+            "display": "back_left_scapular"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6725",
+            "display": "back_midline_upper_back"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6726",
+            "display": "back_right_scapular"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6727",
+            "display": "back_right_posterior_shoulder"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6728",
+            "display": "back_left_posterior_lateral_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6729",
+            "display": "back_left_posterior_medial_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6730",
+            "display": "back_left_lateral_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6731",
+            "display": "back_left_medial_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6732",
+            "display": "back_left_posterior_lateral_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6733",
+            "display": "back_left_posterior_medial_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6734",
+            "display": "back_left_posterior_lateral_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6735",
+            "display": "back_left_posterior_medial_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6736",
+            "display": "back_left_posterior_thumb"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6737",
+            "display": "back_left_posterior_2nd_-_4th_digits"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6738",
+            "display": "back_left_posterior_5th_digit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6739",
+            "display": "back_right_posterior_lateral_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6740",
+            "display": "back_right_posterior_medial_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6741",
+            "display": "back_right_lateral_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6742",
+            "display": "back_right_medial_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6743",
+            "display": "back_right_posterior_lateral_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6744",
+            "display": "back_right_posterior_medial_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6745",
+            "display": "back_right_posterior_lateral_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6746",
+            "display": "back_right_posterior_medial_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6747",
+            "display": "back_right_posterior_thumb"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6748",
+            "display": "back_right_posterior_2nd_-_4th_digits"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6749",
+            "display": "back_right_posterior_5th_digit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6750",
+            "display": "back_left_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6751",
+            "display": "back_midline_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6752",
+            "display": "back_right_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6753",
+            "display": "back_midline_lower_back"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6754",
+            "display": "back_sacrum"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6755",
+            "display": "back_left_gluteal"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6756",
+            "display": "back_right_gluteal"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6757",
+            "display": "back_left_posterior_lateral_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6758",
+            "display": "back_left_posterior_medial_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6759",
+            "display": "back_left_posterior_lateral_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6760",
+            "display": "back_left_posterior_medial_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6761",
+            "display": "back_left_posterior_lateral_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6762",
+            "display": "back_left_posterior_medial_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6763",
+            "display": "back_left_lateral_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6764",
+            "display": "back_left_achilles_tendon"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6765",
+            "display": "back_left_medial_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6766",
+            "display": "back_left_sole_of_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6767",
+            "display": "back_left_lateral_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6768",
+            "display": "back_right_posterior_lateral_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6769",
+            "display": "back_right_posterior_medial_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6770",
+            "display": "back_right_posterior_lateral_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6771",
+            "display": "back_right_posterior_medial_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6772",
+            "display": "back_right_posterior_lateral_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6773",
+            "display": "back_right_posterior_medial_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6774",
+            "display": "back_right_lateral_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6775",
+            "display": "back_right_achilles_tendon"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6776",
+            "display": "back_right_medial_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6777",
+            "display": "back_right_sole_of_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6778",
+            "display": "back_right_lateral_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8441",
+            "display": "front_left_anterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8442",
+            "display": "front_left_anterior_chest"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8443",
+            "display": "front_left_anterior_upper_abdomen"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8444",
+            "display": "front_left_anterior_pelvic"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8445",
+            "display": "back_left_posterior_head"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8446",
+            "display": "back_upper_left_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8447",
+            "display": "back_upper_right_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8448",
+            "display": "front_right_anterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8449",
+            "display": "front_right_anterior_chest"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8450",
+            "display": "front_right_anterior_upper_abdomen"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8451",
+            "display": "front_right_anterior_pelvic"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8452",
+            "display": "back_right_posterior_head"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8453",
+            "display": "back_lower_left_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8454",
+            "display": "back_lower_right_posterior_thorax"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "CIRG-PainTracker-1253",
+      "code": [
+        {
+          "system": "https://cirg.uw.edu",
+          "code": "CIRG-PainTracker-1253",
+          "display": "Please state precisely where your severe pain is"
+        }
+      ],
+      "text": "Please state precisely where your severe pain is",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "6779",
+            "display": "front_posterior_head"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6780",
+            "display": "front_right_brow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6781",
+            "display": "front_left_brow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6782",
+            "display": "front_right_cheek"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6783",
+            "display": "front_left_cheek"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6784",
+            "display": "front_right_jaw"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6785",
+            "display": "front_left_jaw"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6786",
+            "display": "front_anterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6787",
+            "display": "front_right_anterior_shoulder"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6788",
+            "display": "front_left_anterior_shoulder"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6789",
+            "display": "front_right_anterior_lateral_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6790",
+            "display": "front_right_anterior_medial_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6791",
+            "display": "front_right_anterior_lateral_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6792",
+            "display": "front_right_anterior_medial_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6793",
+            "display": "front_right_anterior_lateral_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6794",
+            "display": "front_right_anterior_medial_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6795",
+            "display": "front_right_anterior_lateral_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6796",
+            "display": "front_right_anterior_medial_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6797",
+            "display": "front_right_anterior_thumb"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6798",
+            "display": "front_right_anterior_2nd_-_4th_digits"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6799",
+            "display": "front_right_anterior_5th_digit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6800",
+            "display": "front_left_anterior_lateral_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6801",
+            "display": "front_left_anterior_medial_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6802",
+            "display": "front_left_anterior_lateral_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6803",
+            "display": "front_left_anterior_medial_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6804",
+            "display": "front_left_anterior_lateral_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6805",
+            "display": "front_left_anterior_medial_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6806",
+            "display": "front_left_anterior_lateral_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6807",
+            "display": "front_left_anterior_medial_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6808",
+            "display": "front_left_anterior_thumb"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6809",
+            "display": "front_left_anterior_2nd_-_4th_digits"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6810",
+            "display": "front_left_anterior_5th_digit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6811",
+            "display": "front_anterior_chest"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6812",
+            "display": "front_anterior_upper_abdomen"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6813",
+            "display": "front_anterior_pelvic"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6814",
+            "display": "front_right_anterior_lateral_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6815",
+            "display": "front_right_anterior_medial_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6816",
+            "display": "front_right_anterior_lateral_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6817",
+            "display": "front_right_anterior_medial_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6818",
+            "display": "front_right_patellar_tendon"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6819",
+            "display": "front_right_anterior_lateral_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6820",
+            "display": "front_right_anterior_medial_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6821",
+            "display": "front_right_lateral_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6822",
+            "display": "front_right_medial_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6823",
+            "display": "front_right_top_of_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6824",
+            "display": "front_right_medial_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6825",
+            "display": "front_left_anterior_lateral_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6826",
+            "display": "front_left_anterior_medial_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6827",
+            "display": "front_left_anterior_lateral_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6828",
+            "display": "front_left_anterior_medial_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6829",
+            "display": "front_left_patellar_tendon"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6830",
+            "display": "front_left_anterior_lateral_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6831",
+            "display": "front_left_anterior_medial_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6832",
+            "display": "front_left_lateral_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6833",
+            "display": "front_left_medial_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6834",
+            "display": "front_left_top_of_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6835",
+            "display": "front_left_medial_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6836",
+            "display": "back_posterior_head"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6837",
+            "display": "back_left_posterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6838",
+            "display": "back_midline_posterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6839",
+            "display": "back_right_posterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6840",
+            "display": "back_left_posterior_shoulder"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6841",
+            "display": "back_left_scapular"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6842",
+            "display": "back_midline_upper_back"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6843",
+            "display": "back_right_scapular"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6844",
+            "display": "back_right_posterior_shoulder"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6845",
+            "display": "back_left_posterior_lateral_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6846",
+            "display": "back_left_posterior_medial_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6847",
+            "display": "back_left_lateral_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6848",
+            "display": "back_left_medial_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6849",
+            "display": "back_left_posterior_lateral_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6850",
+            "display": "back_left_posterior_medial_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6851",
+            "display": "back_left_posterior_lateral_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6852",
+            "display": "back_left_posterior_medial_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6853",
+            "display": "back_left_posterior_thumb"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6854",
+            "display": "back_left_posterior_2nd_-_4th_digits"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6855",
+            "display": "back_left_posterior_5th_digit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6856",
+            "display": "back_right_posterior_lateral_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6857",
+            "display": "back_right_posterior_medial_upper_arm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6858",
+            "display": "back_right_lateral_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6859",
+            "display": "back_right_medial_elbow"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6860",
+            "display": "back_right_posterior_lateral_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6861",
+            "display": "back_right_posterior_medial_forearm"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6862",
+            "display": "back_right_posterior_lateral_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6863",
+            "display": "back_right_posterior_medial_wrist"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6864",
+            "display": "back_right_posterior_thumb"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6865",
+            "display": "back_right_posterior_2nd_-_4th_digits"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6866",
+            "display": "back_right_posterior_5th_digit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6867",
+            "display": "back_left_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6868",
+            "display": "back_midline_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6869",
+            "display": "back_right_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6870",
+            "display": "back_midline_lower_back"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6871",
+            "display": "back_sacrum"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6872",
+            "display": "back_left_gluteal"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6873",
+            "display": "back_right_gluteal"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6874",
+            "display": "back_left_posterior_lateral_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6875",
+            "display": "back_left_posterior_medial_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6876",
+            "display": "back_left_posterior_lateral_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6877",
+            "display": "back_left_posterior_medial_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6878",
+            "display": "back_left_posterior_lateral_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6879",
+            "display": "back_left_posterior_medial_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6880",
+            "display": "back_left_lateral_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6881",
+            "display": "back_left_achilles_tendon"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6882",
+            "display": "back_left_medial_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6883",
+            "display": "back_left_sole_of_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6884",
+            "display": "back_left_lateral_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6885",
+            "display": "back_right_posterior_lateral_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6886",
+            "display": "back_right_posterior_medial_upper_thigh"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6887",
+            "display": "back_right_posterior_lateral_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6888",
+            "display": "back_right_posterior_medial_knee"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6889",
+            "display": "back_right_posterior_lateral_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6890",
+            "display": "back_right_posterior_medial_lower_leg"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6891",
+            "display": "back_right_lateral_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6892",
+            "display": "back_right_achilles_tendon"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6893",
+            "display": "back_right_medial_ankle"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6894",
+            "display": "back_right_sole_of_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6895",
+            "display": "back_right_lateral_foot"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8455",
+            "display": "front_left_anterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8456",
+            "display": "front_left_anterior_chest"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8457",
+            "display": "front_left_anterior_upper_abdomen"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8458",
+            "display": "front_left_anterior_pelvic"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8459",
+            "display": "back_left_posterior_head"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8460",
+            "display": "back_upper_left_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8461",
+            "display": "back_upper_right_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8462",
+            "display": "front_right_anterior_neck"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8463",
+            "display": "front_right_anterior_chest"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8464",
+            "display": "front_right_anterior_upper_abdomen"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8465",
+            "display": "front_right_anterior_pelvic"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8466",
+            "display": "back_right_posterior_head"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8467",
+            "display": "back_lower_left_posterior_thorax"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "8468",
+            "display": "back_lower_right_posterior_thorax"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "CIRG-PainTracker-Location-Body-Diagram-IGNORE",
+      "code": [
+        {
+          "code": "CIRG-PainTracker-Location-Body-Diagram-IGNORE",
+          "display": "CIRG-PainTracker-Location-Body-Diagram-IGNORE"
+        }
+      ],
+      "text": "CIRG-PainTracker-Location-Body-Diagram-IGNORE Only included as a mechanism in dhair2 to trigger reporting the questionnaire - this will never have a meaningful value.",
+      "type": "decimal",
+      "required": false
+    }
+  ]
+}

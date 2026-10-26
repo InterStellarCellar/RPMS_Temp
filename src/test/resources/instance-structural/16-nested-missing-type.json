@@ -1,0 +1,21 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nested missing type</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "Group",
+      "item": [
+        {
+          "linkId": "q1",
+          "text": "Child without type"
+        }
+      ]
+    }
+  ]
+}

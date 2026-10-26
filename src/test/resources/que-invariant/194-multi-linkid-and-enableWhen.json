@@ -1,0 +1,19 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    { "linkId": "q1", "type": "boolean", "text": "A" },
+    { "linkId": "q2", "type": "boolean", "text": "B" },
+    { "linkId": "q3", "type": "boolean", "text": "C" },
+    {
+      "linkId": "q1",
+      "type": "string",
+      "text": "Duplicate linkId + 3 enableWhen without enableBehavior (que-2 + que-12)",
+      "enableWhen": [
+        { "question": "q1", "operator": "=", "answerBoolean": true },
+        { "question": "q2", "operator": "=", "answerBoolean": true },
+        { "question": "q3", "operator": "=", "answerBoolean": true }
+      ]
+    }
+  ]
+}

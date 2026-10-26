@@ -1,0 +1,96 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-MAPSS-SF",
+  "title": "Multifactoral assessment of perceived social support (MAPSS) questionnaire. Fredericksen RJ, Fitzsimmons E, Gibbons LE, et al. Development and content validation of the Multifactoral assessment of perceived social support (MAPSS), a brief, patient-reported measure of social support for use in HIV care. AIDS Care. 2019:1-9.",
+  "status": "active",
+  "description": "Multifactoral assessment of perceived social support (MAPSS) questionnaire",
+  "item": [
+    {
+      "linkId": "MAPSS-SF-0",
+      "text": "How much do you feel listened to by those in your personal life?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MAPSS-SF-0-0",
+            "display": "Not enough"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MAPSS-SF-0-1",
+            "display": "Enough or more than enough"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MAPSS-SF-1",
+      "text": "How much do you feel that there are people in your life who understand your problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MAPSS-SF-1-0",
+            "display": "Not enough"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MAPSS-SF-1-1",
+            "display": "Enough or more than enough"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MAPSS-SF-2",
+      "text": "How satisfied are you with the kinds of relationships you have with your family and friends?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "MAPSS-SF-2-0",
+            "display": "Not satisfied"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "MAPSS-SF-2-1",
+            "display": "Satisfied or more than satisfied"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MAPSS-SF-SCORE-SOCIAL-SUPPORT",
+      "text": "Social Support",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='MAPSS-SF-0').answer.empty(),'', iif(%resource.item.where(linkId='MAPSS-SF-0').answer.valueCoding.code = 'MAPSS-SF-0-1','high social support', iif(%resource.item.where(linkId='MAPSS-SF-1').answer.empty() or %resource.item.where(linkId='MAPSS-SF-2').answer.empty(),'incomplete', iif((%resource.item.where(linkId='MAPSS-SF-1').answer.valueCoding.code = 'MAPSS-SF-1-1') or (%resource.item.where(linkId='MAPSS-SF-2').answer.valueCoding.code = 'MAPSS-SF-2-1'),'medium social support','low social support'))))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "MAPSS-SF-SCORE-CRITICAL",
+      "text": "Whether Social Support is to be flagged as critical",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='MAPSS-SF-SCORE-SOCIAL-SUPPORT').answer.empty() = false) and (%resource.item.where(linkId='MAPSS-SF-SCORE-SOCIAL-SUPPORT').answer.valueString = 'low social support')"
+          }
+        }
+      ]
+    }
+  ]
+}

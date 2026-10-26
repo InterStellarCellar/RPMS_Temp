@@ -1,0 +1,677 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "GAD7Questionnaire.integer-total",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "code": [
+    {
+      "code": "69737-5",
+      "system": "http://loinc.org",
+      "display": "Generalized anxiety disorder 7 item (GAD-7)"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueString": "semver"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtractCategory",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "survey"
+          }
+        ]
+      }
+    }
+  ],
+  "subjectType": [
+    "Patient"
+  ],
+  "item": [
+    {
+      "code": [
+        {
+          "code": "69725-0",
+          "system": "http://loinc.org",
+          "display": "Feeling nervous, anxious, or on edge"
+        }
+      ],
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "gad7-1",
+      "text": "Feeling nervous, anxious, or on edge",
+      "type": "choice"
+    },
+    {
+      "code": [
+        {
+          "code": "68509-9",
+          "system": "http://loinc.org",
+          "display": "Not being able to stop or control worrying"
+        }
+      ],
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "gad7-2",
+      "text": "Not being able to stop or control worrying",
+      "type": "choice"
+    },
+    {
+      "code": [
+        {
+          "code": "69733-4",
+          "system": "http://loinc.org",
+          "display": "Worrying too much about different things"
+        }
+      ],
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "gad7-3",
+      "text": "Worrying too much about different things",
+      "type": "choice"
+    },
+    {
+      "code": [
+        {
+          "code": "69734-2",
+          "system": "http://loinc.org",
+          "display": "Trouble relaxing"
+        }
+      ],
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "gad7-4",
+      "text": "Trouble relaxing",
+      "type": "choice"
+    },
+    {
+      "code": [
+        {
+          "code": "69735-9",
+          "system": "http://loinc.org",
+          "display": "Being so restless that it is hard to sit still"
+        }
+      ],
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "gad7-5",
+      "text": "Being so restless that it is hard to sit still",
+      "type": "choice"
+    },
+    {
+      "code": [
+        {
+          "code": "69689-8",
+          "system": "http://loinc.org",
+          "display": "Becoming easily annoyed or irritable"
+        }
+      ],
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "gad7-6",
+      "text": "Becoming easily annoyed or irritable",
+      "type": "choice"
+    },
+    {
+      "code": [
+        {
+          "code": "69736-7",
+          "system": "http://loinc.org",
+          "display": "Feeling afraid as if something awful might happen"
+        }
+      ],
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "gad7-7",
+      "text": "Feeling afraid as if something awful might happen",
+      "type": "choice"
+    },
+    {
+      "code": [
+        {
+          "code": "70274-6",
+          "system": "http://loinc.org",
+          "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+        }
+      ],
+      "extension": [
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='gad7-1').answer.valueCoding.extension.where(url='http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal + %resource.item.where(linkId='gad7-2').answer.valueCoding.extension.where(url='http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal + %resource.item.where(linkId='gad7-3').answer.valueCoding.extension.where(url='http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal + %resource.item.where(linkId='gad7-4').answer.valueCoding.extension.where(url='http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal + %resource.item.where(linkId='gad7-5').answer.valueCoding.extension.where(url='http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal + %resource.item.where(linkId='gad7-6').answer.valueCoding.extension.where(url='http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal + %resource.item.where(linkId='gad7-7').answer.valueCoding.extension.where(url='http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal).truncate()"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 21
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "total-score",
+      "type": "integer",
+      "text": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]",
+      "readOnly": true
+    },
+    {
+      "answerOption": [
+        {
+          "valueString": "Minimal anxiety"
+        },
+        {
+          "valueString": "Mild anxiety"
+        },
+        {
+          "valueString": "Moderate anxiety"
+        },
+        {
+          "valueString": "Severe anxiety"
+        }
+      ],
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "Minimal anxiety"
+            },
+            {
+              "url": "low",
+              "valueDecimal": 0
+            },
+            {
+              "url": "high",
+              "valueDecimal": 4
+            }
+          ],
+          "url": "http://example.org/StructureDefinition/score-band"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "Mild anxiety"
+            },
+            {
+              "url": "low",
+              "valueDecimal": 5
+            },
+            {
+              "url": "high",
+              "valueDecimal": 9
+            }
+          ],
+          "url": "http://example.org/StructureDefinition/score-band"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "Moderate anxiety"
+            },
+            {
+              "url": "low",
+              "valueDecimal": 10
+            },
+            {
+              "url": "high",
+              "valueDecimal": 14
+            }
+          ],
+          "url": "http://example.org/StructureDefinition/score-band"
+        },
+        {
+          "extension": [
+            {
+              "url": "label",
+              "valueString": "Severe anxiety"
+            },
+            {
+              "url": "low",
+              "valueDecimal": 15
+            },
+            {
+              "url": "high",
+              "valueDecimal": 21
+            }
+          ],
+          "url": "http://example.org/StructureDefinition/score-band"
+        },
+        {
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='total-score').answer.valueDecimal.select(iif($this <= 4, 'Minimal anxiety', iif($this <= 9, 'Mild anxiety', iif($this <= 14, 'Moderate anxiety', 'Severe anxiety'))))"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        }
+      ],
+      "linkId": "severity-category",
+      "type": "choice",
+      "text": "GAD-7 anxiety severity",
+      "readOnly": true
+    }
+  ],
+  "status": "active",
+  "url": "https://cirg.uw.edu/Questionnaire/GAD7Questionnaire.integer-total",
+  "version": "0.1.0",
+  "title": "Generalized Anxiety Disorder-7 Assessment"
+}

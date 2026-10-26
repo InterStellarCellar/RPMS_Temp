@@ -1,0 +1,26 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 99
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 1
+        }
+      ],
+      "linkId": "q1",
+      "type": "choice",
+      "text": "Q",
+      "answerValueSet": "http://example.org/ValueSet/missing"
+    }
+  ]
+}

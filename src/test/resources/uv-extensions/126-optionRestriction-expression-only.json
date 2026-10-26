@@ -1,0 +1,29 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">UV ext test</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "choice",
+      "text": "Q",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionRestriction",
+          "extension": [
+            {
+              "url": "expression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "true"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

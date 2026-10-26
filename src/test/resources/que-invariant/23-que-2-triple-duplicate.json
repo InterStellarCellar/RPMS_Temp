@@ -1,0 +1,9 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    { "linkId": "dup", "type": "string", "text": "First" },
+    { "linkId": "dup", "type": "integer", "text": "Second" },
+    { "linkId": "dup", "type": "boolean", "text": "Third" }
+  ]
+}

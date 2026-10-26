@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "Outer group",
+      "item": [
+        {
+          "linkId": "g2",
+          "type": "group",
+          "text": "Inner empty group (fires que-1)"
+        }
+      ]
+    }
+  ]
+}

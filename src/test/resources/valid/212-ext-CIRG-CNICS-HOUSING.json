@@ -1,0 +1,102 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-HOUSING",
+  "title": "CNICS Housing Measure",
+  "status": "active",
+  "description": "CNICS Housing Measure. Reference: Whitney BM FE, Jackson MK, Brown SM, Nguyen J, Nance RN, Ruderman S, Delaney JAC, Crane HM, Fredericksen RJ. Patient perceptions and understanding of a housing status measure for use in HIV care. 27th Annual Conference of International Society of Quality of Life; October 19-23, 2020, 2020; online.",
+  "item": [
+    {
+      "linkId": "HOUSING-0",
+      "text": " In the past month, please check any of the following places in which you stayed at least one night (excluding vacation)?",
+      "type": "choice",
+      "repeats": "true",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "HOUSING-0-0",
+            "display": "A home or apartment that you own or rent (by yourself or with others)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-0-1",
+            "display": "Someone else's home or apartment"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-0-2",
+            "display": "Room in a motel or hotel"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-0-3",
+            "display": "Residential program (e.g. drug treatment facility, halfway house)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-0-4",
+            "display": "Hospital/Long-term care facility"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-0-5",
+            "display": "Shelter for those without housing"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-0-6",
+            "display": "Jail/Prison"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-0-7",
+            "display": "Outdoors, tent, abandoned building, public space, or in a car"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-0-8",
+            "display": "Don't know/Other"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "HOUSING-1",
+      "text": "In the past month, how would you describe your living situation?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "HOUSING-1-0",
+            "display": "Homeless"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-1-1",
+            "display": "Unstable"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-1-2",
+            "display": "Stable"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HOUSING-1-3",
+            "display": "Don't know"
+          }
+        }
+      ]
+    }
+  ]
+}

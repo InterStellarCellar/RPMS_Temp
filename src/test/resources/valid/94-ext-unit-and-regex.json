@@ -1,0 +1,38 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>questionnaire-unit and regex</p></div>"
+  },
+  "id": "valid-unit-regex",
+  "title": "questionnaire-unit and regex",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "kg",
+            "display": "kg"
+          }
+        }
+      ],
+      "linkId": "weight",
+      "type": "decimal",
+      "text": "Weight"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/regex",
+          "valueString": "^[A-Z]{2}[0-9]{4}$"
+        }
+      ],
+      "linkId": "code",
+      "type": "string",
+      "text": "Site code"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "code": [
+    {
+      "system": "http://example.com",
+      "code": "q1",
+      "bogus": "x"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

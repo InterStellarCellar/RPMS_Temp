@@ -1,0 +1,17 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "identifier": [
+    {
+      "use": "primary",
+      "value": "123"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

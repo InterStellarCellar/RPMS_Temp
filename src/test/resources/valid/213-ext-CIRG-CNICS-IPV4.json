@@ -1,0 +1,140 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-IPV4",
+  "title": "IPV-4",
+  "description": "IPV-4, a patient-reported screening instrument of intimate partner violence for primary and HIV care. Reference: [Fredericksen, Rob, Emma Fitzsimmons, Sonia Avendano-Soto, et al. \"Development and Integration of IPV-4, a Patient-Reported Screening Instrument of Intimate Partner Violence for Primary and HIV Care.\" Journal of AIDS and HIV Research 14, no. 2 (2022): 41\u201349. https://doi.org/10.5897/JAHR2021.0551.](https://academicjournals.org/journal/JAHR/article-full-text/E39BF4A70048)",
+  "status": "active",
+  "item": [
+    {
+      "linkId": "IPV4-header-1",
+      "text": "The next questions are about you and a partner. By \"partner\" we mean current or former husband/wife, boyfriend/girlfriend, domestic partner, romantic partner, or sex partner.",
+      "type": "display"
+    },
+    {
+      "linkId": "IPV4-header-2",
+      "text": "In the PAST YEAR, did a current or former partner\u2026",
+      "type": "display"
+    },
+    {
+      "linkId": "IPV4-1",
+      "text": "Make you feel cut off from others, trapped, or controlled in a way you did not like?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "IPV4-1-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "IPV4-1-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "IPV4-2",
+      "text": "Make you feel afraid that they might try to hurt you in some way?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "IPV4-2-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "IPV4-2-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "IPV4-3",
+      "text": "Pressure or force you to do something sexual that you didn't want to do?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "IPV4-3-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "IPV4-3-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "IPV4-4",
+      "text": "Hit, kick, punch, slap, shove, or otherwise physically hurt you?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "IPV4-4-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "IPV4-4-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "IPV4-physical-violence",
+      "text": "Physical violence",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='IPV4-4').answer.valueCoding.code = 'IPV4-4-0', true, false)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "IPV4-sexual-violence",
+      "text": "Sexual violence",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='IPV4-3').answer.valueCoding.code = 'IPV4-3-0', true, false)"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "IPV4-critical",
+      "text": "Either physical or sexual violence indicated.",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='IPV4-physical-violence').answer.valueBoolean.toBoolean() = true or (%resource.item.where(linkId='IPV4-sexual-violence').answer.valueBoolean.toBoolean() = true))"
+          }
+        }
+      ]
+    }
+  ]
+}

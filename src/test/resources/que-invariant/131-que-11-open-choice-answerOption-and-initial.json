@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "open-choice",
+      "text": "Pick or type",
+      "answerOption": [
+        { "valueString": "Option A" },
+        { "valueString": "Option B" }
+      ],
+      "initial": [
+        { "valueString": "Option A" }
+      ]
+    }
+  ]
+}

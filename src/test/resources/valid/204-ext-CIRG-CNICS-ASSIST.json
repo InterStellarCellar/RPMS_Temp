@@ -1,0 +1,959 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-ASSIST",
+  "title": "CNICS Modified ASSIST ",
+  "status": "active",
+  "description": "The CNICS Modified ASSIST is based on the \"NIDA-Modified ASSIST version 2.0\"(LOINC 95513-8). It is constrained to cover only substance use lifetime yes/no and frequency in the past 3 months. Each substance has it's own separate FHIR questionnaire (e.g. \"CIRG-CNICS-ASSIST-COCAINE\") for more detailed questions.",
+  "item": [
+    {
+      "linkId": "ASSIST-lifetime-header",
+      "text": "In your LIFETIME, which of the following substances have you ever used?",
+      "type": "display"
+    },
+    {
+      "linkId": "ASSIST-0",
+      "text": "Cocaine/crack",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-0-reportable-text",
+          "display": "Cocaine/Crack"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-0-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-0-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-1",
+      "text": "Methamphetamine (crystal meth, speed, Tina)",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-1-reportable-text",
+          "display": "Methamphetamine"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-1-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-1-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-2",
+      "text": "Heroin",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-2-reportable-text",
+          "display": "Heroin"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-2-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-2-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-3",
+      "text": "Fentanyl (not prescribed by your Dr.)",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-3-reportable-text",
+          "display": "Fentanyl (not prescribed)"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-3-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-3-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-4",
+      "text": "Narcotic pain meds for NON-MEDICAL use (oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-4-reportable-text",
+          "display": "Narcotic pain meds for NON-MEDICAL use"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-4-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-4-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-5",
+      "text": "Sedatives or sleeping pills for NON-MEDICAL use (Valium, Serepax, Xanax, Librium, Rohypnol, GHB, etc.)",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-5-reportable-text",
+          "display": "Sedatives or sleeping pills for NON-MEDICAL use"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-5-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-5-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-6",
+      "text": "Marijuana for NON-MEDICAL use (pot, weed, hash, cannabis, etc.)",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-6-reportable-text",
+          "display": "Marijuana for NON-MEDICAL use"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-6-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-6-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-7",
+      "text": "Prescription stimulants for NON-MEDICAL use (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-7-reportable-text",
+          "display": "Prescription stimulants for NON-MEDICAL use"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-7-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-7-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-8",
+      "text": "Inhalants (poppers, nitrous oxide, glue, gas, paint thinner, etc.)",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-8-reportable-text",
+          "display": "Inhalants"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-8-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-8-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-9",
+      "text": "Psychedelics (Ecstasy/\"E\"/MDMA/Molly, Ketamine/\"K\", LSD/acid, mushrooms/psylocibin)",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-9-reportable-text",
+          "display": "Psychedelics"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-9-0",
+            "display": "Yes",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-9-1",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-3mo-header",
+      "text": "In the PAST 3 MONTHS, how often have you used:",
+      "type": "display"
+    },
+    {
+      "linkId": "ASSIST-10",
+      "text": "Cocaine/crack?",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-10-reportable-text",
+          "display": "Cocaine/Crack"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-10-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-10-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-10-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-10-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-10-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='ASSIST-0').answer.valueCoding.code = 'ASSIST-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-11",
+      "text": "Methamphetamine (crystal meth, speed, Tina)?",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-11-reportable-text",
+          "display": "Methamphetamine"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-11-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-11-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-11-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-11-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-11-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='ASSIST-1').answer.valueCoding.code = 'ASSIST-1-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-12",
+      "text": "Heroin?",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-12-reportable-text",
+          "display": "Heroin"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-12-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-12-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-12-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-12-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-12-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='ASSIST-2').answer.valueCoding.code = 'ASSIST-2-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-13",
+      "text": "Fentanyl (not prescribed by your Dr.)?",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-13-reportable-text",
+          "display": "Fentanyl"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-13-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-13-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-13-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-13-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-13-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='ASSIST-3').answer.valueCoding.code = 'ASSIST-3-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-14",
+      "text": "Narcotic pain meds for NON-MEDICAL use (oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-14-reportable-text",
+          "display": "Narcotic pain meds for NON-MEDICAL use"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-14-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-14-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-14-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-14-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-14-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='ASSIST-4').answer.valueCoding.code = 'ASSIST-4-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-15",
+      "text": "Sedatives or sleeping pills for NON-MEDICAL use (Valium, Serepax, Xanax, Librium, Rohypnol, GHB, etc.)?",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-15-reportable-text",
+          "display": "Sedatives or sleeping pills for NON-MEDICAL use"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-15-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-15-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-15-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-15-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-15-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='ASSIST-5').answer.valueCoding.code = 'ASSIST-5-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-16",
+      "text": "Marijuana for NON-MEDICAL use (pot, weed, hash, cannabis, etc.)?",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-16-reportable-text",
+          "display": "Marijuana for NON-MEDICAL use"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-16-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-16-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-16-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-16-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-16-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='ASSIST-6').answer.valueCoding.code = 'ASSIST-6-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-17",
+      "text": "Prescription stimulants for NON-MEDICAL use (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-17-reportable-text",
+          "display": "Prescription stimulants for NON-MEDICAL use"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-17-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-17-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-17-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-17-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-17-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='ASSIST-7').answer.valueCoding.code = 'ASSIST-7-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-18",
+      "text": "Inhalants (poppers, nitrous oxide, glue, gas, paint thinner, etc.)?",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-18-reportable-text",
+          "display": "Inhalants"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-18-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-18-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-18-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-18-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-18-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='ASSIST-8').answer.valueCoding.code = 'ASSIST-8-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-19",
+      "text": "Psychedelics (Ecstasy/\"E\"/MDMA/Molly, Ketamine/\"K\", LSD/acid, mushrooms/psylocibin)?",
+      "type": "choice",
+      "code": [
+        {
+          "system": "https://cnics-pro.cirg.washington.edu/",
+          "code": "ASSIST-19-reportable-text",
+          "display": "Psychedelics"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-19-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-19-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-19-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-19-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-19-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='ASSIST-9').answer.valueCoding.code = 'ASSIST-9-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-lifetime-score",
+      "text": "This \"score\" is a comma-separated list of substances that the subject indicated that they have used in their lifetime.",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId = 'ASSIST-0').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-0').answer.valueCoding.code = 'ASSIST-0-0'),%questionnaire.item.where(linkId = 'ASSIST-0').code.where(code = 'ASSIST-0-reportable-text').display + ', ','') + iif(%resource.item.where(linkId = 'ASSIST-1').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-1').answer.valueCoding.code = 'ASSIST-1-0'),%questionnaire.item.where(linkId = 'ASSIST-1').code.where(code = 'ASSIST-1-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-2').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-2').answer.valueCoding.code = 'ASSIST-2-0'),%questionnaire.item.where(linkId = 'ASSIST-2').code.where(code = 'ASSIST-2-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-3').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-3').answer.valueCoding.code = 'ASSIST-3-0'),%questionnaire.item.where(linkId = 'ASSIST-3').code.where(code = 'ASSIST-3-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-4').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-4').answer.valueCoding.code = 'ASSIST-4-0'),%questionnaire.item.where(linkId = 'ASSIST-4').code.where(code = 'ASSIST-4-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-5').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-5').answer.valueCoding.code = 'ASSIST-5-0'),%questionnaire.item.where(linkId = 'ASSIST-5').code.where(code = 'ASSIST-5-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-6').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-6').answer.valueCoding.code = 'ASSIST-6-0'),%questionnaire.item.where(linkId = 'ASSIST-6').code.where(code = 'ASSIST-6-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-7').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-7').answer.valueCoding.code = 'ASSIST-7-0'),%questionnaire.item.where(linkId = 'ASSIST-7').code.where(code = 'ASSIST-7-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-8').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-8').answer.valueCoding.code = 'ASSIST-8-0'),%questionnaire.item.where(linkId = 'ASSIST-8').code.where(code = 'ASSIST-8-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-9').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-9').answer.valueCoding.code = 'ASSIST-9-0'),%questionnaire.item.where(linkId = 'ASSIST-9').code.where(code = 'ASSIST-9-reportable-text').display + ', ','')"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-3mo-score",
+      "text": "This \"score\" is a comma-separated list of substances that the subject indicated that they have used in the past 3 months.",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId = 'ASSIST-10').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-10').answer.valueCoding.code != 'ASSIST-10-0'),%questionnaire.item.where(linkId = 'ASSIST-10').code.where(code = 'ASSIST-10-reportable-text').display + ', ','') + iif(%resource.item.where(linkId = 'ASSIST-11').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-11').answer.valueCoding.code != 'ASSIST-11-0'),%questionnaire.item.where(linkId = 'ASSIST-11').code.where(code = 'ASSIST-11-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-12').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-12').answer.valueCoding.code != 'ASSIST-12-0'),%questionnaire.item.where(linkId = 'ASSIST-12').code.where(code = 'ASSIST-12-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-13').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-13').answer.valueCoding.code != 'ASSIST-13-0'),%questionnaire.item.where(linkId = 'ASSIST-13').code.where(code = 'ASSIST-13-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-14').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-14').answer.valueCoding.code != 'ASSIST-14-0'),%questionnaire.item.where(linkId = 'ASSIST-14').code.where(code = 'ASSIST-14-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-15').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-15').answer.valueCoding.code != 'ASSIST-15-0'),%questionnaire.item.where(linkId = 'ASSIST-15').code.where(code = 'ASSIST-15-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-16').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-16').answer.valueCoding.code != 'ASSIST-16-0'),%questionnaire.item.where(linkId = 'ASSIST-16').code.where(code = 'ASSIST-16-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-17').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-17').answer.valueCoding.code != 'ASSIST-17-0'),%questionnaire.item.where(linkId = 'ASSIST-17').code.where(code = 'ASSIST-17-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-18').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-18').answer.valueCoding.code != 'ASSIST-18-0'),%questionnaire.item.where(linkId = 'ASSIST-18').code.where(code = 'ASSIST-18-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-19').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-19').answer.valueCoding.code != 'ASSIST-19-0'),%questionnaire.item.where(linkId = 'ASSIST-19').code.where(code = 'ASSIST-19-reportable-text').display + ', ','')"
+          }
+        }
+      ]
+    }
+  ]
+}

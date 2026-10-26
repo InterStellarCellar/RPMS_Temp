@@ -1,0 +1,109 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-FOOD",
+  "title": "CNICS Food Security Questionnaire (FSQ)",
+  "status": "active",
+  "description": "CNICS Food Security Questionnaire (FSQ). Based on: Young J, Jeganathan S, Houtzager L, Di Guilmi A, Purnomo J. A valid two-item food security questionnaire for screening HIV-1 infected patients in a clinical setting. Public Health Nutr. 2009;12(11):2129-2132.",
+  "item": [
+    {
+      "linkId": "FOOD-header",
+      "text": "Please read the following two statements and indicate whether the statement was OFTEN, SOMETIMES, or NEVER true for you or other members of your household in the last 12 months.",
+      "type": "display"
+    },
+    {
+      "linkId": "FOOD-0",
+      "text": "The food I/we bought just didn't last, and I/we didn't have money to get more.",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "FOOD-0-0",
+            "display": "Never true"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FOOD-0-1",
+            "display": "Sometimes true"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FOOD-0-2",
+            "display": "Often true"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "FOOD-1",
+      "text": "I/we couldn't afford to eat balanced meals.",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "FOOD-1-0",
+            "display": "Never true"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FOOD-1-1",
+            "display": "Sometimes true"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FOOD-1-2",
+            "display": "Often true"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "FOOD-score",
+      "text": "Food Security Questionnaire score",
+      "type": "decimal",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='FOOD-0').answer.empty() and %resource.item.where(linkId='FOOD-1').answer.empty(), null, iif(%resource.item.where(linkId='FOOD-0').answer.valueCoding.empty() xor %resource.item.where(linkId='FOOD-1').answer.valueCoding.empty(), iif(%resource.item.where(linkId='FOOD-0').answer.valueCoding.code = 'FOOD-0-0' or %resource.item.where(linkId='FOOD-1').answer.valueCoding.code = 'FOOD-1-0', null, 1), iif(%resource.item.where(linkId='FOOD-0').answer.valueCoding.code.replace('FOOD-0-','').toInteger() = 0, iif(%resource.item.where(linkId='FOOD-1').answer.valueCoding.code.replace('FOOD-1-','').toInteger() = 0, 0, 1), iif(%resource.item.where(linkId='FOOD-1').answer.valueCoding.code.replace('FOOD-1-','').toInteger() = 0, 1, 2))))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "FOOD-score-label",
+      "text": "Food Security Questionnaire score: label",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='FOOD-score').answer.valueDecimal.toInteger() = 0, 'Food Secure', iif(%resource.item.where(linkId='FOOD-score').answer.valueDecimal.toInteger() = 1, 'Low Food Security', iif(%resource.item.where(linkId='FOOD-score').answer.valueDecimal.toInteger() = 2, 'Very Low Food Security', null)))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "FOOD-critical-flag",
+      "text": "Food Security Questionnaire score: critical flag",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='FOOD-score').answer.valueDecimal.toInteger() > 0"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Initial values matching types</p></div>"
+  },
+  "id": "valid-initials",
+  "title": "Initial values matching types",
+  "item": [
+    {
+      "linkId": "b",
+      "type": "boolean",
+      "text": "B",
+      "initial": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "i",
+      "type": "integer",
+      "text": "I",
+      "initial": [
+        {
+          "valueInteger": 3
+        }
+      ]
+    },
+    {
+      "linkId": "d",
+      "type": "decimal",
+      "text": "D",
+      "initial": [
+        {
+          "valueDecimal": 1.5
+        }
+      ]
+    },
+    {
+      "linkId": "s",
+      "type": "string",
+      "text": "S",
+      "initial": [
+        {
+          "valueString": "prefilled"
+        }
+      ]
+    },
+    {
+      "linkId": "dt",
+      "type": "date",
+      "text": "Date",
+      "initial": [
+        {
+          "valueDate": "2024-01-02"
+        }
+      ]
+    },
+    {
+      "linkId": "q",
+      "type": "quantity",
+      "text": "Qty",
+      "initial": [
+        {
+          "valueQuantity": {
+            "value": 70,
+            "unit": "kg",
+            "system": "http://unitsofmeasure.org",
+            "code": "kg"
+          }
+        }
+      ]
+    }
+  ]
+}

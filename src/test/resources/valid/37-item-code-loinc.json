@@ -1,0 +1,40 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Item with LOINC code</p></div>"
+  },
+  "id": "valid-item-code",
+  "title": "Item with LOINC code",
+  "item": [
+    {
+      "linkId": "44250-9",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "44250-9",
+          "display": "Little interest or pleasure in doing things"
+        }
+      ],
+      "text": "Little interest or pleasure in doing things",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "Not at all"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "Several days"
+          }
+        }
+      ]
+    }
+  ]
+}

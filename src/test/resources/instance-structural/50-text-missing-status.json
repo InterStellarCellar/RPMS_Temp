@@ -1,0 +1,14 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Text with div but no status</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

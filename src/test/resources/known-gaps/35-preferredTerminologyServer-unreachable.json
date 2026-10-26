@@ -1,0 +1,22 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+      "valueUrl": "https://example.org/tx/not-real"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "choice",
+      "text": "Q",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    }
+  ]
+}

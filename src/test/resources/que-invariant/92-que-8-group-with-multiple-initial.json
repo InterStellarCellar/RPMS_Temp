@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "Group",
+      "initial": [
+        { "valueString": "first" },
+        { "valueString": "second" }
+      ],
+      "item": [
+        { "linkId": "q1", "type": "string", "text": "Question" }
+      ]
+    }
+  ]
+}

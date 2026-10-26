@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "quantity",
+      "text": "Q",
+      "enableWhen": [
+        {
+          "question": "1",
+          "operator": "=",
+          "answerQuantity": "10 mg"
+        }
+      ]
+    }
+  ]
+}

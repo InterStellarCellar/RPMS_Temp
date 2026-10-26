@@ -1,0 +1,16 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "date",
+      "text": "Q",
+      "answerOption": [
+        {
+          "valueDate": "not-a-date"
+        }
+      ]
+    }
+  ]
+}

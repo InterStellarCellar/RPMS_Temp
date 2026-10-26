@@ -1,0 +1,14 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "Empty group with initial (que-1 + que-8)",
+      "initial": [
+        { "valueString": "should not be here" }
+      ]
+    }
+  ]
+}

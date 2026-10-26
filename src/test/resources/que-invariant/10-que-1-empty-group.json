@@ -1,0 +1,11 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "Empty group with no item array"
+    }
+  ]
+}

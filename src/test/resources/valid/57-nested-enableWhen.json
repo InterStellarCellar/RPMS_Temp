@@ -1,0 +1,50 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Nested group with enableWhen</p></div>"
+  },
+  "id": "valid-ew-nested",
+  "title": "Nested group with enableWhen",
+  "item": [
+    {
+      "linkId": "has-allergy",
+      "type": "boolean",
+      "text": "Allergies?"
+    },
+    {
+      "linkId": "allergy-group",
+      "type": "group",
+      "text": "Allergy details",
+      "enableWhen": [
+        {
+          "question": "has-allergy",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ],
+      "item": [
+        {
+          "linkId": "allergen",
+          "type": "string",
+          "text": "Allergen",
+          "required": true
+        },
+        {
+          "linkId": "severity",
+          "type": "choice",
+          "text": "Severity",
+          "answerOption": [
+            {
+              "valueString": "mild"
+            },
+            {
+              "valueString": "severe"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

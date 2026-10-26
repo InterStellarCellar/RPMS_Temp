@@ -1,0 +1,29 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>enableWhen boolean equals</p></div>"
+  },
+  "id": "valid-ew-bool",
+  "title": "enableWhen boolean equals",
+  "item": [
+    {
+      "linkId": "smoker",
+      "type": "boolean",
+      "text": "Smoker?"
+    },
+    {
+      "linkId": "cigs",
+      "type": "integer",
+      "text": "Cigarettes/day",
+      "enableWhen": [
+        {
+          "question": "smoker",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ]
+    }
+  ]
+}

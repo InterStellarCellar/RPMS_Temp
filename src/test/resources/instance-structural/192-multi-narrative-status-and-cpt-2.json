@@ -1,0 +1,23 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Missing text.status and cpt-2</div>"
+  },
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "value": "555-1234"
+        }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

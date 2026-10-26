@@ -1,0 +1,17 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "d1",
+      "type": "display",
+      "text": "Display with nested items and initial (que-1 + que-8)",
+      "item": [
+        { "linkId": "q1", "type": "string", "text": "Child" }
+      ],
+      "initial": [
+        { "valueString": "should not be here" }
+      ]
+    }
+  ]
+}

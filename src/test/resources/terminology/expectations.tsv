@@ -1,0 +1,81 @@
+# filename	minIssues	expectedMessageSubstring (at least minIssues issues must contain this)
+# 00–09: resource-types required binding
+00-subjectType-unknown.json	1	Unknown code
+01-subjectType-multi-one-bad.json	1	Unknown code
+02-referenceResource-unknown.json	1	Unknown code
+# 10–19: language (preferred / BCP47)
+10-language-unknown.json	1	not found in the value set 'Common Languages'
+11-language-bad-region.json	1	Common Languages
+12-language-garbage.json	1	Common Languages
+# 20–29: jurisdiction (extensible)
+20-jurisdiction-iso-unknown.json	1	Unknown code
+20-jurisdiction-iso-unknown.json	1	Jurisdiction
+21-jurisdiction-unknown-system.json	1	CodeSystem is unknown
+22-jurisdiction-m49-unknown-system.json	1	CodeSystem is unknown
+# 30–39: useContext
+30-useContext-code-unknown.json	1	Unknown code
+30-useContext-code-unknown.json	1	UsageContextType
+31-useContext-value-unknown.json	1	Unknown code
+32-useContext-valueQuantity-bad-ucum.json	1	unknown
+33-useContext-valueRange-bad-ucum.json	1	unknown
+# 40–49: meta.security / meta.tag
+40-meta-security-unknown.json	1	Unknown code
+40-meta-security-unknown.json	1	SecurityLabels
+41-meta-tag-unknown.json	1	Unknown code
+42-meta-security-not-in-valueset.json	1	SecurityLabels
+43-meta-security-and-tag-unknown.json	1	v3-ActReason#NOTAREAL
+43-meta-security-and-tag-unknown.json	1	common-tags#not-a-tag
+# 50–59: Questionnaire.code / item.code
+50-root-code-local-unknown.json	1	Unknown code
+51-item-code-local-unknown.json	1	Unknown code
+52-nested-item-code-local-unknown.json	1	Unknown code
+53-item-code-two-unknown.json	2	Unknown code
+54-root-code-loinc-unsupported.json	1	not supported
+55-item-code-loinc-unsupported.json	1	not supported
+56-root-code-snomed-unsupported.json	1	not supported
+57-root-code-rxnorm-unsupported.json	1	not supported
+# 60–69: answerOption / initial / enableWhen Coding
+60-answerOption-coding-unknown.json	1	Unknown code
+61-nested-answerOption-coding-unknown.json	1	Unknown code
+62-initial-coding-unknown.json	1	Unknown code
+63-enableWhen-answerCoding-unknown.json	1	Unknown code
+64-answerOption-loinc-unsupported.json	1	not supported
+65-answerOption-snomed-unsupported.json	1	not supported
+66-initial-loinc-unsupported.json	1	not supported
+67-enableWhen-loinc-unsupported.json	1	not supported
+68-coding-no-system.json	1	A code with no system
+69-identifier-type-unknown.json	1	Unknown code
+69-identifier-type-unknown.json	1	IdentifierType
+# 70–79: UCUM
+70-initial-quantity-bad-ucum.json	1	unknown
+71-initial-quantity-complex-bad-ucum.json	1	unknown
+72-enableWhen-answerQuantity-bad-ucum.json	1	unknown
+73-questionnaire-unit-integer-bad-ucum.json	1	unknown
+74-questionnaire-unit-decimal-bad-ucum.json	1	unknown
+75-unitOption-bad-ucum.json	1	unknown
+# 80–99: extension-bound codes
+80-itemControl-unknown.json	1	Unknown code
+80-itemControl-unknown.json	1	questionnaire-item-control
+81-usageMode-unknown.json	1	Unknown code
+82-choiceOrientation-unknown.json	1	Unknown code
+83-displayCategory-unknown.json	1	Unknown code
+83-displayCategory-unknown.json	1	questionnaire-display-category
+84-constraint-severity-unknown.json	1	Unknown code
+85-versionAlgorithm-unknown.json	1	Unknown code
+85-versionAlgorithm-unknown.json	1	Version Algorithm
+86-answerConstraint-unknown.json	1	CodeSystem is unknown
+87-signatureRequired-unknown.json	1	Unknown code
+88-signatureRequired-wrong-system.json	1	CodeSystem is unknown
+89-launchContext-name-unknown.json	1	Unknown code
+89-launchContext-name-unknown.json	1	launchContext
+# 190–199: multi-error combos
+190-multi-subjectType-and-ucum.json	1	NotAResource
+190-multi-subjectType-and-ucum.json	1	badUnit
+191-multi-itemControl-and-usageMode.json	1	questionnaire-item-control#nope
+191-multi-itemControl-and-usageMode.json	1	questionnaire-usage-mode#nope
+192-multi-jurisdiction-and-useContext.json	1	iso:3166#XX
+192-multi-jurisdiction-and-useContext.json	1	administrative-gender#not-a-gender
+193-multi-meta-tag-and-item-code.json	1	common-tags#not-a-tag
+193-multi-meta-tag-and-item-code.json	1	v2-0001#ZZ
+194-multi-loinc-unsupported-and-ucum.json	1	not supported
+194-multi-loinc-unsupported-and-ucum.json	1	unknown

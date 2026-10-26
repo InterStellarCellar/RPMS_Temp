@@ -1,0 +1,109 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>All common types under a group</p></div>"
+  },
+  "id": "valid-all-types",
+  "title": "All common types under a group",
+  "name": "ValidAllTypes",
+  "url": "http://example.org/fhir/Questionnaire/valid-all-types",
+  "item": [
+    {
+      "linkId": "g",
+      "type": "group",
+      "text": "Demographics",
+      "item": [
+        {
+          "linkId": "g.bool",
+          "type": "boolean",
+          "text": "Bool"
+        },
+        {
+          "linkId": "g.dec",
+          "type": "decimal",
+          "text": "Decimal"
+        },
+        {
+          "linkId": "g.int",
+          "type": "integer",
+          "text": "Integer"
+        },
+        {
+          "linkId": "g.date",
+          "type": "date",
+          "text": "Date"
+        },
+        {
+          "linkId": "g.dt",
+          "type": "dateTime",
+          "text": "DateTime"
+        },
+        {
+          "linkId": "g.time",
+          "type": "time",
+          "text": "Time"
+        },
+        {
+          "linkId": "g.str",
+          "type": "string",
+          "text": "String"
+        },
+        {
+          "linkId": "g.txt",
+          "type": "text",
+          "text": "Text"
+        },
+        {
+          "linkId": "g.url",
+          "type": "url",
+          "text": "URL"
+        },
+        {
+          "linkId": "g.att",
+          "type": "attachment",
+          "text": "Attachment"
+        },
+        {
+          "linkId": "g.ref",
+          "type": "reference",
+          "text": "Reference"
+        },
+        {
+          "linkId": "g.qty",
+          "type": "quantity",
+          "text": "Quantity"
+        },
+        {
+          "linkId": "g.choice",
+          "type": "choice",
+          "text": "Choice",
+          "answerOption": [
+            {
+              "valueInteger": 1
+            },
+            {
+              "valueInteger": 2
+            }
+          ]
+        },
+        {
+          "linkId": "g.open",
+          "type": "open-choice",
+          "text": "Open",
+          "answerOption": [
+            {
+              "valueString": "A"
+            }
+          ]
+        },
+        {
+          "linkId": "g.disp",
+          "type": "display",
+          "text": "Please answer carefully."
+        }
+      ]
+    }
+  ]
+}

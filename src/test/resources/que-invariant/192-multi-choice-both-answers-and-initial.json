@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "choice",
+      "text": "Pick one (que-4 + que-11)",
+      "answerValueSet": "http://example.org/ValueSet/options",
+      "answerOption": [
+        { "valueCoding": { "system": "http://example.org", "code": "a", "display": "A" } }
+      ],
+      "initial": [
+        { "valueCoding": { "system": "http://example.org", "code": "a" } }
+      ]
+    }
+  ]
+}

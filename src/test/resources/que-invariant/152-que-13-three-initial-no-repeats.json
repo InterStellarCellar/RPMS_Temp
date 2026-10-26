@@ -1,0 +1,16 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "integer",
+      "text": "Numbers",
+      "initial": [
+        { "valueInteger": 1 },
+        { "valueInteger": 2 },
+        { "valueInteger": 3 }
+      ]
+    }
+  ]
+}

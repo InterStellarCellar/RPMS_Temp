@@ -1,0 +1,14 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

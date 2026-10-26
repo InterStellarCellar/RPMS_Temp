@@ -1,0 +1,23 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Quantity with code but no system</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "quantity",
+      "text": "Weight",
+      "initial": [
+        {
+          "valueQuantity": {
+            "value": 70,
+            "code": "kg"
+          }
+        }
+      ]
+    }
+  ]
+}

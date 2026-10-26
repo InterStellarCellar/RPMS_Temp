@@ -1,0 +1,83 @@
+# filename	minIssues	expectedMessageSubstring
+# 00–19: meta.profile unresolved / unknown
+00-profile-unknown.json	1	Profile reference
+01-profile-https-unknown.json	1	Profile reference
+02-profile-typo-sdc.json	1	Profile reference
+03-profile-version-unknown.json	1	Profile reference
+04-profile-version-wrong.json	1	Profile reference
+05-profile-urn.json	1	Profile reference
+06-profile-file-scheme.json	1	Profile reference
+07-profile-trailing-slash.json	1	Profile reference
+08-profile-query-string.json	1	Profile reference
+09-profile-double-pipe-version.json	1	Profile reference
+10-profile-empty-version-pipe.json	1	Profile reference
+11-profile-two-unknown.json	2	Profile reference
+12-profile-known-plus-unknown.json	1	Profile reference
+13-profile-sdc-plus-unknown.json	1	Profile reference
+14-profile-valueset-url-as-profile.json	1	Profile reference
+15-profile-invalid-failed-retrieve.json	1	Invalid profile
+# 20–39: meta.profile wrong resource type
+20-profile-type-patient.json	1	Specified profile type was 'Patient'
+21-profile-type-observation.json	1	Specified profile type was 'Observation'
+22-profile-type-bundle.json	1	Specified profile type was 'Bundle'
+23-profile-type-codesystem.json	1	Specified profile type was 'CodeSystem'
+24-profile-type-library.json	1	Specified profile type was 'Library'
+25-profile-type-extension-xver.json	1	Specified profile type was 'Extension'
+# 40–59: meta.profile format
+40-profile-whitespace.json	1	URI values cannot have whitespace
+40-profile-whitespace.json	1	Canonical URLs must be absolute
+43-profile-with-fragment.json	1	Profile reference
+# 60–79: profile application / conflicts
+60-profile-apply-sdc-adapt.json	1	sdc-questionnaire-adapt
+61-profile-apply-sdc-modular.json	1	sdc-questionnaire-modular
+62-profile-apply-sdc-search.json	1	sdc-questionnaire-search
+63-profile-conflicting-adapt-and-base.json	1	max allowed = 0
+# 80–99: derivedFrom canonical
+80-derivedFrom-unresolved.json	1	referred to in the derivation could not be found
+81-derivedFrom-versioned-unresolved.json	1	referred to in the derivation could not be found
+82-derivedFrom-structuredefinition-url.json	1	referred to in the derivation could not be found
+83-derivedFrom-hash-missing.json	1	referred to in the derivation could not be found
+84-derivedFrom-hash-wrong-type.json	1	referred to in the derivation could not be found
+85-derivedFrom-relative.json	1	Canonical URLs must be absolute
+86-derivedFrom-pipe-only.json	1	Canonical URLs must be absolute
+87-derivedFrom-whitespace.json	1	URI values cannot have whitespace
+88-derivedFrom-space-inside.json	1	URI values cannot have whitespace
+89-derivedFrom-urn-unresolved.json	1	referred to in the derivation could not be found
+90-derivedFrom-trailing-slash.json	1	referred to in the derivation could not be found
+91-derivedFrom-multi-unresolved.json	2	referred to in the derivation could not be found
+92-derivedFrom-relative-and-absolute.json	1	Canonical URLs must be absolute
+92-derivedFrom-relative-and-absolute.json	1	referred to in the derivation could not be found
+# 100–119: url / answerValueSet / definition format
+100-url-relative.json	1	Canonical URLs must be absolute
+101-url-whitespace.json	1	URI values cannot have whitespace
+102-url-space-inside.json	1	URI values cannot have whitespace
+110-answerValueSet-relative.json	1	Canonical URLs must be absolute
+111-answerValueSet-whitespace.json	1	URI values cannot have whitespace
+112-answerValueSet-space-inside.json	1	URI values cannot have whitespace
+113-answerValueSet-pipe-only.json	1	Canonical URLs must be absolute
+114-definition-whitespace.json	1	URI values cannot have whitespace
+115-definition-space-inside.json	1	URI values cannot have whitespace
+116-nested-answerValueSet-relative.json	1	Canonical URLs must be absolute
+# 120–139: extension.url / valueCanonical
+120-extension-url-relative.json	1	Extension.url must be an absolute URL
+121-extension-url-empty.json	1	Extension.url is required
+122-modifierExtension-url-relative.json	1	Extension.url must be an absolute URL
+123-item-extension-url-relative.json	1	Extension.url must be an absolute URL
+124-extension-url-unknown.json	1	Unknown extension
+125-modifierExtension-url-unknown.json	1	Unknown extension
+126-valueCanonical-relative-cqf-library.json	1	Canonical URLs must be absolute
+127-unitValueSet-relative.json	1	Canonical URLs must be absolute
+128-unitValueSet-whitespace.json	1	URI values cannot have whitespace
+129-targetStructureMap-relative.json	1	Canonical URLs must be absolute
+130-subQuestionnaire-relative.json	1	Canonical URLs must be absolute
+# 140–159: (reserved — HAPI-1826 fragment refs are parse-layer; see fhir-parse-malformed)
+# 160–169: identifier.system
+160-identifier-system-relative.json	1	Identifier.system must be an absolute
+# 190–199: multi-error combos
+190-multi-profile-and-derivedFrom.json	1	Profile reference
+190-multi-profile-and-derivedFrom.json	1	Canonical URLs must be absolute
+191-multi-url-and-answerValueSet.json	2	Canonical URLs must be absolute
+192-multi-unknown-profile-and-identifier.json	1	Profile reference
+192-multi-unknown-profile-and-identifier.json	1	Identifier.system must be an absolute
+193-multi-whitespace-url-and-derivedFrom.json	2	URI values cannot have whitespace
+194-multi-relative-avs-and-unitValueSet.json	2	Canonical URLs must be absolute

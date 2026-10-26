@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "date",
+      "text": "Q",
+      "enableWhen": [
+        {
+          "question": "1",
+          "operator": "=",
+          "answerDate": "31/12/2020"
+        }
+      ]
+    }
+  ]
+}

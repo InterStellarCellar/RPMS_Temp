@@ -1,0 +1,14 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "d1",
+      "type": "display",
+      "text": "Instructions",
+      "initial": [
+        { "valueString": "should not be here" }
+      ]
+    }
+  ]
+}

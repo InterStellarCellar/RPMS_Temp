@@ -1,0 +1,26 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/missing"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">t</div>"
+  },
+  "status": "draft",
+  "identifier": [
+    {
+      "system": "local-system",
+      "value": "1"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

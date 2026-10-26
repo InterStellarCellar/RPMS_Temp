@@ -1,0 +1,322 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-HIV-STIGMA",
+  "title": "HIV Stigma questionnaire",
+  "status": "active",
+  "description": "HIV Stigma questionnaire. Scored: 1-5 (mean across responses); >= 4 suggests stigma. Christopoulos KA, Neilands TB, Hartogensis W, et al. Internalized HIV Stigma Is Associated With Concurrent Viremia and Poor Retention in a Cohort of US Patients in HIV Care. J Acquir Immune Defic Syndr. 2019;82(2):116-123.",
+  "item": [
+    {
+      "linkId": "HIV-STIGMA-0",
+      "text": "Having HIV makes me feel like I am a bad person",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-0-0",
+            "display": "Strongly disagree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-0-1",
+            "display": "Disagree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-0-2",
+            "display": "Neither disagree nor agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-0-3",
+            "display": "Agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-0-4",
+            "display": "Strongly agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "HIV-STIGMA-1",
+      "text": "Having HIV is disgusting to me",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-1-0",
+            "display": "Strongly disagree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-1-1",
+            "display": "Disagree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-1-2",
+            "display": "Neither disagree nor agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-1-3",
+            "display": "Agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-1-4",
+            "display": "Strongly agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "HIV-STIGMA-2",
+      "text": "I feel ashamed of having HIV",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-2-0",
+            "display": "Strongly disagree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-2-1",
+            "display": "Disagree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-2-2",
+            "display": "Neither disagree nor agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-2-3",
+            "display": "Agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-2-4",
+            "display": "Strongly agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "HIV-STIGMA-3",
+      "text": "I think less of myself because I have HIV",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-3-0",
+            "display": "Strongly disagree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-3-1",
+            "display": "Disagree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-3-2",
+            "display": "Neither disagree nor agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-3-3",
+            "display": "Agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "HIV-STIGMA-3-4",
+            "display": "Strongly agree",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "HIV-STIGMA-SCORE-NUM-ANSWERED",
+      "text": "Number of questions answered. For internal scoring use only.",
+      "type": "integer",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(iif(%resource.item.where(linkId = 'HIV-STIGMA-0').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'HIV-STIGMA-1').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'HIV-STIGMA-2').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'HIV-STIGMA-3').answer.valueCoding.code.exists(), 1, 0))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "HIV-STIGMA-SCORE",
+      "text": "Mean of responses (1-5) across all 4 questions; a score of 4 or higher suggests stigma. If fewer than 3 items answered, the score is not reported.",
+      "type": "decimal",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(iif(%resource.item.where(linkId='HIV-STIGMA-SCORE-NUM-ANSWERED').answer.valueInteger.toInteger() < 3, null, (iif(%resource.item.where(linkId='HIV-STIGMA-0').answer.empty(), 0, %resource.item.where(linkId='HIV-STIGMA-0').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='HIV-STIGMA-1').answer.empty(), 0, %resource.item.where(linkId='HIV-STIGMA-1').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='HIV-STIGMA-2').answer.empty(), 0, %resource.item.where(linkId='HIV-STIGMA-2').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='HIV-STIGMA-3').answer.empty(), 0, %resource.item.where(linkId='HIV-STIGMA-3').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger())) / %resource.item.where(linkId='HIV-STIGMA-SCORE-NUM-ANSWERED').answer.valueInteger.toInteger()))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "HIV-STIGMA-SCORE-CRITICAL",
+      "text": "Whether the score suggests stigma, and is therefore to be flagged as critical.",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(iif(%resource.item.where(linkId='HIV-STIGMA-SCORE').answer.empty(), null,iif(%resource.item.where(linkId='HIV-STIGMA-SCORE').answer.valueDecimal.toDecimal() >= 4, true,false)))"
+          }
+        }
+      ]
+    }
+  ]
+}

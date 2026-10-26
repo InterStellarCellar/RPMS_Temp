@@ -1,0 +1,1030 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-AUDIT",
+  "title": "CNICS AUDIT (alcohol consumption questions)",
+  "status": "active",
+  "description": "CNICS AUDIT. Based on: 1) Bush K, Kivlahan DR, McDonell MB, Fihn SD, Bradley KA. The AUDIT alcohol consumption questions (AUDIT-C): an effective brief screening test for problem drinking. Ambulatory Care Quality Improvement Project (ACQUIP). Alcohol Use Disorders Identification Test. Arch Intern Med. 1998;158(16):1789-1795. 2) Bradley KA, Bush KR, Epler AJ, et al. Two brief alcohol-screening tests from the Alcohol Use Disorders Identification Test (AUDIT): validation in a female Veterans Affairs patient population. Arch Intern Med. 2003;163(7):821-829",
+  "item": [
+    {
+      "linkId": "AUDIT-header",
+      "text": "This portion of the questionnaire is about your use of alcoholic beverages during the PAST TWELVE MONTHS.",
+      "type": "display"
+    },
+    {
+      "linkId": "AUDIT-0",
+      "text": "How often do you have a drink containing alcohol?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-0-0",
+            "display": "Never",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-0-1",
+            "display": "Monthly or less",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-0-2",
+            "display": "2 to 4 times a month",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-0-3",
+            "display": "2 to 3 times a week",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-0-4",
+            "display": "4 to 5 times a week",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-0-5",
+            "display": "6 or 7 times a week",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-Q0-score",
+      "text": "Score contribution from Q0. This is an internal item for other scores' calculations.",
+      "type": "decimal",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='AUDIT-0').answer.empty(), null, %resource.item.where(linkId='AUDIT-0').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger())"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-1",
+      "text": "How many drinks containing alcohol do you have on a typical day when you are drinking?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-1-0",
+            "display": "1",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-1-1",
+            "display": "2",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-1-2",
+            "display": "3",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-1-3",
+            "display": "4",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-1-4",
+            "display": "5",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-1-5",
+            "display": "6",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-1-6",
+            "display": "7",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-1-7",
+            "display": "8",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-1-8",
+            "display": "9",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-1-9",
+            "display": "10 or more",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-2-not-male",
+      "text": "How often do you have four or more drinks on one occasion?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-2-not-male-0",
+            "display": "Never",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-2-not-male-1",
+            "display": "Less than monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-2-not-male-2",
+            "display": "Monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-2-not-male-3",
+            "display": "Weekly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-2-not-male-4",
+            "display": "Daily or almost daily",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "((%patient.gender != 'male') or %patient.gender.exists() != true) and %resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0'"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-2-male",
+      "text": "How often do you have five or more drinks on one occasion?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-2-male-0",
+            "display": "Never",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-2-male-1",
+            "display": "Less than monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-2-male-2",
+            "display": "Monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-2-male-3",
+            "display": "Weekly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-2-male-4",
+            "display": "Daily or almost daily",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%patient.gender.exists() and (%patient.gender = 'male') and (%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0')"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-Q1-Q2-score",
+      "text": "Score contribution from Q1 & Q2. This is an internal item for other scores' calculations.",
+      "type": "decimal",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(iif(%resource.item.where(linkId='AUDIT-1').answer.empty(), 0, %resource.item.where(linkId='AUDIT-1').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-2-not-male').answer.empty(), 0, %resource.item.where(linkId='AUDIT-2-not-male').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-2-male').answer.empty(), 0, %resource.item.where(linkId='AUDIT-2-male').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-C-complete",
+      "text": "AUDIT-C part of questionnaire (first three questions) complete. This is an internal item for other scores' calculations.",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId = 'AUDIT-0').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'AUDIT-0').answer.valueCoding.code = 'AUDIT-0-0') or (%resource.item.where(linkId = 'AUDIT-1').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'AUDIT-2-not-male').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-2-male').answer.valueCoding.code.exists()))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-C-score",
+      "text": "AUDIT-C score (score for questions 0-2)",
+      "type": "decimal",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='AUDIT-Q0-score').answer.valueDecimal.toInteger() + %resource.item.where(linkId='AUDIT-Q1-Q2-score').answer.valueDecimal.toInteger()"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-C-score-interpretation",
+      "text": "CNICS AUDIT-C score interpretation",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, 'At-risk', iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, 'At-risk', iif((%resource.item.where(linkId='AUDIT-C-score').answer.empty() != true), 'Not at-risk', null)))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-3",
+      "text": "How often during the past 12 months have you found that you were not able to stop drinking once you had started?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-3-0",
+            "display": "Never",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-3-1",
+            "display": "Less than monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-3-2",
+            "display": "Monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-3-3",
+            "display": "Weekly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-3-4",
+            "display": "Daily or almost daily",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-4",
+      "text": "How often during the past 12 months have you failed to do what was normally expected from you because of drinking?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-4-0",
+            "display": "Never",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-4-1",
+            "display": "Less than monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-4-2",
+            "display": "Monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-4-3",
+            "display": "Weekly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-4-4",
+            "display": "Daily or almost daily",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-5",
+      "text": "How often during the past 12 months have you needed a first drink in the morning to get yourself going after a heavy drinking session?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-5-0",
+            "display": "Never",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-5-1",
+            "display": "Less than monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-5-2",
+            "display": "Monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-5-3",
+            "display": "Weekly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-5-4",
+            "display": "Daily or almost daily",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-6",
+      "text": "How often during the past 12 months have you had a feeling of guilt or remorse after drinking?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-6-0",
+            "display": "Never",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-6-1",
+            "display": "Less than monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-6-2",
+            "display": "Monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-6-3",
+            "display": "Weekly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-6-4",
+            "display": "Daily or almost daily",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-7",
+      "text": "How often during the past 12 months have you been unable to remember what happened the night before because you had been drinking?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-7-0",
+            "display": "Never",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-7-1",
+            "display": "Less than monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 1
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-7-2",
+            "display": "Monthly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-7-3",
+            "display": "Weekly",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 3
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-7-4",
+            "display": "Daily or almost daily",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-8",
+      "text": "Have you or someone else been injured as a result of your drinking?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-8-0",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-8-1",
+            "display": "Yes, but not in the last 12 months",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-8-2",
+            "display": "Yes, during last 12 months",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-9",
+      "text": "Has a relative or friend or a doctor or another health worker been concerned about your drinking or suggested you cut down?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "AUDIT-9-0",
+            "display": "No",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 0
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-9-1",
+            "display": "Yes, but not in the last 12 months",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "AUDIT-9-2",
+            "display": "Yes, during last 12 months",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                "valueDecimal": 4
+              }
+            ]
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3), true, false)))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-last-7-any-answers",
+      "text": "At least one of the last 7 questions has been answered. This is an internal item for other scores' calculations.",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId = 'AUDIT-3').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-4').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-5').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-6').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-7').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-8').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-9').answer.valueCoding.code.exists()"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-last-7-complete",
+      "text": "Last 7 questions here have been answered. This is an internal item for other scores' calculations.",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId = 'AUDIT-3').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-4').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-5').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-6').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-7').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-8').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-9').answer.valueCoding.code.exists()"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-complete",
+      "text": "AUDIT questionnaire complete",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='AUDIT-C-complete').answer.valueBoolean.toBoolean() = true and (iif((%resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4 and (%patient.gender = 'male')) and %resource.item.where(linkId='AUDIT-last-7-complete').answer.valueBoolean.toBoolean() = true, true,   (iif((%resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3 and (%patient.gender != 'male')) and %resource.item.where(linkId='AUDIT-last-7-complete').answer.valueBoolean.toBoolean() = true, true, false)))))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-score",
+      "text": "CNICS AUDIT score",
+      "type": "decimal",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId='AUDIT-Q0-score').answer.valueDecimal.toInteger() + %resource.item.where(linkId='AUDIT-Q1-Q2-score').answer.valueDecimal.toInteger() + iif(%resource.item.where(linkId='AUDIT-3').answer.empty(), 0, %resource.item.where(linkId='AUDIT-3').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-4').answer.empty(), 0, %resource.item.where(linkId='AUDIT-4').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-5').answer.empty(), 0, %resource.item.where(linkId='AUDIT-5').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-6').answer.empty(), 0, %resource.item.where(linkId='AUDIT-6').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-7').answer.empty(), 0, %resource.item.where(linkId='AUDIT-7').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-8').answer.empty(), 0, %resource.item.where(linkId='AUDIT-8').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-9').answer.empty(), 0, %resource.item.where(linkId='AUDIT-9').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-score-interpretation",
+      "text": "CNICS AUDIT score interpretation",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-score').answer.valueDecimal.toInteger() >= 6, 'At-risk', iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-score').answer.valueDecimal.toInteger() >= 5, 'At-risk', iif((%resource.item.where(linkId='AUDIT-score').answer.empty() != true), 'Not at-risk', null)))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "AUDIT-qnr-to-report",
+      "text": "Which CNICS AUDIT score to display. Returns 'AUDIT', 'AUDIT-C', or null.",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='AUDIT-last-7-any-answers').answer.valueBoolean.toBoolean() = true, 'AUDIT', iif(%resource.item.where(linkId='AUDIT-0').answer.empty() = false, 'AUDIT-C', null))"
+          }
+        }
+      ]
+    }
+  ]
+}

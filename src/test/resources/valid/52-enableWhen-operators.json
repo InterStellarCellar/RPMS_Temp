@@ -1,0 +1,65 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>enableWhen comparison operators</p></div>"
+  },
+  "id": "valid-ew-ops",
+  "title": "enableWhen comparison operators",
+  "item": [
+    {
+      "linkId": "age",
+      "type": "integer",
+      "text": "Age"
+    },
+    {
+      "linkId": "adult",
+      "type": "display",
+      "text": "Adult pathway",
+      "enableWhen": [
+        {
+          "question": "age",
+          "operator": ">=",
+          "answerInteger": 18
+        }
+      ]
+    },
+    {
+      "linkId": "child",
+      "type": "display",
+      "text": "Child pathway",
+      "enableWhen": [
+        {
+          "question": "age",
+          "operator": "<",
+          "answerInteger": 18
+        }
+      ]
+    },
+    {
+      "linkId": "exact",
+      "type": "display",
+      "text": "Exactly 21",
+      "enableWhen": [
+        {
+          "question": "age",
+          "operator": "=",
+          "answerInteger": 21
+        }
+      ]
+    },
+    {
+      "linkId": "not40",
+      "type": "display",
+      "text": "Not 40",
+      "enableWhen": [
+        {
+          "question": "age",
+          "operator": "!=",
+          "answerInteger": 40
+        }
+      ]
+    }
+  ]
+}

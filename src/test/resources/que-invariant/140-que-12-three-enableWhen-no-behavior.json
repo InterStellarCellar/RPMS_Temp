@@ -1,0 +1,19 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    { "linkId": "q1", "type": "boolean", "text": "Condition A" },
+    { "linkId": "q2", "type": "boolean", "text": "Condition B" },
+    { "linkId": "q3", "type": "boolean", "text": "Condition C" },
+    {
+      "linkId": "q4",
+      "type": "string",
+      "text": "Conditional question",
+      "enableWhen": [
+        { "question": "q1", "operator": "=", "answerBoolean": true },
+        { "question": "q2", "operator": "=", "answerBoolean": true },
+        { "question": "q3", "operator": "=", "answerBoolean": true }
+      ]
+    }
+  ]
+}

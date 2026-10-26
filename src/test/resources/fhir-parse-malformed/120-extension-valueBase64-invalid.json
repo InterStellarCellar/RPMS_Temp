@@ -1,0 +1,17 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "extension": [
+    {
+      "url": "http://example.com/ext",
+      "valueBase64Binary": "@@@not-base64!!!"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

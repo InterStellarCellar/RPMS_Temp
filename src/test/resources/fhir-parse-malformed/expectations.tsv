@@ -1,0 +1,95 @@
+# filename	minIssues	expectedMessageSubstring (first matching issue must contain this)
+00-missing-resourceType.json	1	missing required element: 'resourceType'
+01-resourceType-empty-string.json	1	missing required element: 'resourceType'
+02-resourceType-null.json	1	missing required element: 'resourceType'
+03-resourceType-number.json	1	missing required element: 'resourceType'
+04-resourceType-unknown.json	1	Unknown resource name "Questionnair"
+05-contained-missing-resourceType.json	1	Missing required element 'resourceType' from JSON resource object
+10-unknown-root-element.json	1	Unknown element 'fooBar' found during parse
+11-unknown-item-element.json	1	Unknown element 'questionText' found during parse
+12-unknown-coding-child.json	1	Unknown element 'bogus' found during parse
+13-unknown-meta-child.json	1	Unknown element 'notAField' found during parse
+14-unknown-answerX-choice.json	1	Unknown element 'answerStringgg' found during parse
+15-unknown-valueX-choice.json	1	Unknown element 'valueFoo' found during parse
+20-item-as-object.json	1	Expected ARRAY and found OBJECT
+21-extension-as-object.json	1	Expected ARRAY at element 'extension', found 'OBJECT'
+22-modifierExtension-as-object.json	1	Expected ARRAY at element 'modifierExtension', found 'OBJECT'
+23-identifier-as-string.json	1	Expected OBJECT and found SCALAR
+24-contact-as-string.json	1	Expected OBJECT and found SCALAR
+25-jurisdiction-as-string.json	1	Expected OBJECT and found SCALAR
+26-effectivePeriod-as-string.json	1	Expected OBJECT and found SCALAR
+27-answerReference-as-string.json	1	Expected OBJECT and found SCALAR
+28-answerCoding-as-string.json	1	Expected OBJECT and found SCALAR
+29-answerQuantity-as-string.json	1	Expected OBJECT and found SCALAR
+30-useContext-as-string.json	1	Expected OBJECT and found SCALAR
+31-_status-as-scalar.json	1	Expected OBJECT and found SCALAR
+40-status-array-two.json	1	Multiple repetitions of non-repeatable element 'status'
+41-title-array-two.json	1	Multiple repetitions of non-repeatable element 'title'
+42-enableWhen-two-answers.json	1	Multiple repetitions of non-repeatable element 'answer'
+43-answerOption-two-values.json	1	Multiple repetitions of non-repeatable element 'value'
+44-initial-two-values.json	1	Multiple repetitions of non-repeatable element 'value'
+45-_title-array-length-mismatch.json	1	Unexpected array of length 2
+50-status-empty.json	1	Attribute value must not be empty
+51-title-empty.json	1	Attribute value must not be empty
+52-linkId-empty.json	1	Attribute value must not be empty
+53-url-empty.json	1	Attribute value must not be empty
+54-publisher-empty.json	1	Attribute value must not be empty
+60-status-unknown.json	1	Unknown PublicationStatus code 'published'
+61-status-from-number.json	1	Unknown PublicationStatus code '1'
+62-status-from-bool.json	1	Unknown PublicationStatus code 'true'
+63-item-type-unknown.json	1	Unknown QuestionnaireItemType code 'textbox'
+64-enableBehavior-unknown.json	1	Unknown EnableWhenBehavior code 'xor'
+65-operator-unknown.json	1	Unknown QuestionnaireItemOperator code '=='
+66-narrative-status-unknown.json	1	Unknown NarrativeStatus code 'nope'
+67-identifier-use-unknown.json	1	Unknown IdentifierUse code 'primary'
+68-telecom-system-unknown.json	1	Unknown ContactPointSystem code 'faxx'
+69-telecom-use-unknown.json	1	Unknown ContactPointUse code 'primary'
+70-quantity-comparator-unknown.json	1	Unknown QuantityComparator code '=='
+71-address-use-unknown.json	1	Unknown AddressUse code 'primary'
+80-experimental-True.json	1	Invalid boolean string: 'True'
+81-experimental-yes.json	1	Invalid boolean string: 'yes'
+82-experimental-1-string.json	1	Invalid boolean string: '1'
+83-experimental-1-number.json	1	Invalid boolean string: '1'
+84-item-repeats-yes.json	1	Invalid boolean string: 'yes'
+85-item-required-Yes.json	1	Invalid boolean string: 'Yes'
+86-item-readOnly-TRUE.json	1	Invalid boolean string: 'TRUE'
+87-enableWhen-answerBoolean-yes.json	1	Invalid boolean string: 'yes'
+90-date-garbage.json	1	Invalid date/time format: "not-a-date"
+91-date-us-format.json	1	Invalid date/time format: "01/02/2020"
+92-date-month-13.json	1	Invalid date/time format: "2020-13-01"
+93-approvalDate-bad.json	1	Invalid date/time format: "nope"
+94-lastReviewDate-bad.json	1	Invalid date/time format: "yesterday"
+95-period-start-bad.json	1	Invalid date/time format: "nope"
+96-period-end-bad.json	1	Invalid date/time format: "bad"
+97-answerDate-bad.json	1	Invalid date/time format: "31/12/2020"
+98-answerDateTime-hour-25.json	1	Invalid date/time format: "2020-01-01T25:00:00Z"
+99-meta-lastUpdated-garbage.json	1	Invalid date/time format: "yesterday"
+100-answerOption-valueDate-bad.json	1	Invalid date/time format: "not-a-date"
+110-answerInteger-alpha.json	1	NumberFormatException
+111-answerInteger-float-string.json	1	NumberFormatException
+112-maxLength-bool.json	1	NumberFormatException
+113-maxLength-alpha.json	1	NumberFormatException
+114-answerInteger-overflow.json	1	NumberFormatException
+115-answerDecimal-alpha.json	1	neither a decimal digit number
+116-answerDecimal-hex.json	1	neither a decimal digit number
+117-extension-valueDecimal-bad.json	1	neither a decimal digit number
+120-extension-valueBase64-invalid.json	1	Invalid attribute value "@@@not-base64!!!"
+130-extension-missing-url.json	1	missing required element 'url' in parent element 'extension'
+131-modifierExtension-missing-url.json	1	missing required element 'url' in parent element 'modifierExtension'
+132-extension-value-and-nested.json	1	must not have both a value and other contained extensions
+133-modifierExtension-value-and-nested.json	1	must not have both a value and other contained extensions
+134-nested-extension-missing-url.json	1	missing required element 'url' in parent element 'extension'
+140-contained-no-id.json	1	contained child resource with no ID
+150-_status-as-string.json	1	Expected OBJECT and found SCALAR
+151-_title-as-array-of-scalars.json	1	Expected OBJECT and found SCALAR
+152-_linkId-as-number.json	1	Expected OBJECT and found SCALAR
+160-enableWhen-question-as-object.json	1	Unknown element 'value' found during parse
+161-answerOption-valueReference-as-string.json	1	Expected OBJECT and found SCALAR
+162-initial-valueAttachment-as-string.json	1	Expected OBJECT and found SCALAR
+163-item-code-as-string.json	1	Expected OBJECT and found SCALAR
+164-derivedFrom-as-object.json	1	Unknown element 'reference' found during parse
+165-subjectType-as-object.json	1	Unknown element 'code' found during parse
+190-multi-unknown-and-bad-enum.json	2	Unknown PublicationStatus code 'published'
+191-multi-type-and-date.json	2	Invalid date/time format
+192-multi-bool-and-extension.json	2	Invalid boolean string: 'True'
+193-multi-choice-and-integer.json	1	Multiple repetitions of non-repeatable element 'answer'

@@ -1,0 +1,97 @@
+# filename	minIssues	expectedMessageSubstring (at least minIssues issues must contain this)
+# que-0: name identifier warning
+00-que-0-name-lowercase.json	1	que-0
+01-que-0-name-starts-digit.json	1	que-0
+02-que-0-name-with-hyphen.json	1	que-0
+03-que-0-name-with-space.json	1	que-0
+04-que-0-name-with-dot.json	1	que-0
+05-que-0-name-too-long.json	1	que-0
+# que-1: group must nest items; display must not
+10-que-1-empty-group.json	1	que-1
+11-que-1-empty-group-empty-array.json	1	que-1
+12-que-1-display-with-child.json	1	que-1
+13-que-1-display-with-nested-group.json	1	que-1
+14-que-1-nested-empty-group.json	1	que-1
+# que-2: linkIds must be unique
+20-que-2-duplicate-root.json	1	que-2
+21-que-2-duplicate-sibling-in-group.json	1	que-2
+22-que-2-duplicate-across-nesting.json	1	que-2
+23-que-2-triple-duplicate.json	1	que-2
+24-que-2-duplicate-deep-nesting.json	1	que-2
+25-que-2-duplicate-groups.json	1	que-2
+# que-3: display cannot have code
+30-que-3-display-with-code.json	1	que-3
+31-que-3-display-with-multiple-codes.json	1	que-3
+# que-4: not both answerOption and answerValueSet
+40-que-4-choice-both.json	1	que-4
+41-que-4-open-choice-both.json	1	que-4
+42-que-4-string-both.json	1	que-4
+# que-5: answerOption/answerValueSet on forbidden types
+50-que-5-boolean-answerValueSet.json	1	que-5
+51-que-5-boolean-answerOption.json	1	que-5
+52-que-5-text-answerValueSet.json	1	que-5
+53-que-5-text-answerOption.json	1	que-5
+54-que-5-url-answerValueSet.json	1	que-5
+55-que-5-url-answerOption.json	1	que-5
+56-que-5-attachment-answerValueSet.json	1	que-5
+57-que-5-attachment-answerOption.json	1	que-5
+58-que-5-reference-answerValueSet.json	1	que-5
+59-que-5-reference-answerOption.json	1	que-5
+60-que-5-group-answerValueSet.json	1	que-5
+61-que-5-group-answerOption.json	1	que-5
+62-que-5-display-answerValueSet.json	1	que-5
+63-que-5-display-answerOption.json	1	que-5
+# que-6: display: no required/repeats
+70-que-6-display-required.json	1	que-6
+71-que-6-display-repeats.json	1	que-6
+72-que-6-display-required-and-repeats.json	1	que-6
+# que-7: operator exists implies answer is boolean
+80-que-7-exists-answerString.json	1	que-7
+81-que-7-exists-answerInteger.json	1	que-7
+82-que-7-exists-answerDecimal.json	1	que-7
+83-que-7-exists-answerDate.json	1	que-7
+84-que-7-exists-answerCoding.json	1	que-7
+85-que-7-exists-answerQuantity.json	1	que-7
+86-que-7-exists-answerReference.json	1	que-7
+# que-8: no initial on group/display
+90-que-8-group-with-initial.json	1	que-8
+91-que-8-display-with-initial.json	1	que-8
+92-que-8-group-with-multiple-initial.json	1	que-8
+# que-9: display: no readOnly
+100-que-9-display-readOnly-true.json	1	que-9
+101-que-9-display-readOnly-false.json	1	que-9
+# que-10: maxLength only on simple types
+110-que-10-maxLength-choice.json	1	que-10
+111-que-10-maxLength-date.json	1	que-10
+112-que-10-maxLength-dateTime.json	1	que-10
+113-que-10-maxLength-time.json	1	que-10
+114-que-10-maxLength-quantity.json	1	que-10
+115-que-10-maxLength-attachment.json	1	que-10
+116-que-10-maxLength-reference.json	1	que-10
+117-que-10-maxLength-group.json	1	que-10
+118-que-10-maxLength-display.json	1	que-10
+# que-11: answerOption present implies no initial
+130-que-11-choice-answerOption-and-initial.json	1	que-11
+131-que-11-open-choice-answerOption-and-initial.json	1	que-11
+132-que-11-string-answerOption-and-initial.json	1	que-11
+# que-12: 3+ enableWhen requires enableBehavior
+140-que-12-three-enableWhen-no-behavior.json	1	que-12
+141-que-12-four-enableWhen-no-behavior.json	1	que-12
+# que-13: multiple initial only if repeats=true
+150-que-13-two-initial-no-repeats.json	1	que-13
+151-que-13-two-initial-repeats-false.json	1	que-13
+152-que-13-three-initial-no-repeats.json	1	que-13
+# Multi-invariant combos (one row per expected constraint key)
+190-multi-display-code-required-readonly.json	1	que-3
+190-multi-display-code-required-readonly.json	1	que-6
+190-multi-display-code-required-readonly.json	1	que-9
+191-multi-display-nested-initial.json	1	que-1
+191-multi-display-nested-initial.json	1	que-8
+192-multi-choice-both-answers-and-initial.json	1	que-4
+192-multi-choice-both-answers-and-initial.json	1	que-11
+193-multi-group-empty-and-initial.json	1	que-1
+193-multi-group-empty-and-initial.json	1	que-8
+194-multi-linkid-and-enableWhen.json	1	que-2
+194-multi-linkid-and-enableWhen.json	1	que-12
+195-multi-forbidden-answers-and-maxLength.json	1	que-5
+195-multi-forbidden-answers-and-maxLength.json	1	que-10

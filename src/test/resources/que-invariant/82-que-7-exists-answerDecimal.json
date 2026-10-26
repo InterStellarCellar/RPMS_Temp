@@ -1,0 +1,19 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    { "linkId": "q1", "type": "decimal", "text": "Weight" },
+    {
+      "linkId": "q2",
+      "type": "string",
+      "text": "Details",
+      "enableWhen": [
+        {
+          "question": "q1",
+          "operator": "exists",
+          "answerDecimal": 1.0
+        }
+      ]
+    }
+  ]
+}

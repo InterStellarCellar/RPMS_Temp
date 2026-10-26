@@ -1,0 +1,11 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

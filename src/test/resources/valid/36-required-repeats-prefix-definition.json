@@ -1,0 +1,21 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>required repeats prefix definition</p></div>"
+  },
+  "id": "valid-flags",
+  "title": "required repeats prefix definition",
+  "item": [
+    {
+      "linkId": "q1",
+      "definition": "http://hl7.org/fhir/StructureDefinition/Patient#Patient.name",
+      "prefix": "1.",
+      "text": "Given name",
+      "type": "string",
+      "required": true,
+      "repeats": false
+    }
+  ]
+}

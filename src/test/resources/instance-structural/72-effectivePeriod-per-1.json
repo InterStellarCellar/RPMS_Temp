@@ -1,0 +1,19 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">effectivePeriod start after end</div>"
+  },
+  "status": "draft",
+  "effectivePeriod": {
+    "start": "2025-12-31",
+    "end": "2025-01-01"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

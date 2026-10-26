@@ -1,0 +1,27 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Display items as instructions</p></div>"
+  },
+  "id": "valid-display",
+  "title": "Display items as instructions",
+  "item": [
+    {
+      "linkId": "intro",
+      "type": "display",
+      "text": "This survey takes about 5 minutes."
+    },
+    {
+      "linkId": "q1",
+      "type": "string",
+      "text": "Your name"
+    },
+    {
+      "linkId": "outro",
+      "type": "display",
+      "text": "Thank you."
+    }
+  ]
+}

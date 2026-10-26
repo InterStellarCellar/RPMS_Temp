@@ -1,0 +1,11 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Questionnaire with empty item array</p></div>"
+  },
+  "id": "valid-no-items",
+  "title": "No items (allowed)",
+  "item": []
+}

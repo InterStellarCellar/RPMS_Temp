@@ -1,0 +1,48 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>enableWhen answerCoding</p></div>"
+  },
+  "id": "valid-ew-coding",
+  "title": "enableWhen answerCoding",
+  "item": [
+    {
+      "linkId": "sex",
+      "type": "choice",
+      "text": "Sex",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "code": "female",
+            "display": "Female"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "code": "male",
+            "display": "Male"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "preg",
+      "type": "boolean",
+      "text": "Pregnant?",
+      "enableWhen": [
+        {
+          "question": "sex",
+          "operator": "=",
+          "answerCoding": {
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "code": "female"
+          }
+        }
+      ]
+    }
+  ]
+}

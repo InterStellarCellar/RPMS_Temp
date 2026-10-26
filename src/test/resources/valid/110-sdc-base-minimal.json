@@ -1,0 +1,51 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Valid SDC base</p></div>"
+  },
+  "id": "valid-sdc-base",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "url": "http://example.org/fhir/Questionnaire/valid-sdc-base",
+  "version": "1.0.0",
+  "name": "ValidSdcBase",
+  "title": "Valid SDC base",
+  "date": "2024-06-01",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "name",
+      "type": "string",
+      "text": "Name",
+      "required": true
+    },
+    {
+      "linkId": "age",
+      "type": "integer",
+      "text": "Age",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 120
+        }
+      ]
+    }
+  ]
+}

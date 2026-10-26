@@ -1,0 +1,15 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "linkId": "550e8400-e29b-41d4-a716-446655440000",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

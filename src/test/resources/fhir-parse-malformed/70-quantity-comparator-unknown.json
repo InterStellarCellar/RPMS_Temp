@@ -1,0 +1,24 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "quantity",
+      "text": "Q",
+      "enableWhen": [
+        {
+          "question": "1",
+          "operator": "=",
+          "answerQuantity": {
+            "value": 10,
+            "comparator": "==",
+            "unit": "mg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          }
+        }
+      ]
+    }
+  ]
+}

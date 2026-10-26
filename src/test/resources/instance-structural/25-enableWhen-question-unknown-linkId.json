@@ -1,0 +1,27 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">enableWhen references non-existent linkId</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "boolean",
+      "text": "Trigger"
+    },
+    {
+      "linkId": "2",
+      "type": "string",
+      "text": "Conditional",
+      "enableWhen": [
+        {
+          "question": "nonexistent",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ]
+    }
+  ]
+}

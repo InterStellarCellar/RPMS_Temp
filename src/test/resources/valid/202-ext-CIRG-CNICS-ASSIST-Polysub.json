@@ -1,0 +1,140 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-ASSIST-Polysub",
+  "title": "CNICS polysubstance use questions",
+  "status": "active",
+  "description": "CNICS polysubstance use questions, an adjunct to the CNICS Modified ASSIST.",
+  "item": [
+    {
+      "linkId": "ASSIST-Polysub",
+      "text": "In the past 3 months, have you used any of these at the same time? (dhair polysubDrugList substitution)",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-Polysub-freq",
+      "text": "How often in the past 3 months did you use these at the same time?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-freq-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-freq-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-freq-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-freq-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-freq-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-Polysub-inject",
+      "text": "In the past 3 months, did you inject any of these at the same time? (dhair polysubIDUList substitution)",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-inject-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-inject-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-Polysub-inject-alt",
+      "text": "In the past 3 months, did you inject them at the same time? (dhair polysubIDUList substitution)",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-inject-alt-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-inject-alt-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "ASSIST-Polysub-inject-freq",
+      "text": "How often in the past 3 months did you use these at the same time?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-inject-freq-0",
+            "display": "Never"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-inject-freq-1",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-inject-freq-2",
+            "display": "Monthly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-inject-freq-3",
+            "display": "Weekly"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASSIST-Polysub-inject-freq-4",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    }
+  ]
+}

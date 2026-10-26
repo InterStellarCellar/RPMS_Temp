@@ -1,0 +1,22 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "123",
+          "use": "primary"
+        }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

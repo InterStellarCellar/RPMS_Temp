@@ -1,0 +1,27 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "linkId": "d",
+      "type": "display",
+      "text": "Instructions"
+    },
+    {
+      "linkId": "q",
+      "type": "string",
+      "text": "Q",
+      "enableWhen": [
+        {
+          "question": "d",
+          "operator": "exists",
+          "answerBoolean": true
+        }
+      ]
+    }
+  ]
+}

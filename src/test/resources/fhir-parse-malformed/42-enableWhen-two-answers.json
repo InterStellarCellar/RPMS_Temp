@@ -1,0 +1,19 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q",
+      "enableWhen": [
+        {
+          "question": "1",
+          "operator": "=",
+          "answerString": "x",
+          "answerInteger": 1
+        }
+      ]
+    }
+  ]
+}

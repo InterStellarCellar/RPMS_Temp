@@ -1,0 +1,216 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-EXCHANGE-SEX",
+  "title": "CNICS Exchange Sex Questionnaire",
+  "status": "active",
+  "description": "CNICS Exchange Sex Questionnaire.",
+  "item": [
+    {
+      "linkId": "EXCHANGE-SEX-0",
+      "text": "Have you ever had sex for shelter, food, clothing, drugs, money, or any other goods?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-0-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-0-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EXCHANGE-SEX-1",
+      "text": "Did you have sex for any of these things in the past 3 months?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-1-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-1-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EXCHANGE-SEX-2",
+      "text": "Which of these things did you have sex for? Please check all that apply.",
+      "type": "choice",
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-0",
+            "display": "Place to stay/sleep"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-1",
+            "display": "Food"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-2",
+            "display": "Clothing"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-3",
+            "display": "Drugs"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-4",
+            "display": "Money"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-5",
+            "display": "Security/protection"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-6",
+            "display": "Transportation"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-7",
+            "display": "Medication"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-8",
+            "display": "Child care"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-9",
+            "display": "Something else"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-2-10",
+            "display": "Prefer not to say"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EXCHANGE-SEX-3",
+      "text": "Which of these things did you have sex for? Please check all that apply.",
+      "type": "choice",
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-0",
+            "display": "Place to stay/sleep"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-1",
+            "display": "Food"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-2",
+            "display": "Clothing"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-3",
+            "display": "Drugs"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-4",
+            "display": "Money"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-5",
+            "display": "Security/protection"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-6",
+            "display": "Transportation"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-7",
+            "display": "Medication"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-8",
+            "display": "Child care"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-9",
+            "display": "Something else"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-10",
+            "display": "Prefer not to say"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EXCHANGE-SEX-3-11",
+            "display": "None of the above"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EXCHANGE-SEX-SCORE-PAST-3-MONTHS",
+      "text": "Whether the patient indicated an exchange for sex in the past 3 months.",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='EXCHANGE-SEX-1').answer.empty() = false, %resource.item.where(linkId='EXCHANGE-SEX-1').answer.valueCoding.display, iif(%resource.item.where(linkId='EXCHANGE-SEX-3').answer.empty(),'', iif(%resource.item.where(linkId='EXCHANGE-SEX-3').answer.valueCoding.where(code = 'EXCHANGE-SEX-3-10').exists(),'', iif(%resource.item.where(linkId='EXCHANGE-SEX-3').answer.valueCoding.where(code = 'EXCHANGE-SEX-3-11').exists(),'No','Yes'))))"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "d1",
+      "type": "display",
+      "text": "Display with answerValueSet",
+      "answerValueSet": "http://example.org/ValueSet/display"
+    }
+  ]
+}

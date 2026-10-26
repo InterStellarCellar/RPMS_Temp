@@ -1,0 +1,232 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-EUROQOL",
+  "title": "EuroQOL Health Related Quality-of-Life questionnaire",
+  "status": "active",
+  "description": "EuroQOL Health Related Quality-of-Life questionnaire. 'EuroQol G. EuroQol--a new facility for the measurement of health-related quality of life. Health Policy. 1990;16(3):199-208.'",
+  "item": [
+    {
+      "linkId": "EUROQOL-HEADER",
+      "text": "We would like to know how you are doing with your activities TODAY.",
+      "type": "display"
+    },
+    {
+      "linkId": "EUROQOL-0",
+      "text": "MOBILITY",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "EUROQOL-0-0",
+            "display": "I have no problems in walking about"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EUROQOL-0-1",
+            "display": "I have some problems in walking about"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EUROQOL-0-2",
+            "display": "I am unable to walk"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EUROQOL-1",
+      "text": "SELF-CARE",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "EUROQOL-1-0",
+            "display": "I have no problems with washing or dressing myself"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EUROQOL-1-1",
+            "display": "I have some problems with washing or dressing myself"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EUROQOL-1-2",
+            "display": "I am unable to wash or dress myself"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EUROQOL-2",
+      "text": "USUAL ACTIVITIES (eg. work, study, housework, family, or leisure activities)",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "EUROQOL-2-0",
+            "display": "I have no problems with performing my usual activites"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EUROQOL-2-1",
+            "display": "I have some problems with performing my usual activites"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EUROQOL-2-2",
+            "display": "I am unable to perform my usual activities"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EUROQOL-3",
+      "text": "PAIN/DISCOMFORT",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "EUROQOL-3-0",
+            "display": "I have no pain or discomfort"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EUROQOL-3-1",
+            "display": "I have moderate pain or discomfort"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EUROQOL-3-2",
+            "display": "I have extreme pain or discomfort"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EUROQOL-4",
+      "text": "ANXIETY/DEPRESSION",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "EUROQOL-4-0",
+            "display": "I am not anxious or depressed"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EUROQOL-4-1",
+            "display": "I am moderately anxious or depressed"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "EUROQOL-4-2",
+            "display": "I am extremely anxious or depressed"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EUROQOL-5",
+      "text": "Touch or click on the point along the line that most closely reflects your own health state today.Touch or click on the point along the line that most closely reflects your own health state today.",
+      "type": "integer",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control",
+                "code": "slider"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EUROQOL-SCORE-MOBILITY",
+      "text": "Mobility",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='EUROQOL-0').answer.empty(),'', iif(%resource.item.where(linkId='EUROQOL-0').answer.valueCoding.code = 'EUROQOL-0-0','No problem',iif(%resource.item.where(linkId='EUROQOL-0').answer.valueCoding.code = 'EUROQOL-0-1','Some problems',iif(%resource.item.where(linkId='EUROQOL-0').answer.valueCoding.code = 'EUROQOL-0-2','Unable to do',''))))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EUROQOL-SCORE-SELF-CARE",
+      "text": "Self-care",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='EUROQOL-1').answer.empty(),'', iif(%resource.item.where(linkId='EUROQOL-1').answer.valueCoding.code = 'EUROQOL-1-0','No problem',iif(%resource.item.where(linkId='EUROQOL-1').answer.valueCoding.code = 'EUROQOL-1-1','Some problems',iif(%resource.item.where(linkId='EUROQOL-1').answer.valueCoding.code = 'EUROQOL-1-2','Unable to do',''))))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EUROQOL-SCORE-USUAL-ACTIVITIES",
+      "text": "Usual Activities",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='EUROQOL-2').answer.empty(),'', iif(%resource.item.where(linkId='EUROQOL-2').answer.valueCoding.code = 'EUROQOL-2-0','No problem',iif(%resource.item.where(linkId='EUROQOL-2').answer.valueCoding.code = 'EUROQOL-2-1','Some problems',iif(%resource.item.where(linkId='EUROQOL-2').answer.valueCoding.code = 'EUROQOL-2-2','Unable to do',''))))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EUROQOL-SCORE-PAIN",
+      "text": "Pain",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='EUROQOL-3').answer.empty(),'', iif(%resource.item.where(linkId='EUROQOL-3').answer.valueCoding.code = 'EUROQOL-3-0','No pain',iif(%resource.item.where(linkId='EUROQOL-3').answer.valueCoding.code = 'EUROQOL-3-1','Moderate pain',iif(%resource.item.where(linkId='EUROQOL-3').answer.valueCoding.code = 'EUROQOL-3-2','Extreme pain',''))))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "EUROQOL-SCORE-ANXIETY-DEPRESSION",
+      "text": "Anxiety/Depression",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='EUROQOL-4').answer.empty(),'', iif(%resource.item.where(linkId='EUROQOL-4').answer.valueCoding.code = 'EUROQOL-4-0','Not anxious/depressed',iif(%resource.item.where(linkId='EUROQOL-4').answer.valueCoding.code = 'EUROQOL-4-1','Moderately anxious/depressed',iif(%resource.item.where(linkId='EUROQOL-4').answer.valueCoding.code = 'EUROQOL-4-2','Extremely anxious/depressed',''))))"
+          }
+        }
+      ]
+    }
+  ]
+}

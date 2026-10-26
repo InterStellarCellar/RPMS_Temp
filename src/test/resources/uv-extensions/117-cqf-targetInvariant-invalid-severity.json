@@ -1,0 +1,37 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">UV ext test</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-targetInvariant",
+      "extension": [
+        {
+          "url": "key",
+          "valueId": "i1"
+        },
+        {
+          "url": "severity",
+          "valueCode": "panic"
+        },
+        {
+          "url": "expression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "true"
+          }
+        }
+      ]
+    }
+  ]
+}

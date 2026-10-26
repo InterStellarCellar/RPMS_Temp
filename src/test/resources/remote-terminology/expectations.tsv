@@ -1,0 +1,91 @@
+# filename	minIssues	expectedMessageSubstring	mockMode	# note
+00-language-unknown.json	1	xx-NOTREAL	DEFAULT	# Resource.language unknown
+01-subjectType-unknown.json	1	NotAResource	DEFAULT	# subjectType binding
+02-language-and-subjectType-unknown.json	1	The Remote Terminology server	DEFAULT	# combo language+subjectType; prefer remote wrapper if present
+10-root-code-unknown-loinc.json	1	The Remote Terminology server	DEFAULT
+11-root-code-wrong-display-loinc.json	1	The Remote Terminology server	DEFAULT
+12-root-code-unknown-snomed.json	1	The Remote Terminology server	DEFAULT
+13-root-code-unknown-custom-system.json	1	The Remote Terminology server	DEFAULT
+14-root-code-two-unknown-loinc.json	1	The Remote Terminology server	DEFAULT
+15-root-code-unknown-no-display.json	1	The Remote Terminology server	DEFAULT
+16-root-code-snomed-wrong-display.json	1	The Remote Terminology server	DEFAULT
+20-item-code-unknown-loinc.json	1	The Remote Terminology server	DEFAULT
+21-item-code-wrong-display-loinc.json	1	The Remote Terminology server	DEFAULT
+22-item-code-unknown-snomed.json	1	The Remote Terminology server	DEFAULT
+23-item-code-nested-unknown-loinc.json	1	The Remote Terminology server	DEFAULT
+24-item-code-multiple-unknown.json	1	The Remote Terminology server	DEFAULT
+25-item-code-custom-system-bad.json	1	The Remote Terminology server	DEFAULT
+30-answerOption-coding-unknown-loinc.json	1	The Remote Terminology server	DEFAULT
+31-answerOption-coding-wrong-display.json	1	The Remote Terminology server	DEFAULT
+32-answerOption-coding-unknown-snomed.json	1	The Remote Terminology server	DEFAULT
+33-answerOption-coding-custom-bad.json	1	The Remote Terminology server	DEFAULT
+34-answerOption-two-unknown-codings.json	1	The Remote Terminology server	DEFAULT
+35-answerOption-open-choice-unknown.json	1	The Remote Terminology server	DEFAULT
+36-answerOption-coding-versioned-system-unknown.json	1	The Remote Terminology server	DEFAULT
+37-answerOption-coding-userSelected-unknown.json	1	The Remote Terminology server	DEFAULT
+38-answerOption-mixed-string-and-bad-coding.json	1	The Remote Terminology server	DEFAULT
+39-answerOption-initialSelected-bad-coding.json	1	The Remote Terminology server	DEFAULT
+40-answerOption-coding-wrong-display-snomed.json	1	The Remote Terminology server	DEFAULT
+41-answerOption-coding-unknown-rxnorm.json	1	The Remote Terminology server	DEFAULT
+42-answerOption-coding-unknown-icd10.json	1	The Remote Terminology server	DEFAULT
+50-initial-coding-unknown.json	1	The Remote Terminology server	DEFAULT
+51-initial-coding-wrong-display.json	1	The Remote Terminology server	DEFAULT
+52-initial-quantity-bad-ucum.json	1	notARealUcumCode	DEFAULT	# UCUM usually local CommonCodeSystems; still assert code mention
+53-initial-quantity-wrong-ucum-display.json	1	notARealUcumCode	DEFAULT	# UCUM display/unit mismatch often local
+54-initial-coding-snomed-unknown.json	1	The Remote Terminology server	DEFAULT
+55-initial-two-codings-one-bad.json	1	The Remote Terminology server	DEFAULT
+60-enableWhen-answerCoding-unknown.json	1	The Remote Terminology server	DEFAULT
+61-enableWhen-answerCoding-wrong-display.json	1	The Remote Terminology server	DEFAULT
+62-enableWhen-answerQuantity-bad-ucum.json	1	notARealUcum	DEFAULT	# UCUM local-first
+63-enableWhen-answerCoding-snomed-unknown.json	1	The Remote Terminology server	DEFAULT
+64-enableWhen-two-answerCodings-one-bad.json	1	The Remote Terminology server	DEFAULT
+70-jurisdiction-unknown-coding.json	1	999999	DEFAULT
+71-jurisdiction-unknown-system.json	1	The Remote Terminology server	DEFAULT
+72-jurisdiction-wrong-display.json	1	XX-BAD	DEFAULT
+73-useContext-code-unknown.json	1	not-a-real-context	DEFAULT
+74-useContext-value-unknown.json	1	not-a-gender	DEFAULT
+75-useContext-value-wrong-display.json	1	The Remote Terminology server	DEFAULT
+76-useContext-snomed-value-unknown.json	1	The Remote Terminology server	DEFAULT
+77-jurisdiction-iso3166-unknown.json	1	XX-BAD	DEFAULT
+80-meta-security-unknown.json	1	NOTAREAL	DEFAULT
+81-meta-tag-unknown.json	1	not-a-tag	DEFAULT
+82-meta-security-wrong-display.json	1	HTEST	DEFAULT
+83-meta-tag-loinc-unknown.json	1	The Remote Terminology server	DEFAULT
+84-meta-security-and-tag-unknown.json	1	NOTAREAL	DEFAULT
+90-answerValueSet-unknown-canonical.json	1	The Remote Terminology server	DEFAULT	# resolvable VS + bad initial (bare missing VS is silent)
+91-answerValueSet-loinc-answers-with-bad-initial.json	1	The Remote Terminology server	DEFAULT
+92-answerValueSet-versioned-canonical-unknown.json	1	The Remote Terminology server	DEFAULT	# versioned resolvable VS + bad initial
+93-open-choice-answerValueSet-bad-initial.json	1	The Remote Terminology server	DEFAULT
+100-ext-itemControl-unknown.json	1	not-a-control	DEFAULT
+101-ext-usageMode-unknown.json	1	not-a-mode	DEFAULT
+102-ext-mimeType-unknown.json	1	The Remote Terminology server	DEFAULT
+103-ext-questionnaire-unit-bad-ucum.json	1	notARealUcum	DEFAULT	# UCUM local-first
+104-ext-questionnaire-unit-unknown-custom.json	1	The Remote Terminology server	DEFAULT
+105-ext-versionAlgorithm-unknown.json	1	not-an-algo	DEFAULT
+106-ext-answerConstraint-unknown.json	1	not-a-constraint	DEFAULT
+107-ext-constraint-severity-unknown.json	1	not-a-severity	DEFAULT
+108-ext-unitOption-bad-coding.json	1	notARealUcum	DEFAULT
+109-ext-unitValueSet-unknown.json	1	The Remote Terminology server	DEFAULT
+110-ext-optionExclusive-ok-bool-with-bad-sibling-coding.json	1	The Remote Terminology server	DEFAULT
+111-ext-referenceResource-unknown-code.json	1	not-a-resource	DEFAULT
+112-ext-itemControl-wrong-display.json	1	not-a-control	DEFAULT
+113-ext-ordinalValue-with-bad-option-coding.json	1	The Remote Terminology server	DEFAULT
+114-ext-mimeType-multiple-one-bad.json	1	The Remote Terminology server	DEFAULT
+120-tx-validate-http-404-loinc.json	1	The Remote Terminology server	VALIDATE_HTTP_404	# remote validate-code 404 → wrapper error
+121-tx-validate-http-400-loinc.json	1	The Remote Terminology server	VALIDATE_HTTP_400
+122-tx-validate-http-500-loinc.json	1	The Remote Terminology server	VALIDATE_HTTP_500
+123-tx-empty-search-unknown-custom.json	0	EMPTY_SEARCH_NO_REMOTE	EMPTY_SEARCH	# remote claims no CodeSystem; may fall through to unknown-system messaging
+124-tx-reject-all-codes-known-loinc.json	1	The Remote Terminology server	REJECT_ALL_CODES
+125-tx-accept-all-should-not-fail-on-bad-code.json	1	ACCEPT_ALL_SENTINEL	ACCEPT_ALL_CODES	# special: expectation handled in test — must NOT contain Remote Terminology failure for this code
+126-tx-malformed-parameters-loinc.json	1	result	VALIDATE_MALFORMED_PARAMETERS	# missing result param may surface as exception/error text
+127-tx-404-item-code.json	1	The Remote Terminology server	VALIDATE_HTTP_404
+128-tx-reject-all-answerOption.json	1	The Remote Terminology server	REJECT_ALL_CODES
+129-tx-empty-search-answerOption-custom.json	0	EMPTY_SEARCH_NO_REMOTE	EMPTY_SEARCH
+190-multi-root-and-item-code-unknown.json	1	The Remote Terminology server	DEFAULT
+191-multi-answerOption-and-initial-unknown.json	1	The Remote Terminology server	DEFAULT
+192-multi-jurisdiction-and-meta-tag.json	1	The Remote Terminology server	DEFAULT
+193-multi-enableWhen-and-itemControl.json	1	The Remote Terminology server	DEFAULT
+194-multi-useContext-and-root-code.json	1	The Remote Terminology server	DEFAULT
+195-multi-wrong-display-and-unknown-code.json	1	The Remote Terminology server	DEFAULT
+94-answerValueSet-unresolved-silent.json	0	UNRESOLVED_VS_SILENT	DEFAULT	# missing answerValueSet alone produces no terminology issue
+95-answerValueSet-versioned-unresolved-silent.json	0	UNRESOLVED_VS_SILENT	DEFAULT	# versioned missing VS alone is silent

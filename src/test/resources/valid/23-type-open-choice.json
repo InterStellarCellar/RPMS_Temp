@@ -1,0 +1,25 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Open choice</p></div>"
+  },
+  "id": "valid-open-choice",
+  "title": "Open choice",
+  "item": [
+    {
+      "linkId": "flavor",
+      "type": "open-choice",
+      "text": "Flavor",
+      "answerOption": [
+        {
+          "valueString": "Vanilla"
+        },
+        {
+          "valueString": "Chocolate"
+        }
+      ]
+    }
+  ]
+}

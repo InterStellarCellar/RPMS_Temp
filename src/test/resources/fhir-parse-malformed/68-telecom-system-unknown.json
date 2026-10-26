@@ -1,0 +1,21 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "faxx",
+          "value": "123"
+        }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

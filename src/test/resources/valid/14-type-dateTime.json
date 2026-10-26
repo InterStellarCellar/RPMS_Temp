@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Item type dateTime</p></div>"
+  },
+  "id": "valid-type-dateTime",
+  "title": "Item type dateTime",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "dateTime",
+      "text": "A dateTime question",
+      "required": true
+    }
+  ]
+}

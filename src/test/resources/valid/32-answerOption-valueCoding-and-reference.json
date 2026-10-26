@@ -1,0 +1,47 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Coding and Reference options</p></div>"
+  },
+  "id": "valid-ao-coding-ref",
+  "title": "Coding and Reference options",
+  "item": [
+    {
+      "linkId": "c",
+      "type": "choice",
+      "text": "Coding",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "Not at all"
+          },
+          "initialSelected": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "Several days"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "r",
+      "type": "choice",
+      "text": "Practitioner",
+      "answerOption": [
+        {
+          "valueReference": {
+            "reference": "Practitioner/example",
+            "display": "Dr Example"
+          }
+        }
+      ]
+    }
+  ]
+}

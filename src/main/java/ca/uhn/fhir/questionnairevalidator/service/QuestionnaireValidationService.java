@@ -3,6 +3,7 @@ package ca.uhn.fhir.questionnairevalidator.service;
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.context.support.IValidationSupport;
 import ca.uhn.fhir.parser.DataFormatException;
+import ca.uhn.fhir.parser.IParser;
 import ca.uhn.fhir.questionnairevalidator.config.ValidationBeansConfig;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidateResponse;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidationIssueDto;
@@ -10,15 +11,11 @@ import ca.uhn.fhir.validation.FhirValidator;
 import ca.uhn.fhir.validation.ResultSeverityEnum;
 import ca.uhn.fhir.validation.SingleValidationMessage;
 import ca.uhn.fhir.validation.ValidationResult;
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.JsonParser;
 import org.hl7.fhir.common.hapi.validation.support.ValidationSupportChain;
 import org.hl7.fhir.common.hapi.validation.validator.FhirInstanceValidator;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -35,6 +32,20 @@ public class QuestionnaireValidationService {
 			"Unknown code\\s+['\"]([^'\"]+)['\"]", Pattern.CASE_INSENSITIVE);
 	private static final Pattern SYSTEM_CODE_PATTERN = Pattern.compile(
 			"(https?://[^\\s#'\"<>]+#[^\\s'\".,;:)\\]]+)");
+	private static final Pattern PARSE_ELEMENT_PATTERN = Pattern.compile("\\[element=\"([^\"]+)\"\\]");
+	private static final Pattern PARSE_UNKNOWN_ELEMENT_PATTERN =
+			Pattern.compile("Unknown (?:element|attribute) '([^']+)'");
+	private static final Pattern PARSE_INVALID_VALUE_PATTERN =
+			Pattern.compile("Invalid attribute value \"([^\"]*)\"");
+	/** HAPI-1841: "Expected ARRAY at element 'extension', found 'OBJECT'" */
+	private static final Pattern PARSE_EXPECTED_ARRAY_ELEMENT_PATTERN =
+			Pattern.compile("at element '([^']+)'");
+	/** HAPI-1842: "Unexpected array of length N … for element: _title" */
+	private static final Pattern PARSE_FOR_ELEMENT_PATTERN =
+			Pattern.compile("for element:\\s*(\\S+)");
+	/** HAPI-1811: "Extension (URL='…') must not have both a value…" */
+	private static final Pattern PARSE_EXTENSION_URL_PATTERN =
+			Pattern.compile("Extension \\(URL='([^']+)'\\)");
 
 	private final FhirContext myFhirContext;
 	private final ValidationSupportChain myLocalValidationSupportChain;
@@ -52,41 +63,51 @@ public class QuestionnaireValidationService {
 		ValidateResponse response = new ValidateResponse();
 		List<ValidationIssueDto> issues = new ArrayList<>();
 
-		try {
-			validateJsonWellFormed(theJson);
-		} catch (JsonParseException e) {
-			ValidationIssueDto dto = new ValidationIssueDto();
-			dto.setSeverity(ResultSeverityEnum.FATAL.getCode());
-			dto.setMessage(e.getOriginalMessage());
-			if (e.getLocation() != null) {
-				dto.setLine(e.getLocation().getLineNr());
-				dto.setColumn(e.getLocation().getColumnNr());
-			}
-			dto.setLocation("JSON");
-			issues.add(dto);
-			response.setIssues(issues);
-			response.setOk(false);
-			return response;
-		} catch (IOException e) {
-			ValidationIssueDto dto = new ValidationIssueDto();
-			dto.setSeverity(ResultSeverityEnum.FATAL.getCode());
-			dto.setMessage(e.getMessage());
-			dto.setLine(1);
-			dto.setColumn(1);
-			dto.setLocation("JSON");
-			issues.add(dto);
-			response.setIssues(issues);
+		// Syntax first, with an error-recovering checker: standard parsers (Jackson here, and
+		// JSON.parse in the browser) abort at the first syntax error, so they can only ever
+		// report one. This reports every independent syntax problem with its real position.
+		List<ValidationIssueDto> jsonErrors = JsonSyntaxChecker.check(theJson);
+		if (!jsonErrors.isEmpty()) {
+			response.setIssues(jsonErrors);
 			response.setOk(false);
 			return response;
 		}
 
-		final IBaseResource resource;
+		// Parse with a handler that collects ALL parse problems instead of aborting on the first
+		// (StrictErrorHandler) or silently dropping values (LenientErrorHandler). If anything was
+		// collected — or parsing still threw — report those errors, located in the raw JSON, and
+		// stop: running instance validation on a partially-parsed resource would only add
+		// misleading knock-on errors (e.g. "missing" elements whose values failed to parse).
+		CollectingParserErrorHandler parseErrorHandler = new CollectingParserErrorHandler();
+		IBaseResource resource = null;
+		DataFormatException parseException = null;
 		try {
-			resource = myFhirContext.newJsonParser().parseResource(theJson);
+			IParser parser = myFhirContext.newJsonParser();
+			parser.setParserErrorHandler(parseErrorHandler);
+			resource = parser.parseResource(theJson);
 		} catch (DataFormatException e) {
+			parseException = e;
+		}
+
+		if (!parseErrorHandler.getErrors().isEmpty() || parseException != null) {
+			List<CollectingParserErrorHandler.ParseError> parseErrors =
+					new ArrayList<>(parseErrorHandler.getErrors());
+			if (parseException != null) {
+				String parseExceptionMessage = parseException.getMessage();
+				if (parseErrors.stream().noneMatch(e -> parseExceptionMessage != null
+						&& parseExceptionMessage.equals(e.message()))) {
+					parseErrors.add(parseErrorFromException(parseExceptionMessage));
+				}
+			}
+			response.setIssues(new JsonElementLocator(theJson).toIssues(parseErrors));
+			response.setOk(false);
+			return response;
+		}
+
+		if (resource == null) {
 			ValidationIssueDto dto = new ValidationIssueDto();
 			dto.setSeverity(ResultSeverityEnum.ERROR.getCode());
-			dto.setMessage(e.getMessage());
+			dto.setMessage("Could not parse resource");
 			dto.setLine(1);
 			dto.setColumn(1);
 			dto.setLocation("FHIR parse");
@@ -121,6 +142,7 @@ public class QuestionnaireValidationService {
 		for (SingleValidationMessage next : result.getMessages()) {
 			issues.add(toDto(next));
 		}
+		issues = InvariantLocationEnricher.enrich(resource, theJson, issues);
 		response.setIssues(dedupeIssues(issues));
 		response.setOk(result.isSuccessful());
 		return response;
@@ -233,13 +255,49 @@ public class QuestionnaireValidationService {
 		return theMessage != null && theMessage.contains("The Remote Terminology server");
 	}
 
-	private static void validateJsonWellFormed(String theJson) throws JsonParseException, IOException {
-		JsonFactory factory = new JsonFactory();
-		try (JsonParser parser = factory.createParser(theJson)) {
-			while (parser.nextToken() != null) {
-				// consume
+	/** Build a locatable parse error out of a {@link DataFormatException} message. */
+	static CollectingParserErrorHandler.ParseError parseErrorFromException(String theMessage) {
+		String element = null;
+		String offendingValue = null;
+		if (theMessage != null) {
+			Matcher elementMatcher = PARSE_ELEMENT_PATTERN.matcher(theMessage);
+			if (elementMatcher.find()) {
+				element = elementMatcher.group(1);
+			} else {
+				Matcher unknownMatcher = PARSE_UNKNOWN_ELEMENT_PATTERN.matcher(theMessage);
+				if (unknownMatcher.find()) {
+					element = unknownMatcher.group(1);
+				}
+			}
+			// HAPI-1841: "Expected ARRAY at element 'extension', found 'OBJECT'"
+			if (element == null) {
+				Matcher arrayElMatcher = PARSE_EXPECTED_ARRAY_ELEMENT_PATTERN.matcher(theMessage);
+				if (arrayElMatcher.find()) {
+					element = arrayElMatcher.group(1);
+				}
+			}
+			// HAPI-1842: "Unexpected array of length N … for element: _title"
+			if (element == null) {
+				Matcher forElMatcher = PARSE_FOR_ELEMENT_PATTERN.matcher(theMessage);
+				if (forElMatcher.find()) {
+					element = forElMatcher.group(1);
+				}
+			}
+			// HAPI-1811: "Extension (URL='…') must not have both a value…"
+			// The element is the extension or modifierExtension containing that URL.
+			if (element == null) {
+				Matcher urlMatcher = PARSE_EXTENSION_URL_PATTERN.matcher(theMessage);
+				if (urlMatcher.find()) {
+					offendingValue = urlMatcher.group(1);
+					element = "url";
+				}
+			}
+			Matcher valueMatcher = PARSE_INVALID_VALUE_PATTERN.matcher(theMessage);
+			if (valueMatcher.find()) {
+				offendingValue = valueMatcher.group(1);
 			}
 		}
+		return new CollectingParserErrorHandler.ParseError(theMessage, element, null, offendingValue, null);
 	}
 
 	private static ValidationIssueDto toDto(SingleValidationMessage theMsg) {

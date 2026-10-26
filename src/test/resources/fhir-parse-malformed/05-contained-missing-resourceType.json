@@ -1,0 +1,16 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "contained": [
+    {
+      "id": "p1"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

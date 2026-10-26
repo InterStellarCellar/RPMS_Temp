@@ -1,0 +1,16 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "string",
+      "text": "Name",
+      "repeats": false,
+      "initial": [
+        { "valueString": "Alice" },
+        { "valueString": "Bob" }
+      ]
+    }
+  ]
+}

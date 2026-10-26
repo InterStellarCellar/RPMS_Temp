@@ -1,0 +1,15 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    { "linkId": "q1", "type": "string", "text": "Root" },
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "Group",
+      "item": [
+        { "linkId": "q1", "type": "string", "text": "Nested duplicate" }
+      ]
+    }
+  ]
+}

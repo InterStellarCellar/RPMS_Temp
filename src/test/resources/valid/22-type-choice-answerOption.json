@@ -1,0 +1,36 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Choice with answerOption</p></div>"
+  },
+  "id": "valid-choice-options",
+  "title": "Choice with answerOption",
+  "item": [
+    {
+      "linkId": "color",
+      "type": "choice",
+      "text": "Favorite color",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/colors",
+            "code": "red",
+            "display": "Red"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://example.org/colors",
+            "code": "blue",
+            "display": "Blue"
+          }
+        },
+        {
+          "valueString": "Other"
+        }
+      ]
+    }
+  ]
+}

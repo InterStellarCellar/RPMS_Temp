@@ -1,0 +1,49 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Valid SDC behave</p></div>"
+  },
+  "id": "valid-sdc-behave",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-behave"
+    ]
+  },
+  "url": "http://example.org/fhir/Questionnaire/valid-sdc-behave",
+  "version": "1.0.0",
+  "name": "ValidSdcBehave",
+  "title": "Valid SDC behave",
+  "date": "2024-06-01",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "score",
+      "type": "integer",
+      "text": "Score"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='score').answer.value > 5"
+          }
+        }
+      ],
+      "linkId": "high",
+      "type": "display",
+      "text": "High score note"
+    }
+  ]
+}

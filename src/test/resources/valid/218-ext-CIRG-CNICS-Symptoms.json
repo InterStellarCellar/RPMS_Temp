@@ -1,0 +1,784 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-Symptoms",
+  "title": "CNICS Symptoms Checklist",
+  "status": "active",
+  "description": "\"CNICS Symptoms Checklist\". Based on: Justice AC, Holmes W, Gifford AL, et al. Development and validation of a self-completed HIV symptom index. J Clin Epidemiol. 2001;54 Suppl 1:S77-90.",
+  "item": [
+    {
+      "linkId": "Symptoms-header",
+      "text": "These questions are about symptoms you might have had during the PAST 4 WEEKS. Please describe how much you have been bothered by EACH symptom.",
+      "type": "display"
+    },
+    {
+      "linkId": "Symptoms-0",
+      "text": "Fatigue or loss of energy?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-0-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-0-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-0-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-0-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-0-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-1",
+      "text": "Fever, chills, or sweats?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-1-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-1-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-1-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-1-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-1-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-2",
+      "text": "Feeling dizzy or lightheaded?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-2-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-2-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-2-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-2-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-2-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-3",
+      "text": "Pain, numbness, or tingling in the hands or feet?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-3-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-3-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-3-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-3-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-3-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-4",
+      "text": "Trouble remembering?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-4-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-4-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-4-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-4-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-4-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-5",
+      "text": "Nausea or vomiting?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-5-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-5-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-5-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-5-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-5-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-6",
+      "text": "Diarrhea or loose bowel movements?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-6-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-6-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-6-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-6-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-6-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-7",
+      "text": "Felt sad, down, or depressed?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-7-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-7-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-7-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-7-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-7-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-8",
+      "text": "Felt nervous or anxious?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-8-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-8-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-8-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-8-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-8-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-9",
+      "text": "Difficulty falling or staying asleep?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-9-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-9-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-9-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-9-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-9-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-10",
+      "text": "Skin problems, such as rash, dryness, or itching?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-10-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-10-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-10-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-10-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-10-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-11",
+      "text": "Cough or trouble catching your breath?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-11-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-11-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-11-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-11-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-11-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-12",
+      "text": "Headache?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-12-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-12-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-12-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-12-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-12-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-13",
+      "text": "Loss of appetite or a change in the taste of food?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-13-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-13-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-13-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-13-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-13-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-14",
+      "text": "Bloating, pain, or gas in your stomach?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-14-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-14-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-14-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-14-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-14-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-15",
+      "text": "Muscle aches or joint pain?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-15-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-15-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-15-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-15-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-15-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-16",
+      "text": "Problems with having sex, such as loss of interest or lack of satisfaction?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-16-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-16-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-16-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-16-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-16-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-17",
+      "text": "Changes in the way your body looks such as fat deposits or weight gain?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-17-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-17-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-17-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-17-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-17-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-18",
+      "text": "Problems with weight loss or wasting?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-18-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-18-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-18-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-18-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-18-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-19",
+      "text": "Hair loss or changes in the way your hair looks?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "Symptoms-19-0",
+            "display": "I do not have this symptom."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-19-1",
+            "display": "It doesn't bother me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-19-2",
+            "display": "It bothers me a little."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-19-3",
+            "display": "It bothers me."
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "Symptoms-19-4",
+            "display": "It bothers me a lot."
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-bothers-a-lot",
+      "text": "Bothers A Lot",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(iif(%resource.item.where(linkId = 'Symptoms-0').answer.valueCoding.code = 'Symptoms-0-4', 'Fatigue', '') | iif(%resource.item.where(linkId = 'Symptoms-1').answer.valueCoding.code = 'Symptoms-1-4', 'Fevers, chills, sweats', '') | iif(%resource.item.where(linkId = 'Symptoms-2').answer.valueCoding.code = 'Symptoms-2-4', 'Dizzy', '') | iif(%resource.item.where(linkId = 'Symptoms-3').answer.valueCoding.code = 'Symptoms-3-4', 'Numbness/pain feet', '') | iif(%resource.item.where(linkId = 'Symptoms-4').answer.valueCoding.code = 'Symptoms-4-4', 'Memory', '') | iif(%resource.item.where(linkId = 'Symptoms-5').answer.valueCoding.code = 'Symptoms-5-4', 'Nausea/vomiting', '') | iif(%resource.item.where(linkId = 'Symptoms-6').answer.valueCoding.code = 'Symptoms-6-4', 'Diarrhea', '') | iif(%resource.item.where(linkId = 'Symptoms-7').answer.valueCoding.code = 'Symptoms-7-4', 'Sad', '') | iif(%resource.item.where(linkId = 'Symptoms-8').answer.valueCoding.code = 'Symptoms-8-4', 'Nervous/anxious', '') | iif(%resource.item.where(linkId = 'Symptoms-9').answer.valueCoding.code = 'Symptoms-9-4', 'Poor sleep', '') | iif(%resource.item.where(linkId = 'Symptoms-10').answer.valueCoding.code = 'Symptoms-10-4', 'Rash', '') | iif(%resource.item.where(linkId = 'Symptoms-11').answer.valueCoding.code = 'Symptoms-11-4', 'Cough/SOB', '') | iif(%resource.item.where(linkId = 'Symptoms-12').answer.valueCoding.code = 'Symptoms-12-4', 'Headache', '') | iif(%resource.item.where(linkId = 'Symptoms-13').answer.valueCoding.code = 'Symptoms-13-4', 'Poor appetite', '') | iif(%resource.item.where(linkId = 'Symptoms-14').answer.valueCoding.code = 'Symptoms-14-4', 'Bloating, abdominal pain', '') | iif(%resource.item.where(linkId = 'Symptoms-15').answer.valueCoding.code = 'Symptoms-15-4', 'Muscle aches/joint pain', '') | iif(%resource.item.where(linkId = 'Symptoms-16').answer.valueCoding.code = 'Symptoms-16-4', 'Sex problems', '') | iif(%resource.item.where(linkId = 'Symptoms-17').answer.valueCoding.code = 'Symptoms-17-4', 'Fat deposits/wt gain', '') | iif(%resource.item.where(linkId = 'Symptoms-18').answer.valueCoding.code = 'Symptoms-18-4', 'Weight loss/wasting', '') | iif(%resource.item.where(linkId = 'Symptoms-19').answer.valueCoding.code = 'Symptoms-19-4', 'Hair loss/changes', '')).where($this != '').join(', ')"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Symptoms-bothers-some",
+      "text": "Bothers Some",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(iif(%resource.item.where(linkId = 'Symptoms-0').answer.valueCoding.code = 'Symptoms-0-3', 'Fatigue', '') | iif(%resource.item.where(linkId = 'Symptoms-1').answer.valueCoding.code = 'Symptoms-1-3', 'Fevers, chills, sweats', '') | iif(%resource.item.where(linkId = 'Symptoms-2').answer.valueCoding.code = 'Symptoms-2-3', 'Dizzy', '') | iif(%resource.item.where(linkId = 'Symptoms-3').answer.valueCoding.code = 'Symptoms-3-3', 'Numbness/pain feet', '') | iif(%resource.item.where(linkId = 'Symptoms-4').answer.valueCoding.code = 'Symptoms-4-3', 'Memory', '') | iif(%resource.item.where(linkId = 'Symptoms-5').answer.valueCoding.code = 'Symptoms-5-3', 'Nausea/vomiting', '') | iif(%resource.item.where(linkId = 'Symptoms-6').answer.valueCoding.code = 'Symptoms-6-3', 'Diarrhea', '') | iif(%resource.item.where(linkId = 'Symptoms-7').answer.valueCoding.code = 'Symptoms-7-3', 'Sad', '') | iif(%resource.item.where(linkId = 'Symptoms-8').answer.valueCoding.code = 'Symptoms-8-3', 'Nervous/anxious', '') | iif(%resource.item.where(linkId = 'Symptoms-9').answer.valueCoding.code = 'Symptoms-9-3', 'Poor sleep', '') | iif(%resource.item.where(linkId = 'Symptoms-10').answer.valueCoding.code = 'Symptoms-10-3', 'Rash', '') | iif(%resource.item.where(linkId = 'Symptoms-11').answer.valueCoding.code = 'Symptoms-11-3', 'Cough/SOB', '') | iif(%resource.item.where(linkId = 'Symptoms-12').answer.valueCoding.code = 'Symptoms-12-3', 'Headache', '') | iif(%resource.item.where(linkId = 'Symptoms-13').answer.valueCoding.code = 'Symptoms-13-3', 'Poor appetite', '') | iif(%resource.item.where(linkId = 'Symptoms-14').answer.valueCoding.code = 'Symptoms-14-3', 'Bloating, abdominal pain', '') | iif(%resource.item.where(linkId = 'Symptoms-15').answer.valueCoding.code = 'Symptoms-15-3', 'Muscle aches/joint pain', '') | iif(%resource.item.where(linkId = 'Symptoms-16').answer.valueCoding.code = 'Symptoms-16-3', 'Sex problems', '') | iif(%resource.item.where(linkId = 'Symptoms-17').answer.valueCoding.code = 'Symptoms-17-3', 'Fat deposits/wt gain', '') | iif(%resource.item.where(linkId = 'Symptoms-18').answer.valueCoding.code = 'Symptoms-18-3', 'Weight loss/wasting', '') | iif(%resource.item.where(linkId = 'Symptoms-19').answer.valueCoding.code = 'Symptoms-19-3', 'Hair loss/changes', '')).where($this != '').join(', ')"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "L1",
+      "item": [
+        {
+          "linkId": "g2",
+          "type": "group",
+          "text": "L2",
+          "item": [
+            {
+              "linkId": "g3",
+              "type": "group",
+              "text": "L3",
+              "item": [
+                {
+                  "linkId": "g4",
+                  "type": "group",
+                  "text": "L4",
+                  "item": [
+                    {
+                      "linkId": "g5",
+                      "type": "group",
+                      "text": "L5",
+                      "item": [
+                        {
+                          "linkId": "q",
+                          "type": "string",
+                          "text": "Deep"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

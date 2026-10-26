@@ -1,0 +1,13 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Missing both linkId and type</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "text": "Q"
+    }
+  ]
+}

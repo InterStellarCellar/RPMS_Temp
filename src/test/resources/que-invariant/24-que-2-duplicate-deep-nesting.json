@@ -1,0 +1,36 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "Branch A",
+      "item": [
+        {
+          "linkId": "g1a",
+          "type": "group",
+          "text": "Deep A",
+          "item": [
+            { "linkId": "deep", "type": "string", "text": "Deep item A" }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "g2",
+      "type": "group",
+      "text": "Branch B",
+      "item": [
+        {
+          "linkId": "g2a",
+          "type": "group",
+          "text": "Deep B",
+          "item": [
+            { "linkId": "deep", "type": "string", "text": "Deep item B (dup)" }
+          ]
+        }
+      ]
+    }
+  ]
+}

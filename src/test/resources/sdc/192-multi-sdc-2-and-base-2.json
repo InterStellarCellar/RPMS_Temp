@@ -1,0 +1,30 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">SDC test</div>"
+  },
+  "status": "draft",
+  "url": "http://example.org/fhir/Questionnaire/sdc-test",
+  "version": "2.0.0",
+  "name": "SdcTest",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "choice",
+      "text": "Pick",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "x"
+          }
+        }
+      ]
+    }
+  ]
+}

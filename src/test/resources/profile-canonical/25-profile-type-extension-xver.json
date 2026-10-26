@@ -1,0 +1,20 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">profile-canonical corpus</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.disabledDisplay"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nested answerOption missing value</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "Group",
+      "item": [
+        {
+          "linkId": "q1",
+          "type": "choice",
+          "text": "Pick one",
+          "answerOption": [
+            {
+              "initialSelected": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

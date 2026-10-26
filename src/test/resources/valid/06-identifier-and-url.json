@@ -1,0 +1,30 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Identifiers</p></div>"
+  },
+  "id": "valid-ids",
+  "url": "https://example.org/Questionnaire/valid-ids",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://example.org/ns",
+      "value": "A1"
+    },
+    {
+      "use": "secondary",
+      "system": "http://example.org/ns2",
+      "value": "B2"
+    }
+  ],
+  "title": "Identifiers",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "string",
+      "text": "ID check"
+    }
+  ]
+}

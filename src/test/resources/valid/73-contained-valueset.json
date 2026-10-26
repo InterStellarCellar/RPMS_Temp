@@ -1,0 +1,42 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Contained ValueSet referenced by answerValueSet</p></div>"
+  },
+  "id": "valid-contained-vs",
+  "title": "Contained ValueSet referenced by answerValueSet",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs1",
+      "status": "active",
+      "compose": {
+        "include": [
+          {
+            "system": "http://example.org/cs",
+            "concept": [
+              {
+                "code": "a",
+                "display": "A"
+              },
+              {
+                "code": "b",
+                "display": "B"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "pick",
+      "type": "choice",
+      "text": "Pick",
+      "answerValueSet": "#vs1"
+    }
+  ]
+}

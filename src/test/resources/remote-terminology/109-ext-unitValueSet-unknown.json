@@ -1,0 +1,28 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">remote-terminology corpus</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitValueSet",
+          "valueCanonical": "http://example.org/ValueSet/bad-units"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://example.org/units",
+            "code": "BAD-UNIT"
+          }
+        }
+      ],
+      "linkId": "1",
+      "type": "quantity",
+      "text": "Q"
+    }
+  ]
+}

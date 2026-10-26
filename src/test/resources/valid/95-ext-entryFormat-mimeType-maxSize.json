@@ -1,0 +1,38 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>entryFormat mimeType maxSize</p></div>"
+  },
+  "id": "valid-entry-mime",
+  "title": "entryFormat mimeType maxSize",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+          "valueString": "YYYY-MM-DD"
+        }
+      ],
+      "linkId": "dob",
+      "type": "date",
+      "text": "Date of birth"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/mimeType",
+          "valueCode": "image/png"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxSize",
+          "valueDecimal": 1048576
+        }
+      ],
+      "linkId": "photo",
+      "type": "attachment",
+      "text": "Photo"
+    }
+  ]
+}

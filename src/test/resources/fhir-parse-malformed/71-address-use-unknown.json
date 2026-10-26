@@ -1,0 +1,22 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "extension": [
+    {
+      "url": "http://example.com/ext",
+      "valueAddress": {
+        "use": "primary",
+        "line": [
+          "123 Main"
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

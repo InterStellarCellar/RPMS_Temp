@@ -1,0 +1,47 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "linkId": "a",
+      "type": "boolean",
+      "text": "A"
+    },
+    {
+      "linkId": "b",
+      "type": "boolean",
+      "text": "B"
+    },
+    {
+      "linkId": "c",
+      "type": "boolean",
+      "text": "C"
+    },
+    {
+      "linkId": "d",
+      "type": "string",
+      "text": "D",
+      "enableWhen": [
+        {
+          "question": "a",
+          "operator": "=",
+          "answerBoolean": true
+        },
+        {
+          "question": "b",
+          "operator": "=",
+          "answerBoolean": true
+        },
+        {
+          "question": "c",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ]
+    }
+  ]
+}

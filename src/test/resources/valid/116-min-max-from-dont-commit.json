@@ -1,0 +1,29 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "min-max-value",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Questionnaire using minValue and maxValue extensions</p><p>Age must be 0\u2013120 (inclusive).</p></div>"
+  },
+  "title": "minValue / maxValue",
+  "description": "A single integer question constrained with http://hl7.org/fhir/StructureDefinition/minValue and http://hl7.org/fhir/StructureDefinition/maxValue. The allowed answer is 0 through 120 inclusive. Instance validation checks the extensions are well-formed; it does not check that a later QuestionnaireResponse sits in that range.",
+  "status": "draft",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 120
+        }
+      ],
+      "linkId": "age",
+      "text": "Age in years",
+      "type": "integer",
+      "required": true
+    }
+  ]
+}

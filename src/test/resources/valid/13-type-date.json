@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Item type date</p></div>"
+  },
+  "id": "valid-type-date",
+  "title": "Item type date",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "date",
+      "text": "A date question",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "url",
+      "text": "Website",
+      "answerOption": [
+        { "valueString": "http://example.org" }
+      ]
+    }
+  ]
+}

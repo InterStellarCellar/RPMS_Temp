@@ -1,0 +1,25 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">remote-terminology corpus</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "choice",
+      "text": "Q",
+      "answerValueSet": "http://example.org/ValueSet/remote-choices",
+      "initial": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "0000-0",
+            "display": "Nope"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4904 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-ASSIST",
+  "title": "Modified ASSIST (never used and deprecated, see CIRG-CNICS-ASSIST instead)",
+  "status": "active",
+  "description": "The CNICS Modified ASSIST is based on the \"NIDA-Modified ASSIST version 2.0\"(LOINC 95513-8). It uses different terms and examples (e.g. psychedelics instead of hallucinogens), and asks aobut using multiple substances at the same time, and overdoses.",
+  "item": [
+    {
+      "linkId": "/63643-1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "63643-1",
+          "display": "In your LIFETIME, which of the following substances have you ever used?"
+        }
+      ],
+      "text": "In your LIFETIME, which of the following substances have you ever used?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31122-7",
+            "display": "Cannabis (marijuana, pot, grass, hash, etc.)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31123-5",
+            "display": "Cocaine (coke, crack, etc.)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31124-3",
+            "display": "Prescription stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31125-0",
+            "display": "Methamphetamine (speed, crystal meth, ice, etc.)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31126-8",
+            "display": "Inhalants (nitrous oxide, glue, gas, paint thinner, etc.)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31127-6",
+            "display": "Sedatives or sleeping pills (Valium, Serepax, Ativan, Xanax, Librium, Rohypnol, GHB, etc.)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31128-4",
+            "display": "Hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31129-2",
+            "display": "Street opioids (heroin, opium, etc.)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31130-0",
+            "display": "Prescription opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA46-8",
+            "display": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95430-5",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95430-5",
+          "display": "In the past three months, how often have you used cannabis (marijuana, pot, grass, hash, etc.)?"
+        }
+      ],
+      "text": "In the past three months, how often have you used cannabis (marijuana, pot, grass, hash, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95431-3",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95431-3",
+          "display": "In the past three months, how often have you used cocaine (coke, crack, etc.)?"
+        }
+      ],
+      "text": "In the past three months, how often have you used cocaine (coke, crack, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95432-1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95432-1",
+          "display": "In the past three months, how often have you used prescription stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?"
+        }
+      ],
+      "text": "In the past three months, how often have you used prescription stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95433-9",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95433-9",
+          "display": "In the past three months, how often have you used methamphetamine (speed, crystal meth, ice, etc.)?"
+        }
+      ],
+      "text": "In the past three months, how often have you used methamphetamine (speed, crystal meth, ice, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95434-7",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95434-7",
+          "display": "In the past three months, how often have you used inhalants (nitrous oxide, glue, gas, paint thinner, etc.)?"
+        }
+      ],
+      "text": "In the past three months, how often have you used inhalants (nitrous oxide, glue, gas, paint thinner, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95435-4",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95435-4",
+          "display": "In the past three months, how often have you used sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc.)?"
+        }
+      ],
+      "text": "In the past three months, how often have you used sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95436-2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95436-2",
+          "display": "In the past three months, how often have you used hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)?"
+        }
+      ],
+      "text": "In the past three months, how often have you used hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95437-0",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95437-0",
+          "display": "In the past three months, how often have you used street opioids (heroin, opium, etc.)?"
+        }
+      ],
+      "text": "In the past three months, how often have you used street opioids (heroin, opium, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95438-8",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95438-8",
+          "display": "In the past three months, how often have you used prescription opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?"
+        }
+      ],
+      "text": "In the past three months, how often have you used prescription opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95495-8",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95495-8",
+          "display": "Other substances used during the past 3Mo"
+        }
+      ],
+      "text": "Other substances used during the past 3Mo",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "/95495-8/95494-1",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95494-1",
+              "display": "Other substances used during the past 3 months"
+            }
+          ],
+          "text": "Other substances used during the past 3 months",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA28139-6",
+                "display": "Alcohol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31131-8",
+                "display": "Tobacco"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA15260-5",
+                "display": "Steroids"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31132-6",
+                "display": "Illegal/illicit drugs"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "/95495-8/95439-6",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95439-6",
+              "display": "During the past 3 months, how often have you used other substances?"
+            }
+          ],
+          "text": "During the past 3 months, how often have you used other substances?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA6270-8",
+                "display": "Never"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 2
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA26460-8",
+                "display": "Once or twice"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18876-5",
+                "display": "Monthly"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18891-4",
+                "display": "Weekly"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 6
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18934-2",
+                "display": "Daily or almost daily"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "/95440-4",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95440-4",
+          "display": "In the past 3 months, how often have you had a strong desire or urge to use cannabis (marijuana, pot, grass, hash, etc.)?"
+        }
+      ],
+      "text": "In the past 3 months, how often have you had a strong desire or urge to use cannabis (marijuana, pot, grass, hash, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95441-2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95441-2",
+          "display": "In the past 3 months, how often have you had a strong desire or urge to use cocaine (coke, crack, etc.)?"
+        }
+      ],
+      "text": "In the past 3 months, how often have you had a strong desire or urge to use cocaine (coke, crack, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95442-0",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95442-0",
+          "display": "In the past 3 months, how often have you had a strong desire or urge to use prescribed amphetamine type stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?"
+        }
+      ],
+      "text": "In the past 3 months, how often have you had a strong desire or urge to use prescribed amphetamine type stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95443-8",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95443-8",
+          "display": "In the past 3 months, how often have you had a strong desire or urge to use methamphetamine (speed, crystal meth, ice, etc.)?"
+        }
+      ],
+      "text": "In the past 3 months, how often have you had a strong desire or urge to use methamphetamine (speed, crystal meth, ice, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95444-6",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95444-6",
+          "display": "In the past 3 months, how often have you had a strong desire or urge to use inhalants (nitrous oxide, glue, gas, paint thinner, etc.)?"
+        }
+      ],
+      "text": "In the past 3 months, how often have you had a strong desire or urge to use inhalants (nitrous oxide, glue, gas, paint thinner, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95445-3",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95445-3",
+          "display": "In the past 3 months, how often have you had a strong desire or urge to use sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc.)?"
+        }
+      ],
+      "text": "In the past 3 months, how often have you had a strong desire or urge to use sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95446-1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95446-1",
+          "display": "In the past 3 months, how often have you had a strong desire or urge to use hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)?"
+        }
+      ],
+      "text": "In the past 3 months, how often have you had a strong desire or urge to use hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95447-9",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95447-9",
+          "display": "In the past 3 months, how often have you had a strong desire or urge to use street opioids (heroin, opium, etc.)?"
+        }
+      ],
+      "text": "In the past 3 months, how often have you had a strong desire or urge to use street opioids (heroin, opium, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95448-7",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95448-7",
+          "display": "In the past 3 months, how often have you had a strong desire or urge to use prescribed opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?"
+        }
+      ],
+      "text": "In the past 3 months, how often have you had a strong desire or urge to use prescribed opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95496-6",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95496-6",
+          "display": "Other substances that you have had a strong desire or urge to use in the past 3Mo"
+        }
+      ],
+      "text": "Other substances that you have had a strong desire or urge to use in the past 3Mo",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "/95496-6/95500-5",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95500-5",
+              "display": "Other substances you have had a strong desire or urge to use during the past 3 months"
+            }
+          ],
+          "text": "Other substances you have had a strong desire or urge to use during the past 3 months",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA28139-6",
+                "display": "Alcohol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31131-8",
+                "display": "Tobacco"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA15260-5",
+                "display": "Steroids"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31132-6",
+                "display": "Illegal/illicit drugs"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "/95496-6/95449-5",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95449-5",
+              "display": "During the past 3 months, how often have you had a strong desire or urge to use other substances?"
+            }
+          ],
+          "text": "During the past 3 months, how often have you had a strong desire or urge to use other substances?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA6270-8",
+                "display": "Never"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA26460-8",
+                "display": "Once or twice"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18876-5",
+                "display": "Monthly"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18891-4",
+                "display": "Weekly"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 6
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18934-2",
+                "display": "Daily or almost daily"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "/95450-3",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95450-3",
+          "display": "During the past 3 months, how often has your use of cannabis (marijuana, pot, grass, hash, etc.) led to health, social, legal or financial problems?"
+        }
+      ],
+      "text": "During the past 3 months, how often has your use of cannabis (marijuana, pot, grass, hash, etc.) led to health, social, legal or financial problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95451-1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95451-1",
+          "display": "During the past 3 months, how often has your use of cocaine (coke, crack, etc.) led to health, social, legal or financial problems?"
+        }
+      ],
+      "text": "During the past 3 months, how often has your use of cocaine (coke, crack, etc.) led to health, social, legal or financial problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95452-9",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95452-9",
+          "display": "During the past 3 months, how often has your use of prescribed amphetamine type stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.) led to health, social, legal or financial problems?"
+        }
+      ],
+      "text": "During the past 3 months, how often has your use of prescribed amphetamine type stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.) led to health, social, legal or financial problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95453-7",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95453-7",
+          "display": "During the past 3 months, how often has your use of methamphetamine (speed, crystal meth, ice, etc.) led to health, social, legal or financial problems?"
+        }
+      ],
+      "text": "During the past 3 months, how often has your use of methamphetamine (speed, crystal meth, ice, etc.) led to health, social, legal or financial problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95454-5",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95454-5",
+          "display": "During the past 3 months, how often has your use of inhalants (nitrous oxide, glue, gas, paint thinner, etc.) led to health, social, legal or financial problems?"
+        }
+      ],
+      "text": "During the past 3 months, how often has your use of inhalants (nitrous oxide, glue, gas, paint thinner, etc.) led to health, social, legal or financial problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95455-2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95455-2",
+          "display": "During the past 3 months, how often has your use of sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc.) led to health, social, legal or financial problems?"
+        }
+      ],
+      "text": "During the past 3 months, how often has your use of sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc.) led to health, social, legal or financial problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95456-0",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95456-0",
+          "display": "During the past 3 months, how often has your use of hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.) led to health, social, legal or financial problems?"
+        }
+      ],
+      "text": "During the past 3 months, how often has your use of hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.) led to health, social, legal or financial problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95457-8",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95457-8",
+          "display": "During the past 3 months, how often has your use of street opioids (heroin, opium, etc.) led to health, social, legal or financial problems?"
+        }
+      ],
+      "text": "During the past 3 months, how often has your use of street opioids (heroin, opium, etc.) led to health, social, legal or financial problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95458-6",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95458-6",
+          "display": "During the past 3 months, how often has your use of prescribed opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.) led to health, social, legal or financial problems?"
+        }
+      ],
+      "text": "During the past 3 months, how often has your use of prescribed opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.) led to health, social, legal or financial problems?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95497-4",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95497-4",
+          "display": "Other substances that have led to health, social, legal or financial problems in the past 3Mo"
+        }
+      ],
+      "text": "Other substances that have led to health, social, legal or financial problems in the past 3Mo",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "/95497-4/95501-3",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95501-3",
+              "display": "Other substances that have led to health, social, legal or financial problems during the past 3 months"
+            }
+          ],
+          "text": "Other substances that have led to health, social, legal or financial problems during the past 3 months",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA28139-6",
+                "display": "Alcohol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31131-8",
+                "display": "Tobacco"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA15260-5",
+                "display": "Steroids"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31132-6",
+                "display": "Illegal/illicit drugs"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "/95497-4/95459-4",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95459-4",
+              "display": "During the past 3 months, how often has your use of other substances led to health, social, legal or financial problems?"
+            }
+          ],
+          "text": "During the past 3 months, how often has your use of other substances led to health, social, legal or financial problems?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA6270-8",
+                "display": "Never"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 4
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA26460-8",
+                "display": "Once or twice"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18876-5",
+                "display": "Monthly"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 6
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18891-4",
+                "display": "Weekly"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 7
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18934-2",
+                "display": "Daily or almost daily"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "/95460-2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95460-2",
+          "display": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of cannabis (marijuana, pot, grass, hash, etc.)?"
+        }
+      ],
+      "text": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of cannabis (marijuana, pot, grass, hash, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95461-0",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95461-0",
+          "display": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of cocaine (coke, crack, etc.)?"
+        }
+      ],
+      "text": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of cocaine (coke, crack, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95462-8",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95462-8",
+          "display": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of prescribed amphetamine type stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?"
+        }
+      ],
+      "text": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of prescribed amphetamine type stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95463-6",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95463-6",
+          "display": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of methamphetamine (speed, crystal meth, ice, etc.)?"
+        }
+      ],
+      "text": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of methamphetamine (speed, crystal meth, ice, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95464-4",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95464-4",
+          "display": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of inhalants (nitrous oxide, glue, gas, paint thinner, etc.)?"
+        }
+      ],
+      "text": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of inhalants (nitrous oxide, glue, gas, paint thinner, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95465-1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95465-1",
+          "display": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc.)?"
+        }
+      ],
+      "text": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of sedatives or sleeping pills (Valium, Serepax, Ativan, Librium, Xanax, Rohypnol, GHB, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95466-9",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95466-9",
+          "display": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)? etc.)"
+        }
+      ],
+      "text": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)? etc.)",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95467-7",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95467-7",
+          "display": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of street opioids (heroin, opium, etc.)?"
+        }
+      ],
+      "text": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of street opioids (heroin, opium, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95468-5",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95468-5",
+          "display": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of prescribed opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?"
+        }
+      ],
+      "text": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of prescribed opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6270-8",
+            "display": "Never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA26460-8",
+            "display": "Once or twice"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18876-5",
+            "display": "Monthly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18891-4",
+            "display": "Weekly"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18934-2",
+            "display": "Daily or almost daily"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95498-2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95498-2",
+          "display": "Other substances that have caused you to fail to do what was normally expected of you in the past 3Mo"
+        }
+      ],
+      "text": "Other substances that have caused you to fail to do what was normally expected of you in the past 3Mo",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "/95498-2/95502-1",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95502-1",
+              "display": "Other substances that have caused you to fail to do what was normally expected of you during the past 3 months"
+            }
+          ],
+          "text": "Other substances that have caused you to fail to do what was normally expected of you during the past 3 months",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA28139-6",
+                "display": "Alcohol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31131-8",
+                "display": "Tobacco"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA15260-5",
+                "display": "Steroids"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31132-6",
+                "display": "Illegal/illicit drugs"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "/95498-2/95469-3",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95469-3",
+              "display": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of other substances"
+            }
+          ],
+          "text": "During the past 3 months, how often have you failed to do what was normally expected of you because of your use of other substances",
+          "type": "choice",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA6270-8",
+                "display": "Never"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 5
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA26460-8",
+                "display": "Once or twice"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 6
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18876-5",
+                "display": "Monthly"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 7
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18891-4",
+                "display": "Weekly"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 8
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18934-2",
+                "display": "Daily or almost daily"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "/95470-1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95470-1",
+          "display": "Has a friend or relative or anyone else ever expressed concern about your use of cannabis (marijuana, pot, grass, hash, etc.)?"
+        }
+      ],
+      "text": "Has a friend or relative or anyone else ever expressed concern about your use of cannabis (marijuana, pot, grass, hash, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95471-9",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95471-9",
+          "display": "Has a friend or relative or anyone else ever expressed concern about your use of cocaine (coke, crack, etc.)?"
+        }
+      ],
+      "text": "Has a friend or relative or anyone else ever expressed concern about your use of cocaine (coke, crack, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95472-7",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95472-7",
+          "display": "Has a friend or relative or anyone else ever expressed concern about your use of prescribed amphetamine type stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?"
+        }
+      ],
+      "text": "Has a friend or relative or anyone else ever expressed concern about your use of prescribed amphetamine type stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95473-5",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95473-5",
+          "display": "Has a friend or relative or anyone else ever expressed concern about your use of methamphetamine (speed, crystal meth, ice, etc.)?"
+        }
+      ],
+      "text": "Has a friend or relative or anyone else ever expressed concern about your use of methamphetamine (speed, crystal meth, ice, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95474-3",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95474-3",
+          "display": "Has a friend or relative or anyone else ever expressed concern about your use of inhalants (nitrous oxide, glue, gas, paint thinner, etc.)?"
+        }
+      ],
+      "text": "Has a friend or relative or anyone else ever expressed concern about your use of inhalants (nitrous oxide, glue, gas, paint thinner, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95475-0",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95475-0",
+          "display": "Has a friend or relative or anyone else ever expressed concern about your use of sedatives or sleeping pills (Valium, Serepax, Xanax, Ativan, Librium, Rohypnol, GHB, etc.)?"
+        }
+      ],
+      "text": "Has a friend or relative or anyone else ever expressed concern about your use of sedatives or sleeping pills (Valium, Serepax, Xanax, Ativan, Librium, Rohypnol, GHB, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95476-8",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95476-8",
+          "display": "Has a friend or relative or anyone else ever expressed concern about your use of hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)?"
+        }
+      ],
+      "text": "Has a friend or relative or anyone else ever expressed concern about your use of hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95477-6",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95477-6",
+          "display": "Has a friend or relative or anyone else ever expressed concern about your use of street opioids (heroin, opium, etc.)?"
+        }
+      ],
+      "text": "Has a friend or relative or anyone else ever expressed concern about your use of street opioids (heroin, opium, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95478-4",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95478-4",
+          "display": "Has a friend or relative or anyone else ever expressed concern about your use of prescribed opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?"
+        }
+      ],
+      "text": "Has a friend or relative or anyone else ever expressed concern about your use of prescribed opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95480-0",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95480-0",
+          "display": "Other substances that have caused a friend or relative or anyone else to ever express concern about your use of other substances"
+        }
+      ],
+      "text": "Other substances that have caused a friend or relative or anyone else to ever express concern about your use of other substances",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "/95480-0/95481-8",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95481-8",
+              "display": "Other substances that have caused a friend or relative or anyone else to ever express concern about your use"
+            }
+          ],
+          "text": "Other substances that have caused a friend or relative or anyone else to ever express concern about your use",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA28139-6",
+                "display": "Alcohol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31131-8",
+                "display": "Tobacco"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA15260-5",
+                "display": "Steroids"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31132-6",
+                "display": "Illegal/illicit drugs"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "/95480-0/95479-2",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95479-2",
+              "display": "Has a friend or relative or anyone else ever expressed concern about your use of other substances?"
+            }
+          ],
+          "text": "Has a friend or relative or anyone else ever expressed concern about your use of other substances?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18386-5",
+                "display": "No, never"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31150-8",
+                "display": "Yes, but not in the past 3 months"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 6
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31151-6",
+                "display": "Yes, in the past 3 months"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "/95482-6",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95482-6",
+          "display": "Have you ever tried and failed to control, cut down or stop using cannabis (marijuana, pot, grass, hash, etc.)?"
+        }
+      ],
+      "text": "Have you ever tried and failed to control, cut down or stop using cannabis (marijuana, pot, grass, hash, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95483-4",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95483-4",
+          "display": "Have you ever tried and failed to control, cut down or stop using cocaine (coke, crack, etc.)?"
+        }
+      ],
+      "text": "Have you ever tried and failed to control, cut down or stop using cocaine (coke, crack, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95484-2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95484-2",
+          "display": "Have you ever tried and failed to control, cut down or stop using prescribed amphetamine type stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?"
+        }
+      ],
+      "text": "Have you ever tried and failed to control, cut down or stop using prescribed amphetamine type stimulants (Ritalin, Concerta, Dexedrine, Adderall, diet pills, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95485-9",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95485-9",
+          "display": "Have you ever tried and failed to control, cut down or stop using methamphetamine (speed, crystal meth, ice, etc.)?"
+        }
+      ],
+      "text": "Have you ever tried and failed to control, cut down or stop using methamphetamine (speed, crystal meth, ice, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95486-7",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95486-7",
+          "display": "Have you ever tried and failed to control, cut down or stop using inhalants (nitrous oxide, glue, gas, paint thinner, etc.)?"
+        }
+      ],
+      "text": "Have you ever tried and failed to control, cut down or stop using inhalants (nitrous oxide, glue, gas, paint thinner, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95487-5",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95487-5",
+          "display": "Have you ever tried and failed to control, cut down or stop using sedatives or sleeping pills (Valium, Serepax, Xanax, Ativan, Librium, Rohypnol, GHB, etc.)?"
+        }
+      ],
+      "text": "Have you ever tried and failed to control, cut down or stop using sedatives or sleeping pills (Valium, Serepax, Xanax, Ativan, Librium, Rohypnol, GHB, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95488-3",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95488-3",
+          "display": "Have you ever tried and failed to control, cut down or stop using hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)?"
+        }
+      ],
+      "text": "Have you ever tried and failed to control, cut down or stop using hallucinogens (LSD, acid, mushrooms, PCP, Special K, ecstasy, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95489-1",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95489-1",
+          "display": "Have you ever tried and failed to control, cut down or stop using street opioids (heroin, opium, etc.)?"
+        }
+      ],
+      "text": "Have you ever tried and failed to control, cut down or stop using street opioids (heroin, opium, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95490-9",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95490-9",
+          "display": "Have you ever tried and failed to control, cut down or stop using prescribed opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?"
+        }
+      ],
+      "text": "Have you ever tried and failed to control, cut down or stop using prescribed opioids (fentanyl, oxycodone [OxyContin, Percocet], hydrocodone [Vicodin], methadone, buprenorphine, etc.)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "/95499-0",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95499-0",
+          "display": "Other substances that you have ever tried and failed to control, cut down or stop using"
+        }
+      ],
+      "text": "Other substances that you have ever tried and failed to control, cut down or stop using",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "/95499-0/95503-9",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95503-9",
+              "display": "Other substances that you have ever tried and failed to control, cut down or stop using"
+            }
+          ],
+          "text": "Other substances that you have ever tried and failed to control, cut down or stop using",
+          "type": "choice",
+          "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA28139-6",
+                "display": "Alcohol"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31131-8",
+                "display": "Tobacco"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA15260-5",
+                "display": "Steroids"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31132-6",
+                "display": "Illegal/illicit drugs"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "/95499-0/95491-7",
+          "code": [
+            {
+              "system": "http://loinc.org",
+              "code": "95491-7",
+              "display": "Have you ever tried and failed to control, cut down or stop using other substances?"
+            }
+          ],
+          "text": "Have you ever tried and failed to control, cut down or stop using other substances?",
+          "type": "choice",
+          "answerOption": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 0
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA18386-5",
+                "display": "No, never"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 3
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31150-8",
+                "display": "Yes, but not in the past 3 months"
+              }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal": 6
+                }
+              ],
+              "valueCoding": {
+                "system": "http://loinc.org",
+                "code": "LA31151-6",
+                "display": "Yes, in the past 3 months"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "/95492-5",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95492-5",
+          "display": "Have you ever used any drug by injection (NONMEDICAL USE ONLY)?"
+        }
+      ],
+      "text": "Have you ever used any drug by injection (NONMEDICAL USE ONLY)?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA18386-5",
+            "display": "No, never"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31150-8",
+            "display": "Yes, but not in the past 3 months"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA31151-6",
+            "display": "Yes, in the past 3 months"
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "{score}"
+          }
+        }
+      ],
+      "linkId": "/95493-3",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95493-3",
+          "display": "Cannabis substance involvement score"
+        }
+      ],
+      "text": "Cannabis substance involvement score",
+      "type": "decimal"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "{score}"
+          }
+        }
+      ],
+      "linkId": "/95504-7",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95504-7",
+          "display": "Cocaine substance involvement score"
+        }
+      ],
+      "text": "Cocaine substance involvement score",
+      "type": "decimal"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "{score}"
+          }
+        }
+      ],
+      "linkId": "/95505-4",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95505-4",
+          "display": "Prescription stimulants substance involvement score"
+        }
+      ],
+      "text": "Prescription stimulants substance involvement score",
+      "type": "decimal"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "{score}"
+          }
+        }
+      ],
+      "linkId": "/95506-2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95506-2",
+          "display": "Methamphetamine substance involvement score"
+        }
+      ],
+      "text": "Methamphetamine substance involvement score",
+      "type": "decimal"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "{score}"
+          }
+        }
+      ],
+      "linkId": "/95507-0",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95507-0",
+          "display": "Inhalants substance involvement score"
+        }
+      ],
+      "text": "Inhalants substance involvement score",
+      "type": "decimal"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "{score}"
+          }
+        }
+      ],
+      "linkId": "/95508-8",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95508-8",
+          "display": "Sedatives or sleeping pills substance involvement score"
+        }
+      ],
+      "text": "Sedatives or sleeping pills substance involvement score",
+      "type": "decimal"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "{score}"
+          }
+        }
+      ],
+      "linkId": "/95509-6",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95509-6",
+          "display": "Hallucinogens substance involvement score"
+        }
+      ],
+      "text": "Hallucinogens substance involvement score",
+      "type": "decimal"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "{score}"
+          }
+        }
+      ],
+      "linkId": "/95510-4",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95510-4",
+          "display": "Street opioids substance involvement score"
+        }
+      ],
+      "text": "Street opioids substance involvement score",
+      "type": "decimal"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "{score}"
+          }
+        }
+      ],
+      "linkId": "/95511-2",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95511-2",
+          "display": "Prescription opioids substance involvement score"
+        }
+      ],
+      "text": "Prescription opioids substance involvement score",
+      "type": "decimal"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "{score}"
+          }
+        }
+      ],
+      "linkId": "/95512-0",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "95512-0",
+          "display": "Other substance involvement score"
+        }
+      ],
+      "text": "Other substance involvement score",
+      "type": "decimal"
+    }
+  ]
+}

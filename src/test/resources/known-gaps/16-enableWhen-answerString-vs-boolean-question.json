@@ -1,0 +1,27 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "linkId": "smoker",
+      "type": "boolean",
+      "text": "Smoke?"
+    },
+    {
+      "linkId": "cigs",
+      "type": "integer",
+      "text": "Cigs",
+      "enableWhen": [
+        {
+          "question": "smoker",
+          "operator": "=",
+          "answerString": "yes"
+        }
+      ]
+    }
+  ]
+}

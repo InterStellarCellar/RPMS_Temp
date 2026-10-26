@@ -1,0 +1,59 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "string",
+      "text": "Q",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint",
+          "extension": [
+            {
+              "url": "key",
+              "valueId": "k1"
+            },
+            {
+              "url": "severity",
+              "valueCode": "error"
+            },
+            {
+              "url": "expression",
+              "valueString": "true"
+            },
+            {
+              "url": "human",
+              "valueString": "one"
+            }
+          ]
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint",
+          "extension": [
+            {
+              "url": "key",
+              "valueId": "k1"
+            },
+            {
+              "url": "severity",
+              "valueCode": "error"
+            },
+            {
+              "url": "expression",
+              "valueString": "false"
+            },
+            {
+              "url": "human",
+              "valueString": "two"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

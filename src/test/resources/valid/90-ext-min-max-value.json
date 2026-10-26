@@ -1,0 +1,28 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>minValue / maxValue</p></div>"
+  },
+  "id": "valid-minmax",
+  "title": "minValue / maxValue",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 120
+        }
+      ],
+      "linkId": "age",
+      "type": "integer",
+      "text": "Age",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+# location-quality expectations
+# filename<TAB>messageSubstring<TAB>minIssues<TAB>locationSubstring<TAB>lineMode<TAB>lineArg
+# lineMode exact = line==lineArg; min = line>=lineArg; coarse1 = line==1 AND column>lineArg
+# locationSubstring '-' means do not assert location. Multi-row allowed per file.
+
+# 00–09: Accurate JSON / FHIR parse locations (JsonSyntaxChecker / JsonElementLocator)
+00-json-unterminated-object.json	Unterminated object	1	JSON	exact	6
+01-parse-unknown-root-element.json	Unknown element	1	notARealField	min	5
+02-parse-unknown-item-element.json	Unknown element	1	bogusItemField	min	5
+
+# 10–19: Accurate que-2 locations (InvariantLocationEnricher)
+10-que-2-duplicate-root-enriched.json	que-2	2	linkId	min	5
+11-que-2-duplicate-nested-enriched.json	que-2	2	linkId	min	5
+12-que-2-triple-duplicate-enriched.json	que-2	3	linkId	min	5
+13-que-2-duplicate-deep-enriched.json	que-2	2	linkId	min	5
+
+# 20–39: Coarse HAPI instance lines (line=1 + large column) but useful FHIRPath location
+20-que-1-empty-group-coarse-line.json	que-1	1	Questionnaire.item[0]	coarse1	40
+21-que-3-display-code-coarse-line.json	que-3	1	Questionnaire.item[0]	coarse1	40
+22-que-4-both-answers-coarse-line.json	que-4	1	Questionnaire.item[0]	coarse1	40
+23-que-12-three-enableWhen-coarse-line.json	que-12	1	Questionnaire.item[3]	coarse1	40
+24-missing-status-coarse-line.json	minimum required = 1	1	Questionnaire	coarse1	40
+25-missing-linkId-coarse-line.json	linkId	1	Questionnaire.item[0]	coarse1	40
+26-missing-type-nested-coarse-line.json	minimum required = 1	1	Questionnaire.item[0].item[0]	coarse1	40
+27-enableWhen-unknown-linkId-coarse-line.json	linkId	1	Questionnaire.item[1]	coarse1	40
+28-enableWhen-self-reference-coarse-line.json	can't reference itself	1	Questionnaire.item[0]	coarse1	40
+29-per-1-effectivePeriod-coarse-line.json	per-1	1	effectivePeriod	coarse1	40
+30-qty-3-quantity-code-no-system-coarse-line.json	qty-3	1	Quantity	coarse1	40
+31-invalid-id-coarse-line.json	Invalid Resource id	1	Questionnaire.id	coarse1	20
+32-relative-url-coarse-line.json	absolute	1	Questionnaire.url	coarse1	40
+33-subjectType-unknown-coarse-line.json	Unknown code	1	subjectType	coarse1	40
+34-txt-1-script-coarse-line.json	script	1	text.div	coarse1	40
+35-answerOption-missing-value-coarse-line.json	minimum required = 1	1	answerOption[0]	coarse1	40
+36-cpt-2-telecom-coarse-line.json	cpt-2	1	telecom	coarse1	40
+37-dom-3-unreferenced-contained-coarse-line.json	dom-3	1	contained	coarse1	40
+38-que-7-exists-non-boolean-coarse-line.json	que-7	1	enableWhen	coarse1	40
+39-que-13-multiple-initial-coarse-line.json	que-13	1	Questionnaire.item[0]	coarse1	40
+
+# 50–59: Mixed accuracy in one payload
+50-multi-que2-enriched-and-que1-coarse.json	que-2	2	linkId	min	5
+50-multi-que2-enriched-and-que1-coarse.json	que-1	1	Questionnaire.item[0]	coarse1	40
+51-multi-parse-unknown-and-que2.json	Unknown element	1	extraJunk	min	5

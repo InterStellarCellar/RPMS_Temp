@@ -1,0 +1,20 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "Questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Relative meta profile</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

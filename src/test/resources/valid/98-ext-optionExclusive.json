@@ -1,0 +1,47 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>optionExclusive</p></div>"
+  },
+  "id": "valid-option-excl",
+  "title": "optionExclusive",
+  "item": [
+    {
+      "linkId": "symptoms",
+      "type": "choice",
+      "text": "Symptoms",
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/cs",
+            "code": "fever",
+            "display": "Fever"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://example.org/cs",
+            "code": "cough",
+            "display": "Cough"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionExclusive",
+              "valueBoolean": true
+            }
+          ],
+          "valueCoding": {
+            "system": "http://example.org/cs",
+            "code": "none",
+            "display": "None of the above"
+          }
+        }
+      ]
+    }
+  ]
+}

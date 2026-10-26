@@ -1,0 +1,34 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "valid-ew-quantity",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>enableWhen with answerQuantity</p></div>"
+  },
+  "title": "enableWhen answerQuantity",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "weight",
+      "type": "quantity",
+      "text": "Weight"
+    },
+    {
+      "linkId": "heavy",
+      "type": "display",
+      "text": "High weight pathway",
+      "enableWhen": [
+        {
+          "question": "weight",
+          "operator": ">",
+          "answerQuantity": {
+            "value": 100,
+            "unit": "kg",
+            "system": "http://unitsofmeasure.org",
+            "code": "kg"
+          }
+        }
+      ]
+    }
+  ]
+}

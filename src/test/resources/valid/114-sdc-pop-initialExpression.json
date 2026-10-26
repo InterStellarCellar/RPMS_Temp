@@ -1,0 +1,44 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Valid SDC populate expression</p></div>"
+  },
+  "id": "valid-sdc-pop",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp"
+    ]
+  },
+  "url": "http://example.org/fhir/Questionnaire/valid-sdc-pop",
+  "version": "1.0.0",
+  "name": "ValidSdcPop",
+  "title": "Valid SDC populate expression",
+  "date": "2024-06-01",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%patient.name.first().given.first()"
+          }
+        }
+      ],
+      "linkId": "given",
+      "type": "string",
+      "text": "Given name"
+    }
+  ]
+}

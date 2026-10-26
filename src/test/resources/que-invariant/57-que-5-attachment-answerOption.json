@@ -1,0 +1,14 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "attachment",
+      "text": "Upload file",
+      "answerOption": [
+        { "valueString": "file.pdf" }
+      ]
+    }
+  ]
+}

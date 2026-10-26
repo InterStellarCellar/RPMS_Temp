@@ -1,0 +1,38 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Terminology corpus fixture</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "a",
+      "type": "choice",
+      "text": "A",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "code": "male"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "b",
+      "type": "string",
+      "text": "B",
+      "enableWhen": [
+        {
+          "question": "a",
+          "operator": "=",
+          "answerCoding": {
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "code": "alien"
+          }
+        }
+      ]
+    }
+  ]
+}

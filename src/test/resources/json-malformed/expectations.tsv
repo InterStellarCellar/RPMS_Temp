@@ -1,0 +1,67 @@
+# filename	minIssues	expectedMessageSubstring (first matching issue must contain this)
+00-empty.json	1	Unexpected end of input
+01-whitespace-only.json	1	Unexpected end of input
+02-truncated-eof-after-open-brace.json	1	Unterminated object
+03-truncated-eof-after-open-bracket.json	1	Unterminated array
+04-truncated-eof-after-colon.json	1	Unexpected end of input
+05-truncated-eof-after-comma.json	1	Unterminated object
+06-truncated-eof-mid-string.json	1	Unterminated string
+07-trailing-text-after-object.json	1	Unexpected content after the top-level JSON value
+08-trailing-second-object.json	1	Unexpected content after the top-level JSON value
+09-leading-close-brace.json	1	Expected a JSON value
+10-leading-close-bracket.json	1	Expected a JSON value
+11-leading-comma.json	1	Expected a JSON value
+12-leading-colon.json	1	Expected a JSON value
+13-object-comma-no-value.json	1	Expected a string key
+14-object-colon-no-key.json	1	Expected a string key
+15-bareword-value.json	1	Unexpected character
+16-single-quoted-string.json	1	Expected a string key
+17-at-sign-token.json	1	Unexpected character
+18-object-missing-close-brace.json	1	Unterminated object
+19-object-trailing-comma.json	1	Trailing comma in object
+20-object-bare-key.json	1	Expected a string key
+21-object-missing-colon.json	1	Expected ':' after object key
+22-object-missing-comma.json	1	Expected ',' or '}'
+23-object-numeric-key.json	1	Expected a string key
+24-array-missing-close-bracket.json	1	Expected ',' or ']'
+25-array-trailing-comma.json	1	Trailing comma in array
+26-array-missing-comma.json	1	Expected ',' or ']'
+27-array-close-brace-inside.json	1	Expected
+28-string-unterminated-eof.json	1	Unterminated string
+29-string-unterminated-newline.json	1	Unterminated string
+30-string-unescaped-control-tab.json	1	Unescaped control character
+31-string-invalid-escape-backslash-q.json	1	Invalid escape character
+32-string-invalid-escape-backslash-a.json	1	Invalid escape character
+33-string-unicode-too-short.json	1	Invalid \u escape
+34-string-unicode-non-hex.json	1	Invalid \u escape
+35-string-backslash-eof.json	1	Unterminated string
+36-literal-tru.json	1	Invalid literal 'tru'
+37-literal-True-capital.json	1	Unexpected character 'T'
+38-literal-FALSE-caps.json	1	Unexpected character 'F'
+39-literal-nul.json	1	Invalid literal 'nul'
+40-literal-nil.json	1	Invalid literal 'nil'
+41-literal-undefined.json	1	Unexpected character
+42-number-leading-zero.json	1	leading zeros
+43-number-bare-minus.json	1	Invalid number
+44-number-trailing-dot.json	1	digit after the decimal point
+45-number-bare-exponent.json	1	digit in the exponent
+46-number-exponent-sign-only.json	1	digit in the exponent
+47-number-alpha-suffix.json	1	Invalid number
+48-number-double-dot.json	1	Invalid number
+49-number-plus-sign.json	1	Unexpected character
+50-number-hex-notation.json	1	Invalid number
+51-depth-too-deep-objects.json	1	nested too deeply
+52-depth-too-deep-arrays.json	1	nested too deeply
+53-near-miss-missing-comma-after-resourcetype.json	1	Expected ',' or '}'
+54-near-miss-trailing-comma-in-item.json	1	Trailing comma in object
+55-near-miss-missing-colon-in-item.json	1	Expected ':' after object key
+56-near-miss-unclosed-item-array.json	1	Expected ',' or ']'
+57-near-miss-single-quote-in-value.json	1	Unexpected character
+90-multi-missing-comma-and-bad-literal.json	2	Expected ',' or '}'
+91-multi-trailing-comma-and-bad-number.json	2	leading zeros
+92-multi-bad-escape-and-missing-comma.json	2	Invalid escape
+93-multi-bare-key-and-trailing-text.json	2	Expected a string key
+94-multi-three-independent-errors.json	3	Expected ',' or '}'
+95-multi-nested-object-and-array-errors.json	2	Expected
+96-multi-string-and-number-errors.json	2	Invalid \u escape
+97-multi-four-errors-kitchen-sink.json	3	Expected ',' or '}'

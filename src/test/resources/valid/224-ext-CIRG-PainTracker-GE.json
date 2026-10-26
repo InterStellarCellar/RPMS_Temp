@@ -1,0 +1,430 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-PainTracker-GE",
+  "name": "CIRG PainTracker patient goals and expectations",
+  "title": "PainTracker patient goals and expectations questionnaire",
+  "description": "The patient goals and expectations questionnaire is novel to PainTracker; it contains questions about patient's expectations and treatment goals from their visits to the UWMC Center for Pain Relief.",
+  "status": "active",
+  "item": [
+    {
+      "linkId": "GE-1-1",
+      "text": "1st",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "GE-1-1-1",
+            "display": "A diagnosis (to help find the cause of pain)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-1-2",
+            "display": "Help in coping with the pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-1-3",
+            "display": "A reduction in pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-1-4",
+            "display": "A cure"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-1-5",
+            "display": "Help getting back to important activities"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-1-6",
+            "display": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "GE-1-2",
+      "text": "2nd",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "GE-1-2-1",
+            "display": "A diagnosis (to help find the cause of pain)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-2-2",
+            "display": "Help in coping with the pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-2-3",
+            "display": "A reduction in pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-2-4",
+            "display": "A cure"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-2-5",
+            "display": "Help getting back to important activities"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-2-6",
+            "display": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "GE-1-3",
+      "text": "3rd",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "GE-1-3-1",
+            "display": "A diagnosis (to help find the cause of pain)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-3-2",
+            "display": "Help in coping with the pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-3-3",
+            "display": "A reduction in pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-3-4",
+            "display": "A cure"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-3-5",
+            "display": "Help getting back to important activities"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-1-3-6",
+            "display": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "GE-2-1",
+      "text": "1st",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "GE-2-1-1",
+            "display": "Consultation only (advice only to you and your primary care physician)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-2",
+            "display": "Counseling"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-3",
+            "display": "Stress management"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-4",
+            "display": "Physical therapy"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-5",
+            "display": "Medications for pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-6",
+            "display": "Acupuncture"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-7",
+            "display": "Surgery"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-8",
+            "display": "Relaxation therapy"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-9",
+            "display": "Biofeedback"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-10",
+            "display": "Injections or nerve blocks"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-11",
+            "display": "Electrical stimulation such as TENS unit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-12",
+            "display": "Spinal cord stimulator"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-13",
+            "display": "Implanted medication pump"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-14",
+            "display": "Don't know"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-1-15",
+            "display": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "GE-2-2",
+      "text": "2nd",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "GE-2-2-1",
+            "display": "Consultation only (advice only to you and your primary care physician)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-2",
+            "display": "Counseling"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-3",
+            "display": "Stress management"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-4",
+            "display": "Physical therapy"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-5",
+            "display": "Medications for pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-6",
+            "display": "Acupuncture"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-7",
+            "display": "Surgery"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-8",
+            "display": "Relaxation therapy"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-9",
+            "display": "Biofeedback"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-10",
+            "display": "Injections or nerve blocks"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-11",
+            "display": "Electrical stimulation such as TENS unit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-12",
+            "display": "Spinal cord stimulator"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-13",
+            "display": "Implanted medication pump"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-14",
+            "display": "Don't know"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-2-15",
+            "display": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "GE-2-3",
+      "text": "3rd",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "GE-2-3-1",
+            "display": "Consultation only (advice only to you and your primary care physician)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-2",
+            "display": "Counseling"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-3",
+            "display": "Stress management"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-4",
+            "display": "Physical therapy"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-5",
+            "display": "Medications for pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-6",
+            "display": "Acupuncture"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-7",
+            "display": "Surgery"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-8",
+            "display": "Relaxation therapy"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-9",
+            "display": "Biofeedback"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-10",
+            "display": "Injections or nerve blocks"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-11",
+            "display": "Electrical stimulation such as TENS unit"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-12",
+            "display": "Spinal cord stimulator"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-13",
+            "display": "Implanted medication pump"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-14",
+            "display": "Don't know"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "GE-2-3-15",
+            "display": "Other"
+          }
+        }
+      ]
+    }
+  ]
+}

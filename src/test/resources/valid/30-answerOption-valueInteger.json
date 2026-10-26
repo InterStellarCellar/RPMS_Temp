@@ -1,0 +1,28 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>answerOption integers</p></div>"
+  },
+  "id": "valid-ao-int",
+  "title": "answerOption integers",
+  "item": [
+    {
+      "linkId": "score",
+      "type": "choice",
+      "text": "Score",
+      "answerOption": [
+        {
+          "valueInteger": 0
+        },
+        {
+          "valueInteger": 1
+        },
+        {
+          "valueInteger": 2
+        }
+      ]
+    }
+  ]
+}

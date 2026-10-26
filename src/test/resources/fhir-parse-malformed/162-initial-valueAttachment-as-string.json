@@ -1,0 +1,16 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "attachment",
+      "text": "Q",
+      "initial": [
+        {
+          "valueAttachment": "data:text/plain;base64,SGVsbG8="
+        }
+      ]
+    }
+  ]
+}

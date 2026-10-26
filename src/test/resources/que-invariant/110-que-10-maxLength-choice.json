@@ -1,0 +1,16 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "choice",
+      "text": "Pick one",
+      "maxLength": 100,
+      "answerOption": [
+        { "valueString": "A" },
+        { "valueString": "B" }
+      ]
+    }
+  ]
+}

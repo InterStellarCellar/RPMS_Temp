@@ -1,0 +1,35 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Valid SDC search</p></div>"
+  },
+  "id": "valid-sdc-search",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-search"
+    ]
+  },
+  "url": "http://example.org/fhir/Questionnaire/valid-sdc-search",
+  "version": "1.0.0",
+  "name": "ValidSdcSearch",
+  "title": "Valid SDC search",
+  "date": "2024-06-01",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

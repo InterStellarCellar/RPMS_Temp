@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Choice with answerValueSet</p></div>"
+  },
+  "id": "valid-choice-vs",
+  "title": "Choice with answerValueSet",
+  "item": [
+    {
+      "linkId": "yn",
+      "type": "choice",
+      "text": "Yes/No/Don't know",
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+    }
+  ]
+}

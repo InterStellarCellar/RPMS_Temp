@@ -1,0 +1,31 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Terminology corpus fixture</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "a",
+      "type": "quantity",
+      "text": "A"
+    },
+    {
+      "linkId": "b",
+      "type": "string",
+      "text": "B",
+      "enableWhen": [
+        {
+          "question": "a",
+          "operator": ">",
+          "answerQuantity": {
+            "value": 5,
+            "system": "http://unitsofmeasure.org",
+            "code": "notARealUcum"
+          }
+        }
+      ]
+    }
+  ]
+}

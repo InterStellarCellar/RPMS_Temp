@@ -1,0 +1,160 @@
+# filename	minIssues	expectedMessageSubstring
+# UV Extensions corpus — Questionnaire extensions from hl7.fhir.uv.extensions.r4
+# All fixtures are valid JSON + clean FHIR parse; issues come from instance validation of extension SDs.
+
+# 00–09: nested-only on simple extensions (empty extensions are stripped by HAPI — see README)
+06-minValue-nested-only.json	1	simple extension
+07-hidden-nested-only.json	1	simple extension
+# 10–79: wrong value[x] type for UV Questionnaire extensions
+10-minValue-as-string.json	1	but found type string
+11-minValue-as-boolean.json	1	but found type boolean
+12-maxValue-as-string.json	1	but found type string
+13-maxValue-as-boolean.json	1	but found type boolean
+14-minLength-as-string.json	1	but found type string
+15-minLength-as-decimal.json	1	but found type decimal
+16-maxDecimalPlaces-as-string.json	1	but found type string
+17-maxDecimalPlaces-as-boolean.json	1	but found type boolean
+18-maxSize-as-string.json	1	but found type string
+19-maxSize-as-boolean.json	1	but found type boolean
+20-mimeType-as-boolean.json	1	but found type boolean
+21-mimeType-as-integer.json	1	but found type integer
+22-regex-as-boolean.json	1	but found type boolean
+23-regex-as-integer.json	1	but found type integer
+24-entryFormat-as-boolean.json	1	but found type boolean
+25-entryFormat-as-integer.json	1	but found type integer
+26-ordinalValue-as-string.json	1	but found type string
+27-itemWeight-as-string.json	1	but found type string
+28-designNote-as-boolean.json	1	but found type boolean
+29-designNote-as-integer.json	1	but found type integer
+30-preferredTxServer-as-boolean.json	1	but found type boolean
+31-preferredTxServer-as-integer.json	1	but found type integer
+32-hidden-as-string.json	1	but found type string
+33-hidden-as-integer.json	1	but found type integer
+34-sliderStep-as-string.json	1	but found type string
+35-sliderStep-as-boolean.json	1	but found type boolean
+36-supportLink-as-boolean.json	1	but found type boolean
+37-supportLink-as-integer.json	1	but found type integer
+38-minOccurs-as-string.json	1	but found type string
+39-maxOccurs-as-boolean.json	1	but found type boolean
+40-unit-as-string.json	1	but found type string
+41-unit-as-boolean.json	1	but found type boolean
+42-unitOption-as-string.json	1	but found type string
+43-unitOption-as-boolean.json	1	but found type boolean
+44-unitValueSet-as-boolean.json	1	but found type boolean
+45-unitValueSet-as-integer.json	1	but found type integer
+46-referenceResource-as-boolean.json	1	but found type boolean
+47-referenceResource-as-integer.json	1	but found type integer
+48-referenceProfile-as-boolean.json	1	but found type boolean
+49-referenceProfile-as-integer.json	1	but found type integer
+50-referenceFilter-as-boolean.json	1	but found type boolean
+51-referenceFilter-as-integer.json	1	but found type integer
+52-baseType-as-boolean.json	1	but found type boolean
+53-baseType-as-integer.json	1	but found type integer
+54-fhirType-as-boolean.json	1	but found type boolean
+55-fhirType-as-integer.json	1	but found type integer
+56-definitionBased-as-string.json	1	but found type string
+57-definitionBased-as-integer.json	1	but found type integer
+58-choiceOrientation-as-boolean.json	1	but found type boolean
+59-choiceOrientation-as-integer.json	1	but found type integer
+60-usageMode-as-boolean.json	1	but found type boolean
+61-usageMode-as-integer.json	1	but found type integer
+62-itemControl-as-string.json	1	but found type string
+63-itemControl-as-boolean.json	1	but found type boolean
+64-displayCategory-as-string.json	1	but found type string
+65-displayCategory-as-boolean.json	1	but found type boolean
+66-signatureRequired-as-string.json	1	but found type string
+67-signatureRequired-as-boolean.json	1	but found type boolean
+68-optionExclusive-as-string.json	1	but found type string
+69-optionExclusive-as-integer.json	1	but found type integer
+70-optionPrefix-as-boolean.json	1	but found type boolean
+71-optionPrefix-as-integer.json	1	but found type integer
+72-indexAnswer-as-string.json	1	but found type string
+73-indexAnswer-as-integer.json	1	but found type integer
+74-variable-as-string.json	1	var-1
+75-variable-as-boolean.json	1	var-1
+76-versionAlgorithm-as-boolean.json	1	but found type boolean
+77-versionAlgorithm-as-integer.json	1	but found type integer
+78-versionPolicy-as-string.json	1	but found type string
+79-versionPolicy-as-boolean.json	1	but found type boolean
+# 80–99: binding / coding / canonical format
+81-choiceOrientation-invalid-code.json	1	Unknown code 'http://hl7.org/fhir/choice-list-orientation#diagonal'
+82-usageMode-invalid-code.json	1	Unknown code 'http://hl7.org/fhir/questionnaire-usage-mode#not-a-mode'
+83-baseType-invalid-code.json	1	Unknown code 'http://hl7.org/fhir/data-types#NotAFhirType'
+84-referenceResource-invalid-code.json	1	Unknown code 'http://hl7.org/fhir/resource-types#NotAResource'
+85-itemControl-unknown-coding.json	1	Unknown code 'http://hl7.org/fhir/questionnaire-item-control#not-a-real-control'
+86-displayCategory-unknown-coding.json	1	Unknown code 'http://hl7.org/fhir/questionnaire-display-category#not-a-category'
+87-versionAlgorithm-unknown-coding.json	1	Unknown code 'http://hl7.org/fhir/version-algorithm#not-an-algorithm'
+88-versionPolicy-unknown-coding.json	1	Unknown code 'http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes#not-a-policy'
+89-unitValueSet-not-absolute.json	1	absolute
+90-referenceProfile-not-absolute.json	1	absolute
+91-permitted-valueset-as-boolean.json	1	but found type boolean
+92-permitted-valueset-on-answerValueSet.json	1	but found type boolean
+93-permitted-conceptmap-as-boolean.json	1	but found type boolean
+94-elementdefinition-conceptmap-as-boolean.json	1	but found type boolean
+97-itemControl-codeableconcept-id-only.json	1	No code provided
+# 100–129: complex extension structure (constraint, targetConstraint, supportHyperlink, optionRestriction)
+101-constraint-only-key.json	1	minimum required
+102-constraint-missing-severity.json	1	minimum required
+103-constraint-missing-expression.json	1	minimum required
+104-constraint-missing-human.json	1	minimum required
+105-constraint-invalid-severity.json	1	Unknown code 'http://hl7.org/fhir/constraint-severity#critical'
+106-constraint-severity-as-boolean.json	1	but found type boolean
+107-constraint-key-as-boolean.json	1	but found type boolean
+109-constraint-expression-as-boolean.json	1	but found type boolean
+111-targetConstraint-missing-expression.json	1	minimum required
+112-targetConstraint-invalid-severity.json	1	Unknown code 'http://hl7.org/fhir/constraint-severity#fatal'
+113-targetConstraint-expression-as-string.json	1	but found type string
+116-cqf-targetInvariant-missing-key.json	1	minimum required
+117-cqf-targetInvariant-invalid-severity.json	1	Unknown code 'http://hl7.org/fhir/constraint-severity#panic'
+119-supportHyperlink-label-only.json	1	minimum required
+120-supportHyperlink-link-only.json	1	minimum required
+121-supportHyperlink-label-as-boolean.json	1	but found type boolean
+122-supportHyperlink-link-as-boolean.json	1	but found type boolean
+125-optionRestriction-option-only.json	1	not allowed to be used at this point
+126-optionRestriction-expression-only.json	1	not allowed to be used at this point
+127-optionRestriction-expression-as-string.json	1	not allowed to be used at this point
+128-optionRestriction-option-as-boolean.json	1	not allowed to be used at this point
+# 130–149: variable / Expression (var-1, exp-1)
+130-variable-missing-name.json	1	var-1
+133-variable-on-item-missing-name.json	1	var-1
+# 150–169: wrong extension context
+150-optionExclusive-on-item.json	1	not allowed to be used at this point
+151-optionPrefix-on-item.json	1	not allowed to be used at this point
+152-ordinalValue-on-item.json	1	not allowed to be used at this point
+153-itemWeight-on-item.json	1	not allowed to be used at this point
+154-minValue-on-questionnaire-root.json	1	not allowed to be used at this point
+155-hidden-on-questionnaire-root.json	1	not allowed to be used at this point
+156-itemControl-on-questionnaire-root.json	1	not allowed to be used at this point
+157-unit-on-questionnaire-root.json	1	not allowed to be used at this point
+158-definitionBased-on-item.json	1	not allowed to be used at this point
+159-indexAnswer-on-item.json	1	not allowed to be used at this point
+# 170–189: additional wrong-type / datatype edge cases
+170-maxSize-as-integer.json	1	but found type integer
+171-minValue-as-markdown.json	1	but found type markdown
+172-mimeType-as-coding.json	1	but found type Coding
+173-choiceOrientation-as-coding.json	1	but found type Coding
+174-usageMode-as-coding.json	1	but found type Coding
+175-supportLink-as-url.json	1	but found type url
+176-unitValueSet-as-uri.json	1	but found type uri
+177-referenceProfile-as-uri.json	1	but found type uri
+178-preferredTxServer-as-uri.json	1	but found type uri
+179-regex-as-markdown.json	1	but found type markdown
+180-minOccurs-as-decimal.json	1	but found type decimal
+181-maxOccurs-as-decimal.json	1	but found type decimal
+182-sliderStep-as-decimal.json	1	but found type decimal
+183-ordinalValue-as-integer.json	1	but found type integer
+184-itemWeight-as-integer.json	1	but found type integer
+185-minLength-as-boolean.json	1	but found type boolean
+186-maxDecimalPlaces-as-decimal.json	1	but found type decimal
+189-artifact-author-as-string.json	1	but found type string
+# 190–199: multi-error combos
+190-multi-minValue-string-and-hidden-string.json	1	StructureDefinition/minValue
+190-multi-minValue-string-and-hidden-string.json	1	StructureDefinition/questionnaire-hidden
+191-multi-unit-string-and-usageMode-invalid.json	1	StructureDefinition/questionnaire-unit
+191-multi-unit-string-and-usageMode-invalid.json	1	Unknown code
+192-multi-constraint-missing-and-variable-no-name.json	1	minimum required
+192-multi-constraint-missing-and-variable-no-name.json	1	var-1
+193-multi-supportHyperlink-and-itemControl-wrong-type.json	1	matching slice is required
+193-multi-supportHyperlink-and-itemControl-wrong-type.json	1	but found type string
+194-multi-optionExclusive-string-and-ordinal-string.json	1	StructureDefinition/questionnaire-optionExclusive
+194-multi-optionExclusive-string-and-ordinal-string.json	1	StructureDefinition/ordinalValue

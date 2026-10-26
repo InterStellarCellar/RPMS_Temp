@@ -1,0 +1,278 @@
+{
+  "resourceType": "Questionnaire",
+  "title": "HPAI Provider Questionnaire (9-Jan v5 DRAFT)",
+  "id": "fbc4adde-f647-4fc6-b08a-c151c940f4b9",
+  "status": "draft",
+  "url": "http://forms.aidbox.io/questionnaire/fbc4adde-f647-4fc6-b08a-c151c940f4b9",
+  "meta": {
+    "lastUpdated": "2026-01-09T22:00:43.982390Z",
+    "versionId": "14276",
+    "extension": [
+      {
+        "url": "https://aidbox.app/ex/createdAt",
+        "valueInstant": "2026-01-09T21:46:04.315464Z"
+      }
+    ]
+  },
+  "item": [
+    {
+      "text": "WA DOH suggests that healthcare systems add the following screening questions for patients with ILI:\n\n  \nIn the **10 days before symptom onset**, has the patient had: ",
+      "type": "display",
+      "linkId": "OZeDhhS5"
+    },
+    {
+      "item": [
+        {
+          "text": "Please add brief notes for the public health investigator",
+          "type": "text",
+          "linkId": "hpai-0B",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%resource.item.where(linkId = 'hpai-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-0').answer.valueCoding.code = 'hpai-0-yes'"
+              }
+            }
+          ]
+        }
+      ],
+      "text": "...contact (within 6 feet) with a **person who is suspected or confirmed to** have avian influenza, also called \"bird flu\"?",
+      "type": "choice",
+      "linkId": "hpai-0",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "radio-button",
+                "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+          "valueCode": "horizontal"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "hpai-0-no",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "hpai-0-yes",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "text": "Please add brief notes for the public health investigator",
+          "type": "text",
+          "linkId": "hpai-1B",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%resource.item.where(linkId = 'hpai-1').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-1').answer.valueCoding.code = 'hpai-1-yes'"
+              }
+            }
+          ]
+        }
+      ],
+      "text": "...close contact with  **sick or dead animals** or their environments, including birds, wildlife, livestock (e.g., cows, pigs, or poultry), or domestic cats?",
+      "type": "choice",
+      "linkId": "hpai-1",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "radio-button",
+                "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+          "valueCode": "horizontal"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "hpai-1-no",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "hpai-1-yes",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "text": "### Use contact, droplet, and airborne precautions with eye protection (goggles or face shield). If possible, isolate the patient in an airborne infection isolation room (AIIR; negative pressure room).\n \n \nThis patient has a **Notifiable condition in WA State** and should be reported to your local health department.",
+      "type": "display",
+      "linkId": "hpai-rec-0",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId = 'hpai-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-0').answer.valueCoding.code = 'hpai-0-yes') or (%resource.item.where(linkId = 'hpai-1').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-1').answer.valueCoding.code = 'hpai-1-yes') or (%resource.item.where(linkId = 'hpai-2').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-2').answer.valueCoding.code = 'hpai-2-yes')"
+          }
+        }
+      ]
+    },
+    {
+      "item": [
+        {
+          "text": "#### This link offers information about outpatient isolation protocols (this URL is just an example): \n\n[https://www.cdc.gov/bird-flu/hcp/clinicians-evaluating-patients/](https://www.cdc.gov/bird-flu/hcp/clinicians-evaluating-patients/)",
+          "type": "display",
+          "linkId": "kHqagscX",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%resource.item.where(linkId = 'hpai-setting').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-setting').answer.valueCoding.code = 'hpai-setting-out'"
+              }
+            }
+          ]
+        },
+        {
+          "text": "### Follow your organizations protocols for respiratory isolation",
+          "type": "display",
+          "linkId": "K9DCTrxl",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%resource.item.where(linkId = 'hpai-setting').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-setting').answer.valueCoding.code != 'hpai-setting-out'"
+              }
+            }
+          ]
+        }
+      ],
+      "text": "Is the patient in an outpatient or inpatient setting?",
+      "type": "choice",
+      "linkId": "hpai-setting",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "(%resource.item.where(linkId = 'hpai-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-0').answer.valueCoding.code = 'hpai-0-yes') or (%resource.item.where(linkId = 'hpai-1').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-1').answer.valueCoding.code = 'hpai-1-yes') or (%resource.item.where(linkId = 'hpai-2').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-2').answer.valueCoding.code = 'hpai-2-yes')"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "radio-button",
+                "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+          "valueCode": "horizontal"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "hpai-setting-out",
+            "display": "Outpatient"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "hpai-setting-ed",
+            "display": "ED or Urgent Care"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "hpai-setting-in",
+            "display": "Inpatient"
+          }
+        }
+      ]
+    },
+    {
+      "text": "_______________________________",
+      "type": "display",
+      "linkId": "Ao2sQ8Sr"
+    },
+    {
+      "item": [
+        {
+          "text": "Please add brief notes for the public health investigator",
+          "type": "text",
+          "linkId": "hpai-3B",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%resource.item.where(linkId = 'hpai-3').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-3').answer.valueCoding.code = 'hpai-3-yes'"
+              }
+            }
+          ]
+        }
+      ],
+      "text": "Has the patient consumed or handled **raw animal foods for humans or pets** (e.g., raw cow milk, cheeses or other products made with raw cow milk, raw meat, or raw meat-based pet food)?",
+      "type": "choice",
+      "linkId": "hpai-3",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "radio-button",
+                "system": "http://hl7.org/fhir/ValueSet/questionnaire-item-control"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-choiceOrientation",
+          "valueCode": "horizontal"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "hpai-3-no",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "hpai-3-yes",
+            "display": "Yes"
+          }
+        }
+      ]
+    }
+  ]
+}

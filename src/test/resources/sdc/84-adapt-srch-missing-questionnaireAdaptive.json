@@ -1,0 +1,28 @@
+{
+  "resourceType": "Questionnaire",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-adapt-srch"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">SDC test</div>"
+  },
+  "status": "draft",
+  "url": "http://example.org/fhir/Questionnaire/sdc-test",
+  "version": "1.0.0",
+  "name": "SdcTest",
+  "title": "Adaptive Search",
+  "date": "2024-01-01",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "item": []
+}

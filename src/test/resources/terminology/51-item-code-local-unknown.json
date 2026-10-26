@@ -1,0 +1,21 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Terminology corpus fixture</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q",
+      "code": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0001",
+          "code": "ZZ"
+        }
+      ]
+    }
+  ]
+}

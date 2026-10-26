@@ -1,0 +1,70 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-CNICS-FINANCIAL",
+  "title": "CNICS Financial Situation Questionnaire",
+  "status": "active",
+  "description": "CNICS Financial situation questionnaire. Based on: Rice E, Green S, Santos K, Lester P, Rotheram-Borus MJ. A lifetime of low-risk behaviors among HIV-positive Latinas in Los Angeles. J Immigr Minor Health. 2010;12(6):875-881.",
+  "item": [
+    {
+      "linkId": "FINANCIAL-0",
+      "text": "Which of the following best describes your financial situation?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "FINANCIAL-0-0",
+            "display": "Struggling to survive, not enough money to pay bills and buy food"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FINANCIAL-0-1",
+            "display": "Barely paying the bills"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FINANCIAL-0-2",
+            "display": "Have the necessities, have money to cover needs"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "FINANCIAL-0-3",
+            "display": "Comfortable, have money to purchase extras"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "FINANCIAL-score-label",
+      "text": "Financial Situation Questionnaire score: label",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='FINANCIAL-0').answer.valueCoding.code = 'FINANCIAL-0-0', 'Struggling to survive', iif(%resource.item.where(linkId='FINANCIAL-0').answer.valueCoding.code = 'FINANCIAL-0-1', 'Barely paying the bills', iif(%resource.item.where(linkId='FINANCIAL-0').answer.valueCoding.code = 'FINANCIAL-0-2', 'Has necessities', iif(%resource.item.where(linkId='FINANCIAL-0').answer.valueCoding.code = 'FINANCIAL-0-3', 'Comfortable', null))))"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "FINANCIAL-critical-flag",
+      "text": "Financial Situation Questionnaire score: critical flag",
+      "type": "boolean",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='FINANCIAL-0').answer.valueCoding.code = 'FINANCIAL-0-0'"
+          }
+        }
+      ]
+    }
+  ]
+}

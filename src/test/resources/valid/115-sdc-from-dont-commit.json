@@ -1,0 +1,101 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "valid-sdc-dont-commit",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>SDC base Questionnaire</p><p>Name, age (0\u2013120), smoking status, and visit reason.</p></div>"
+  },
+  "url": "http://example.org/fhir/Questionnaire/sdc-valid",
+  "version": "1.0.0",
+  "name": "SdcValidExample",
+  "title": "Valid SDC Questionnaire",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "description": "Minimal Questionnaire conforming to the SDC Base Questionnaire profile. meta.profile is unversioned so it matches the loaded hl7.fhir.uv.sdc.r4 ci-build package. url is required by SDC.",
+  "item": [
+    {
+      "linkId": "name",
+      "text": "What is your name?",
+      "type": "string",
+      "required": true
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 120
+        }
+      ],
+      "linkId": "age",
+      "text": "Age in years",
+      "type": "integer",
+      "required": true
+    },
+    {
+      "linkId": "smoker",
+      "text": "Do you currently smoke?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "cigs-per-day",
+      "text": "How many cigarettes per day?",
+      "type": "integer",
+      "enableWhen": [
+        {
+          "question": "smoker",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "reason",
+      "text": "Why are you here today?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/visit-reason",
+            "code": "routine",
+            "display": "Routine visit"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/visit-reason",
+            "code": "follow-up",
+            "display": "Follow-up"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/visit-reason",
+            "code": "new-problem",
+            "display": "New problem"
+          }
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "date": "2024-06-01"
+}

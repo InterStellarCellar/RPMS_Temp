@@ -1,0 +1,31 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Unknown enableWhen linkId and per-1</div>"
+  },
+  "status": "draft",
+  "effectivePeriod": {
+    "start": "2025-12-31",
+    "end": "2025-01-01"
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "type": "boolean",
+      "text": "Trigger"
+    },
+    {
+      "linkId": "2",
+      "type": "string",
+      "text": "Conditional",
+      "enableWhen": [
+        {
+          "question": "nope",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ]
+    }
+  ]
+}

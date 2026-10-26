@@ -1,0 +1,192 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-PC-PTSD-5",
+  "title": "The Primary Care PTSD Screen for DSM-5 [PC-PTSD-5]",
+  "name": "The Primary Care PTSD Screen for DSM-5 [PC-PTSD-5]",
+  "description": "The Primary Care PTSD Screen for DSM-5 (PC-PTSD-5). Reference: [https://www.ptsd.va.gov/professional/assessment/screens/pc-ptsd.asp ](https://www.ptsd.va.gov/professional/assessment/screens/pc-ptsd.asp)",
+  "status": "active",
+  "code": [
+    {
+      "system": "http://loinc.org",
+      "code": "102010-6",
+      "display": "The Primary Care PTSD Screen for DSM-5 [PC-PTSD-5]"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "introduction",
+      "type": "display",
+      "text": "Sometimes things happen to people that are unusually or especially frightening, horrible, or traumatic. For example: a serious accident or fire; a physical or sexual assault or abuse; an earthquake or flood; a war; seeing someone be killed or seriously injured; having a loved one die through homicide or suicide."
+    },
+    {
+      "type": "choice",
+      "required": false,
+      "linkId": "/102011-4",
+      "text": "Have you ever experienced this kind of event?",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA33-6",
+            "display": "Yes",
+            "system": "http://loinc.org"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA32-8",
+            "display": "No",
+            "system": "http://loinc.org"
+          }
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "required": false,
+      "linkId": "/102012-2",
+      "text": "In the past month, have you had nightmares about the event(s) or thought about the event(s) when you did not want to?",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA33-6",
+            "display": "Yes",
+            "system": "http://loinc.org"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA32-8",
+            "display": "No",
+            "system": "http://loinc.org"
+          }
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "required": false,
+      "linkId": "/102013-0",
+      "text": "In the past month, have you tried hard not to think about the event(s) or went out of your way to avoid situations that reminded you of the event(s)?",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA33-6",
+            "display": "Yes",
+            "system": "http://loinc.org"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA32-8",
+            "display": "No",
+            "system": "http://loinc.org"
+          }
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "required": false,
+      "linkId": "/102014-8",
+      "text": "In the past month, have you been constantly on guard, watchful, or easily startled?",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA33-6",
+            "display": "Yes",
+            "system": "http://loinc.org"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA32-8",
+            "display": "No",
+            "system": "http://loinc.org"
+          }
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "required": false,
+      "linkId": "/102015-5",
+      "text": "In the past month have you felt numb or detached from people, activities, or your surroundings?",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA33-6",
+            "display": "Yes",
+            "system": "http://loinc.org"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA32-8",
+            "display": "No",
+            "system": "http://loinc.org"
+          }
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "required": false,
+      "linkId": "/102016-3",
+      "text": "In the past month have you felt guilty or unable to stop blaming yourself or others for the event(s) or any problems the event(s) may have caused?",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA33-6",
+            "display": "Yes",
+            "system": "http://loinc.org"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA32-8",
+            "display": "No",
+            "system": "http://loinc.org"
+          }
+        }
+      ]
+    },
+    {
+      "type": "decimal",
+      "code": [
+        {
+          "code": "102017-1",
+          "display": "PC-PTSD-5 score",
+          "system": "http://loinc.org"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "code": "{score}",
+            "display": "{score}",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ],
+      "required": false,
+      "linkId": "/102017-1",
+      "text": "PC-PTSD-5 score"
+    },
+    {
+      "linkId": "PC-PTSD-5-SCORE-SYMPTOMS",
+      "text": "PTSD Symptoms (Past month)",
+      "type": "string",
+      "readOnly": true,
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "iif(%resource.item.where(linkId='/102011-4').answer.empty() or %resource.item.where(linkId='/102011-4').answer.valueCoding.code = 'LA32-8', '', (iif((%resource.item.where(linkId='/102012-2').answer.empty() = false) and (%resource.item.where(linkId='/102012-2').answer.valueCoding.code = 'LA33-6'), 'Intrusive Thoughts, ', '')) +  (iif((%resource.item.where(linkId='/102013-0').answer.empty() = false) and (%resource.item.where(linkId='/102013-0').answer.valueCoding.code = 'LA33-6'), 'Avoidance, ', '')) +  (iif((%resource.item.where(linkId='/102014-8').answer.empty() = false) and (%resource.item.where(linkId='/102014-8').answer.valueCoding.code = 'LA33-6'), 'Hypervigilance, ', '')) +  (iif((%resource.item.where(linkId='/102015-5').answer.empty() = false) and (%resource.item.where(linkId='/102015-5').answer.valueCoding.code = 'LA33-6'), 'Numb/Detached, ', '')) +  (iif((%resource.item.where(linkId='/102016-3').answer.empty() = false) and (%resource.item.where(linkId='/102016-3').answer.valueCoding.code = 'LA33-6'), 'Guilt, ', '')))"
+          }
+        }
+      ]
+    }
+  ]
+}

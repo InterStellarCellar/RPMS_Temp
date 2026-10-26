@@ -1,0 +1,23 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">remote-terminology corpus</div>"
+  },
+  "status": "draft",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://loinc.org",
+        "code": "0000-0"
+      }
+    ]
+  },
+  "item": [
+    {
+      "linkId": "1",
+      "type": "string",
+      "text": "Q"
+    }
+  ]
+}

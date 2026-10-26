@@ -1,0 +1,52 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-render"
+    ]
+  },
+  "url": "http://example.org/fhir/Questionnaire/40-sdc-rend-1-nested-page-not-enforced",
+  "version": "1.0.0",
+  "name": "GapTest",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    }
+  ],
+  "item": [
+    {
+      "linkId": "g1",
+      "type": "group",
+      "text": "Group",
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "page"
+                  }
+                ]
+              }
+            }
+          ],
+          "linkId": "p1",
+          "type": "group",
+          "text": "Nested page (should violate sdc-rend-1)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Deep nested groups</p></div>"
+  },
+  "id": "valid-deep",
+  "title": "Deep nested groups",
+  "item": [
+    {
+      "linkId": "l1",
+      "type": "group",
+      "text": "L1",
+      "item": [
+        {
+          "linkId": "l2",
+          "type": "group",
+          "text": "L2",
+          "item": [
+            {
+              "linkId": "l3",
+              "type": "group",
+              "text": "L3",
+              "item": [
+                {
+                  "linkId": "leaf",
+                  "type": "string",
+                  "text": "Leaf"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

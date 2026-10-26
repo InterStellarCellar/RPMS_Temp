@@ -1,0 +1,101 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "CIRG-PainTracker-STOP",
+  "title": "STOP Questionnaire: A Tool to Screen Patients for Obstructive Sleep Apnea",
+  "description": "STOP Questionnaire: A Tool to Screen Patients for Obstructive Sleep Apnea. Reference: [https://pubs.asahq.org/anesthesiology/article/108/5/812/8377/STOP-QuestionnaireA-Tool-to-Screen-Patients-for](https://pubs.asahq.org/anesthesiology/article/108/5/812/8377/STOP-QuestionnaireA-Tool-to-Screen-Patients-for)",
+  "status": "active",
+  "item": [
+    {
+      "linkId": "STOP-0",
+      "text": "Have you been told you snore?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "STOP-0-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "STOP-0-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "STOP-1",
+      "text": "Are you often tired during the day? ",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "STOP-1-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "STOP-1-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "STOP-2",
+      "text": "Do you know if you stop breathing or has anyone witnessed you stop breathing while you are asleep? ",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "STOP-2-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "STOP-2-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "STOP-3",
+      "text": "Do you have high blood pressure or are you on medication to control high blood pressure?",
+      "type": "choice",
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "STOP-3-0",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "STOP-3-1",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "STOP-score",
+      "type": "decimal",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "code": "{score}",
+            "display": "{score}",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ],
+      "required": false,
+      "text": "STOP questionnaire total score"
+    }
+  ]
+}

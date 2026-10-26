@@ -1,0 +1,22 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "grp",
+      "type": "group",
+      "text": "Group A",
+      "item": [
+        { "linkId": "q1", "type": "string", "text": "Question A" }
+      ]
+    },
+    {
+      "linkId": "grp",
+      "type": "group",
+      "text": "Group B (duplicate linkId)",
+      "item": [
+        { "linkId": "q2", "type": "string", "text": "Question B" }
+      ]
+    }
+  ]
+}

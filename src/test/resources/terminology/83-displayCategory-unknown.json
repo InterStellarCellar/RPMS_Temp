@@ -1,0 +1,28 @@
+{
+  "resourceType": "Questionnaire",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Terminology corpus fixture</div>"
+  },
+  "status": "draft",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-displayCategory",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-display-category",
+                "code": "not-a-cat"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "1",
+      "type": "display",
+      "text": "Note"
+    }
+  ]
+}

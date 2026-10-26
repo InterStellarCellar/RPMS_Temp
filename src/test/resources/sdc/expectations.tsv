@@ -1,0 +1,54 @@
+# filename	minIssues	expectedMessageSubstring
+# 00–09: cardinality
+00-base-missing-url.json	1	url
+01-search-missing-title.json	1	title
+02-search-missing-date.json	1	date
+# 10–19: common (sdc-2/3, cnl, que-15)
+10-sdc-2-version-without-algorithm.json	1	sdc-2
+11-sdc-3-non-semver-algorithm.json	1	sdc-3
+12-cnl-0-name-lowercase.json	1	cnl-0
+13-cnl-1-url-with-pipe.json	1	cnl-1
+14-que-15-linkId-too-long.json	1	que-15
+16-que-1b-empty-group-draft.json	1	que-1b
+17-que-1c-display-with-child.json	1	que-1c
+18-que-14-answerConstraint-alone.json	1	que-14
+# 20–29: sdc-1
+20-sdc-1-answerExpression-and-answerOption.json	1	sdc-1
+21-sdc-1-answerExpression-and-answerValueSet.json	1	sdc-1
+# 30–39: sdc-base-*
+30-sdc-base-1-coding-no-code-or-display.json	1	sdc-base-1
+31-sdc-base-2-coding-code-without-system.json	1	sdc-base-2
+32-sdc-base-4-reference-type-only.json	1	sdc-base-4
+# 40–49: behave
+40-sdc-behave-1-initial-and-initialExpression.json	1	sdc-behave-1
+41-sdc-behave-2-enableWhen-and-expression.json	1	sdc-behave-2
+42-sdc-behave-3-quantity-no-unit.json	1	sdc-behave-3
+# 50–59: render
+51-sdc-rend-2-mixed-root-page.json	1	sdc-rend-2
+# 60–69: populate
+60-sdc-pop-1-initial-and-initialExpression.json	1	sdc-pop-1
+61-sdc-pop-2-missing-observationLinkPeriod.json	1	sdc-pop-2
+# 70–79: extract
+70-sdc-obsn-1-display-observationExtract.json	1	sdc-obsn-1
+71-tev-1-missing-templateExtract.json	1	tev-1
+72-extr-template-missing-contained.json	1	contained
+# 80–89: modular / adaptive
+80-modular-missing-assemble-expectation.json	1	assemble-expectation
+81-adapt-has-url.json	1	url
+82-adapt-1-not-contained.json	1	sdc-adapt-1
+83-adapt-srch-has-items.json	1	item
+84-adapt-srch-missing-questionnaireAdaptive.json	1	questionnaireAdaptive
+85-sdc-adaptive-1-mixed-adaptive-types.json	1	sdc-adaptive-1
+# 90–99: extension constraints
+90-sdc-inv1-enableWhenExpression-fhir-query.json	1	sdc-inv1
+91-sdc-lcext-1-launchContext-type-mismatch.json	1	sdc-lcext-1
+92-calculatedExpression-wrong-type.json	1	Expression
+93-choiceColumn-as-valueString.json	1	Extension
+94-assemble-expectation-invalid-code.json	1	assemble-expectation
+# 190–199: multi
+190-multi-missing-url-and-sdc-2.json	1	url
+190-multi-missing-url-and-sdc-2.json	1	sdc-2
+191-multi-sdc-1-and-behave-1.json	1	sdc-1
+191-multi-sdc-1-and-behave-1.json	1	sdc-behave-1
+192-multi-sdc-2-and-base-2.json	1	sdc-2
+192-multi-sdc-2-and-base-2.json	1	sdc-base-2
