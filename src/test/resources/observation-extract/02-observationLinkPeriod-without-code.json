@@ -10,7 +10,7 @@
       "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-obsn"
     ]
   },
-  "url": "http://example.org/fhir/Questionnaire/49-observationLinkPeriod-without-code",
+  "url": "http://example.org/fhir/Questionnaire/02-observationLinkPeriod-without-code",
   "version": "1.0.0",
   "name": "GapTest",
   "extension": [

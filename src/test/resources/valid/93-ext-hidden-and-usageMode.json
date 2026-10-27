@@ -23,6 +23,12 @@
         {
           "valueString": "0"
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "93-ext-hidden-and-usageMode--internal"
+        }
       ]
     },
     {
@@ -34,7 +40,13 @@
       ],
       "linkId": "capture-only",
       "type": "string",
-      "text": "Capture only"
+      "text": "Capture only",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "93-ext-hidden-and-usageMode--capture-only"
+        }
+      ]
     }
   ]
 }

@@ -18,14 +18,22 @@
         {
           "valueCoding": {
             "code": "ASSIST-OD-ever-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-OD-ever-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "201-ext-CIRG-CNICS-ASSIST-OD--ASSIST-OD-ever"
         }
       ]
     },
@@ -42,32 +50,43 @@
         {
           "valueCoding": {
             "code": "ASSIST-OD-recent-0",
-            "display": "0"
+            "display": "0",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-OD-recent-1",
-            "display": "1"
+            "display": "1",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-OD-recent-2",
-            "display": "2"
+            "display": "2",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-OD-recent-3",
-            "display": "3"
+            "display": "3",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-OD-recent-4",
-            "display": "4 or more"
+            "display": "4 or more",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "201-ext-CIRG-CNICS-ASSIST-OD--ASSIST-OD-recent"
         }
       ]
     },
@@ -79,14 +98,22 @@
         {
           "valueCoding": {
             "code": "ASSIST-OD-narcan-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-OD-narcan-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "201-ext-CIRG-CNICS-ASSIST-OD--ASSIST-OD-narcan"
         }
       ]
     }

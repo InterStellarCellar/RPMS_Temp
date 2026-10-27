@@ -29,14 +29,32 @@
             "code": "LA33-6",
             "display": "Yes",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "LA32-8",
             "display": "No",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "219-ext-CIRG-PC-PTSD-5--102011-4"
         }
       ]
     },
@@ -51,14 +69,32 @@
             "code": "LA33-6",
             "display": "Yes",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "LA32-8",
             "display": "No",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "219-ext-CIRG-PC-PTSD-5--102012-2"
         }
       ]
     },
@@ -73,14 +109,32 @@
             "code": "LA33-6",
             "display": "Yes",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "LA32-8",
             "display": "No",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "219-ext-CIRG-PC-PTSD-5--102013-0"
         }
       ]
     },
@@ -95,14 +149,32 @@
             "code": "LA33-6",
             "display": "Yes",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "LA32-8",
             "display": "No",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "219-ext-CIRG-PC-PTSD-5--102014-8"
         }
       ]
     },
@@ -117,14 +189,32 @@
             "code": "LA33-6",
             "display": "Yes",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "LA32-8",
             "display": "No",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "219-ext-CIRG-PC-PTSD-5--102015-5"
         }
       ]
     },
@@ -139,14 +229,32 @@
             "code": "LA33-6",
             "display": "Yes",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "LA32-8",
             "display": "No",
             "system": "http://loinc.org"
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "219-ext-CIRG-PC-PTSD-5--102016-3"
         }
       ]
     },
@@ -185,6 +293,12 @@
             "language": "text/fhirpath",
             "expression": "iif(%resource.item.where(linkId='/102011-4').answer.empty() or %resource.item.where(linkId='/102011-4').answer.valueCoding.code = 'LA32-8', '', (iif((%resource.item.where(linkId='/102012-2').answer.empty() = false) and (%resource.item.where(linkId='/102012-2').answer.valueCoding.code = 'LA33-6'), 'Intrusive Thoughts, ', '')) +  (iif((%resource.item.where(linkId='/102013-0').answer.empty() = false) and (%resource.item.where(linkId='/102013-0').answer.valueCoding.code = 'LA33-6'), 'Avoidance, ', '')) +  (iif((%resource.item.where(linkId='/102014-8').answer.empty() = false) and (%resource.item.where(linkId='/102014-8').answer.valueCoding.code = 'LA33-6'), 'Hypervigilance, ', '')) +  (iif((%resource.item.where(linkId='/102015-5').answer.empty() = false) and (%resource.item.where(linkId='/102015-5').answer.valueCoding.code = 'LA33-6'), 'Numb/Detached, ', '')) +  (iif((%resource.item.where(linkId='/102016-3').answer.empty() = false) and (%resource.item.where(linkId='/102016-3').answer.valueCoding.code = 'LA33-6'), 'Guilt, ', '')))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "219-ext-CIRG-PC-PTSD-5--PC-PTSD-5-SCORE-SYMPTOMS"
         }
       ]
     }

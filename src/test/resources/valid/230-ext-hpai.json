@@ -34,6 +34,12 @@
                 "expression": "%resource.item.where(linkId = 'hpai-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-0').answer.valueCoding.code = 'hpai-0-yes'"
               }
             }
+          ],
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "230-ext-hpai--hpai-0B"
+            }
           ]
         }
       ],
@@ -61,14 +67,22 @@
         {
           "valueCoding": {
             "code": "hpai-0-no",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "hpai-0-yes",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "230-ext-hpai--hpai-0"
         }
       ]
     },
@@ -85,6 +99,12 @@
                 "language": "text/fhirpath",
                 "expression": "%resource.item.where(linkId = 'hpai-1').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-1').answer.valueCoding.code = 'hpai-1-yes'"
               }
+            }
+          ],
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "230-ext-hpai--hpai-1B"
             }
           ]
         }
@@ -113,14 +133,22 @@
         {
           "valueCoding": {
             "code": "hpai-1-no",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "hpai-1-yes",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "230-ext-hpai--hpai-1"
         }
       ]
     },
@@ -133,7 +161,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "(%resource.item.where(linkId = 'hpai-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-0').answer.valueCoding.code = 'hpai-0-yes') or (%resource.item.where(linkId = 'hpai-1').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-1').answer.valueCoding.code = 'hpai-1-yes') or (%resource.item.where(linkId = 'hpai-2').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-2').answer.valueCoding.code = 'hpai-2-yes')"
+            "expression": "(%resource.item.where(linkId = 'hpai-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-0').answer.valueCoding.code = 'hpai-0-yes') or (%resource.item.where(linkId = 'hpai-1').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-1').answer.valueCoding.code = 'hpai-1-yes')"
           }
         }
       ]
@@ -177,7 +205,7 @@
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression",
           "valueExpression": {
             "language": "text/fhirpath",
-            "expression": "(%resource.item.where(linkId = 'hpai-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-0').answer.valueCoding.code = 'hpai-0-yes') or (%resource.item.where(linkId = 'hpai-1').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-1').answer.valueCoding.code = 'hpai-1-yes') or (%resource.item.where(linkId = 'hpai-2').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-2').answer.valueCoding.code = 'hpai-2-yes')"
+            "expression": "(%resource.item.where(linkId = 'hpai-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-0').answer.valueCoding.code = 'hpai-0-yes') or (%resource.item.where(linkId = 'hpai-1').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-1').answer.valueCoding.code = 'hpai-1-yes')"
           }
         },
         {
@@ -200,20 +228,29 @@
         {
           "valueCoding": {
             "code": "hpai-setting-out",
-            "display": "Outpatient"
+            "display": "Outpatient",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "hpai-setting-ed",
-            "display": "ED or Urgent Care"
+            "display": "ED or Urgent Care",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "hpai-setting-in",
-            "display": "Inpatient"
+            "display": "Inpatient",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "230-ext-hpai--hpai-setting"
         }
       ]
     },
@@ -235,6 +272,12 @@
                 "language": "text/fhirpath",
                 "expression": "%resource.item.where(linkId = 'hpai-3').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'hpai-3').answer.valueCoding.code = 'hpai-3-yes'"
               }
+            }
+          ],
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "230-ext-hpai--hpai-3B"
             }
           ]
         }
@@ -263,14 +306,22 @@
         {
           "valueCoding": {
             "code": "hpai-3-no",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "hpai-3-yes",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "230-ext-hpai--hpai-3"
         }
       ]
     }

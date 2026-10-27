@@ -12,7 +12,13 @@
       "linkId": "q1",
       "type": "decimal",
       "text": "A decimal question",
-      "required": true
+      "required": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "11-type-decimal--q1"
+        }
+      ]
     }
   ]
 }

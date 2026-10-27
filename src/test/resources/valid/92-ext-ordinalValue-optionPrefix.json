@@ -47,6 +47,12 @@
             "display": "Nearly every day"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "92-ext-ordinalValue-optionPrefix--sev"
+        }
       ]
     }
   ]

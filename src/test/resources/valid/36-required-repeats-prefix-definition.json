@@ -15,7 +15,13 @@
       "text": "Given name",
       "type": "string",
       "required": true,
-      "repeats": false
+      "repeats": false,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "36-required-repeats-prefix-definition--q1"
+        }
+      ]
     }
   ]
 }

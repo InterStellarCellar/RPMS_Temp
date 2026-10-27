@@ -29,17 +29,23 @@
       "answerOption": [
         {
           "valueCoding": {
-            "system": "http://example.org/cs",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "1",
             "display": "One"
           }
         },
         {
           "valueCoding": {
-            "system": "http://example.org/cs",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "2",
             "display": "Two"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "91-ext-itemControl-drop-down--q1"
         }
       ]
     }

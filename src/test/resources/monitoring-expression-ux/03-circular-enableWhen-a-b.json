@@ -16,6 +16,12 @@
           "operator": "=",
           "answerBoolean": true
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "03-circular-enableWhen-a-b--a"
+        }
       ]
     },
     {
@@ -27,6 +33,12 @@
           "question": "a",
           "operator": "=",
           "answerBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "03-circular-enableWhen-a-b--b"
         }
       ]
     }

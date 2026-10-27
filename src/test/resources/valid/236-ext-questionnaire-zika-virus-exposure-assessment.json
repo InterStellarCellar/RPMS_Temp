@@ -31,7 +31,7 @@
       "linkId": "1",
       "code": [
         {
-          "system": "http://example.org/questionnaires",
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
           "code": "CDE: Resident of or Frequent Traveler to Zika Area"
         }
       ],
@@ -51,7 +51,7 @@
       "linkId": "2",
       "code": [
         {
-          "system": "http://example.org/questionnaires",
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
           "code": "CDE: Recent Travel to Zika Area"
         }
       ],
@@ -69,7 +69,7 @@
       "linkId": "3",
       "code": [
         {
-          "system": "http://example.org/questionnaires",
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
           "code": "CDE: Time Since Returned From Travel"
         }
       ],
@@ -96,7 +96,7 @@
       "linkId": "4",
       "code": [
         {
-          "system": "http://example.org/questionnaires",
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
           "code": "CDE: Recent Sexual Encounter with Traveler to Zika Area"
         }
       ],
@@ -114,7 +114,7 @@
       "linkId": "5",
       "code": [
         {
-          "system": "http://example.org/questionnaires",
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
           "code": "CDE: Time Since Sexual Encounter"
         }
       ],
@@ -141,7 +141,7 @@
       "linkId": "6",
       "code": [
         {
-          "system": "http://example.org/questionnaires",
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
           "code": "CDE: Planned Travel to Zika Area"
         }
       ],

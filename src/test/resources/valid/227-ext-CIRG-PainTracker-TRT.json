@@ -8,7 +8,13 @@
     {
       "linkId": "TRT-1-header",
       "text": "Number of healthcare providers seen for pain past 6 months",
-      "type": "string"
+      "type": "string",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-1-header"
+        }
+      ]
     },
     {
       "linkId": "TRT-1-1",
@@ -18,74 +24,92 @@
         {
           "valueCoding": {
             "code": "TRT-1-1-0",
-            "display": "0"
+            "display": "0",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-1",
-            "display": "1"
+            "display": "1",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-2",
-            "display": "2"
+            "display": "2",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-3",
-            "display": "3"
+            "display": "3",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-4",
-            "display": "4"
+            "display": "4",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-5",
-            "display": "5"
+            "display": "5",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-6",
-            "display": "6"
+            "display": "6",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-7",
-            "display": "7"
+            "display": "7",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-8",
-            "display": "8"
+            "display": "8",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-9",
-            "display": "9"
+            "display": "9",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-10",
-            "display": "10"
+            "display": "10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-1-11",
-            "display": "More than 10"
+            "display": "More than 10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-1-1"
         }
       ]
     },
@@ -97,74 +121,92 @@
         {
           "valueCoding": {
             "code": "TRT-1-2-0",
-            "display": "0"
+            "display": "0",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-1",
-            "display": "1"
+            "display": "1",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-2",
-            "display": "2"
+            "display": "2",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-3",
-            "display": "3"
+            "display": "3",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-4",
-            "display": "4"
+            "display": "4",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-5",
-            "display": "5"
+            "display": "5",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-6",
-            "display": "6"
+            "display": "6",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-7",
-            "display": "7"
+            "display": "7",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-8",
-            "display": "8"
+            "display": "8",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-9",
-            "display": "9"
+            "display": "9",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-10",
-            "display": "10"
+            "display": "10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-2-11",
-            "display": "More than 10"
+            "display": "More than 10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-1-2"
         }
       ]
     },
@@ -176,74 +218,92 @@
         {
           "valueCoding": {
             "code": "TRT-1-3-0",
-            "display": "0"
+            "display": "0",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-1",
-            "display": "1"
+            "display": "1",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-2",
-            "display": "2"
+            "display": "2",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-3",
-            "display": "3"
+            "display": "3",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-4",
-            "display": "4"
+            "display": "4",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-5",
-            "display": "5"
+            "display": "5",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-6",
-            "display": "6"
+            "display": "6",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-7",
-            "display": "7"
+            "display": "7",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-8",
-            "display": "8"
+            "display": "8",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-9",
-            "display": "9"
+            "display": "9",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-10",
-            "display": "10"
+            "display": "10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-3-11",
-            "display": "More than 10"
+            "display": "More than 10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-1-3"
         }
       ]
     },
@@ -255,81 +315,105 @@
         {
           "valueCoding": {
             "code": "TRT-1-4-0",
-            "display": "0"
+            "display": "0",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-1",
-            "display": "1"
+            "display": "1",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-2",
-            "display": "2"
+            "display": "2",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-3",
-            "display": "3"
+            "display": "3",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-4",
-            "display": "4"
+            "display": "4",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-5",
-            "display": "5"
+            "display": "5",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-6",
-            "display": "6"
+            "display": "6",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-7",
-            "display": "7"
+            "display": "7",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-8",
-            "display": "8"
+            "display": "8",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-9",
-            "display": "9"
+            "display": "9",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-10",
-            "display": "10"
+            "display": "10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-1-4-11",
-            "display": "More than 10"
+            "display": "More than 10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-1-4"
         }
       ]
     },
     {
       "linkId": "TRT-2-header",
       "text": "Number of healthcare providers seen for pain past 6 months",
-      "type": "string"
+      "type": "string",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-2-header"
+        }
+      ]
     },
     {
       "linkId": "TRT-2-1",
@@ -339,74 +423,92 @@
         {
           "valueCoding": {
             "code": "TRT-2-1-0",
-            "display": "0"
+            "display": "0",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-1",
-            "display": "1"
+            "display": "1",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-2",
-            "display": "2"
+            "display": "2",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-3",
-            "display": "3"
+            "display": "3",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-4",
-            "display": "4"
+            "display": "4",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-5",
-            "display": "5"
+            "display": "5",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-6",
-            "display": "6"
+            "display": "6",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-7",
-            "display": "7"
+            "display": "7",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-8",
-            "display": "8"
+            "display": "8",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-9",
-            "display": "9"
+            "display": "9",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-10",
-            "display": "10"
+            "display": "10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-1-11",
-            "display": "More than 10"
+            "display": "More than 10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-2-1"
         }
       ]
     },
@@ -418,74 +520,92 @@
         {
           "valueCoding": {
             "code": "TRT-2-2-0",
-            "display": "0"
+            "display": "0",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-1",
-            "display": "1"
+            "display": "1",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-2",
-            "display": "2"
+            "display": "2",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-3",
-            "display": "3"
+            "display": "3",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-4",
-            "display": "4"
+            "display": "4",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-5",
-            "display": "5"
+            "display": "5",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-6",
-            "display": "6"
+            "display": "6",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-7",
-            "display": "7"
+            "display": "7",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-8",
-            "display": "8"
+            "display": "8",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-9",
-            "display": "9"
+            "display": "9",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-10",
-            "display": "10"
+            "display": "10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-2-11",
-            "display": "More than 10"
+            "display": "More than 10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-2-2"
         }
       ]
     },
@@ -497,81 +617,105 @@
         {
           "valueCoding": {
             "code": "TRT-2-3-0",
-            "display": "0"
+            "display": "0",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-1",
-            "display": "1"
+            "display": "1",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-2",
-            "display": "2"
+            "display": "2",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-3",
-            "display": "3"
+            "display": "3",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-4",
-            "display": "4"
+            "display": "4",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-5",
-            "display": "5"
+            "display": "5",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-6",
-            "display": "6"
+            "display": "6",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-7",
-            "display": "7"
+            "display": "7",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-8",
-            "display": "8"
+            "display": "8",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-9",
-            "display": "9"
+            "display": "9",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-10",
-            "display": "10"
+            "display": "10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-2-3-11",
-            "display": "More than 10"
+            "display": "More than 10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-2-3"
         }
       ]
     },
     {
       "linkId": "TRT-3-header",
       "text": "Efficacy of pain treatments in last 6 months",
-      "type": "string"
+      "type": "string",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-3-header"
+        }
+      ]
     },
     {
       "linkId": "TRT-3-1",
@@ -581,26 +725,36 @@
         {
           "valueCoding": {
             "code": "TRT-3-1-0",
-            "display": "Did not have this type of treatment"
+            "display": "Did not have this type of treatment",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-3-1-1",
-            "display": "It was very effective"
+            "display": "It was very effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-3-1-2",
-            "display": "It was moderately effective"
+            "display": "It was moderately effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-3-1-3",
-            "display": "Not at all effective"
+            "display": "Not at all effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-3-1"
         }
       ]
     },
@@ -612,26 +766,36 @@
         {
           "valueCoding": {
             "code": "TRT-3-2-0",
-            "display": "Did not have this type of treatment"
+            "display": "Did not have this type of treatment",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-3-2-1",
-            "display": "It was very effective"
+            "display": "It was very effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-3-2-2",
-            "display": "It was moderately effective"
+            "display": "It was moderately effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-3-2-3",
-            "display": "Not at all effective"
+            "display": "Not at all effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-3-2"
         }
       ]
     },
@@ -643,62 +807,88 @@
         {
           "valueCoding": {
             "code": "TRT-3-3-0",
-            "display": "Did not have this type of treatment"
+            "display": "Did not have this type of treatment",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-3-3-1",
-            "display": "It was very effective"
+            "display": "It was very effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-3-3-2",
-            "display": "It was moderately effective"
+            "display": "It was moderately effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-3-3-3",
-            "display": "Not at all effective"
+            "display": "Not at all effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-3-3"
         }
       ]
     },
     {
       "linkId": "TRT-4-header",
       "text": "Efficacy of pain treatments in last 6 months",
-      "type": "string"
+      "type": "string",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-4-header"
+        }
+      ]
     },
     {
       "linkId": "TRT-4-1",
-      "text": "Non-opioid medications such as non-steroidal anti-inflammatory medications (like Motrin, Advil, ibuprofen, Celebrex) or \u201cneuropathic pain medications\u201d (like Neurontin, Lyrica, Cymbalta, other anti- depressant)?",
+      "text": "Non-opioid medications such as non-steroidal anti-inflammatory medications (like Motrin, Advil, ibuprofen, Celebrex) or “neuropathic pain medications” (like Neurontin, Lyrica, Cymbalta, other anti- depressant)?",
       "type": "choice",
       "answerOption": [
         {
           "valueCoding": {
             "code": "TRT-4-1-0",
-            "display": "Did not have this type of treatment"
+            "display": "Did not have this type of treatment",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-4-1-1",
-            "display": "It was very effective"
+            "display": "It was very effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-4-1-2",
-            "display": "It was moderately effective"
+            "display": "It was moderately effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-4-1-3",
-            "display": "Not at all effective"
+            "display": "Not at all effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-4-1"
         }
       ]
     },
@@ -710,26 +900,36 @@
         {
           "valueCoding": {
             "code": "TRT-4-2-0",
-            "display": "Did not have this type of treatment"
+            "display": "Did not have this type of treatment",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-4-2-1",
-            "display": "It was very effective"
+            "display": "It was very effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-4-2-2",
-            "display": "It was moderately effective"
+            "display": "It was moderately effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "TRT-4-2-3",
-            "display": "Not at all effective"
+            "display": "Not at all effective",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "227-ext-CIRG-PainTracker-TRT--TRT-4-2"
         }
       ]
     }

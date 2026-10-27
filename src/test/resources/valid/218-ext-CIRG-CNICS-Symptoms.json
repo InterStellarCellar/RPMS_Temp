@@ -18,32 +18,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-0-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-0-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-0-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-0-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-0-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-0"
         }
       ]
     },
@@ -55,32 +96,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-1-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-1-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-1-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-1-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-1-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-1"
         }
       ]
     },
@@ -92,32 +174,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-2-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-2-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-2-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-2-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-2-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-2"
         }
       ]
     },
@@ -129,32 +252,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-3-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-3-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-3-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-3-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-3-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-3"
         }
       ]
     },
@@ -166,32 +330,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-4-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-4-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-4-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-4-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-4-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-4"
         }
       ]
     },
@@ -203,32 +408,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-5-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-5-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-5-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-5-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-5-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-5"
         }
       ]
     },
@@ -240,32 +486,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-6-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-6-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-6-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-6-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-6-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-6"
         }
       ]
     },
@@ -277,32 +564,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-7-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-7-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-7-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-7-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-7-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-7"
         }
       ]
     },
@@ -314,32 +642,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-8-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-8-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-8-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-8-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-8-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-8"
         }
       ]
     },
@@ -351,32 +720,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-9-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-9-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-9-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-9-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-9-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-9"
         }
       ]
     },
@@ -388,32 +798,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-10-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-10-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-10-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-10-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-10-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-10"
         }
       ]
     },
@@ -425,32 +876,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-11-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-11-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-11-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-11-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-11-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-11"
         }
       ]
     },
@@ -462,32 +954,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-12-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-12-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-12-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-12-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-12-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-12"
         }
       ]
     },
@@ -499,32 +1032,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-13-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-13-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-13-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-13-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-13-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-13"
         }
       ]
     },
@@ -536,32 +1110,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-14-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-14-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-14-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-14-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-14-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-14"
         }
       ]
     },
@@ -573,32 +1188,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-15-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-15-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-15-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-15-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-15-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-15"
         }
       ]
     },
@@ -610,32 +1266,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-16-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-16-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-16-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-16-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-16-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-16"
         }
       ]
     },
@@ -647,32 +1344,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-17-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-17-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-17-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-17-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-17-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-17"
         }
       ]
     },
@@ -684,32 +1422,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-18-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-18-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-18-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-18-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-18-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-18"
         }
       ]
     },
@@ -721,32 +1500,73 @@
         {
           "valueCoding": {
             "code": "Symptoms-19-0",
-            "display": "I do not have this symptom."
-          }
+            "display": "I do not have this symptom.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-19-1",
-            "display": "It doesn't bother me."
-          }
+            "display": "It doesn't bother me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-19-2",
-            "display": "It bothers me a little."
-          }
+            "display": "It bothers me a little.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-19-3",
-            "display": "It bothers me."
-          }
+            "display": "It bothers me.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Symptoms-19-4",
-            "display": "It bothers me a lot."
-          }
+            "display": "It bothers me a lot.",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-19"
         }
       ]
     },
@@ -763,6 +1583,12 @@
             "expression": "(iif(%resource.item.where(linkId = 'Symptoms-0').answer.valueCoding.code = 'Symptoms-0-4', 'Fatigue', '') | iif(%resource.item.where(linkId = 'Symptoms-1').answer.valueCoding.code = 'Symptoms-1-4', 'Fevers, chills, sweats', '') | iif(%resource.item.where(linkId = 'Symptoms-2').answer.valueCoding.code = 'Symptoms-2-4', 'Dizzy', '') | iif(%resource.item.where(linkId = 'Symptoms-3').answer.valueCoding.code = 'Symptoms-3-4', 'Numbness/pain feet', '') | iif(%resource.item.where(linkId = 'Symptoms-4').answer.valueCoding.code = 'Symptoms-4-4', 'Memory', '') | iif(%resource.item.where(linkId = 'Symptoms-5').answer.valueCoding.code = 'Symptoms-5-4', 'Nausea/vomiting', '') | iif(%resource.item.where(linkId = 'Symptoms-6').answer.valueCoding.code = 'Symptoms-6-4', 'Diarrhea', '') | iif(%resource.item.where(linkId = 'Symptoms-7').answer.valueCoding.code = 'Symptoms-7-4', 'Sad', '') | iif(%resource.item.where(linkId = 'Symptoms-8').answer.valueCoding.code = 'Symptoms-8-4', 'Nervous/anxious', '') | iif(%resource.item.where(linkId = 'Symptoms-9').answer.valueCoding.code = 'Symptoms-9-4', 'Poor sleep', '') | iif(%resource.item.where(linkId = 'Symptoms-10').answer.valueCoding.code = 'Symptoms-10-4', 'Rash', '') | iif(%resource.item.where(linkId = 'Symptoms-11').answer.valueCoding.code = 'Symptoms-11-4', 'Cough/SOB', '') | iif(%resource.item.where(linkId = 'Symptoms-12').answer.valueCoding.code = 'Symptoms-12-4', 'Headache', '') | iif(%resource.item.where(linkId = 'Symptoms-13').answer.valueCoding.code = 'Symptoms-13-4', 'Poor appetite', '') | iif(%resource.item.where(linkId = 'Symptoms-14').answer.valueCoding.code = 'Symptoms-14-4', 'Bloating, abdominal pain', '') | iif(%resource.item.where(linkId = 'Symptoms-15').answer.valueCoding.code = 'Symptoms-15-4', 'Muscle aches/joint pain', '') | iif(%resource.item.where(linkId = 'Symptoms-16').answer.valueCoding.code = 'Symptoms-16-4', 'Sex problems', '') | iif(%resource.item.where(linkId = 'Symptoms-17').answer.valueCoding.code = 'Symptoms-17-4', 'Fat deposits/wt gain', '') | iif(%resource.item.where(linkId = 'Symptoms-18').answer.valueCoding.code = 'Symptoms-18-4', 'Weight loss/wasting', '') | iif(%resource.item.where(linkId = 'Symptoms-19').answer.valueCoding.code = 'Symptoms-19-4', 'Hair loss/changes', '')).where($this != '').join(', ')"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-bothers-a-lot"
+        }
       ]
     },
     {
@@ -777,6 +1603,12 @@
             "language": "text/fhirpath",
             "expression": "(iif(%resource.item.where(linkId = 'Symptoms-0').answer.valueCoding.code = 'Symptoms-0-3', 'Fatigue', '') | iif(%resource.item.where(linkId = 'Symptoms-1').answer.valueCoding.code = 'Symptoms-1-3', 'Fevers, chills, sweats', '') | iif(%resource.item.where(linkId = 'Symptoms-2').answer.valueCoding.code = 'Symptoms-2-3', 'Dizzy', '') | iif(%resource.item.where(linkId = 'Symptoms-3').answer.valueCoding.code = 'Symptoms-3-3', 'Numbness/pain feet', '') | iif(%resource.item.where(linkId = 'Symptoms-4').answer.valueCoding.code = 'Symptoms-4-3', 'Memory', '') | iif(%resource.item.where(linkId = 'Symptoms-5').answer.valueCoding.code = 'Symptoms-5-3', 'Nausea/vomiting', '') | iif(%resource.item.where(linkId = 'Symptoms-6').answer.valueCoding.code = 'Symptoms-6-3', 'Diarrhea', '') | iif(%resource.item.where(linkId = 'Symptoms-7').answer.valueCoding.code = 'Symptoms-7-3', 'Sad', '') | iif(%resource.item.where(linkId = 'Symptoms-8').answer.valueCoding.code = 'Symptoms-8-3', 'Nervous/anxious', '') | iif(%resource.item.where(linkId = 'Symptoms-9').answer.valueCoding.code = 'Symptoms-9-3', 'Poor sleep', '') | iif(%resource.item.where(linkId = 'Symptoms-10').answer.valueCoding.code = 'Symptoms-10-3', 'Rash', '') | iif(%resource.item.where(linkId = 'Symptoms-11').answer.valueCoding.code = 'Symptoms-11-3', 'Cough/SOB', '') | iif(%resource.item.where(linkId = 'Symptoms-12').answer.valueCoding.code = 'Symptoms-12-3', 'Headache', '') | iif(%resource.item.where(linkId = 'Symptoms-13').answer.valueCoding.code = 'Symptoms-13-3', 'Poor appetite', '') | iif(%resource.item.where(linkId = 'Symptoms-14').answer.valueCoding.code = 'Symptoms-14-3', 'Bloating, abdominal pain', '') | iif(%resource.item.where(linkId = 'Symptoms-15').answer.valueCoding.code = 'Symptoms-15-3', 'Muscle aches/joint pain', '') | iif(%resource.item.where(linkId = 'Symptoms-16').answer.valueCoding.code = 'Symptoms-16-3', 'Sex problems', '') | iif(%resource.item.where(linkId = 'Symptoms-17').answer.valueCoding.code = 'Symptoms-17-3', 'Fat deposits/wt gain', '') | iif(%resource.item.where(linkId = 'Symptoms-18').answer.valueCoding.code = 'Symptoms-18-3', 'Weight loss/wasting', '') | iif(%resource.item.where(linkId = 'Symptoms-19').answer.valueCoding.code = 'Symptoms-19-3', 'Hair loss/changes', '')).where($this != '').join(', ')"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "218-ext-CIRG-CNICS-Symptoms--Symptoms-bothers-some"
         }
       ]
     }

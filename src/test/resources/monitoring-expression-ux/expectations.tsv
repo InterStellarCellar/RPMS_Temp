@@ -1,0 +1,14 @@
+# monitoring-expression-ux expectations
+# filename<TAB>minIssues<TAB>messageSubstring
+# minIssues of 0 means the substring must not appear (control cases).
+
+01-scoring-calculatedExpression-on-string.json	1	calculatedExpression scoring requires item.type integer or decimal
+02-scoring-calculatedExpression-on-integer-ok.json	0	calculatedExpression scoring requires item.type integer or decimal
+03-circular-enableWhen-a-b.json	1	circular enableWhen dependency
+03-circular-enableWhen-a-b.json	0	comes after the question
+04-circular-enableWhen-three-node.json	1	circular enableWhen dependency
+04-circular-enableWhen-three-node.json	0	comes after the question
+
+05-readOnly-without-initial.json	1	readOnly item has no initial, calculatedExpression, or initialExpression
+06-readOnly-with-calculatedExpression-ok.json	0	readOnly item has no initial, calculatedExpression, or initialExpression
+07-calculatedExpression-unknown-linkId.json	1	unknown linkId

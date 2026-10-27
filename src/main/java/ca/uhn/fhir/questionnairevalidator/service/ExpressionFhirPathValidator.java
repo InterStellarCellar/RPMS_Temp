@@ -57,9 +57,19 @@ class ExpressionFhirPathValidator {
 			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-templateExtract";
 	static final String URL_OBSERVATION_EXTRACT_ENTRY =
 			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtractEntry";
+	static final String URL_CALCULATED_EXPRESSION =
+			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression";
+	static final String URL_ENABLE_WHEN_EXPRESSION =
+			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression";
+	static final String URL_INITIAL_EXPRESSION =
+			"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression";
 
 	private static final Set<String> EXTRACT_PARENT_URLS = Set.of(
 			URL_DEFINITION_EXTRACT, URL_TEMPLATE_EXTRACT, URL_OBSERVATION_EXTRACT_ENTRY);
+
+	/** Monitoring UX expression sites: unknown linkId literals are errors (not warnings). */
+	private static final Set<String> ESCALATED_LINK_ID_URLS = Set.of(
+			URL_CALCULATED_EXPRESSION, URL_ENABLE_WHEN_EXPRESSION, URL_INITIAL_EXPRESSION);
 	private static final Set<String> EXTRACT_SLICE_NAMES = Set.of(
 			"fullUrl", "ifNoneMatch", "ifModifiedSince", "ifMatch", "ifNoneExist", "resourceId");
 
@@ -282,7 +292,7 @@ class ExpressionFhirPathValidator {
 		if (theVariableSite && theExpression.hasName()) {
 			checkVariableSelfReference(theExpression.getName(), expr, exprPath);
 		}
-		checkUnknownLinkIds(expr, exprPath);
+		checkUnknownLinkIds(expr, exprPath, theUrl);
 		checkUndeclaredEnv(expr, exprPath);
 	}
 
@@ -292,7 +302,7 @@ class ExpressionFhirPathValidator {
 			return;
 		}
 		parseFhirPath(theExpr, shortName(theUrl), thePath);
-		checkUnknownLinkIds(theExpr, thePath);
+		checkUnknownLinkIds(theExpr, thePath, theUrl);
 		checkUndeclaredEnv(theExpr, thePath);
 	}
 
@@ -319,19 +329,26 @@ class ExpressionFhirPathValidator {
 		}
 	}
 
-	private void checkUnknownLinkIds(String theExpr, String thePath) {
+	private void checkUnknownLinkIds(String theExpr, String thePath, String theExtensionUrl) {
+		ResultSeverityEnum severity = escalateUnknownLinkId(theExtensionUrl)
+				? ResultSeverityEnum.ERROR
+				: ResultSeverityEnum.WARNING;
 		Matcher matcher = LINK_ID_LITERAL.matcher(theExpr);
 		Set<String> seen = new LinkedHashSet<>();
 		while (matcher.find()) {
 			String linkId = matcher.group(1);
 			if (seen.add(linkId) && !myLinkIds.contains(linkId)) {
 				addIssue(
-						ResultSeverityEnum.WARNING,
+						severity,
 						"FHIRPath references unknown linkId '" + linkId + "'",
 						thePath,
 						theExpr);
 			}
 		}
+	}
+
+	static boolean escalateUnknownLinkId(String theExtensionUrl) {
+		return theExtensionUrl != null && ESCALATED_LINK_ID_URLS.contains(theExtensionUrl);
 	}
 
 	private void checkUndeclaredEnv(String theExpr, String thePath) {

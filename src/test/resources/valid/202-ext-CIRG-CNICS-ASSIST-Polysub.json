@@ -13,14 +13,22 @@
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "202-ext-CIRG-CNICS-ASSIST-Polysub--ASSIST-Polysub"
         }
       ]
     },
@@ -32,32 +40,43 @@
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-freq-0",
-            "display": "Never"
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-freq-1",
-            "display": "Once or twice"
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-freq-2",
-            "display": "Monthly"
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-freq-3",
-            "display": "Weekly"
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-freq-4",
-            "display": "Daily or almost daily"
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "202-ext-CIRG-CNICS-ASSIST-Polysub--ASSIST-Polysub-freq"
         }
       ]
     },
@@ -69,14 +88,22 @@
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-inject-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-inject-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "202-ext-CIRG-CNICS-ASSIST-Polysub--ASSIST-Polysub-inject"
         }
       ]
     },
@@ -88,14 +115,22 @@
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-inject-alt-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-inject-alt-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "202-ext-CIRG-CNICS-ASSIST-Polysub--ASSIST-Polysub-inject-alt"
         }
       ]
     },
@@ -107,32 +142,43 @@
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-inject-freq-0",
-            "display": "Never"
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-inject-freq-1",
-            "display": "Once or twice"
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-inject-freq-2",
-            "display": "Monthly"
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-inject-freq-3",
-            "display": "Weekly"
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "ASSIST-Polysub-inject-freq-4",
-            "display": "Daily or almost daily"
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "202-ext-CIRG-CNICS-ASSIST-Polysub--ASSIST-Polysub-inject-freq"
         }
       ]
     }

@@ -20,6 +20,12 @@
             }
           ]
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "47-optionExclusive-on-open-choice-alone--q1"
+        }
       ]
     }
   ]

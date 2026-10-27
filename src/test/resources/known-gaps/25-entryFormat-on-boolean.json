@@ -15,7 +15,13 @@
       ],
       "linkId": "q1",
       "type": "boolean",
-      "text": "Q"
+      "text": "Q",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "25-entryFormat-on-boolean--q1"
+        }
+      ]
     }
   ]
 }

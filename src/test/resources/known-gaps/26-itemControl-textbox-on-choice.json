@@ -27,6 +27,12 @@
         {
           "valueString": "x"
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "26-itemControl-textbox-on-choice--q1"
+        }
       ]
     }
   ]

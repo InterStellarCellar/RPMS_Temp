@@ -21,7 +21,13 @@
       ],
       "linkId": "weight",
       "type": "decimal",
-      "text": "Weight"
+      "text": "Weight",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "94-ext-unit-and-regex--weight"
+        }
+      ]
     },
     {
       "extension": [
@@ -32,7 +38,13 @@
       ],
       "linkId": "code",
       "type": "string",
-      "text": "Site code"
+      "text": "Site code",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "94-ext-unit-and-regex--code"
+        }
+      ]
     }
   ]
 }

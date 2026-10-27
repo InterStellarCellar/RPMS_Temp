@@ -19,6 +19,12 @@
         {
           "valueString": "Chocolate"
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "23-type-open-choice--flavor"
+        }
       ]
     }
   ]

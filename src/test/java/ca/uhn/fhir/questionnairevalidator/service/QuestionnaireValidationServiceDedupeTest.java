@@ -64,6 +64,42 @@ class QuestionnaireValidationServiceDedupeTest {
 		assertEquals(localTerm.getMessage(), deduped.get(1).getMessage());
 	}
 
+	@Test
+	void dedupeIssues_dropsForwardRefWarningWhenCircularEnableWhenPresent() {
+		ValidationIssueDto forward = issue(
+				9,
+				5,
+				"warning",
+				"The target of this enableWhen rule (b) comes after the question itself");
+		ValidationIssueDto circular = issue(
+				15,
+				11,
+				"error",
+				"circular enableWhen dependency involving 'a' → 'b' → 'a'");
+		ValidationIssueDto unrelated = issue(1, 1, "warning", "Constraint failed: dom-6: 'A resource should have narrative'");
+
+		List<ValidationIssueDto> deduped =
+				QuestionnaireValidationService.dedupeIssues(List.of(forward, circular, unrelated));
+
+		assertEquals(2, deduped.size());
+		assertEquals(circular.getMessage(), deduped.get(0).getMessage());
+		assertEquals(unrelated.getMessage(), deduped.get(1).getMessage());
+	}
+
+	@Test
+	void dedupeIssues_keepsForwardRefWarningWhenNoCircularError() {
+		ValidationIssueDto forward = issue(
+				9,
+				5,
+				"warning",
+				"The target of this enableWhen rule (b) comes after the question itself");
+
+		List<ValidationIssueDto> deduped = QuestionnaireValidationService.dedupeIssues(List.of(forward));
+
+		assertEquals(1, deduped.size());
+		assertEquals(forward.getMessage(), deduped.get(0).getMessage());
+	}
+
 	private static ValidationIssueDto issue(int line, int col, String severity, String message) {
 		ValidationIssueDto dto = new ValidationIssueDto();
 		dto.setLine(line);

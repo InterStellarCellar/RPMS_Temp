@@ -1,0 +1,15 @@
+# range-unit-safety expectations
+# filename<TAB>minIssues<TAB>messageSubstring
+# minIssues 0 means the substring must not appear (control fixtures).
+# Each fixture is valid JSON / clean FHIR parse.
+
+01-minValue-greater-than-maxValue.json	1	minValue is greater than maxValue
+02-minValue-equals-maxValue.json	1	minValue equals maxValue
+03-sliderStepValue-larger-than-range.json	1	sliderStepValue is larger than maxValue minus minValue
+04-unitValueSet-unresolved.json	1	unitValueSet could not be resolved
+05-unit-bad-ucum.json	1	Unknown UCUM unit
+06-weight-with-celsius-unit.json	1	unit dimension does not match concept
+07-spo2-max-over-100.json	1	declared value range is outside typical physiological bounds
+08-hidden-and-required.json	1	hidden item should not be required
+09-hr-sane-range-ok.json	0	unit dimension does not match concept
+09-hr-sane-range-ok.json	0	declared value range is outside typical physiological bounds

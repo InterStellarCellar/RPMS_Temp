@@ -36,7 +36,13 @@
       ],
       "linkId": "pain",
       "type": "integer",
-      "text": "Pain 0-10"
+      "text": "Pain 0-10",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "96-ext-sliderStepValue--pain"
+        }
+      ]
     }
   ]
 }

@@ -2,7 +2,7 @@
   "resourceType": "Questionnaire",
   "id": "CIRG-CNICS-IPV4",
   "title": "IPV-4",
-  "description": "IPV-4, a patient-reported screening instrument of intimate partner violence for primary and HIV care. Reference: [Fredericksen, Rob, Emma Fitzsimmons, Sonia Avendano-Soto, et al. \"Development and Integration of IPV-4, a Patient-Reported Screening Instrument of Intimate Partner Violence for Primary and HIV Care.\" Journal of AIDS and HIV Research 14, no. 2 (2022): 41\u201349. https://doi.org/10.5897/JAHR2021.0551.](https://academicjournals.org/journal/JAHR/article-full-text/E39BF4A70048)",
+  "description": "IPV-4, a patient-reported screening instrument of intimate partner violence for primary and HIV care. Reference: [Fredericksen, Rob, Emma Fitzsimmons, Sonia Avendano-Soto, et al. \"Development and Integration of IPV-4, a Patient-Reported Screening Instrument of Intimate Partner Violence for Primary and HIV Care.\" Journal of AIDS and HIV Research 14, no. 2 (2022): 41–49. https://doi.org/10.5897/JAHR2021.0551.](https://academicjournals.org/journal/JAHR/article-full-text/E39BF4A70048)",
   "status": "active",
   "item": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "linkId": "IPV4-header-2",
-      "text": "In the PAST YEAR, did a current or former partner\u2026",
+      "text": "In the PAST YEAR, did a current or former partner…",
       "type": "display"
     },
     {
@@ -23,14 +23,22 @@
         {
           "valueCoding": {
             "code": "IPV4-1-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "IPV4-1-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "213-ext-CIRG-CNICS-IPV4--IPV4-1"
         }
       ]
     },
@@ -42,14 +50,22 @@
         {
           "valueCoding": {
             "code": "IPV4-2-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "IPV4-2-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "213-ext-CIRG-CNICS-IPV4--IPV4-2"
         }
       ]
     },
@@ -61,14 +77,34 @@
         {
           "valueCoding": {
             "code": "IPV4-3-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "IPV4-3-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "213-ext-CIRG-CNICS-IPV4--IPV4-3"
         }
       ]
     },
@@ -80,14 +116,34 @@
         {
           "valueCoding": {
             "code": "IPV4-4-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "IPV4-4-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "213-ext-CIRG-CNICS-IPV4--IPV4-4"
         }
       ]
     },
@@ -104,6 +160,12 @@
             "expression": "iif(%resource.item.where(linkId='IPV4-4').answer.valueCoding.code = 'IPV4-4-0', true, false)"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "213-ext-CIRG-CNICS-IPV4--IPV4-physical-violence"
+        }
       ]
     },
     {
@@ -119,6 +181,12 @@
             "expression": "iif(%resource.item.where(linkId='IPV4-3').answer.valueCoding.code = 'IPV4-3-0', true, false)"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "213-ext-CIRG-CNICS-IPV4--IPV4-sexual-violence"
+        }
       ]
     },
     {
@@ -133,6 +201,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='IPV4-physical-violence').answer.valueBoolean.toBoolean() = true or (%resource.item.where(linkId='IPV4-sexual-violence').answer.valueBoolean.toBoolean() = true))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "213-ext-CIRG-CNICS-IPV4--IPV4-critical"
         }
       ]
     }

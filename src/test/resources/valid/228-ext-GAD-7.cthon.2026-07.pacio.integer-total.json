@@ -565,6 +565,14 @@
         {
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
           "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}",
+            "display": "score"
+          }
         }
       ],
       "linkId": "total-score",
@@ -667,7 +675,13 @@
       "linkId": "severity-category",
       "type": "choice",
       "text": "GAD-7 anxiety severity",
-      "readOnly": true
+      "readOnly": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "228-ext-GAD-7.cthon.2026-07.pacio.integer-total--severity-category"
+        }
+      ]
     }
   ],
   "status": "active",

@@ -11,7 +11,13 @@
     {
       "linkId": "q1",
       "type": "string",
-      "text": "Name"
+      "text": "Name",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "00-minimal-draft--q1"
+        }
+      ]
     }
   ]
 }

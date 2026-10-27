@@ -1,0 +1,41 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "linkId": "a",
+      "type": "integer",
+      "text": "A",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "07-calculatedExpression-unknown-linkId--a"
+        }
+      ]
+    },
+    {
+      "linkId": "b",
+      "type": "integer",
+      "text": "B",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "07-calculatedExpression-unknown-linkId--b"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='does-not-exist').answer.value"
+          }
+        }
+      ]
+    }
+  ]
+}

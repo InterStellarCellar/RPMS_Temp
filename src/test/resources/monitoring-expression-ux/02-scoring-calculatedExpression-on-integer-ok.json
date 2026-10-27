@@ -1,0 +1,69 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "linkId": "q1",
+      "type": "choice",
+      "text": "Little interest",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "44250-9"
+        }
+      ],
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 0
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6568-5",
+            "display": "Not at all"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 1
+            }
+          ],
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6569-3",
+            "display": "Several days"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "score",
+      "type": "integer",
+      "text": "Total",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "44261-6"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
+          "valueExpression": {
+            "language": "text/fhirpath",
+            "expression": "%resource.item.where(linkId='q1').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/itemWeight').valueDecimal"
+          }
+        }
+      ]
+    }
+  ]
+}

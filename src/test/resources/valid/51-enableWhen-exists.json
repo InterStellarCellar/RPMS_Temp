@@ -11,7 +11,13 @@
     {
       "linkId": "note",
       "type": "string",
-      "text": "Optional note"
+      "text": "Optional note",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "51-enableWhen-exists--note"
+        }
+      ]
     },
     {
       "linkId": "follow",
@@ -22,6 +28,12 @@
           "question": "note",
           "operator": "exists",
           "answerBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "51-enableWhen-exists--follow"
         }
       ]
     }

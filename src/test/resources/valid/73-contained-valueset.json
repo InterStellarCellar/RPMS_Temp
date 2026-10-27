@@ -36,7 +36,13 @@
       "linkId": "pick",
       "type": "choice",
       "text": "Pick",
-      "answerValueSet": "#vs1"
+      "answerValueSet": "#vs1",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "73-contained-valueset--pick"
+        }
+      ]
     }
   ]
 }

@@ -16,14 +16,14 @@
       "answerOption": [
         {
           "valueCoding": {
-            "system": "http://example.org/cs",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "fever",
             "display": "Fever"
           }
         },
         {
           "valueCoding": {
-            "system": "http://example.org/cs",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "cough",
             "display": "Cough"
           }
@@ -36,10 +36,16 @@
             }
           ],
           "valueCoding": {
-            "system": "http://example.org/cs",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "none",
             "display": "None of the above"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "98-ext-optionExclusive--symptoms"
         }
       ]
     }

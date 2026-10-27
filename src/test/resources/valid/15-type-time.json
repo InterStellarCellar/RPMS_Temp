@@ -12,7 +12,13 @@
       "linkId": "q1",
       "type": "time",
       "text": "A time question",
-      "required": true
+      "required": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "15-type-time--q1"
+        }
+      ]
     }
   ]
 }

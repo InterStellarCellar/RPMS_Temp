@@ -9,7 +9,13 @@
     {
       "linkId": "flag",
       "type": "boolean",
-      "text": "Flag"
+      "text": "Flag",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "18-enableWhen-answerCoding-vs-boolean-question--flag"
+        }
+      ]
     },
     {
       "linkId": "detail",
@@ -23,6 +29,12 @@
             "system": "http://example.org/cs",
             "code": "y"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "18-enableWhen-answerCoding-vs-boolean-question--detail"
         }
       ]
     }

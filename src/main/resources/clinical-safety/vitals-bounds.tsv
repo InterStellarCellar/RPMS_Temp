@@ -1,0 +1,11 @@
+# Curated vitals concepts for authoring-time dimension + physiological checks.
+# Columns: system, code, label, dimension, ucumExamples (comma-separated), physMin, physMax, physUnit
+# dimension: frequency | fraction | temperature | mass | length | ratio | pressure
+http://loinc.org	8867-4	Heart rate	frequency	/min,{beats}/min,{1}/min,min-1	20	250	/min
+http://loinc.org	59408-5	Oxygen saturation	fraction	%	50	100	%
+http://loinc.org	8310-5	Body temperature	temperature	Cel,[degF],K	30	45	Cel
+http://loinc.org	29463-7	Body weight	mass	kg,g,[lb_av]	0.5	500	kg
+http://loinc.org	8302-2	Body height	length	cm,m,[in_i]	20	250	cm
+http://loinc.org	39156-5	Body mass index	ratio	kg/m2	10	80	kg/m2
+http://loinc.org	8480-6	Systolic blood pressure	pressure	mm[Hg]	40	250	mm[Hg]
+http://loinc.org	8462-4	Diastolic blood pressure	pressure	mm[Hg]	20	160	mm[Hg]

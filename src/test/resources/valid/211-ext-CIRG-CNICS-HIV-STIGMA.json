@@ -19,8 +19,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -31,8 +38,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -43,8 +57,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -55,8 +76,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -67,8 +95,21 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 5
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "211-ext-CIRG-CNICS-HIV-STIGMA--HIV-STIGMA-0"
         }
       ]
     },
@@ -86,8 +127,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -98,8 +146,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -110,8 +165,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -122,8 +184,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -134,8 +203,21 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 5
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "211-ext-CIRG-CNICS-HIV-STIGMA--HIV-STIGMA-1"
         }
       ]
     },
@@ -153,8 +235,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -165,8 +254,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -177,8 +273,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -189,8 +292,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -201,8 +311,21 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 5
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "211-ext-CIRG-CNICS-HIV-STIGMA--HIV-STIGMA-2"
         }
       ]
     },
@@ -220,8 +343,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -232,8 +362,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -244,8 +381,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -256,8 +400,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -268,8 +419,21 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 5
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "211-ext-CIRG-CNICS-HIV-STIGMA--HIV-STIGMA-3"
         }
       ]
     },
@@ -286,6 +450,12 @@
             "expression": "(iif(%resource.item.where(linkId = 'HIV-STIGMA-0').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'HIV-STIGMA-1').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'HIV-STIGMA-2').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'HIV-STIGMA-3').answer.valueCoding.code.exists(), 1, 0))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "211-ext-CIRG-CNICS-HIV-STIGMA--HIV-STIGMA-SCORE-NUM-ANSWERED"
+        }
       ]
     },
     {
@@ -301,6 +471,12 @@
             "expression": "(iif(%resource.item.where(linkId='HIV-STIGMA-SCORE-NUM-ANSWERED').answer.valueInteger.toInteger() < 3, null, (iif(%resource.item.where(linkId='HIV-STIGMA-0').answer.empty(), 0, %resource.item.where(linkId='HIV-STIGMA-0').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='HIV-STIGMA-1').answer.empty(), 0, %resource.item.where(linkId='HIV-STIGMA-1').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='HIV-STIGMA-2').answer.empty(), 0, %resource.item.where(linkId='HIV-STIGMA-2').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='HIV-STIGMA-3').answer.empty(), 0, %resource.item.where(linkId='HIV-STIGMA-3').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger())) / %resource.item.where(linkId='HIV-STIGMA-SCORE-NUM-ANSWERED').answer.valueInteger.toInteger()))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "211-ext-CIRG-CNICS-HIV-STIGMA--HIV-STIGMA-SCORE"
+        }
       ]
     },
     {
@@ -315,6 +491,12 @@
             "language": "text/fhirpath",
             "expression": "(iif(%resource.item.where(linkId='HIV-STIGMA-SCORE').answer.empty(), null,iif(%resource.item.where(linkId='HIV-STIGMA-SCORE').answer.valueDecimal.toDecimal() >= 4, true,false)))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "211-ext-CIRG-CNICS-HIV-STIGMA--HIV-STIGMA-SCORE-CRITICAL"
         }
       ]
     }

@@ -11,7 +11,13 @@
     {
       "linkId": "q1",
       "type": "string",
-      "text": "Legacy"
+      "text": "Legacy",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "03-status-retired--q1"
+        }
+      ]
     }
   ]
 }

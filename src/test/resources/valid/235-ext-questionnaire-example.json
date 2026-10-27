@@ -17,7 +17,7 @@
       "linkId": "1",
       "code": [
         {
-          "system": "http://example.org/system/code/sections",
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
           "code": "COMORBIDITY"
         }
       ],
@@ -27,7 +27,7 @@
           "linkId": "1.1",
           "code": [
             {
-              "system": "http://example.org/system/code/questions",
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
               "code": "COMORB"
             }
           ],
@@ -39,7 +39,7 @@
               "linkId": "1.1.1",
               "code": [
                 {
-                  "system": "http://example.org/system/code/sections",
+                  "system": "https://csiro.au/CodeSystem/rpms-fixtures",
                   "code": "CARDIAL"
                 }
               ],
@@ -59,7 +59,7 @@
                   "linkId": "1.1.1.1",
                   "code": [
                     {
-                      "system": "http://example.org/system/code/questions",
+                      "system": "https://csiro.au/CodeSystem/rpms-fixtures",
                       "code": "COMORBCAR"
                     }
                   ],
@@ -71,7 +71,7 @@
                       "linkId": "1.1.1.1.1",
                       "code": [
                         {
-                          "system": "http://example.org/system/code/questions",
+                          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
                           "code": "COMCAR00",
                           "display": "Angina Pectoris"
                         },
@@ -104,7 +104,7 @@
                   "linkId": "1.1.1.2",
                   "code": [
                     {
-                      "system": "http://example.org/system/code/questions",
+                      "system": "https://csiro.au/CodeSystem/rpms-fixtures",
                       "code": "COMORBVAS"
                     }
                   ],
@@ -122,7 +122,7 @@
       "linkId": "2",
       "code": [
         {
-          "system": "http://example.org/system/code/sections",
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
           "code": "HISTOPATHOLOGY"
         }
       ],
@@ -132,7 +132,7 @@
           "linkId": "2.1",
           "code": [
             {
-              "system": "http://example.org/system/code/sections",
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
               "code": "ABDOMINAL"
             }
           ],
@@ -142,7 +142,7 @@
               "linkId": "2.1.2",
               "code": [
                 {
-                  "system": "http://example.org/system/code/questions",
+                  "system": "https://csiro.au/CodeSystem/rpms-fixtures",
                   "code": "STADPT",
                   "display": "pT category"
                 }

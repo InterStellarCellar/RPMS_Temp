@@ -12,7 +12,13 @@
       "linkId": "q1",
       "type": "dateTime",
       "text": "A dateTime question",
-      "required": true
+      "required": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "14-type-dateTime--q1"
+        }
+      ]
     }
   ]
 }

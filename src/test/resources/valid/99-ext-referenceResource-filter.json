@@ -21,7 +21,13 @@
       ],
       "linkId": "patient",
       "type": "reference",
-      "text": "Related patient"
+      "text": "Related patient",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "99-ext-referenceResource-filter--patient"
+        }
+      ]
     }
   ]
 }

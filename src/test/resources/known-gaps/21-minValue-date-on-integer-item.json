@@ -15,7 +15,13 @@
       ],
       "linkId": "age",
       "type": "integer",
-      "text": "Age"
+      "text": "Age",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "21-minValue-date-on-integer-item--age"
+        }
+      ]
     }
   ]
 }

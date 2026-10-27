@@ -21,6 +21,12 @@
           "operator": "exists",
           "answerBoolean": true
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "43-enableWhen-to-display-item--q"
+        }
       ]
     }
   ]

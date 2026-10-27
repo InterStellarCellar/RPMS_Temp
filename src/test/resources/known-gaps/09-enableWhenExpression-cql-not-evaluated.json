@@ -35,6 +35,12 @@
             "expression": "define X: 1 + 1"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "09-enableWhenExpression-cql-not-evaluated--q1"
+        }
       ]
     }
   ]

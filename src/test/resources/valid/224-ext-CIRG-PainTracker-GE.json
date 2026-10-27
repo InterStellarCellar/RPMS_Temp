@@ -14,38 +14,50 @@
         {
           "valueCoding": {
             "code": "GE-1-1-1",
-            "display": "A diagnosis (to help find the cause of pain)"
+            "display": "A diagnosis (to help find the cause of pain)",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-1-2",
-            "display": "Help in coping with the pain"
+            "display": "Help in coping with the pain",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-1-3",
-            "display": "A reduction in pain"
+            "display": "A reduction in pain",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-1-4",
-            "display": "A cure"
+            "display": "A cure",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-1-5",
-            "display": "Help getting back to important activities"
+            "display": "Help getting back to important activities",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-1-6",
-            "display": "Other"
+            "display": "Other",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "224-ext-CIRG-PainTracker-GE--GE-1-1"
         }
       ]
     },
@@ -57,38 +69,50 @@
         {
           "valueCoding": {
             "code": "GE-1-2-1",
-            "display": "A diagnosis (to help find the cause of pain)"
+            "display": "A diagnosis (to help find the cause of pain)",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-2-2",
-            "display": "Help in coping with the pain"
+            "display": "Help in coping with the pain",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-2-3",
-            "display": "A reduction in pain"
+            "display": "A reduction in pain",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-2-4",
-            "display": "A cure"
+            "display": "A cure",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-2-5",
-            "display": "Help getting back to important activities"
+            "display": "Help getting back to important activities",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-2-6",
-            "display": "Other"
+            "display": "Other",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "224-ext-CIRG-PainTracker-GE--GE-1-2"
         }
       ]
     },
@@ -100,38 +124,50 @@
         {
           "valueCoding": {
             "code": "GE-1-3-1",
-            "display": "A diagnosis (to help find the cause of pain)"
+            "display": "A diagnosis (to help find the cause of pain)",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-3-2",
-            "display": "Help in coping with the pain"
+            "display": "Help in coping with the pain",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-3-3",
-            "display": "A reduction in pain"
+            "display": "A reduction in pain",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-3-4",
-            "display": "A cure"
+            "display": "A cure",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-3-5",
-            "display": "Help getting back to important activities"
+            "display": "Help getting back to important activities",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-1-3-6",
-            "display": "Other"
+            "display": "Other",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "224-ext-CIRG-PainTracker-GE--GE-1-3"
         }
       ]
     },
@@ -143,92 +179,113 @@
         {
           "valueCoding": {
             "code": "GE-2-1-1",
-            "display": "Consultation only (advice only to you and your primary care physician)"
+            "display": "Consultation only (advice only to you and your primary care physician)",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-2",
-            "display": "Counseling"
+            "display": "Counseling",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-3",
-            "display": "Stress management"
+            "display": "Stress management",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-4",
-            "display": "Physical therapy"
+            "display": "Physical therapy",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-5",
-            "display": "Medications for pain"
+            "display": "Medications for pain",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-6",
-            "display": "Acupuncture"
+            "display": "Acupuncture",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-7",
-            "display": "Surgery"
+            "display": "Surgery",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-8",
-            "display": "Relaxation therapy"
+            "display": "Relaxation therapy",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-9",
-            "display": "Biofeedback"
+            "display": "Biofeedback",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-10",
-            "display": "Injections or nerve blocks"
+            "display": "Injections or nerve blocks",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-11",
-            "display": "Electrical stimulation such as TENS unit"
+            "display": "Electrical stimulation such as TENS unit",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-12",
-            "display": "Spinal cord stimulator"
+            "display": "Spinal cord stimulator",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-13",
-            "display": "Implanted medication pump"
+            "display": "Implanted medication pump",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-14",
-            "display": "Don't know"
+            "display": "Don't know",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-1-15",
-            "display": "Other"
+            "display": "Other",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "224-ext-CIRG-PainTracker-GE--GE-2-1"
         }
       ]
     },
@@ -240,92 +297,113 @@
         {
           "valueCoding": {
             "code": "GE-2-2-1",
-            "display": "Consultation only (advice only to you and your primary care physician)"
+            "display": "Consultation only (advice only to you and your primary care physician)",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-2",
-            "display": "Counseling"
+            "display": "Counseling",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-3",
-            "display": "Stress management"
+            "display": "Stress management",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-4",
-            "display": "Physical therapy"
+            "display": "Physical therapy",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-5",
-            "display": "Medications for pain"
+            "display": "Medications for pain",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-6",
-            "display": "Acupuncture"
+            "display": "Acupuncture",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-7",
-            "display": "Surgery"
+            "display": "Surgery",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-8",
-            "display": "Relaxation therapy"
+            "display": "Relaxation therapy",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-9",
-            "display": "Biofeedback"
+            "display": "Biofeedback",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-10",
-            "display": "Injections or nerve blocks"
+            "display": "Injections or nerve blocks",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-11",
-            "display": "Electrical stimulation such as TENS unit"
+            "display": "Electrical stimulation such as TENS unit",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-12",
-            "display": "Spinal cord stimulator"
+            "display": "Spinal cord stimulator",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-13",
-            "display": "Implanted medication pump"
+            "display": "Implanted medication pump",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-14",
-            "display": "Don't know"
+            "display": "Don't know",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-2-15",
-            "display": "Other"
+            "display": "Other",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "224-ext-CIRG-PainTracker-GE--GE-2-2"
         }
       ]
     },
@@ -337,92 +415,113 @@
         {
           "valueCoding": {
             "code": "GE-2-3-1",
-            "display": "Consultation only (advice only to you and your primary care physician)"
+            "display": "Consultation only (advice only to you and your primary care physician)",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-2",
-            "display": "Counseling"
+            "display": "Counseling",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-3",
-            "display": "Stress management"
+            "display": "Stress management",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-4",
-            "display": "Physical therapy"
+            "display": "Physical therapy",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-5",
-            "display": "Medications for pain"
+            "display": "Medications for pain",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-6",
-            "display": "Acupuncture"
+            "display": "Acupuncture",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-7",
-            "display": "Surgery"
+            "display": "Surgery",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-8",
-            "display": "Relaxation therapy"
+            "display": "Relaxation therapy",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-9",
-            "display": "Biofeedback"
+            "display": "Biofeedback",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-10",
-            "display": "Injections or nerve blocks"
+            "display": "Injections or nerve blocks",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-11",
-            "display": "Electrical stimulation such as TENS unit"
+            "display": "Electrical stimulation such as TENS unit",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-12",
-            "display": "Spinal cord stimulator"
+            "display": "Spinal cord stimulator",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-13",
-            "display": "Implanted medication pump"
+            "display": "Implanted medication pump",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-14",
-            "display": "Don't know"
+            "display": "Don't know",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "GE-2-3-15",
-            "display": "Other"
+            "display": "Other",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "224-ext-CIRG-PainTracker-GE--GE-2-3"
         }
       ]
     }

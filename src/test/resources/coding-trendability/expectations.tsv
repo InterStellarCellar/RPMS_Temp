@@ -1,0 +1,15 @@
+# coding-trendability expectations
+# filename<TAB>minIssues<TAB>messageSubstring
+# minIssues 0 means the substring must not appear (control fixtures).
+# Each fixture is valid JSON / clean FHIR parse.
+
+01-value-item-missing-code.json	1	value-producing item requires item.code
+02-answerOption-coding-no-system.json	1	Coding must include both system and code
+03-item-code-example-system.json	1	example CodeSystem is not a stable coded identity
+04-item-code-custom-system-ok.json	0	item.code system is not a preferred terminology
+04-item-code-custom-system-ok.json	0	example CodeSystem is not a stable coded identity
+06-calculatedExpression-missing-ordinal.json	1	scored choice answerOption requires ordinalValue or itemWeight
+07-phq-style-ordinals-ok.json	0	value-producing item requires item.code
+07-phq-style-ordinals-ok.json	0	Coding must include both system and code
+07-phq-style-ordinals-ok.json	0	example CodeSystem is not a stable coded identity
+07-phq-style-ordinals-ok.json	0	scored choice answerOption requires ordinalValue or itemWeight

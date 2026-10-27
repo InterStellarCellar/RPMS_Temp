@@ -86,7 +86,13 @@
     {
       "linkId": "q1",
       "type": "string",
-      "text": "Comment"
+      "text": "Comment",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "02-root-metadata-full--q1"
+        }
+      ]
     }
   ]
 }

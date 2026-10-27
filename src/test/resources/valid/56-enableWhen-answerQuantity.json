@@ -11,7 +11,13 @@
     {
       "linkId": "weight",
       "type": "quantity",
-      "text": "Weight"
+      "text": "Weight",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "56-enableWhen-answerQuantity--weight"
+        }
+      ]
     },
     {
       "linkId": "heavy",

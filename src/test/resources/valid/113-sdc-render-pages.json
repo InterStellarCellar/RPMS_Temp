@@ -47,7 +47,13 @@
         {
           "linkId": "p1.q",
           "type": "string",
-          "text": "Name"
+          "text": "Name",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "113-sdc-render-pages--p1.q"
+            }
+          ]
         }
       ]
     },
@@ -72,7 +78,13 @@
         {
           "linkId": "p2.q",
           "type": "boolean",
-          "text": "OK?"
+          "text": "OK?",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "113-sdc-render-pages--p2.q"
+            }
+          ]
         }
       ]
     }

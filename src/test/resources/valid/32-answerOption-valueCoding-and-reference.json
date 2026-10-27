@@ -28,6 +28,12 @@
             "display": "Several days"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "32-answerOption-valueCoding-and-reference--c"
+        }
       ]
     },
     {
@@ -40,6 +46,12 @@
             "reference": "Practitioner/example",
             "display": "Dr Example"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "32-answerOption-valueCoding-and-reference--r"
         }
       ]
     }

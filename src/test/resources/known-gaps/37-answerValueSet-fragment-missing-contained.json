@@ -10,7 +10,13 @@
       "linkId": "q1",
       "type": "choice",
       "text": "Q",
-      "answerValueSet": "#missing-vs"
+      "answerValueSet": "#missing-vs",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "37-answerValueSet-fragment-missing-contained--q1"
+        }
+      ]
     }
   ]
 }

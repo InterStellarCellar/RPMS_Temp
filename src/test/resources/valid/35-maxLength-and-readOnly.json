@@ -12,7 +12,13 @@
       "linkId": "short",
       "type": "string",
       "text": "Short",
-      "maxLength": 40
+      "maxLength": 40,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "35-maxLength-and-readOnly--short"
+        }
+      ]
     },
     {
       "linkId": "locked",
@@ -22,6 +28,12 @@
       "initial": [
         {
           "valueString": "system-set"
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "35-maxLength-and-readOnly--locked"
         }
       ]
     }

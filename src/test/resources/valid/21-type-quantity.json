@@ -12,7 +12,13 @@
       "linkId": "q1",
       "type": "quantity",
       "text": "A quantity question",
-      "required": true
+      "required": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "21-type-quantity--q1"
+        }
+      ]
     }
   ]
 }

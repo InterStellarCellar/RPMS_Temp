@@ -146,6 +146,11 @@ public class QuestionnaireValidationService {
 		issues = InvariantLocationEnricher.enrich(resource, theJson, issues);
 		if (resource instanceof Questionnaire questionnaire) {
 			issues.addAll(ExpressionFhirPathValidator.validate(questionnaire, theJson, myFhirContext));
+			issues.addAll(MonitoringExpressionUxValidator.validate(questionnaire, theJson));
+			issues.addAll(ObservationExtractValidator.validate(questionnaire, theJson));
+			issues.addAll(RangeAndUnitSafetyValidator.validate(
+					questionnaire, theJson, myLocalValidationSupportChain));
+			issues.addAll(CodingTrendabilityValidator.validate(questionnaire, theJson));
 		}
 		issues = dedupeIssues(issues);
 		response.setIssues(issues);
@@ -158,6 +163,8 @@ public class QuestionnaireValidationService {
 	 * Policy:
 	 * - If a remote terminology wrapper exists for a location, keep that (remote code-system check).
 	 * - Otherwise keep the core message (structural / local / common-code-system issues).
+	 * - If a circular enableWhen error is present, drop HAPI "comes after" forward-ref warnings
+	 *   (order smell is redundant once mutual dependency is reported).
 	 */
 	static List<ValidationIssueDto> dedupeIssues(List<ValidationIssueDto> theIssues) {
 		Map<String, ValidationIssueDto> bestByKey = new LinkedHashMap<>();
@@ -171,9 +178,13 @@ public class QuestionnaireValidationService {
 
 		// Drop core twins when a remote terminology wrapper exists at the same location/severity.
 		List<ValidationIssueDto> locationHasRemote = new ArrayList<>();
+		boolean hasCircularEnableWhen = false;
 		for (ValidationIssueDto issue : bestByKey.values()) {
 			if (isRemoteTerminologyWrapper(issue.getMessage())) {
 				locationHasRemote.add(issue);
+			}
+			if (isCircularEnableWhenError(issue)) {
+				hasCircularEnableWhen = true;
 			}
 		}
 		List<ValidationIssueDto> out = new ArrayList<>();
@@ -182,9 +193,34 @@ public class QuestionnaireValidationService {
 					&& locationHasRemote.stream().anyMatch(remote -> sameLocationAndSeverity(remote, issue))) {
 				continue;
 			}
+			if (hasCircularEnableWhen && isEnableWhenForwardRefWarning(issue)) {
+				continue;
+			}
 			out.add(issue);
 		}
 		return out;
+	}
+
+	static boolean isCircularEnableWhenError(ValidationIssueDto theIssue) {
+		if (theIssue == null || theIssue.getMessage() == null) {
+			return false;
+		}
+		String severity = theIssue.getSeverity() == null ? "" : theIssue.getSeverity().toLowerCase(Locale.ROOT);
+		return ("error".equals(severity) || "fatal".equals(severity))
+				&& theIssue.getMessage().contains(MonitoringExpressionUxValidator.MSG_CIRCULAR_ENABLE_WHEN);
+	}
+
+	static boolean isEnableWhenForwardRefWarning(ValidationIssueDto theIssue) {
+		if (theIssue == null || theIssue.getMessage() == null) {
+			return false;
+		}
+		String severity = theIssue.getSeverity() == null ? "" : theIssue.getSeverity().toLowerCase(Locale.ROOT);
+		if (!"warning".equals(severity)) {
+			return false;
+		}
+		String message = theIssue.getMessage().toLowerCase(Locale.ROOT);
+		return message.contains("comes after the question")
+				|| (message.contains("enablewhen") && message.contains("comes after"));
 	}
 
 	private static boolean sameLocationAndSeverity(ValidationIssueDto a, ValidationIssueDto b) {

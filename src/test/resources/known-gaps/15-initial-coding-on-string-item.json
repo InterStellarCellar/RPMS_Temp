@@ -17,6 +17,12 @@
             "code": "x"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "15-initial-coding-on-string-item--q1"
+        }
       ]
     }
   ]

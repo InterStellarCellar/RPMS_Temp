@@ -20,7 +20,13 @@
       "linkId": "q1",
       "type": "string",
       "text": "Q",
-      "required": true
+      "required": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "82-combo-hidden-required-bad-regex--q1"
+        }
+      ]
     }
   ]
 }

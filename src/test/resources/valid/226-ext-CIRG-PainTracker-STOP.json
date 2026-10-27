@@ -13,14 +13,22 @@
         {
           "valueCoding": {
             "code": "STOP-0-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "STOP-0-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "226-ext-CIRG-PainTracker-STOP--STOP-0"
         }
       ]
     },
@@ -32,14 +40,22 @@
         {
           "valueCoding": {
             "code": "STOP-1-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "STOP-1-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "226-ext-CIRG-PainTracker-STOP--STOP-1"
         }
       ]
     },
@@ -51,14 +67,22 @@
         {
           "valueCoding": {
             "code": "STOP-2-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "STOP-2-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "226-ext-CIRG-PainTracker-STOP--STOP-2"
         }
       ]
     },
@@ -70,14 +94,22 @@
         {
           "valueCoding": {
             "code": "STOP-3-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "STOP-3-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "226-ext-CIRG-PainTracker-STOP--STOP-3"
         }
       ]
     },
@@ -95,7 +127,13 @@
         }
       ],
       "required": false,
-      "text": "STOP questionnaire total score"
+      "text": "STOP questionnaire total score",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "226-ext-CIRG-PainTracker-STOP--STOP-score"
+        }
+      ]
     }
   ]
 }

@@ -29,7 +29,13 @@
     {
       "linkId": "score",
       "type": "integer",
-      "text": "Score"
+      "text": "Score",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "112-sdc-behave-enableWhenExpression--score"
+        }
+      ]
     },
     {
       "extension": [

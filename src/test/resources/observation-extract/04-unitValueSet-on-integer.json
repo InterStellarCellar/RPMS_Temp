@@ -8,9 +8,14 @@
   "item": [
     {
       "linkId": "q1",
-      "type": "string",
+      "type": "integer",
       "text": "Q",
-      "readOnly": true
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unitValueSet",
+          "valueCanonical": "http://example.org/ValueSet/units"
+        }
+      ]
     }
   ]
 }

@@ -12,7 +12,13 @@
       "linkId": "q1",
       "type": "date",
       "text": "A date question",
-      "required": true
+      "required": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "13-type-date--q1"
+        }
+      ]
     }
   ]
 }

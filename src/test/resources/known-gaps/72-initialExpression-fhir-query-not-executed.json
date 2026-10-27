@@ -35,6 +35,12 @@
             "expression": "Patient?name=smith"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "72-initialExpression-fhir-query-not-executed--q1"
+        }
       ]
     }
   ]

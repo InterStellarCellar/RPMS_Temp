@@ -53,6 +53,12 @@
             }
           ]
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "87-constraint-key-duplicate--q1"
+        }
       ]
     }
   ]

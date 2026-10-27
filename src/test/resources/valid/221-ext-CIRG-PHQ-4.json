@@ -5,7 +5,7 @@
   "name": "Patient Health Questionnaire 4 item (PHQ-4)",
   "description": "Patient Health Questionnaire 4 item (PHQ-4). References: [https://www.phqscreeners.com/select-screener](https://www.phqscreeners.com/select-screener), [https://www.phqscreeners.com/images/sites/g/files/g10016261/f/201412/instructions.pdf](https://www.phqscreeners.com/images/sites/g/files/g10016261/f/201412/instructions.pdf).",
   "status": "active",
-  "copyright": "Copyright \u00a9 Pfizer Inc. All rights reserved. Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.",
+  "copyright": "Copyright © Pfizer Inc. All rights reserved. Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.",
   "code": [
     {
       "system": "http://loinc.org",
@@ -92,6 +92,12 @@
               "valueDecimal": 3
             }
           ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "221-ext-CIRG-PHQ-4--69725-0"
         }
       ]
     },

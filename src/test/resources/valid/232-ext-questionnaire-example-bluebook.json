@@ -36,7 +36,13 @@
             {
               "linkId": "nameOfChild",
               "text": "Name of child",
-              "type": "string"
+              "type": "string",
+              "code": [
+                {
+                  "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                  "code": "232-ext-questionnaire-example-bluebook--nameOfChild"
+                }
+              ]
             },
             {
               "linkId": "sex",
@@ -45,13 +51,21 @@
               "answerOption": [
                 {
                   "valueCoding": {
-                    "code": "F"
+                    "code": "F",
+                    "system": "https://csiro.au/CodeSystem/rpms-fixtures"
                   }
                 },
                 {
                   "valueCoding": {
-                    "code": "M"
+                    "code": "M",
+                    "system": "https://csiro.au/CodeSystem/rpms-fixtures"
                   }
+                }
+              ],
+              "code": [
+                {
+                  "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                  "code": "232-ext-questionnaire-example-bluebook--sex"
                 }
               ]
             }
@@ -65,12 +79,24 @@
             {
               "linkId": "birthWeight",
               "text": "Birth weight (kg)",
-              "type": "decimal"
+              "type": "decimal",
+              "code": [
+                {
+                  "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                  "code": "232-ext-questionnaire-example-bluebook--birthWeight"
+                }
+              ]
             },
             {
               "linkId": "birthLength",
               "text": "Birth length (cm)",
-              "type": "decimal"
+              "type": "decimal",
+              "code": [
+                {
+                  "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                  "code": "232-ext-questionnaire-example-bluebook--birthLength"
+                }
+              ]
             },
             {
               "linkId": "vitaminKgiven",
@@ -79,17 +105,20 @@
               "answerOption": [
                 {
                   "valueCoding": {
-                    "code": "INJECTION"
+                    "code": "INJECTION",
+                    "system": "https://csiro.au/CodeSystem/rpms-fixtures"
                   }
                 },
                 {
                   "valueCoding": {
-                    "code": "INTRAVENOUS"
+                    "code": "INTRAVENOUS",
+                    "system": "https://csiro.au/CodeSystem/rpms-fixtures"
                   }
                 },
                 {
                   "valueCoding": {
-                    "code": "ORAL"
+                    "code": "ORAL",
+                    "system": "https://csiro.au/CodeSystem/rpms-fixtures"
                   }
                 }
               ],
@@ -108,14 +137,32 @@
                     {
                       "linkId": "vitaminiKDose1",
                       "text": "1st dose",
-                      "type": "dateTime"
+                      "type": "dateTime",
+                      "code": [
+                        {
+                          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                          "code": "232-ext-questionnaire-example-bluebook--vitaminiKDose1"
+                        }
+                      ]
                     },
                     {
                       "linkId": "vitaminiKDose2",
                       "text": "2nd dose",
-                      "type": "dateTime"
+                      "type": "dateTime",
+                      "code": [
+                        {
+                          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                          "code": "232-ext-questionnaire-example-bluebook--vitaminiKDose2"
+                        }
+                      ]
                     }
                   ]
+                }
+              ],
+              "code": [
+                {
+                  "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                  "code": "232-ext-questionnaire-example-bluebook--vitaminKgiven"
                 }
               ]
             },
@@ -127,14 +174,32 @@
                 {
                   "linkId": "hepBgivenDate",
                   "text": "Date given",
-                  "type": "date"
+                  "type": "date",
+                  "code": [
+                    {
+                      "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                      "code": "232-ext-questionnaire-example-bluebook--hepBgivenDate"
+                    }
+                  ]
+                }
+              ],
+              "code": [
+                {
+                  "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                  "code": "232-ext-questionnaire-example-bluebook--hepBgiven"
                 }
               ]
             },
             {
               "linkId": "abnormalitiesAtBirth",
               "text": "Abnormalities noted at birth",
-              "type": "string"
+              "type": "string",
+              "code": [
+                {
+                  "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                  "code": "232-ext-questionnaire-example-bluebook--abnormalitiesAtBirth"
+                }
+              ]
             }
           ]
         }

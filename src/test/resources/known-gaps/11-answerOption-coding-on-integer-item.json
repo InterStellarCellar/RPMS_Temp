@@ -13,9 +13,15 @@
       "answerOption": [
         {
           "valueCoding": {
-            "system": "http://example.org/cs",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "a"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "11-answerOption-coding-on-integer-item--q1"
         }
       ]
     }

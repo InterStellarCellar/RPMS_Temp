@@ -18,20 +18,47 @@
         {
           "valueCoding": {
             "code": "FOOD-0-0",
-            "display": "Never true"
-          }
+            "display": "Never true",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FOOD-0-1",
-            "display": "Sometimes true"
-          }
+            "display": "Sometimes true",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FOOD-0-2",
-            "display": "Often true"
-          }
+            "display": "Often true",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "209-ext-CIRG-CNICS-FOOD--FOOD-0"
         }
       ]
     },
@@ -43,20 +70,47 @@
         {
           "valueCoding": {
             "code": "FOOD-1-0",
-            "display": "Never true"
-          }
+            "display": "Never true",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FOOD-1-1",
-            "display": "Sometimes true"
-          }
+            "display": "Sometimes true",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FOOD-1-2",
-            "display": "Often true"
-          }
+            "display": "Often true",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "209-ext-CIRG-CNICS-FOOD--FOOD-1"
         }
       ]
     },
@@ -73,6 +127,12 @@
             "expression": "iif(%resource.item.where(linkId='FOOD-0').answer.empty() and %resource.item.where(linkId='FOOD-1').answer.empty(), null, iif(%resource.item.where(linkId='FOOD-0').answer.valueCoding.empty() xor %resource.item.where(linkId='FOOD-1').answer.valueCoding.empty(), iif(%resource.item.where(linkId='FOOD-0').answer.valueCoding.code = 'FOOD-0-0' or %resource.item.where(linkId='FOOD-1').answer.valueCoding.code = 'FOOD-1-0', null, 1), iif(%resource.item.where(linkId='FOOD-0').answer.valueCoding.code.replace('FOOD-0-','').toInteger() = 0, iif(%resource.item.where(linkId='FOOD-1').answer.valueCoding.code.replace('FOOD-1-','').toInteger() = 0, 0, 1), iif(%resource.item.where(linkId='FOOD-1').answer.valueCoding.code.replace('FOOD-1-','').toInteger() = 0, 1, 2))))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "209-ext-CIRG-CNICS-FOOD--FOOD-score"
+        }
       ]
     },
     {
@@ -88,6 +148,12 @@
             "expression": "iif(%resource.item.where(linkId='FOOD-score').answer.valueDecimal.toInteger() = 0, 'Food Secure', iif(%resource.item.where(linkId='FOOD-score').answer.valueDecimal.toInteger() = 1, 'Low Food Security', iif(%resource.item.where(linkId='FOOD-score').answer.valueDecimal.toInteger() = 2, 'Very Low Food Security', null)))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "209-ext-CIRG-CNICS-FOOD--FOOD-score-label"
+        }
       ]
     },
     {
@@ -102,6 +168,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='FOOD-score').answer.valueDecimal.toInteger() > 0"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "209-ext-CIRG-CNICS-FOOD--FOOD-critical-flag"
         }
       ]
     }

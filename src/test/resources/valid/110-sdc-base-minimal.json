@@ -30,7 +30,13 @@
       "linkId": "name",
       "type": "string",
       "text": "Name",
-      "required": true
+      "required": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "110-sdc-base-minimal--name"
+        }
+      ]
     },
     {
       "linkId": "age",
@@ -44,6 +50,12 @@
         {
           "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
           "valueInteger": 120
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "110-sdc-base-minimal--age"
         }
       ]
     }

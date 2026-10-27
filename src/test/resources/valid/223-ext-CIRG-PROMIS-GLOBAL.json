@@ -4,7 +4,7 @@
   "title": "PROMIS short form - global - version 1.2",
   "description": "PROMIS short form - global - version 1.2. Reference: [https://www.healthmeasures.net/administrator/components/com_instruments/uploads/PROMIS%20Global%20Health%20Scoring%20Manual_22June2023.pdf](https://www.healthmeasures.net/administrator/components/com_instruments/uploads/PROMIS%20Global%20Health%20Scoring%20Manual_22June2023.pdf).",
   "status": "active",
-  "copyright": "Copyright \u00a9 2010 PROMIS Health Organization or other individuals/entities that have contributed information and materials to Assessment Center, and are being used with the permission of the copyright holders. Use of PROMIS instruments (e.g., item banks, short forms, profile measures) are subject to the PROMIS Terms and Conditions available at: http://www.assessmentcenter.net/TandC.aspx",
+  "copyright": "Copyright © 2010 PROMIS Health Organization or other individuals/entities that have contributed information and materials to Assessment Center, and are being used with the permission of the copyright holders. Use of PROMIS instruments (e.g., item banks, short forms, profile measures) are subject to the PROMIS Terms and Conditions available at: http://www.assessmentcenter.net/TandC.aspx",
   "code": [
     {
       "system": "http://loinc.org",

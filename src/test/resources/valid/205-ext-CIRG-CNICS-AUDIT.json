@@ -24,8 +24,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -36,8 +43,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -48,8 +62,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -60,8 +81,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -72,8 +100,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -84,8 +119,21 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-0"
         }
       ]
     },
@@ -101,6 +149,12 @@
             "language": "text/fhirpath",
             "expression": "iif(%resource.item.where(linkId='AUDIT-0').answer.empty(), null, %resource.item.where(linkId='AUDIT-0').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger())"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-Q0-score"
         }
       ]
     },
@@ -118,8 +172,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -130,8 +191,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -142,8 +210,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -154,8 +229,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -166,8 +248,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -178,8 +267,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -190,8 +286,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -202,8 +305,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -214,8 +324,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -226,8 +343,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 9
+            }
+          ]
         }
       ],
       "extension": [
@@ -237,6 +361,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-1"
         }
       ]
     },
@@ -254,8 +384,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -266,8 +403,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -278,8 +422,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -290,8 +441,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -302,8 +460,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -313,6 +478,12 @@
             "language": "text/fhirpath",
             "expression": "((%patient.gender != 'male') or %patient.gender.exists() != true) and %resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-2-not-male"
         }
       ]
     },
@@ -330,8 +501,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -342,8 +520,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -354,8 +539,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -366,8 +558,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -378,8 +577,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -389,6 +595,12 @@
             "language": "text/fhirpath",
             "expression": "%patient.gender.exists() and (%patient.gender = 'male') and (%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0')"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-2-male"
         }
       ]
     },
@@ -405,6 +617,12 @@
             "expression": "(iif(%resource.item.where(linkId='AUDIT-1').answer.empty(), 0, %resource.item.where(linkId='AUDIT-1').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-2-not-male').answer.empty(), 0, %resource.item.where(linkId='AUDIT-2-not-male').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-2-male').answer.empty(), 0, %resource.item.where(linkId='AUDIT-2-male').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-Q1-Q2-score"
+        }
       ]
     },
     {
@@ -419,6 +637,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId = 'AUDIT-0').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'AUDIT-0').answer.valueCoding.code = 'AUDIT-0-0') or (%resource.item.where(linkId = 'AUDIT-1').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'AUDIT-2-not-male').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-2-male').answer.valueCoding.code.exists()))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-C-complete"
         }
       ]
     },
@@ -435,6 +659,12 @@
             "expression": "%resource.item.where(linkId='AUDIT-Q0-score').answer.valueDecimal.toInteger() + %resource.item.where(linkId='AUDIT-Q1-Q2-score').answer.valueDecimal.toInteger()"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-C-score"
+        }
       ]
     },
     {
@@ -449,6 +679,12 @@
             "language": "text/fhirpath",
             "expression": "iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, 'At-risk', iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, 'At-risk', iif((%resource.item.where(linkId='AUDIT-C-score').answer.empty() != true), 'Not at-risk', null)))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-C-score-interpretation"
         }
       ]
     },
@@ -466,8 +702,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -478,8 +721,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -490,8 +740,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -502,8 +759,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -514,8 +778,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -525,6 +796,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-3"
         }
       ]
     },
@@ -542,8 +819,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -554,8 +838,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -566,8 +857,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -578,8 +876,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -590,8 +895,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -601,6 +913,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-4"
         }
       ]
     },
@@ -618,8 +936,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -630,8 +955,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -642,8 +974,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -654,8 +993,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -666,8 +1012,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -677,6 +1030,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-5"
         }
       ]
     },
@@ -694,8 +1053,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -706,8 +1072,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -718,8 +1091,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -730,8 +1110,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -742,8 +1129,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -753,6 +1147,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-6"
         }
       ]
     },
@@ -770,8 +1170,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -782,8 +1189,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -794,8 +1208,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -806,8 +1227,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 3
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -818,8 +1246,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -829,6 +1264,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-7"
         }
       ]
     },
@@ -846,8 +1287,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -858,8 +1306,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -870,8 +1325,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         }
       ],
       "extension": [
@@ -881,6 +1343,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-8"
         }
       ]
     },
@@ -898,8 +1366,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -910,8 +1385,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 2
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -922,8 +1404,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 4
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         }
       ],
       "extension": [
@@ -933,6 +1422,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='AUDIT-0').answer.valueCoding.code != 'AUDIT-0-0' and (iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4, true, iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3, true, false))))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-9"
         }
       ]
     },
@@ -949,6 +1444,12 @@
             "expression": "%resource.item.where(linkId = 'AUDIT-3').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-4').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-5').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-6').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-7').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-8').answer.valueCoding.code.exists() or %resource.item.where(linkId = 'AUDIT-9').answer.valueCoding.code.exists()"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-last-7-any-answers"
+        }
       ]
     },
     {
@@ -963,6 +1464,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId = 'AUDIT-3').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-4').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-5').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-6').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-7').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-8').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'AUDIT-9').answer.valueCoding.code.exists()"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-last-7-complete"
         }
       ]
     },
@@ -979,6 +1486,12 @@
             "expression": "(%resource.item.where(linkId='AUDIT-C-complete').answer.valueBoolean.toBoolean() = true and (iif((%resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 4 and (%patient.gender = 'male')) and %resource.item.where(linkId='AUDIT-last-7-complete').answer.valueBoolean.toBoolean() = true, true,   (iif((%resource.item.where(linkId='AUDIT-C-score').answer.valueDecimal.toInteger() >= 3 and (%patient.gender != 'male')) and %resource.item.where(linkId='AUDIT-last-7-complete').answer.valueBoolean.toBoolean() = true, true, false)))))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-complete"
+        }
       ]
     },
     {
@@ -993,6 +1506,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='AUDIT-Q0-score').answer.valueDecimal.toInteger() + %resource.item.where(linkId='AUDIT-Q1-Q2-score').answer.valueDecimal.toInteger() + iif(%resource.item.where(linkId='AUDIT-3').answer.empty(), 0, %resource.item.where(linkId='AUDIT-3').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-4').answer.empty(), 0, %resource.item.where(linkId='AUDIT-4').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-5').answer.empty(), 0, %resource.item.where(linkId='AUDIT-5').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-6').answer.empty(), 0, %resource.item.where(linkId='AUDIT-6').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-7').answer.empty(), 0, %resource.item.where(linkId='AUDIT-7').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-8').answer.empty(), 0, %resource.item.where(linkId='AUDIT-8').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='AUDIT-9').answer.empty(), 0, %resource.item.where(linkId='AUDIT-9').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-score"
         }
       ]
     },
@@ -1009,6 +1528,12 @@
             "expression": "iif(%patient.gender = 'male' and %resource.item.where(linkId='AUDIT-score').answer.valueDecimal.toInteger() >= 6, 'At-risk', iif(%patient.gender != 'male' and %resource.item.where(linkId='AUDIT-score').answer.valueDecimal.toInteger() >= 5, 'At-risk', iif((%resource.item.where(linkId='AUDIT-score').answer.empty() != true), 'Not at-risk', null)))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-score-interpretation"
+        }
       ]
     },
     {
@@ -1023,6 +1548,12 @@
             "language": "text/fhirpath",
             "expression": "iif(%resource.item.where(linkId='AUDIT-last-7-any-answers').answer.valueBoolean.toBoolean() = true, 'AUDIT', iif(%resource.item.where(linkId='AUDIT-0').answer.empty() = false, 'AUDIT-C', null))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "205-ext-CIRG-CNICS-AUDIT--AUDIT-qnr-to-report"
         }
       ]
     }

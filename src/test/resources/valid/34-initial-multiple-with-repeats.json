@@ -20,6 +20,12 @@
         {
           "valueString": "b"
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "34-initial-multiple-with-repeats--tags"
+        }
       ]
     }
   ]

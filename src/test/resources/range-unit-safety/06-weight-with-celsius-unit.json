@@ -1,0 +1,30 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "Cel"
+          }
+        }
+      ],
+      "linkId": "weight",
+      "type": "quantity",
+      "text": "Weight",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "29463-7"
+        }
+      ]
+    }
+  ]
+}

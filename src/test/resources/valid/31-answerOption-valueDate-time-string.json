@@ -19,6 +19,12 @@
         {
           "valueDate": "2021-01-01"
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "31-answerOption-valueDate-time-string--d"
+        }
       ]
     },
     {
@@ -32,6 +38,12 @@
         {
           "valueTime": "17:00:00"
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "31-answerOption-valueDate-time-string--t"
+        }
       ]
     },
     {
@@ -44,6 +56,12 @@
         },
         {
           "valueString": "High"
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "31-answerOption-valueDate-time-string--s"
         }
       ]
     }

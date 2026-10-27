@@ -11,7 +11,13 @@
     {
       "linkId": "has-allergy",
       "type": "boolean",
-      "text": "Allergies?"
+      "text": "Allergies?",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "57-nested-enableWhen--has-allergy"
+        }
+      ]
     },
     {
       "linkId": "allergy-group",
@@ -29,7 +35,13 @@
           "linkId": "allergen",
           "type": "string",
           "text": "Allergen",
-          "required": true
+          "required": true,
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "57-nested-enableWhen--allergen"
+            }
+          ]
         },
         {
           "linkId": "severity",
@@ -41,6 +53,12 @@
             },
             {
               "valueString": "severe"
+            }
+          ],
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "57-nested-enableWhen--severity"
             }
           ]
         }

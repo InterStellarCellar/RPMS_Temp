@@ -13,10 +13,16 @@
       "answerOption": [
         {
           "valueCoding": {
-            "system": "http://example.org/cs",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "a",
             "display": "   "
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "64-choice-answerOption-display-whitespace--q1"
         }
       ]
     }

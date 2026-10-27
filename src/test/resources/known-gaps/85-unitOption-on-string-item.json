@@ -26,6 +26,12 @@
             "code": "kg"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "85-unitOption-on-string-item--q1"
+        }
       ]
     }
   ]

@@ -34,13 +34,13 @@ terminology packages match the webapp.
 |-------|--------|------------------------|
 | 09 | `expression-not-compiled` | CQL (`text/cql`) in Expression extensions is not compiled or executed. **`text/fhirpath` syntax is checked** — see `expression-fhirpath/` |
 | 10–19 | `type-consistency-unchecked` | `answerOption` / `initial` / `enableWhen.answer[x]` type vs `item.type` (or referenced question) |
-| 20–29 | `extension-semantics-unchecked` | Extension present and typed OK, but meaningless (inverted min/max, invalid regex, wrong itemControl, …) |
-| 30–39 | `unresolved-reference` | Missing ValueSet / definition / Library / derivedFrom / fragment `#id` — no hard error |
-| 40–49 | `authoring-soft-rule` | Spec SHOULD / HAPI-dropped authoring rules (`sdc-rend-1`, prefix dupes, circular enableWhen, …) |
+| 20–29 | `extension-semantics-unchecked` | Extension present and typed OK, but meaningless (invalid regex, wrong itemControl, …). **`minValue`/`maxValue` order, slider step, hidden+required** are now enforced — see `range-unit-safety/` |
+| 30–39 | `unresolved-reference` | Missing ValueSet / definition / Library / derivedFrom / fragment `#id` — no hard error. **`unitValueSet` resolution is now an error** — see `range-unit-safety/` |
+| 40–49 | `authoring-soft-rule` | Spec SHOULD / HAPI-dropped authoring rules (`sdc-rend-1`, prefix dupes, …). **`observationLinkPeriod` ⇒ `item.code` is now enforced** — see `observation-extract/`. **Circular `enableWhen` is now an error** — see `monitoring-expression-ux/` |
 | 50–59 | `sdc-runtime-not-executed` | Populate / extract / launch / assemble semantics not run at validate time |
-| 60–69 | `authoring-soft-rule` | More soft smells (opaque linkIds, deep nesting, example bindings, …) |
+| 60–69 | `authoring-soft-rule` | More soft smells (opaque linkIds, deep nesting, …). **`item.code` example systems are now errors** — see `coding-trendability/`. **Bare `readOnly` without value source is now a warning** — see `monitoring-expression-ux/` |
 | 70–79 | `expression-or-sdc-gap` | Query languages (`application/x-fhir-query`) not executed; leftover SDC authoring smells |
-| 80–95 | `combo-gap` / soft rules | Combinations of independent gaps still pass |
+| 80–95 | `combo-gap` / soft rules | Combinations of independent gaps still pass. **code-only `answerOption.valueCoding` is now an error** — see `coding-trendability/`. **`83` reduced to prefix-dup only** (circular enableWhen is now an error) |
 
 ## Sources
 
@@ -51,6 +51,14 @@ terminology packages match the webapp.
 - Prior notes in `sdc/README.md` and `instance-structural/README.md` (dropped `sdc-rend-1`, `dom-2`, …)
 - Manual probes under `dont-commit/examples/` (`min-max-extension.json`)
 - Invalid `text/fhirpath` fixtures moved to `expression-fhirpath/` once authoring-time parse landed
+- `49-observationLinkPeriod-without-code` moved to `observation-extract/` once linkPeriod⇒code landed
+- `20` / `27` / `34` / `86` / `91` moved to `range-unit-safety/` (min/max, hidden+required, unitValueSet, slider)
+- `81` reduced to unresolved `answerValueSet` only (inverted min/max is now an error)
+- `69` / `90` moved to `coding-trendability/` (example CodeSystem / coding without system)
+- `44` / `65` moved to `monitoring-expression-ux/` (circular enableWhen / readOnly without value source)
+- `83` reduced to prefix-dup only (circular enableWhen is now an error)
+- `70-isSubject-true-without-subjectType` moved to `subject-identity/` once isSubject⇒subjectType landed
+- `67` empty `subjectType` remains here (`max_error_fatal=0`); rule 19 now warns that Patient is missing
 
 ## Explicitly *not* gaps (removed after probing)
 
@@ -73,4 +81,9 @@ Fixtures that **do** produce `error`/`fatal` were deleted rather than weakened, 
 | Must fail other instance rules | `instance-structural/` |
 | Must fail SDC profile rules | `sdc/` |
 | Must fail embedded FHIRPath | `expression-fhirpath/` |
+| Must fail observation extract / populate authoring | `observation-extract/` |
+| Must fail range / unit / clinical-safety authoring | `range-unit-safety/` |
+| Must fail coding / terminology for trendability | `coding-trendability/` |
+| Must fail monitoring expression UX authoring | `monitoring-expression-ux/` |
+| Must fail subject / identity / longitudinal authoring | `subject-identity/` |
 | Location line/col quality | `location-quality/` |

@@ -31,8 +31,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -43,8 +50,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ]
     },
@@ -69,8 +83,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -81,8 +102,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ]
     },
@@ -107,8 +135,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -119,8 +154,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ]
     },
@@ -145,8 +187,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -157,8 +206,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ]
     },
@@ -183,8 +239,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -195,8 +258,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ]
     },
@@ -221,8 +291,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -233,8 +310,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ]
     },
@@ -259,8 +343,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -271,8 +362,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ]
     },
@@ -297,8 +395,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -309,8 +414,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ]
     },
@@ -335,8 +447,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -347,8 +466,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ]
     },
@@ -373,8 +499,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -385,8 +518,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ]
     },
@@ -410,32 +550,67 @@
         {
           "valueCoding": {
             "code": "ASSIST-10-0",
-            "display": "Never"
-          }
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-10-1",
-            "display": "Once or twice"
-          }
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-10-2",
-            "display": "Monthly"
-          }
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-10-3",
-            "display": "Weekly"
-          }
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-10-4",
-            "display": "Daily or almost daily"
-          }
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -463,32 +638,67 @@
         {
           "valueCoding": {
             "code": "ASSIST-11-0",
-            "display": "Never"
-          }
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-11-1",
-            "display": "Once or twice"
-          }
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-11-2",
-            "display": "Monthly"
-          }
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-11-3",
-            "display": "Weekly"
-          }
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-11-4",
-            "display": "Daily or almost daily"
-          }
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -516,32 +726,67 @@
         {
           "valueCoding": {
             "code": "ASSIST-12-0",
-            "display": "Never"
-          }
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-12-1",
-            "display": "Once or twice"
-          }
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-12-2",
-            "display": "Monthly"
-          }
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-12-3",
-            "display": "Weekly"
-          }
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-12-4",
-            "display": "Daily or almost daily"
-          }
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -569,32 +814,67 @@
         {
           "valueCoding": {
             "code": "ASSIST-13-0",
-            "display": "Never"
-          }
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-13-1",
-            "display": "Once or twice"
-          }
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-13-2",
-            "display": "Monthly"
-          }
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-13-3",
-            "display": "Weekly"
-          }
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-13-4",
-            "display": "Daily or almost daily"
-          }
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -622,32 +902,67 @@
         {
           "valueCoding": {
             "code": "ASSIST-14-0",
-            "display": "Never"
-          }
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-14-1",
-            "display": "Once or twice"
-          }
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-14-2",
-            "display": "Monthly"
-          }
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-14-3",
-            "display": "Weekly"
-          }
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-14-4",
-            "display": "Daily or almost daily"
-          }
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -675,32 +990,67 @@
         {
           "valueCoding": {
             "code": "ASSIST-15-0",
-            "display": "Never"
-          }
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-15-1",
-            "display": "Once or twice"
-          }
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-15-2",
-            "display": "Monthly"
-          }
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-15-3",
-            "display": "Weekly"
-          }
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-15-4",
-            "display": "Daily or almost daily"
-          }
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -728,32 +1078,67 @@
         {
           "valueCoding": {
             "code": "ASSIST-16-0",
-            "display": "Never"
-          }
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-16-1",
-            "display": "Once or twice"
-          }
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-16-2",
-            "display": "Monthly"
-          }
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-16-3",
-            "display": "Weekly"
-          }
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-16-4",
-            "display": "Daily or almost daily"
-          }
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -781,32 +1166,67 @@
         {
           "valueCoding": {
             "code": "ASSIST-17-0",
-            "display": "Never"
-          }
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-17-1",
-            "display": "Once or twice"
-          }
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-17-2",
-            "display": "Monthly"
-          }
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-17-3",
-            "display": "Weekly"
-          }
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-17-4",
-            "display": "Daily or almost daily"
-          }
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -834,32 +1254,67 @@
         {
           "valueCoding": {
             "code": "ASSIST-18-0",
-            "display": "Never"
-          }
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-18-1",
-            "display": "Once or twice"
-          }
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-18-2",
-            "display": "Monthly"
-          }
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-18-3",
-            "display": "Weekly"
-          }
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-18-4",
-            "display": "Daily or almost daily"
-          }
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -887,32 +1342,67 @@
         {
           "valueCoding": {
             "code": "ASSIST-19-0",
-            "display": "Never"
-          }
+            "display": "Never",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-19-1",
-            "display": "Once or twice"
-          }
+            "display": "Once or twice",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-19-2",
-            "display": "Monthly"
-          }
+            "display": "Monthly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-19-3",
-            "display": "Weekly"
-          }
+            "display": "Weekly",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "ASSIST-19-4",
-            "display": "Daily or almost daily"
-          }
+            "display": "Daily or almost daily",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         }
       ],
       "extension": [
@@ -938,6 +1428,12 @@
             "expression": "iif(%resource.item.where(linkId = 'ASSIST-0').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-0').answer.valueCoding.code = 'ASSIST-0-0'),%questionnaire.item.where(linkId = 'ASSIST-0').code.where(code = 'ASSIST-0-reportable-text').display + ', ','') + iif(%resource.item.where(linkId = 'ASSIST-1').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-1').answer.valueCoding.code = 'ASSIST-1-0'),%questionnaire.item.where(linkId = 'ASSIST-1').code.where(code = 'ASSIST-1-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-2').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-2').answer.valueCoding.code = 'ASSIST-2-0'),%questionnaire.item.where(linkId = 'ASSIST-2').code.where(code = 'ASSIST-2-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-3').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-3').answer.valueCoding.code = 'ASSIST-3-0'),%questionnaire.item.where(linkId = 'ASSIST-3').code.where(code = 'ASSIST-3-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-4').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-4').answer.valueCoding.code = 'ASSIST-4-0'),%questionnaire.item.where(linkId = 'ASSIST-4').code.where(code = 'ASSIST-4-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-5').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-5').answer.valueCoding.code = 'ASSIST-5-0'),%questionnaire.item.where(linkId = 'ASSIST-5').code.where(code = 'ASSIST-5-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-6').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-6').answer.valueCoding.code = 'ASSIST-6-0'),%questionnaire.item.where(linkId = 'ASSIST-6').code.where(code = 'ASSIST-6-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-7').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-7').answer.valueCoding.code = 'ASSIST-7-0'),%questionnaire.item.where(linkId = 'ASSIST-7').code.where(code = 'ASSIST-7-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-8').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-8').answer.valueCoding.code = 'ASSIST-8-0'),%questionnaire.item.where(linkId = 'ASSIST-8').code.where(code = 'ASSIST-8-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-9').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-9').answer.valueCoding.code = 'ASSIST-9-0'),%questionnaire.item.where(linkId = 'ASSIST-9').code.where(code = 'ASSIST-9-reportable-text').display + ', ','')"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "204-ext-CIRG-CNICS-ASSIST--ASSIST-lifetime-score"
+        }
       ]
     },
     {
@@ -952,6 +1448,12 @@
             "language": "text/fhirpath",
             "expression": "iif(%resource.item.where(linkId = 'ASSIST-10').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-10').answer.valueCoding.code != 'ASSIST-10-0'),%questionnaire.item.where(linkId = 'ASSIST-10').code.where(code = 'ASSIST-10-reportable-text').display + ', ','') + iif(%resource.item.where(linkId = 'ASSIST-11').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-11').answer.valueCoding.code != 'ASSIST-11-0'),%questionnaire.item.where(linkId = 'ASSIST-11').code.where(code = 'ASSIST-11-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-12').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-12').answer.valueCoding.code != 'ASSIST-12-0'),%questionnaire.item.where(linkId = 'ASSIST-12').code.where(code = 'ASSIST-12-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-13').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-13').answer.valueCoding.code != 'ASSIST-13-0'),%questionnaire.item.where(linkId = 'ASSIST-13').code.where(code = 'ASSIST-13-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-14').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-14').answer.valueCoding.code != 'ASSIST-14-0'),%questionnaire.item.where(linkId = 'ASSIST-14').code.where(code = 'ASSIST-14-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-15').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-15').answer.valueCoding.code != 'ASSIST-15-0'),%questionnaire.item.where(linkId = 'ASSIST-15').code.where(code = 'ASSIST-15-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-16').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-16').answer.valueCoding.code != 'ASSIST-16-0'),%questionnaire.item.where(linkId = 'ASSIST-16').code.where(code = 'ASSIST-16-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-17').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-17').answer.valueCoding.code != 'ASSIST-17-0'),%questionnaire.item.where(linkId = 'ASSIST-17').code.where(code = 'ASSIST-17-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-18').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-18').answer.valueCoding.code != 'ASSIST-18-0'),%questionnaire.item.where(linkId = 'ASSIST-18').code.where(code = 'ASSIST-18-reportable-text').display + ', ','')+ iif(%resource.item.where(linkId = 'ASSIST-19').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'ASSIST-19').answer.valueCoding.code != 'ASSIST-19-0'),%questionnaire.item.where(linkId = 'ASSIST-19').code.where(code = 'ASSIST-19-reportable-text').display + ', ','')"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "204-ext-CIRG-CNICS-ASSIST--ASSIST-3mo-score"
         }
       ]
     }

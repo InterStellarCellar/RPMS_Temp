@@ -27,6 +27,12 @@
             "display": "Male"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "53-enableWhen-coding--sex"
+        }
       ]
     },
     {
@@ -41,6 +47,12 @@
             "system": "http://hl7.org/fhir/administrative-gender",
             "code": "female"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "53-enableWhen-coding--preg"
         }
       ]
     }

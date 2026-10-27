@@ -14,6 +14,12 @@
         {
           "valueBoolean": true
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "14-initial-boolean-on-date-item--q1"
+        }
       ]
     }
   ]

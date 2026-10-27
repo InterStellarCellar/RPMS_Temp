@@ -18,62 +18,134 @@
         {
           "linkId": "g.bool",
           "type": "boolean",
-          "text": "Bool"
+          "text": "Bool",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.bool"
+            }
+          ]
         },
         {
           "linkId": "g.dec",
           "type": "decimal",
-          "text": "Decimal"
+          "text": "Decimal",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.dec"
+            }
+          ]
         },
         {
           "linkId": "g.int",
           "type": "integer",
-          "text": "Integer"
+          "text": "Integer",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.int"
+            }
+          ]
         },
         {
           "linkId": "g.date",
           "type": "date",
-          "text": "Date"
+          "text": "Date",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.date"
+            }
+          ]
         },
         {
           "linkId": "g.dt",
           "type": "dateTime",
-          "text": "DateTime"
+          "text": "DateTime",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.dt"
+            }
+          ]
         },
         {
           "linkId": "g.time",
           "type": "time",
-          "text": "Time"
+          "text": "Time",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.time"
+            }
+          ]
         },
         {
           "linkId": "g.str",
           "type": "string",
-          "text": "String"
+          "text": "String",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.str"
+            }
+          ]
         },
         {
           "linkId": "g.txt",
           "type": "text",
-          "text": "Text"
+          "text": "Text",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.txt"
+            }
+          ]
         },
         {
           "linkId": "g.url",
           "type": "url",
-          "text": "URL"
+          "text": "URL",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.url"
+            }
+          ]
         },
         {
           "linkId": "g.att",
           "type": "attachment",
-          "text": "Attachment"
+          "text": "Attachment",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.att"
+            }
+          ]
         },
         {
           "linkId": "g.ref",
           "type": "reference",
-          "text": "Reference"
+          "text": "Reference",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.ref"
+            }
+          ]
         },
         {
           "linkId": "g.qty",
           "type": "quantity",
-          "text": "Quantity"
+          "text": "Quantity",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.qty"
+            }
+          ]
         },
         {
           "linkId": "g.choice",
@@ -86,6 +158,12 @@
             {
               "valueInteger": 2
             }
+          ],
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.choice"
+            }
           ]
         },
         {
@@ -95,6 +173,12 @@
           "answerOption": [
             {
               "valueString": "A"
+            }
+          ],
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "25-all-simple-types-group--g.open"
             }
           ]
         },

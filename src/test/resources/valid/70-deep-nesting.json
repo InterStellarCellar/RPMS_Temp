@@ -26,7 +26,13 @@
                 {
                   "linkId": "leaf",
                   "type": "string",
-                  "text": "Leaf"
+                  "text": "Leaf",
+                  "code": [
+                    {
+                      "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                      "code": "70-deep-nesting--leaf"
+                    }
+                  ]
                 }
               ]
             }

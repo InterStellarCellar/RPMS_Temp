@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>SDC base Questionnaire</p><p>Name, age (0\u2013120), smoking status, and visit reason.</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>SDC base Questionnaire</p><p>Name, age (0–120), smoking status, and visit reason.</p></div>"
   },
   "url": "http://example.org/fhir/Questionnaire/sdc-valid",
   "version": "1.0.0",
@@ -24,7 +24,13 @@
       "linkId": "name",
       "text": "What is your name?",
       "type": "string",
-      "required": true
+      "required": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "115-sdc-from-dont-commit--name"
+        }
+      ]
     },
     {
       "extension": [
@@ -40,12 +46,24 @@
       "linkId": "age",
       "text": "Age in years",
       "type": "integer",
-      "required": true
+      "required": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "115-sdc-from-dont-commit--age"
+        }
+      ]
     },
     {
       "linkId": "smoker",
       "text": "Do you currently smoke?",
-      "type": "boolean"
+      "type": "boolean",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "115-sdc-from-dont-commit--smoker"
+        }
+      ]
     },
     {
       "linkId": "cigs-per-day",
@@ -57,6 +75,12 @@
           "operator": "=",
           "answerBoolean": true
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "115-sdc-from-dont-commit--cigs-per-day"
+        }
       ]
     },
     {
@@ -66,24 +90,30 @@
       "answerOption": [
         {
           "valueCoding": {
-            "system": "http://example.org/CodeSystem/visit-reason",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "routine",
             "display": "Routine visit"
           }
         },
         {
           "valueCoding": {
-            "system": "http://example.org/CodeSystem/visit-reason",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "follow-up",
             "display": "Follow-up"
           }
         },
         {
           "valueCoding": {
-            "system": "http://example.org/CodeSystem/visit-reason",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "new-problem",
             "display": "New problem"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "115-sdc-from-dont-commit--reason"
         }
       ]
     }

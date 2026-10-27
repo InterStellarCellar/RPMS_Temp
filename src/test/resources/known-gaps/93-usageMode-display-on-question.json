@@ -15,7 +15,13 @@
       ],
       "linkId": "q1",
       "type": "string",
-      "text": "Capture question marked display-only"
+      "text": "Capture question marked display-only",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "93-usageMode-display-on-question--q1"
+        }
+      ]
     }
   ]
 }

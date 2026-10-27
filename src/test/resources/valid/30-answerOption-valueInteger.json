@@ -22,6 +22,12 @@
         {
           "valueInteger": 2
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "30-answerOption-valueInteger--score"
+        }
       ]
     }
   ]

@@ -16,6 +16,12 @@
         {
           "valueBoolean": true
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "33-initial-values-by-type--b"
+        }
       ]
     },
     {
@@ -25,6 +31,12 @@
       "initial": [
         {
           "valueInteger": 3
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "33-initial-values-by-type--i"
         }
       ]
     },
@@ -36,6 +48,12 @@
         {
           "valueDecimal": 1.5
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "33-initial-values-by-type--d"
+        }
       ]
     },
     {
@@ -46,6 +64,12 @@
         {
           "valueString": "prefilled"
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "33-initial-values-by-type--s"
+        }
       ]
     },
     {
@@ -55,6 +79,12 @@
       "initial": [
         {
           "valueDate": "2024-01-02"
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "33-initial-values-by-type--dt"
         }
       ]
     },
@@ -70,6 +100,12 @@
             "system": "http://unitsofmeasure.org",
             "code": "kg"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "33-initial-values-by-type--q"
         }
       ]
     }

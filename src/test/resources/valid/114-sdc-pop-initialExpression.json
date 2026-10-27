@@ -38,7 +38,13 @@
       ],
       "linkId": "given",
       "type": "string",
-      "text": "Given name"
+      "text": "Given name",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "114-sdc-pop-initialExpression--given"
+        }
+      ]
     }
   ]
 }

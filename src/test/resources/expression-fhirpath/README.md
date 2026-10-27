@@ -7,7 +7,8 @@ authoring-time FHIRPath checks (`ExpressionFhirPathValidator`):
 
 - `IFhirPath.parse` rejection (broken syntax, unknown functions)
 - variable self-reference
-- unknown `linkId='…'` literals (warning; asserted where relevant)
+- unknown `linkId='…'` literals (**error** on `calculatedExpression` / `enableWhenExpression` /
+  `initialExpression`; warning on other expression sites; asserted where relevant)
 
 CQL and `application/x-fhir-query` are **not** compiled here — those remain in
 `known-gaps/` (`09`, `72`, `73`).

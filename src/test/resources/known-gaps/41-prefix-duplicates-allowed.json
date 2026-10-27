@@ -10,13 +10,25 @@
       "linkId": "q1",
       "type": "string",
       "text": "A",
-      "prefix": "1."
+      "prefix": "1.",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "41-prefix-duplicates-allowed--q1"
+        }
+      ]
     },
     {
       "linkId": "q2",
       "type": "string",
       "text": "B",
-      "prefix": "1."
+      "prefix": "1.",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "41-prefix-duplicates-allowed--q2"
+        }
+      ]
     }
   ]
 }

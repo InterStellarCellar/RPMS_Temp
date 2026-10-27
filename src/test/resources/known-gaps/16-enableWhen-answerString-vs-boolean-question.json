@@ -9,7 +9,13 @@
     {
       "linkId": "smoker",
       "type": "boolean",
-      "text": "Smoke?"
+      "text": "Smoke?",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "16-enableWhen-answerString-vs-boolean-question--smoker"
+        }
+      ]
     },
     {
       "linkId": "cigs",
@@ -20,6 +26,12 @@
           "question": "smoker",
           "operator": "=",
           "answerString": "yes"
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "16-enableWhen-answerString-vs-boolean-question--cigs"
         }
       ]
     }

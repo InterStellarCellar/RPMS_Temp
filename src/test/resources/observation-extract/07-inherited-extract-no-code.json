@@ -5,18 +5,17 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+      "valueBoolean": true
+    }
+  ],
   "item": [
     {
       "linkId": "q1",
-      "type": "choice",
-      "text": "Q",
-      "answerOption": [
-        {
-          "valueCoding": {
-            "code": "orphan-code"
-          }
-        }
-      ]
+      "type": "string",
+      "text": "Q"
     }
   ]
 }

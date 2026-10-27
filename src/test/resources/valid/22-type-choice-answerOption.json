@@ -15,20 +15,26 @@
       "answerOption": [
         {
           "valueCoding": {
-            "system": "http://example.org/colors",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "red",
             "display": "Red"
           }
         },
         {
           "valueCoding": {
-            "system": "http://example.org/colors",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
             "code": "blue",
             "display": "Blue"
           }
         },
         {
           "valueString": "Other"
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "22-type-choice-answerOption--color"
         }
       ]
     }

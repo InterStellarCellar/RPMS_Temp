@@ -20,6 +20,12 @@
           "valueString": "y",
           "initialSelected": true
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "42-multiple-initialSelected-without-repeats--a"
+        }
       ]
     }
   ]

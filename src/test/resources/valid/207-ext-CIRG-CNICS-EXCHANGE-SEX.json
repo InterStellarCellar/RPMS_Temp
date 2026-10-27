@@ -13,14 +13,22 @@
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-0-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-0-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "207-ext-CIRG-CNICS-EXCHANGE-SEX--EXCHANGE-SEX-0"
         }
       ]
     },
@@ -32,14 +40,34 @@
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-1-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-1-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "207-ext-CIRG-CNICS-EXCHANGE-SEX--EXCHANGE-SEX-1"
         }
       ]
     },
@@ -52,68 +80,85 @@
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-0",
-            "display": "Place to stay/sleep"
+            "display": "Place to stay/sleep",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-1",
-            "display": "Food"
+            "display": "Food",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-2",
-            "display": "Clothing"
+            "display": "Clothing",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-3",
-            "display": "Drugs"
+            "display": "Drugs",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-4",
-            "display": "Money"
+            "display": "Money",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-5",
-            "display": "Security/protection"
+            "display": "Security/protection",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-6",
-            "display": "Transportation"
+            "display": "Transportation",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-7",
-            "display": "Medication"
+            "display": "Medication",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-8",
-            "display": "Child care"
+            "display": "Child care",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-9",
-            "display": "Something else"
+            "display": "Something else",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-2-10",
-            "display": "Prefer not to say"
+            "display": "Prefer not to say",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "207-ext-CIRG-CNICS-EXCHANGE-SEX--EXCHANGE-SEX-2"
         }
       ]
     },
@@ -126,74 +171,164 @@
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-0",
-            "display": "Place to stay/sleep"
-          }
+            "display": "Place to stay/sleep",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-1",
-            "display": "Food"
-          }
+            "display": "Food",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-2",
-            "display": "Clothing"
-          }
+            "display": "Clothing",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-3",
-            "display": "Drugs"
-          }
+            "display": "Drugs",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-4",
-            "display": "Money"
-          }
+            "display": "Money",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-5",
-            "display": "Security/protection"
-          }
+            "display": "Security/protection",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-6",
-            "display": "Transportation"
-          }
+            "display": "Transportation",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-7",
-            "display": "Medication"
-          }
+            "display": "Medication",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-8",
-            "display": "Child care"
-          }
+            "display": "Child care",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-9",
-            "display": "Something else"
-          }
+            "display": "Something else",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 9
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-10",
-            "display": "Prefer not to say"
-          }
+            "display": "Prefer not to say",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 10
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "EXCHANGE-SEX-3-11",
-            "display": "None of the above"
-          }
+            "display": "None of the above",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 11
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "207-ext-CIRG-CNICS-EXCHANGE-SEX--EXCHANGE-SEX-3"
         }
       ]
     },
@@ -209,6 +344,12 @@
             "language": "text/fhirpath",
             "expression": "iif(%resource.item.where(linkId='EXCHANGE-SEX-1').answer.empty() = false, %resource.item.where(linkId='EXCHANGE-SEX-1').answer.valueCoding.display, iif(%resource.item.where(linkId='EXCHANGE-SEX-3').answer.empty(),'', iif(%resource.item.where(linkId='EXCHANGE-SEX-3').answer.valueCoding.where(code = 'EXCHANGE-SEX-3-10').exists(),'', iif(%resource.item.where(linkId='EXCHANGE-SEX-3').answer.valueCoding.where(code = 'EXCHANGE-SEX-3-11').exists(),'No','Yes'))))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "207-ext-CIRG-CNICS-EXCHANGE-SEX--EXCHANGE-SEX-SCORE-PAST-3-MONTHS"
         }
       ]
     }

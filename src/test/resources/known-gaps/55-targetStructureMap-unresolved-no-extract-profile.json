@@ -15,7 +15,13 @@
     {
       "linkId": "q1",
       "type": "string",
-      "text": "Q"
+      "text": "Q",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "55-targetStructureMap-unresolved-no-extract-profile--q1"
+        }
+      ]
     }
   ]
 }

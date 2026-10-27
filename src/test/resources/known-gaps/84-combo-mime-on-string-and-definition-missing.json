@@ -20,7 +20,13 @@
       "linkId": "q1",
       "type": "string",
       "text": "Q",
-      "definition": "http://example.org/StructureDefinition/Nope#x"
+      "definition": "http://example.org/StructureDefinition/Nope#x",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "84-combo-mime-on-string-and-definition-missing--q1"
+        }
+      ]
     }
   ]
 }

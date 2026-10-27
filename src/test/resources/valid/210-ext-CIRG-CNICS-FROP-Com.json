@@ -18,26 +18,60 @@
         {
           "valueCoding": {
             "code": "FROP-Com-0-0",
-            "display": "None"
-          }
+            "display": "None",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FROP-Com-0-1",
-            "display": "1 fall"
-          }
+            "display": "1 fall",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FROP-Com-0-2",
-            "display": "2 falls"
-          }
+            "display": "2 falls",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FROP-Com-0-3",
-            "display": "3 or more"
-          }
+            "display": "3 or more",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "210-ext-CIRG-CNICS-FROP-Com--FROP-Com-0"
         }
       ]
     },
@@ -49,14 +83,28 @@
         {
           "valueCoding": {
             "code": "FROP-Com-1-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FROP-Com-1-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ],
       "extension": [
@@ -66,6 +114,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId = 'FROP-Com-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'FROP-Com-0').answer.valueCoding.code != 'FROP-Com-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "210-ext-CIRG-CNICS-FROP-Com--FROP-Com-1"
         }
       ]
     },
@@ -82,6 +136,12 @@
             "expression": "iif(%resource.item.where(linkId='FROP-Com-0').answer.valueCoding.code = 'FROP-Com-0-0', 'None', iif(%resource.item.where(linkId='FROP-Com-0').answer.valueCoding.code = 'FROP-Com-0-1', '1', iif(%resource.item.where(linkId='FROP-Com-0').answer.valueCoding.code = 'FROP-Com-0-2', '2', iif(%resource.item.where(linkId='FROP-Com-0').answer.valueCoding.code = 'FROP-Com-0-3', '3 or more', null))))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "210-ext-CIRG-CNICS-FROP-Com--FROP-Com-num-falls-text"
+        }
       ]
     },
     {
@@ -96,6 +156,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId = 'FROP-Com-0').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'FROP-Com-0').answer.valueCoding.code != 'FROP-Com-0-0' and %resource.item.where(linkId = 'FROP-Com-1').answer.valueCoding.code = 'FROP-Com-1-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "210-ext-CIRG-CNICS-FROP-Com--FROP-Com-ed-visit-bool"
         }
       ]
     }

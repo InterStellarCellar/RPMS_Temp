@@ -16,12 +16,24 @@
           "operator": "=",
           "answerBoolean": true
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "45-enableWhen-forward-reference-warning-only--later"
+        }
       ]
     },
     {
       "linkId": "earlier",
       "type": "boolean",
-      "text": "Earlier"
+      "text": "Earlier",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "45-enableWhen-forward-reference-warning-only--earlier"
+        }
+      ]
     }
   ]
 }

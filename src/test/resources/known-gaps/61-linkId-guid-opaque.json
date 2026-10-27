@@ -9,7 +9,13 @@
     {
       "linkId": "550e8400-e29b-41d4-a716-446655440000",
       "type": "string",
-      "text": "Q"
+      "text": "Q",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "61-linkId-guid-opaque--550e8400-e29b-41d4-a716-446655440000"
+        }
+      ]
     }
   ]
 }

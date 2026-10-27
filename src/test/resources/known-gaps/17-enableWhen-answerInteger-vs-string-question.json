@@ -9,7 +9,13 @@
     {
       "linkId": "name",
       "type": "string",
-      "text": "Name"
+      "text": "Name",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "17-enableWhen-answerInteger-vs-string-question--name"
+        }
+      ]
     },
     {
       "linkId": "extra",
@@ -20,6 +26,12 @@
           "question": "name",
           "operator": "=",
           "answerInteger": 42
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "17-enableWhen-answerInteger-vs-string-question--extra"
         }
       ]
     }

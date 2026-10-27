@@ -13,56 +13,125 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-0-0",
-            "display": "None"
-          }
+            "display": "None",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-0-1",
-            "display": "1"
-          }
+            "display": "1",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-0-2",
-            "display": "2"
-          }
+            "display": "2",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-0-3",
-            "display": "3"
-          }
+            "display": "3",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-0-4",
-            "display": "4-5"
-          }
+            "display": "4-5",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-0-5",
-            "display": "6-7"
-          }
+            "display": "6-7",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-0-6",
-            "display": "8-10"
-          }
+            "display": "8-10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 6
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-0-7",
-            "display": "11-20"
-          }
+            "display": "11-20",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 7
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-0-8",
-            "display": "more than 20"
-          }
+            "display": "more than 20",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 8
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-0"
         }
       ]
     },
@@ -74,38 +143,86 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-1-0",
-            "display": "Male"
-          }
+            "display": "Male",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-1-1",
-            "display": "Female"
-          }
+            "display": "Female",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-1-2",
-            "display": "Male-to-Female Transgender/Transgender Woman"
-          }
+            "display": "Male-to-Female Transgender/Transgender Woman",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-1-3",
-            "display": "Female-to-Male Transgender/Transgender Man"
-          }
+            "display": "Female-to-Male Transgender/Transgender Man",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-1-4",
-            "display": "A gender not listed above"
-          }
+            "display": "A gender not listed above",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 4
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-1-5",
-            "display": "I don't know"
-          }
+            "display": "I don't know",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 5
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-1"
         }
       ]
     },
@@ -117,20 +234,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-2-0",
-            "display": "HIV positive"
-          }
+            "display": "HIV positive",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-2-1",
-            "display": "HIV negative"
-          }
+            "display": "HIV negative",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-2-2",
-            "display": "HIV status unknown"
-          }
+            "display": "HIV status unknown",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-2"
         }
       ]
     },
@@ -142,20 +286,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-3-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-3-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-3-2",
-            "display": "I don't know"
-          }
+            "display": "I don't know",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-3"
         }
       ]
     },
@@ -167,20 +338,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-4-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-4-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-4-2",
-            "display": "I don't know"
-          }
+            "display": "I don't know",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-4"
         }
       ]
     },
@@ -192,14 +390,22 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-5-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-5-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-5"
         }
       ]
     },
@@ -211,20 +417,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-6-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-6-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-6-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-6"
         }
       ]
     },
@@ -236,20 +469,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-7-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-7-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-7-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-7"
         }
       ]
     },
@@ -261,20 +521,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-8-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-8-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-8-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-8"
         }
       ]
     },
@@ -286,20 +573,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-9-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-9-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-9-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-9"
         }
       ]
     },
@@ -311,20 +625,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-10-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-10-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-10-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-10"
         }
       ]
     },
@@ -336,20 +677,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-11-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-11-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-11-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-11"
         }
       ]
     },
@@ -361,20 +729,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-12-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-12-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-12-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-12"
         }
       ]
     },
@@ -386,20 +781,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-13-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-13-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-13-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-13"
         }
       ]
     },
@@ -411,20 +833,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-14-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-14-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-14-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-14"
         }
       ]
     },
@@ -444,6 +893,12 @@
             ]
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-15"
+        }
       ]
     },
     {
@@ -454,14 +909,34 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-16-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-16-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-16"
         }
       ]
     },
@@ -473,14 +948,34 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-17-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-17-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-17"
         }
       ]
     },
@@ -492,26 +987,60 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-18-0",
-            "display": "All"
-          }
+            "display": "All",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-18-1",
-            "display": "Most"
-          }
+            "display": "Most",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-18-2",
-            "display": "Some"
-          }
+            "display": "Some",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-18-3",
-            "display": "None"
-          }
+            "display": "None",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-18"
         }
       ]
     },
@@ -523,26 +1052,60 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-19-0",
-            "display": "All"
-          }
+            "display": "All",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-19-1",
-            "display": "Most"
-          }
+            "display": "Most",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-19-2",
-            "display": "Some"
-          }
+            "display": "Some",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-19-3",
-            "display": "None"
-          }
+            "display": "None",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-19"
         }
       ]
     },
@@ -554,26 +1117,60 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-20-0",
-            "display": "All"
-          }
+            "display": "All",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-20-1",
-            "display": "Most"
-          }
+            "display": "Most",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-20-2",
-            "display": "Some"
-          }
+            "display": "Some",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-20-3",
-            "display": "None"
-          }
+            "display": "None",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-20"
         }
       ]
     },
@@ -585,26 +1182,60 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-21-0",
-            "display": "All"
-          }
+            "display": "All",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-21-1",
-            "display": "Most"
-          }
+            "display": "Most",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-21-2",
-            "display": "Some"
-          }
+            "display": "Some",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-21-3",
-            "display": "None"
-          }
+            "display": "None",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-21"
         }
       ]
     },
@@ -616,26 +1247,60 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-22-0",
-            "display": "All"
-          }
+            "display": "All",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-22-1",
-            "display": "Most"
-          }
+            "display": "Most",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-22-2",
-            "display": "Some"
-          }
+            "display": "Some",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-22-3",
-            "display": "None"
-          }
+            "display": "None",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-22"
         }
       ]
     },
@@ -647,26 +1312,60 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-23-0",
-            "display": "All"
-          }
+            "display": "All",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-23-1",
-            "display": "Most"
-          }
+            "display": "Most",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-23-2",
-            "display": "Some"
-          }
+            "display": "Some",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-23-3",
-            "display": "None"
-          }
+            "display": "None",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-23"
         }
       ]
     },
@@ -679,26 +1378,60 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-24-0",
-            "display": "HIV positive"
-          }
+            "display": "HIV positive",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-24-1",
-            "display": "HIV negative"
-          }
+            "display": "HIV negative",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-24-2",
-            "display": "HIV status unknown"
-          }
+            "display": "HIV status unknown",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-24-3",
-            "display": "All of the above"
-          }
+            "display": "All of the above",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-24"
         }
       ]
     },
@@ -710,26 +1443,60 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-25-0",
-            "display": "Yes, all are"
-          }
+            "display": "Yes, all are",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-25-1",
-            "display": "Some are"
-          }
+            "display": "Some are",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-25-2",
-            "display": "No, none are"
-          }
+            "display": "No, none are",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-25-3",
-            "display": "I don't know"
-          }
+            "display": "I don't know",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-25"
         }
       ]
     },
@@ -741,26 +1508,60 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-26-0",
-            "display": "Yes, all are"
-          }
+            "display": "Yes, all are",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-26-1",
-            "display": "Some are"
-          }
+            "display": "Some are",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-26-2",
-            "display": "No, none are"
-          }
+            "display": "No, none are",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-26-3",
-            "display": "I don't know"
-          }
+            "display": "I don't know",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-26"
         }
       ]
     },
@@ -772,14 +1573,22 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-27-0",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-27-1",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-27"
         }
       ]
     },
@@ -791,20 +1600,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-28-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-28-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-28-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-28"
         }
       ]
     },
@@ -816,20 +1652,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-29-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-29-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-29-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-29"
         }
       ]
     },
@@ -841,20 +1704,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-30-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-30-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-30-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-30"
         }
       ]
     },
@@ -866,20 +1756,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-31-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-31-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-31-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-31"
         }
       ]
     },
@@ -891,20 +1808,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-32-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-32-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-32-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-32"
         }
       ]
     },
@@ -916,20 +1860,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-33-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-33-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-33-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-33"
         }
       ]
     },
@@ -941,20 +1912,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-34-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-34-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-34-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-34"
         }
       ]
     },
@@ -966,20 +1964,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-35-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-35-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-35-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-35"
         }
       ]
     },
@@ -991,20 +2016,47 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-36-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-36-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-36-2",
-            "display": "Can't remember"
-          }
+            "display": "Can't remember",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-36"
         }
       ]
     },
@@ -1024,6 +2076,12 @@
             ]
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-37"
+        }
       ]
     },
     {
@@ -1034,14 +2092,34 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-38-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-38-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-38"
         }
       ]
     },
@@ -1053,14 +2131,34 @@
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-39-0",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "SEXUAL-RISK-39-1",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-39"
         }
       ]
     },
@@ -1077,6 +2175,12 @@
             "expression": "iif(%resource.item.where(linkId='SEXUAL-RISK-0').answer.empty(), 'Not answered', %resource.item.where(linkId='SEXUAL-RISK-0').answer.valueCoding.display)"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-NUM-PARTNERS"
+        }
       ]
     },
     {
@@ -1091,6 +2195,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='SEXUAL-RISK-0').answer.empty() != true) and %resource.item.where(linkId='SEXUAL-RISK-0').answer.valueCoding.code = 'SEXUAL-RISK-0-1'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-ONE-PARTNER"
         }
       ]
     },
@@ -1107,6 +2217,12 @@
             "expression": "(%resource.item.where(linkId='SEXUAL-RISK-0').answer.empty() != true) and ((%resource.item.where(linkId='SEXUAL-RISK-0').answer.valueCoding.code = 'SEXUAL-RISK-0-2') or (%resource.item.where(linkId='SEXUAL-RISK-0').answer.valueCoding.code = 'SEXUAL-RISK-0-3') or (%resource.item.where(linkId='SEXUAL-RISK-0').answer.valueCoding.code = 'SEXUAL-RISK-0-4'))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-MULTIPLE-PARTNERS"
+        }
       ]
     },
     {
@@ -1121,6 +2237,12 @@
             "language": "text/fhirpath",
             "expression": "iif(%resource.item.where(linkId='SEXUAL-RISK-1').answer.empty(), '', %resource.item.where(linkId='SEXUAL-RISK-1').answer.valueCoding.display + '; ') + iif(%resource.item.where(linkId='SEXUAL-RISK-18').answer.empty() or %resource.item.where(linkId='SEXUAL-RISK-18').answer.valueCoding.code = 'SEXUAL-RISK-18-3', '', %resource.item.where(linkId='SEXUAL-RISK-18').answer.valueCoding.display + ' male; ') + iif(%resource.item.where(linkId='SEXUAL-RISK-19').answer.empty() or %resource.item.where(linkId='SEXUAL-RISK-19').answer.valueCoding.code = 'SEXUAL-RISK-19-3', '',  %resource.item.where(linkId='SEXUAL-RISK-19').answer.valueCoding.display + ' female; ') + iif(%resource.item.where(linkId='SEXUAL-RISK-20').answer.empty() or %resource.item.where(linkId='SEXUAL-RISK-20').answer.valueCoding.code = 'SEXUAL-RISK-20-3', '',  %resource.item.where(linkId='SEXUAL-RISK-20').answer.valueCoding.display + ' male-to-female; ') + iif(%resource.item.where(linkId='SEXUAL-RISK-21').answer.empty() or %resource.item.where(linkId='SEXUAL-RISK-21').answer.valueCoding.code = 'SEXUAL-RISK-21-3', '',  %resource.item.where(linkId='SEXUAL-RISK-21').answer.valueCoding.display + ' female-to-male; ') + iif(%resource.item.where(linkId='SEXUAL-RISK-22').answer.empty() or %resource.item.where(linkId='SEXUAL-RISK-22').answer.valueCoding.code = 'SEXUAL-RISK-22-3', '',  %resource.item.where(linkId='SEXUAL-RISK-22').answer.valueCoding.display + ' no specific gender; ') + iif(%resource.item.where(linkId='SEXUAL-RISK-23').answer.empty() or %resource.item.where(linkId='SEXUAL-RISK-23').answer.valueCoding.code = 'SEXUAL-RISK-23-3', '',  %resource.item.where(linkId='SEXUAL-RISK-23').answer.valueCoding.display + ' unknown')"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-PARTNERS-GENDERS"
         }
       ]
     },
@@ -1137,6 +2259,12 @@
             "expression": "iif(%resource.item.where(linkId='SEXUAL-RISK-SCORE-ONE-PARTNER').answer.valueBoolean.toBoolean() = true, iif(%resource.item.where(linkId='SEXUAL-RISK-4').answer.valueCoding.code = 'SEXUAL-RISK-4-0','HIV negative partner: prescribed PrEP', iif(%resource.item.where(linkId='SEXUAL-RISK-4').answer.valueCoding.code = 'SEXUAL-RISK-4-1','HIV negative partner: not prescribed PrEP', iif(%resource.item.where(linkId='SEXUAL-RISK-4').answer.valueCoding.code = 'SEXUAL-RISK-4-2','HIV negative partner: PrEP use unknown',''))), iif(%resource.item.where(linkId='SEXUAL-RISK-SCORE-MULTIPLE-PARTNERS').answer.valueBoolean.toBoolean() = true, iif(%resource.item.where(linkId='SEXUAL-RISK-26').answer.valueCoding.code = 'SEXUAL-RISK-26-0','HIV negative partner(s): all prescribed PrEP', iif(%resource.item.where(linkId='SEXUAL-RISK-26').answer.valueCoding.code = 'SEXUAL-RISK-26-1','HIV negative partner(s): some prescribed PrEP', iif(%resource.item.where(linkId='SEXUAL-RISK-26').answer.valueCoding.code = 'SEXUAL-RISK-26-2','HIV negative partner(s): none prescribed PrEP', iif(%resource.item.where(linkId='SEXUAL-RISK-26').answer.valueCoding.code = 'SEXUAL-RISK-26-3','HIV negative partner(s): PrEP use unknown','')))),''))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-PARTNERS-HIV-NEG-PREP"
+        }
       ]
     },
     {
@@ -1151,6 +2279,12 @@
             "language": "text/fhirpath",
             "expression": "iif(%resource.item.where(linkId='SEXUAL-RISK-SCORE-ONE-PARTNER').answer.valueBoolean.toBoolean() = true, iif(%resource.item.where(linkId='SEXUAL-RISK-3').answer.valueCoding.code = 'SEXUAL-RISK-3-0','HIV positive partner: prescribed ARVs', iif(%resource.item.where(linkId='SEXUAL-RISK-3').answer.valueCoding.code = 'SEXUAL-RISK-3-1','HIV positive partner: not prescribed ARVs', iif(%resource.item.where(linkId='SEXUAL-RISK-3').answer.valueCoding.code = 'SEXUAL-RISK-3-2','HIV positive partner: ARV use unknown',''))), iif(%resource.item.where(linkId='SEXUAL-RISK-SCORE-MULTIPLE-PARTNERS').answer.valueBoolean.toBoolean() = true, iif(%resource.item.where(linkId='SEXUAL-RISK-25').answer.valueCoding.code = 'SEXUAL-RISK-25-0','HIV positive partner(s): all prescribed ARVs', iif(%resource.item.where(linkId='SEXUAL-RISK-25').answer.valueCoding.code = 'SEXUAL-RISK-25-1','HIV positive partner(s): some prescribed ARVs', iif(%resource.item.where(linkId='SEXUAL-RISK-25').answer.valueCoding.code = 'SEXUAL-RISK-25-2','HIV positive partner(s): none prescribed ARVs', iif(%resource.item.where(linkId='SEXUAL-RISK-25').answer.valueCoding.code = 'SEXUAL-RISK-25-3','HIV positive partner(s): ARV use unknown','')))),''))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-PARTNERS-HIV-POS-ARV"
         }
       ]
     },
@@ -1167,6 +2301,12 @@
             "expression": "iif(%resource.item.where(linkId='SEXUAL-RISK-SCORE-ONE-PARTNER').answer.valueBoolean.toBoolean() = true, iif(%resource.item.where(linkId='SEXUAL-RISK-2').answer.valueCoding.code = 'SEXUAL-RISK-2-2','Partner with unknown HIV status', ''), iif(%resource.item.where(linkId='SEXUAL-RISK-SCORE-MULTIPLE-PARTNERS').answer.valueBoolean.toBoolean() = true, iif(%resource.item.where(linkId='SEXUAL-RISK-24').answer.valueCoding.where(code = 'SEXUAL-RISK-24-2' or code = 'SEXUAL-RISK-24-3').exists(),'Partner(s) with unknown HIV status', ''), ''))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-PARTNERS-HIV-UNKNOWN"
+        }
       ]
     },
     {
@@ -1181,6 +2321,12 @@
             "language": "text/fhirpath",
             "expression": "iif((%resource.item.where(linkId='SEXUAL-RISK-8').answer.valueCoding.code = 'SEXUAL-RISK-8-0') or (%resource.item.where(linkId='SEXUAL-RISK-9').answer.valueCoding.code = 'SEXUAL-RISK-9-0') or(%resource.item.where(linkId='SEXUAL-RISK-13').answer.valueCoding.code = 'SEXUAL-RISK-13-0') or(%resource.item.where(linkId='SEXUAL-RISK-30').answer.valueCoding.code = 'SEXUAL-RISK-30-0') or(%resource.item.where(linkId='SEXUAL-RISK-31').answer.valueCoding.code = 'SEXUAL-RISK-31-0') or(%resource.item.where(linkId='SEXUAL-RISK-35').answer.valueCoding.code = 'SEXUAL-RISK-35-0'),'Yes', iif((%resource.item.where(linkId='SEXUAL-RISK-8').answer.valueCoding.code = 'SEXUAL-RISK-8-2') or (%resource.item.where(linkId='SEXUAL-RISK-9').answer.valueCoding.code = 'SEXUAL-RISK-9-2') or(%resource.item.where(linkId='SEXUAL-RISK-13').answer.valueCoding.code = 'SEXUAL-RISK-13-2') or(%resource.item.where(linkId='SEXUAL-RISK-30').answer.valueCoding.code = 'SEXUAL-RISK-30-2') or(%resource.item.where(linkId='SEXUAL-RISK-31').answer.valueCoding.code = 'SEXUAL-RISK-31-2') or(%resource.item.where(linkId='SEXUAL-RISK-35').answer.valueCoding.code = 'SEXUAL-RISK-35-2'),'I can\\'t remember',iif((%resource.item.where(linkId='SEXUAL-RISK-8').answer.valueCoding.code = 'SEXUAL-RISK-8-1') or (%resource.item.where(linkId='SEXUAL-RISK-9').answer.valueCoding.code = 'SEXUAL-RISK-9-1') or(%resource.item.where(linkId='SEXUAL-RISK-13').answer.valueCoding.code = 'SEXUAL-RISK-13-1') or(%resource.item.where(linkId='SEXUAL-RISK-30').answer.valueCoding.code = 'SEXUAL-RISK-30-1') or(%resource.item.where(linkId='SEXUAL-RISK-31').answer.valueCoding.code = 'SEXUAL-RISK-31-1') or(%resource.item.where(linkId='SEXUAL-RISK-35').answer.valueCoding.code = 'SEXUAL-RISK-35-1'),'No','')))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-UNPROTECTED-ANAL"
         }
       ]
     },
@@ -1197,6 +2343,12 @@
             "expression": "'TBD'"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-UNPROTECTED-ANAL-TYPE"
+        }
       ]
     },
     {
@@ -1211,6 +2363,12 @@
             "language": "text/fhirpath",
             "expression": "iif((%resource.item.where(linkId='SEXUAL-RISK-6').answer.valueCoding.code = 'SEXUAL-RISK-6-0') or (%resource.item.where(linkId='SEXUAL-RISK-7').answer.valueCoding.code = 'SEXUAL-RISK-7-0') or(%resource.item.where(linkId='SEXUAL-RISK-14').answer.valueCoding.code = 'SEXUAL-RISK-14-0') or(%resource.item.where(linkId='SEXUAL-RISK-28').answer.valueCoding.code = 'SEXUAL-RISK-28-0') or(%resource.item.where(linkId='SEXUAL-RISK-29').answer.valueCoding.code = 'SEXUAL-RISK-29-0') or(%resource.item.where(linkId='SEXUAL-RISK-36').answer.valueCoding.code = 'SEXUAL-RISK-36-0'),'Yes', iif((%resource.item.where(linkId='SEXUAL-RISK-6').answer.valueCoding.code = 'SEXUAL-RISK-6-2') or (%resource.item.where(linkId='SEXUAL-RISK-7').answer.valueCoding.code = 'SEXUAL-RISK-7-2') or(%resource.item.where(linkId='SEXUAL-RISK-14').answer.valueCoding.code = 'SEXUAL-RISK-14-2') or(%resource.item.where(linkId='SEXUAL-RISK-28').answer.valueCoding.code = 'SEXUAL-RISK-28-2') or(%resource.item.where(linkId='SEXUAL-RISK-29').answer.valueCoding.code = 'SEXUAL-RISK-29-2') or(%resource.item.where(linkId='SEXUAL-RISK-36').answer.valueCoding.code = 'SEXUAL-RISK-36-2'),'I can\\'t remember',iif((%resource.item.where(linkId='SEXUAL-RISK-6').answer.valueCoding.code = 'SEXUAL-RISK-6-1') or (%resource.item.where(linkId='SEXUAL-RISK-7').answer.valueCoding.code = 'SEXUAL-RISK-7-1') or(%resource.item.where(linkId='SEXUAL-RISK-14').answer.valueCoding.code = 'SEXUAL-RISK-14-1') or(%resource.item.where(linkId='SEXUAL-RISK-28').answer.valueCoding.code = 'SEXUAL-RISK-28-1') or(%resource.item.where(linkId='SEXUAL-RISK-29').answer.valueCoding.code = 'SEXUAL-RISK-29-1') or(%resource.item.where(linkId='SEXUAL-RISK-36').answer.valueCoding.code = 'SEXUAL-RISK-36-1'),'No','')))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-UNPROTECTED-ORAL"
         }
       ]
     },
@@ -1227,6 +2385,12 @@
             "expression": "iif((%resource.item.where(linkId='SEXUAL-RISK-10').answer.valueCoding.code = 'SEXUAL-RISK-10-0') or (%resource.item.where(linkId='SEXUAL-RISK-11').answer.valueCoding.code = 'SEXUAL-RISK-11-0') or(%resource.item.where(linkId='SEXUAL-RISK-12').answer.valueCoding.code = 'SEXUAL-RISK-12-0') or(%resource.item.where(linkId='SEXUAL-RISK-32').answer.valueCoding.code = 'SEXUAL-RISK-32-0') or(%resource.item.where(linkId='SEXUAL-RISK-33').answer.valueCoding.code = 'SEXUAL-RISK-33-0') or(%resource.item.where(linkId='SEXUAL-RISK-34').answer.valueCoding.code = 'SEXUAL-RISK-34-0'),'Yes', iif((%resource.item.where(linkId='SEXUAL-RISK-10').answer.valueCoding.code = 'SEXUAL-RISK-10-2') or (%resource.item.where(linkId='SEXUAL-RISK-11').answer.valueCoding.code = 'SEXUAL-RISK-11-2') or(%resource.item.where(linkId='SEXUAL-RISK-12').answer.valueCoding.code = 'SEXUAL-RISK-12-2') or(%resource.item.where(linkId='SEXUAL-RISK-32').answer.valueCoding.code = 'SEXUAL-RISK-32-2') or(%resource.item.where(linkId='SEXUAL-RISK-33').answer.valueCoding.code = 'SEXUAL-RISK-33-2') or(%resource.item.where(linkId='SEXUAL-RISK-34').answer.valueCoding.code = 'SEXUAL-RISK-34-2'),'I can\\'t remember',iif((%resource.item.where(linkId='SEXUAL-RISK-10').answer.valueCoding.code = 'SEXUAL-RISK-10-1') or (%resource.item.where(linkId='SEXUAL-RISK-11').answer.valueCoding.code = 'SEXUAL-RISK-11-1') or(%resource.item.where(linkId='SEXUAL-RISK-12').answer.valueCoding.code = 'SEXUAL-RISK-12-1') or(%resource.item.where(linkId='SEXUAL-RISK-32').answer.valueCoding.code = 'SEXUAL-RISK-32-1') or(%resource.item.where(linkId='SEXUAL-RISK-33').answer.valueCoding.code = 'SEXUAL-RISK-33-1') or(%resource.item.where(linkId='SEXUAL-RISK-34').answer.valueCoding.code = 'SEXUAL-RISK-34-1'),'No','')))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-UNPROTECTED-VAGINAL"
+        }
       ]
     },
     {
@@ -1242,6 +2406,12 @@
             "expression": "iif((%resource.item.where(linkId='SEXUAL-RISK-SCORE-UNPROTECTED-ANAL').answer.valueString.toString() = 'Yes' or %resource.item.where(linkId='SEXUAL-RISK-SCORE-UNPROTECTED-ORAL').answer.valueString.toString() = 'Yes' or %resource.item.where(linkId='SEXUAL-RISK-SCORE-UNPROTECTED-VAGINAL').answer.valueString.toString() = 'Yes'),'Yes',iif((%resource.item.where(linkId='SEXUAL-RISK-SCORE-UNPROTECTED-ANAL').answer.valueString.toString() = 'I can\\'t remember' or %resource.item.where(linkId='SEXUAL-RISK-SCORE-UNPROTECTED-ORAL').answer.valueString.toString() = 'I can\\'t remember' or %resource.item.where(linkId='SEXUAL-RISK-SCORE-UNPROTECTED-VAGINAL').answer.valueString.toString() = 'I can\\'t remember'),'I can\\'t remember','No'))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-UNPROTECTED"
+        }
       ]
     },
     {
@@ -1256,6 +2426,12 @@
             "language": "text/fhirpath",
             "expression": "iif((%resource.item.where(linkId='SEXUAL-RISK-16').answer.valueCoding.code = 'SEXUAL-RISK-16-0') or (%resource.item.where(linkId='SEXUAL-RISK-17').answer.valueCoding.code = 'SEXUAL-RISK-17-0') or (%resource.item.where(linkId='SEXUAL-RISK-38').answer.valueCoding.code = 'SEXUAL-RISK-38-0') or (%resource.item.where(linkId='SEXUAL-RISK-39').answer.valueCoding.code = 'SEXUAL-RISK-39-0'), true, iif((%resource.item.where(linkId='SEXUAL-RISK-16').answer.valueCoding.code = 'SEXUAL-RISK-16-1') or (%resource.item.where(linkId='SEXUAL-RISK-17').answer.valueCoding.code = 'SEXUAL-RISK-17-1') or (%resource.item.where(linkId='SEXUAL-RISK-38').answer.valueCoding.code = 'SEXUAL-RISK-38-1') or (%resource.item.where(linkId='SEXUAL-RISK-39').answer.valueCoding.code = 'SEXUAL-RISK-39-1'), false,''))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "216-ext-CIRG-CNICS-SEXUAL-RISK--SEXUAL-RISK-SCORE-STI-EXPOSURE"
         }
       ]
     }

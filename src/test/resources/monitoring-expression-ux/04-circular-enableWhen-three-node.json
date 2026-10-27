@@ -1,0 +1,64 @@
+{
+  "resourceType": "Questionnaire",
+  "status": "draft",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">x</div>"
+  },
+  "item": [
+    {
+      "linkId": "a",
+      "type": "boolean",
+      "text": "A",
+      "enableWhen": [
+        {
+          "question": "b",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "04-circular-enableWhen-three-node--a"
+        }
+      ]
+    },
+    {
+      "linkId": "b",
+      "type": "boolean",
+      "text": "B",
+      "enableWhen": [
+        {
+          "question": "c",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "04-circular-enableWhen-three-node--b"
+        }
+      ]
+    },
+    {
+      "linkId": "c",
+      "type": "boolean",
+      "text": "C",
+      "enableWhen": [
+        {
+          "question": "a",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "04-circular-enableWhen-three-node--c"
+        }
+      ]
+    }
+  ]
+}

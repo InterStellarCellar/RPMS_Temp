@@ -30,7 +30,13 @@
     {
       "linkId": "q1",
       "type": "string",
-      "text": "Q"
+      "text": "Q",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "54-assembleContext-unused--q1"
+        }
+      ]
     }
   ]
 }

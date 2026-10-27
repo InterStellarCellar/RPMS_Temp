@@ -13,26 +13,60 @@
         {
           "valueCoding": {
             "code": "FINANCIAL-0-0",
-            "display": "Struggling to survive, not enough money to pay bills and buy food"
-          }
+            "display": "Struggling to survive, not enough money to pay bills and buy food",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FINANCIAL-0-1",
-            "display": "Barely paying the bills"
-          }
+            "display": "Barely paying the bills",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FINANCIAL-0-2",
-            "display": "Have the necessities, have money to cover needs"
-          }
+            "display": "Have the necessities, have money to cover needs",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 2
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "FINANCIAL-0-3",
-            "display": "Comfortable, have money to purchase extras"
-          }
+            "display": "Comfortable, have money to purchase extras",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "208-ext-CIRG-CNICS-FINANCIAL--FINANCIAL-0"
         }
       ]
     },
@@ -49,6 +83,12 @@
             "expression": "iif(%resource.item.where(linkId='FINANCIAL-0').answer.valueCoding.code = 'FINANCIAL-0-0', 'Struggling to survive', iif(%resource.item.where(linkId='FINANCIAL-0').answer.valueCoding.code = 'FINANCIAL-0-1', 'Barely paying the bills', iif(%resource.item.where(linkId='FINANCIAL-0').answer.valueCoding.code = 'FINANCIAL-0-2', 'Has necessities', iif(%resource.item.where(linkId='FINANCIAL-0').answer.valueCoding.code = 'FINANCIAL-0-3', 'Comfortable', null))))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "208-ext-CIRG-CNICS-FINANCIAL--FINANCIAL-score-label"
+        }
       ]
     },
     {
@@ -63,6 +103,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='FINANCIAL-0').answer.valueCoding.code = 'FINANCIAL-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "208-ext-CIRG-CNICS-FINANCIAL--FINANCIAL-critical-flag"
         }
       ]
     }

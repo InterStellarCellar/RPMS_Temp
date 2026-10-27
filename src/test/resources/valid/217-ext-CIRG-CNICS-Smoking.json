@@ -13,14 +13,34 @@
         {
           "valueCoding": {
             "code": "Smoking-0-0",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Smoking-0-1",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-0"
         }
       ]
     },
@@ -32,14 +52,34 @@
         {
           "valueCoding": {
             "code": "Smoking-1-0",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Smoking-1-1",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-1"
         }
       ]
     },
@@ -51,32 +91,43 @@
         {
           "valueCoding": {
             "code": "Smoking-2-0",
-            "display": "0-5 years"
+            "display": "0-5 years",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-2-1",
-            "display": "6-10 years"
+            "display": "6-10 years",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-2-2",
-            "display": "11-15 years"
+            "display": "11-15 years",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-2-3",
-            "display": "16-20 years"
+            "display": "16-20 years",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-2-4",
-            "display": "More than 20 years"
+            "display": "More than 20 years",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-2"
         }
       ]
     },
@@ -89,26 +140,36 @@
         {
           "valueCoding": {
             "code": "Smoking-3-0",
-            "display": "Less than half a pack a day"
+            "display": "Less than half a pack a day",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-3-1",
-            "display": "Half a pack to 1 pack a day"
+            "display": "Half a pack to 1 pack a day",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-3-2",
-            "display": "Between 1 and 2 packs a day"
+            "display": "Between 1 and 2 packs a day",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-3-3",
-            "display": "More than 2 packs a day"
+            "display": "More than 2 packs a day",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-3"
         }
       ]
     },
@@ -120,44 +181,57 @@
         {
           "valueCoding": {
             "code": "Smoking-4-0",
-            "display": "Less than 15 years old"
+            "display": "Less than 15 years old",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-4-1",
-            "display": "15-20 years old"
+            "display": "15-20 years old",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-4-2",
-            "display": "21-25 years old"
+            "display": "21-25 years old",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-4-3",
-            "display": "26-30 years old"
+            "display": "26-30 years old",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-4-4",
-            "display": "31-35 years old"
+            "display": "31-35 years old",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-4-5",
-            "display": "36-40 years old"
+            "display": "36-40 years old",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-4-6",
-            "display": "More than 40 years old"
+            "display": "More than 40 years old",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-4"
         }
       ]
     },
@@ -169,44 +243,57 @@
         {
           "valueCoding": {
             "code": "Smoking-5-0",
-            "display": "None"
+            "display": "None",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-5-1",
-            "display": "1-5"
+            "display": "1-5",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-5-2",
-            "display": "6-10"
+            "display": "6-10",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-5-3",
-            "display": "11-15"
+            "display": "11-15",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-5-4",
-            "display": "16-20"
+            "display": "16-20",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-5-5",
-            "display": "21-30"
+            "display": "21-30",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-5-6",
-            "display": "More than 30"
+            "display": "More than 30",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-5"
         }
       ]
     },
@@ -218,14 +305,22 @@
         {
           "valueCoding": {
             "code": "Smoking-6-0",
-            "display": "No"
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-6-1",
-            "display": "Yes"
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-6"
         }
       ]
     },
@@ -237,14 +332,34 @@
         {
           "valueCoding": {
             "code": "Smoking-7-0",
-            "display": "No"
-          }
+            "display": "No",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "Smoking-7-1",
-            "display": "Yes"
-          }
+            "display": "Yes",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-7"
         }
       ]
     },
@@ -256,32 +371,43 @@
         {
           "valueCoding": {
             "code": "Smoking-8-0",
-            "display": "Less than 1 year"
+            "display": "Less than 1 year",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-8-1",
-            "display": "1-2 years"
+            "display": "1-2 years",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-8-2",
-            "display": "3-4 years"
+            "display": "3-4 years",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-8-3",
-            "display": "4-5 years"
+            "display": "4-5 years",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-8-4",
-            "display": "More than 5 years"
+            "display": "More than 5 years",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-8"
         }
       ]
     },
@@ -293,32 +419,43 @@
         {
           "valueCoding": {
             "code": "Smoking-9-0",
-            "display": "Every day or almost every day"
+            "display": "Every day or almost every day",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-9-1",
-            "display": "Once or a few times a week"
+            "display": "Once or a few times a week",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-9-2",
-            "display": "Once or a few times a month"
+            "display": "Once or a few times a month",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-9-3",
-            "display": "Once or a few times in the past 12 months"
+            "display": "Once or a few times in the past 12 months",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
           "valueCoding": {
             "code": "Smoking-9-4",
-            "display": "Never in the past 12 months"
+            "display": "Never in the past 12 months",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-9"
         }
       ]
     },
@@ -335,6 +472,12 @@
             "expression": "iif(%resource.item.where(linkId='Smoking-0').answer.empty() and %resource.item.where(linkId='Smoking-1').answer.empty(), 'Not answered', iif(%resource.item.where(linkId='Smoking-0').answer.valueCoding.code = 'Smoking-0-0' and (%resource.item.where(linkId='Smoking-1').answer.empty() or %resource.item.where(linkId='Smoking-1').answer.valueCoding.code = 'Smoking-1-0'), 'No', iif(%resource.item.where(linkId='Smoking-0').answer.valueCoding.code = 'Smoking-0-1' and %resource.item.where(linkId='Smoking-1').answer.valueCoding.code = 'Smoking-1-0', 'Previously smoked', iif(%resource.item.where(linkId='Smoking-0').answer.valueCoding.code = 'Smoking-0-1' and %resource.item.where(linkId='Smoking-1').answer.empty(), 'More than 20 cigarettes in lifetime', iif(%resource.item.where(linkId='Smoking-1').answer.valueCoding.code = 'Smoking-1-1', 'Currently', null)))))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--Smoking-Tobacco-Cigs-Summary"
+        }
       ]
     },
     {
@@ -349,6 +492,12 @@
             "language": "text/fhirpath",
             "expression": "iif(%resource.item.where(linkId='Smoking-7').answer.empty(), 'Not answered',   iif(%resource.item.where(linkId='Smoking-7').answer.valueCoding.code = 'Smoking-7-0', 'No',     iif(%resource.item.where(linkId='Smoking-7').answer.valueCoding.code = 'Smoking-7-1', 'Yes', null)))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "217-ext-CIRG-CNICS-Smoking--E-Cigarettes-Summary"
         }
       ]
     }

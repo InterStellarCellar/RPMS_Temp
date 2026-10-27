@@ -11,7 +11,13 @@
     {
       "linkId": "smoker",
       "type": "boolean",
-      "text": "Smoker?"
+      "text": "Smoker?",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "50-enableWhen-equals-boolean--smoker"
+        }
+      ]
     },
     {
       "linkId": "cigs",
@@ -22,6 +28,12 @@
           "question": "smoker",
           "operator": "=",
           "answerBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "50-enableWhen-equals-boolean--cigs"
         }
       ]
     }

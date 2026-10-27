@@ -9,7 +9,13 @@
     {
       "linkId": "age",
       "type": "integer",
-      "text": "Age"
+      "text": "Age",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "19-enableWhen-answerQuantity-vs-integer-question--age"
+        }
+      ]
     },
     {
       "linkId": "note",
@@ -25,6 +31,12 @@
             "system": "http://unitsofmeasure.org",
             "code": "a"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "19-enableWhen-answerQuantity-vs-integer-question--note"
         }
       ]
     }

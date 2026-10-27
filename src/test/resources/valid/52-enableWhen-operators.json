@@ -11,7 +11,13 @@
     {
       "linkId": "age",
       "type": "integer",
-      "text": "Age"
+      "text": "Age",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "52-enableWhen-operators--age"
+        }
+      ]
     },
     {
       "linkId": "adult",

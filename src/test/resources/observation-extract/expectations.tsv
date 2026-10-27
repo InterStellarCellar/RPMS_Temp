@@ -1,0 +1,12 @@
+# observation-extract expectations
+# filename<TAB>minIssues<TAB>messageSubstring
+# Each fixture is valid JSON / clean FHIR parse and must emit the listed authoring-time issue.
+
+01-observationExtract-no-code.json	1	observationExtract requires item.code
+02-observationLinkPeriod-without-code.json	1	observationLinkPeriod requires item.code
+03-extractable-decimal-no-unit.json	1	extractable numeric item requires a unit
+04-unitOption-on-string.json	1	unitOption is only valid on quantity
+04-unitValueSet-on-integer.json	1	unitValueSet is only valid on quantity
+05-extract-without-category.json	1	observationExtractCategory is recommended
+06-panel-duplicate-codes.json	1	observation extract component/member requires distinct codes
+07-inherited-extract-no-code.json	1	observationExtract requires item.code

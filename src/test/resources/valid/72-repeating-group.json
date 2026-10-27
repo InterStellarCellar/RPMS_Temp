@@ -18,12 +18,24 @@
           "linkId": "meds.name",
           "type": "string",
           "text": "Name",
-          "required": true
+          "required": true,
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "72-repeating-group--meds.name"
+            }
+          ]
         },
         {
           "linkId": "meds.dose",
           "type": "quantity",
-          "text": "Dose"
+          "text": "Dose",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "72-repeating-group--meds.dose"
+            }
+          ]
         }
       ]
     }

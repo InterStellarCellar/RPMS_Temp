@@ -14,6 +14,12 @@
         {
           "valueInteger": 5
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "10-answerOption-integer-on-string-item--q1"
+        }
       ]
     }
   ]

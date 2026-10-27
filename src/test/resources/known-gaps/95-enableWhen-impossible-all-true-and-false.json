@@ -9,7 +9,13 @@
     {
       "linkId": "a",
       "type": "boolean",
-      "text": "A"
+      "text": "A",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "95-enableWhen-impossible-all-true-and-false--a"
+        }
+      ]
     },
     {
       "linkId": "b",
@@ -27,7 +33,13 @@
           "answerBoolean": false
         }
       ],
-      "enableBehavior": "all"
+      "enableBehavior": "all",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "95-enableWhen-impossible-all-true-and-false--b"
+        }
+      ]
     }
   ]
 }

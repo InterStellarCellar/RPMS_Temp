@@ -19,8 +19,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -31,8 +38,21 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-0"
         }
       ]
     },
@@ -50,7 +70,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
@@ -62,7 +83,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         }
       ],
@@ -73,6 +95,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-1"
         }
       ]
     },
@@ -90,8 +118,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -102,8 +137,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ],
       "extension": [
@@ -113,6 +155,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-2"
         }
       ]
     },
@@ -130,8 +178,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -142,8 +197,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ],
       "extension": [
@@ -153,6 +215,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-3"
         }
       ]
     },
@@ -170,8 +238,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -182,8 +257,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ],
       "extension": [
@@ -193,6 +275,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-4"
         }
       ]
     },
@@ -210,8 +298,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -222,8 +317,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ],
       "extension": [
@@ -233,6 +335,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-5"
         }
       ]
     },
@@ -250,8 +358,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -262,8 +377,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ],
       "extension": [
@@ -273,6 +395,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-6"
         }
       ]
     },
@@ -290,8 +418,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -302,8 +437,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ],
       "extension": [
@@ -313,6 +455,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-7"
         }
       ]
     },
@@ -330,8 +478,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
@@ -342,8 +497,15 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
-          }
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
         }
       ],
       "extension": [
@@ -353,6 +515,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-8"
         }
       ]
     },
@@ -370,7 +538,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
@@ -382,7 +551,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         }
       ],
@@ -393,6 +563,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-9"
         }
       ]
     },
@@ -410,7 +586,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
@@ -422,7 +599,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         }
       ],
@@ -433,6 +611,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-10"
         }
       ]
     },
@@ -450,7 +634,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
@@ -462,7 +647,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         }
       ],
@@ -473,6 +659,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-11"
         }
       ]
     },
@@ -490,7 +682,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 1
               }
-            ]
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         },
         {
@@ -502,7 +695,8 @@
                 "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                 "valueDecimal": 0
               }
-            ]
+            ],
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
           }
         }
       ],
@@ -513,6 +707,12 @@
             "language": "text/fhirpath",
             "expression": "%resource.item.where(linkId='MINI-0').answer.valueCoding.code = 'MINI-0-0'"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-12"
         }
       ]
     },
@@ -529,6 +729,12 @@
             "expression": "((%resource.item.where(linkId = 'MINI-0').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'MINI-0').answer.valueCoding.code = 'MINI-0-1')) or ((%resource.item.where(linkId = 'MINI-0').answer.valueCoding.code.exists() and (%resource.item.where(linkId = 'MINI-0').answer.valueCoding.code = 'MINI-0-0')) and (%resource.item.where(linkId = 'MINI-2').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-3').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-4').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-5').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-6').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-7').answer.valueCoding.code.exists() and %resource.item.where(linkId = 'MINI-8').answer.valueCoding.code.exists())))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-complete"
+        }
       ]
     },
     {
@@ -543,6 +749,12 @@
             "language": "text/fhirpath",
             "expression": "(iif(%resource.item.where(linkId = 'MINI-2').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-3').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-4').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-5').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-6').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-7').answer.valueCoding.code.exists(), 1, 0) + iif(%resource.item.where(linkId = 'MINI-8').answer.valueCoding.code.exists(), 1, 0))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-num-answered"
         }
       ]
     },
@@ -559,6 +771,12 @@
             "expression": "(iif(%resource.item.where(linkId='MINI-2').answer.empty(), 0, %resource.item.where(linkId='MINI-2').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-3').answer.empty(), 0, %resource.item.where(linkId='MINI-3').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-4').answer.empty(), 0, %resource.item.where(linkId='MINI-4').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-5').answer.empty(), 0, %resource.item.where(linkId='MINI-5').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-6').answer.empty(), 0, %resource.item.where(linkId='MINI-6').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-7').answer.empty(), 0, %resource.item.where(linkId='MINI-7').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()) + iif(%resource.item.where(linkId='MINI-8').answer.empty(), 0, %resource.item.where(linkId='MINI-8').answer.valueCoding.extension('http://hl7.org/fhir/StructureDefinition/ordinalValue').valueDecimal.toInteger()))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-score-ignoring-skipped"
+        }
       ]
     },
     {
@@ -574,6 +792,12 @@
             "expression": "iif(%resource.item.where(linkId='MINI-complete').answer.valueBoolean.toBoolean() = true, %resource.item.where(linkId='MINI-score-ignoring-skipped').answer.valueInteger.toString(), iif(%resource.item.where(linkId='MINI-num-answered').answer.valueInteger.toInteger() > 0, %resource.item.where(linkId='MINI-score-ignoring-skipped').answer.valueInteger.toString() + ' (Incomplete; Number of Questions Answered: ' + %resource.item.where(linkId='MINI-num-answered').answer.valueInteger.toString() + ')', 'N/A'))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-score"
+        }
       ]
     },
     {
@@ -588,6 +812,12 @@
             "language": "text/fhirpath",
             "expression": "iif(%resource.item.where(linkId='MINI-complete').answer.valueBoolean.toBoolean() = false, '', iif(%resource.item.where(linkId='MINI-score-ignoring-skipped').answer.valueInteger.toInteger() >= 3, 'Dependent Drinker', 'Not a Dependent Drinker'))"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "215-ext-CIRG-CNICS-MINI--MINI-score-interpretation"
         }
       ]
     }

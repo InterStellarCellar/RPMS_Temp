@@ -12,7 +12,13 @@
       "linkId": "yn",
       "type": "choice",
       "text": "Yes/No/Don't know",
-      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow"
+      "answerValueSet": "http://hl7.org/fhir/ValueSet/yesnodontknow",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "24-type-choice-answerValueSet--yn"
+        }
+      ]
     }
   ]
 }

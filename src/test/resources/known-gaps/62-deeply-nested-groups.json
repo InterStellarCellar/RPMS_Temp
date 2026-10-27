@@ -34,7 +34,13 @@
                         {
                           "linkId": "q",
                           "type": "string",
-                          "text": "Deep"
+                          "text": "Deep",
+                          "code": [
+                            {
+                              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+                              "code": "62-deeply-nested-groups--q"
+                            }
+                          ]
                         }
                       ]
                     }

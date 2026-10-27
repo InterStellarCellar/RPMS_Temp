@@ -143,7 +143,7 @@ class ExpressionFhirPathValidatorTest {
 	}
 
 	@Test
-	void missingLinkIdLiteral_isWarning() {
+	void missingLinkIdLiteral_onCalculatedExpression_isError() {
 		String json = """
 				{
 				  "resourceType": "Questionnaire",
@@ -168,7 +168,31 @@ class ExpressionFhirPathValidatorTest {
 				}
 				""";
 		List<ValidationIssueDto> issues = validate(json);
-		assertFalse(hasSeverity(issues, "error"), describe(issues));
+		assertTrue(hasSeverityMessage(issues, "error", "unknown linkId"), describe(issues));
+		assertFalse(hasSeverityMessage(issues, "warning", "unknown linkId"), describe(issues));
+	}
+
+	@Test
+	void missingLinkIdLiteral_onVariable_isWarning() {
+		String json = """
+				{
+				  "resourceType": "Questionnaire",
+				  "status": "draft",
+				  "extension": [
+				    {
+				      "url": "http://hl7.org/fhir/StructureDefinition/variable",
+				      "valueExpression": {
+				        "name": "x",
+				        "language": "text/fhirpath",
+				        "expression": "%resource.item.where(linkId='does-not-exist').answer.value"
+				      }
+				    }
+				  ],
+				  "item": [ { "linkId": "a", "type": "integer", "text": "A" } ]
+				}
+				""";
+		List<ValidationIssueDto> issues = validate(json);
+		assertFalse(hasSeverityMessage(issues, "error", "unknown linkId"), describe(issues));
 		assertTrue(hasSeverityMessage(issues, "warning", "unknown linkId"), describe(issues));
 	}
 

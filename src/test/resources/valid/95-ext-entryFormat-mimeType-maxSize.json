@@ -17,7 +17,13 @@
       ],
       "linkId": "dob",
       "type": "date",
-      "text": "Date of birth"
+      "text": "Date of birth",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "95-ext-entryFormat-mimeType-maxSize--dob"
+        }
+      ]
     },
     {
       "extension": [
@@ -32,7 +38,13 @@
       ],
       "linkId": "photo",
       "type": "attachment",
-      "text": "Photo"
+      "text": "Photo",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "95-ext-entryFormat-mimeType-maxSize--photo"
+        }
+      ]
     }
   ]
 }

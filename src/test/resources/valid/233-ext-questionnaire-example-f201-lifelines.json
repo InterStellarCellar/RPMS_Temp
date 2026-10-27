@@ -22,7 +22,13 @@
     {
       "linkId": "1",
       "text": "Do you have allergies?",
-      "type": "boolean"
+      "type": "boolean",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "233-ext-questionnaire-example-f201-lifelines--1"
+        }
+      ]
     },
     {
       "linkId": "2",
@@ -32,22 +38,46 @@
         {
           "linkId": "2.1",
           "text": "What is your gender?",
-          "type": "string"
+          "type": "string",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "233-ext-questionnaire-example-f201-lifelines--2.1"
+            }
+          ]
         },
         {
           "linkId": "2.2",
           "text": "What is your date of birth?",
-          "type": "date"
+          "type": "date",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "233-ext-questionnaire-example-f201-lifelines--2.2"
+            }
+          ]
         },
         {
           "linkId": "2.3",
           "text": "What is your country of birth?",
-          "type": "string"
+          "type": "string",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "233-ext-questionnaire-example-f201-lifelines--2.3"
+            }
+          ]
         },
         {
           "linkId": "2.4",
           "text": "What is your marital status?",
-          "type": "string"
+          "type": "string",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "233-ext-questionnaire-example-f201-lifelines--2.4"
+            }
+          ]
         }
       ]
     },
@@ -59,12 +89,24 @@
         {
           "linkId": "3.1",
           "text": "Do you smoke?",
-          "type": "boolean"
+          "type": "boolean",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "233-ext-questionnaire-example-f201-lifelines--3.1"
+            }
+          ]
         },
         {
           "linkId": "3.2",
           "text": "Do you drink alchohol?",
-          "type": "boolean"
+          "type": "boolean",
+          "code": [
+            {
+              "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+              "code": "233-ext-questionnaire-example-f201-lifelines--3.2"
+            }
+          ]
         }
       ]
     }

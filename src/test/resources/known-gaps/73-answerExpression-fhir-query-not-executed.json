@@ -35,6 +35,12 @@
             "expression": "ValueSet/$expand?url=http://example.org/ValueSet/x"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "73-answerExpression-fhir-query-not-executed--q1"
+        }
       ]
     }
   ]

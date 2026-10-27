@@ -11,17 +11,35 @@
     {
       "linkId": "a",
       "type": "boolean",
-      "text": "A"
+      "text": "A",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "55-enableWhen-three-with-behavior-any--a"
+        }
+      ]
     },
     {
       "linkId": "b",
       "type": "boolean",
-      "text": "B"
+      "text": "B",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "55-enableWhen-three-with-behavior-any--b"
+        }
+      ]
     },
     {
       "linkId": "c",
       "type": "boolean",
-      "text": "C"
+      "text": "C",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "55-enableWhen-three-with-behavior-any--c"
+        }
+      ]
     },
     {
       "linkId": "d",
@@ -44,7 +62,13 @@
           "answerBoolean": true
         }
       ],
-      "enableBehavior": "any"
+      "enableBehavior": "any",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "55-enableWhen-three-with-behavior-any--d"
+        }
+      ]
     }
   ]
 }

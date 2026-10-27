@@ -21,7 +21,13 @@
       ],
       "linkId": "pain",
       "type": "integer",
-      "text": "Pain score"
+      "text": "Pain score",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "97-ext-supportLink-designNote--pain"
+        }
+      ]
     }
   ]
 }

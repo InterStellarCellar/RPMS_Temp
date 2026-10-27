@@ -22,7 +22,13 @@
       "linkId": "age",
       "type": "integer",
       "text": "Age",
-      "required": true
+      "required": true,
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "90-ext-min-max-value--age"
+        }
+      ]
     }
   ]
 }

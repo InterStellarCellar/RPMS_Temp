@@ -24,7 +24,13 @@
     {
       "linkId": "q1",
       "type": "string",
-      "text": "ID check"
+      "text": "ID check",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "06-identifier-and-url--q1"
+        }
+      ]
     }
   ]
 }

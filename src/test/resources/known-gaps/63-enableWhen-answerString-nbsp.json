@@ -9,7 +9,13 @@
     {
       "linkId": "name",
       "type": "string",
-      "text": "Name"
+      "text": "Name",
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "63-enableWhen-answerString-nbsp--name"
+        }
+      ]
     },
     {
       "linkId": "extra",
@@ -19,7 +25,13 @@
         {
           "question": "name",
           "operator": "=",
-          "answerString": "\u00a0"
+          "answerString": " "
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "63-enableWhen-answerString-nbsp--extra"
         }
       ]
     }

@@ -13,14 +13,34 @@
         {
           "valueCoding": {
             "code": "MAPSS-SF-0-0",
-            "display": "Not enough"
-          }
+            "display": "Not enough",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "MAPSS-SF-0-1",
-            "display": "Enough or more than enough"
-          }
+            "display": "Enough or more than enough",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "214-ext-CIRG-CNICS-MAPSS-SF--MAPSS-SF-0"
         }
       ]
     },
@@ -32,14 +52,34 @@
         {
           "valueCoding": {
             "code": "MAPSS-SF-1-0",
-            "display": "Not enough"
-          }
+            "display": "Not enough",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "MAPSS-SF-1-1",
-            "display": "Enough or more than enough"
-          }
+            "display": "Enough or more than enough",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "214-ext-CIRG-CNICS-MAPSS-SF--MAPSS-SF-1"
         }
       ]
     },
@@ -51,14 +91,34 @@
         {
           "valueCoding": {
             "code": "MAPSS-SF-2-0",
-            "display": "Not satisfied"
-          }
+            "display": "Not satisfied",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 0
+            }
+          ]
         },
         {
           "valueCoding": {
             "code": "MAPSS-SF-2-1",
-            "display": "Satisfied or more than satisfied"
-          }
+            "display": "Satisfied or more than satisfied",
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+              "valueDecimal": 1
+            }
+          ]
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "214-ext-CIRG-CNICS-MAPSS-SF--MAPSS-SF-2"
         }
       ]
     },
@@ -75,6 +135,12 @@
             "expression": "iif(%resource.item.where(linkId='MAPSS-SF-0').answer.empty(),'', iif(%resource.item.where(linkId='MAPSS-SF-0').answer.valueCoding.code = 'MAPSS-SF-0-1','high social support', iif(%resource.item.where(linkId='MAPSS-SF-1').answer.empty() or %resource.item.where(linkId='MAPSS-SF-2').answer.empty(),'incomplete', iif((%resource.item.where(linkId='MAPSS-SF-1').answer.valueCoding.code = 'MAPSS-SF-1-1') or (%resource.item.where(linkId='MAPSS-SF-2').answer.valueCoding.code = 'MAPSS-SF-2-1'),'medium social support','low social support'))))"
           }
         }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "214-ext-CIRG-CNICS-MAPSS-SF--MAPSS-SF-SCORE-SOCIAL-SUPPORT"
+        }
       ]
     },
     {
@@ -89,6 +155,12 @@
             "language": "text/fhirpath",
             "expression": "(%resource.item.where(linkId='MAPSS-SF-SCORE-SOCIAL-SUPPORT').answer.empty() = false) and (%resource.item.where(linkId='MAPSS-SF-SCORE-SOCIAL-SUPPORT').answer.valueString = 'low social support')"
           }
+        }
+      ],
+      "code": [
+        {
+          "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+          "code": "214-ext-CIRG-CNICS-MAPSS-SF--MAPSS-SF-SCORE-CRITICAL"
         }
       ]
     }
