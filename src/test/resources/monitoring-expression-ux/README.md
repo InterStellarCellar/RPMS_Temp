@@ -10,6 +10,8 @@ authoring-time monitoring UX expression checks
 - scoring `calculatedExpression` on non-integer/decimal `item.type` (error)
 - circular `enableWhen.question` dependency graphs (error); HAPI "comes after"
   forward-ref warnings are suppressed when a circular error is present
+- `enableWhen` targeting a `display` item (error)
+- contradictory `enableWhen` equals under `enableBehavior=all` (error)
 - `readOnly` without `initial` / `calculatedExpression` / `initialExpression` (warning)
 - unknown `linkId='…'` literals in `calculatedExpression` (error via ExpressionFhirPath)
 
@@ -32,3 +34,5 @@ are allowed.
 | 05 | readOnly without value source (from known-gaps `65`) |
 | 06 | readOnly + calculatedExpression (control) |
 | 07 | calculatedExpression unknown linkId (rule 16 escalate) |
+| 43 | enableWhen targets display (from known-gaps `43`) |
+| 95 | impossible enableWhen all true+false (from known-gaps `95`) |

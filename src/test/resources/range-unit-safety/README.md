@@ -10,6 +10,8 @@ authoring-time range / unit / clinical-safety checks
 - `minValue` equals `maxValue` (warning)
 - `sliderStepValue` larger than `max − min` (error)
 - unresolved `unitValueSet` (error)
+- unresolved `answerValueSet` including missing `#contained` fragments (error)
+- invalid `regex` extension syntax (error)
 - unknown UCUM on `questionnaire-unit` / `unitOption` (error)
 - curated-vitals unit dimension mismatch (warning)
 - curated-vitals physiological bounds (warning)
@@ -17,7 +19,7 @@ authoring-time range / unit / clinical-safety checks
 
 Control fixture `09` must **not** emit dimension or physiological warnings.
 
-Type-mismatched min/max (known-gaps `21`) is out of scope. `$extract` is not run.
+Type-mismatched min/max lives in `type-consistency/` (fixture `21`). `$extract` is not run.
 
 ## Expectations
 
@@ -38,3 +40,8 @@ are allowed.
 | 07 | SpO₂ max &gt; 100 |
 | 08 | hidden + required (from `27`) |
 | 09 | HR sane range control |
+| 10 | unresolved answerValueSet (from known-gaps `81`) |
+| 11 | hidden+required + bad regex (from known-gaps `82`) |
+| 22 | invalid regex syntax (from known-gaps `22`) |
+| 30 | unresolved answerValueSet (from known-gaps `30`) |
+| 37 | missing `#contained` answerValueSet (from known-gaps `37`) |

@@ -1,0 +1,19 @@
+# type-consistency expectations
+# filename<TAB>minIssues<TAB>messageSubstring
+# minIssues 0 means the substring must not appear (control fixtures).
+
+01-answerOption-string-on-string-ok.json	0	answerOption value type does not match item.type
+01-answerOption-string-on-string-ok.json	0	initial value type does not match item.type
+10-answerOption-integer-on-string-item.json	1	answerOption value type does not match item.type
+11-answerOption-coding-on-integer-item.json	1	answerOption value type does not match item.type
+11-answerOption-coding-on-quantity-item.json	1	answerOption value type does not match item.type
+12-answerOption-reference-on-date-item.json	1	answerOption value type does not match item.type
+13-initial-string-on-integer-item.json	1	initial value type does not match item.type
+14-initial-boolean-on-date-item.json	1	initial value type does not match item.type
+15-initial-coding-on-string-item.json	1	initial value type does not match item.type
+16-enableWhen-answerString-vs-boolean-question.json	1	enableWhen answer type does not match question item.type
+17-enableWhen-answerInteger-vs-string-question.json	1	enableWhen answer type does not match question item.type
+18-enableWhen-answerCoding-vs-boolean-question.json	1	enableWhen answer type does not match question item.type
+19-enableWhen-answerQuantity-vs-integer-question.json	1	enableWhen answer type does not match question item.type
+21-minValue-date-on-integer-item.json	1	minValue/maxValue type does not match item.type
+42-multiple-initialSelected-without-repeats.json	1	multiple initialSelected requires repeats

@@ -13,3 +13,8 @@
 08-hidden-and-required.json	1	hidden item should not be required
 09-hr-sane-range-ok.json	0	unit dimension does not match concept
 09-hr-sane-range-ok.json	0	declared value range is outside typical physiological bounds
+10-answerValueSet-unresolved-combo.json	1	answerValueSet could not be resolved
+11-hidden-required-bad-regex.json	1	invalid regex syntax
+22-regex-invalid-syntax.json	1	invalid regex syntax
+30-answerValueSet-unresolved.json	1	answerValueSet could not be resolved
+37-answerValueSet-fragment-missing-contained.json	1	answerValueSet could not be resolved

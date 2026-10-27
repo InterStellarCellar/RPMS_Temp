@@ -2,9 +2,13 @@ package ca.uhn.fhir.questionnairevalidator.service;
 
 import ca.uhn.fhir.questionnairevalidator.dto.ValidationIssueDto;
 import ca.uhn.fhir.validation.ResultSeverityEnum;
+import org.hl7.fhir.r4.model.BooleanType;
+import org.hl7.fhir.r4.model.DecimalType;
 import org.hl7.fhir.r4.model.Expression;
 import org.hl7.fhir.r4.model.Extension;
+import org.hl7.fhir.r4.model.IntegerType;
 import org.hl7.fhir.r4.model.Questionnaire;
+import org.hl7.fhir.r4.model.StringType;
 import org.hl7.fhir.r4.model.Type;
 
 import java.util.ArrayList;
@@ -35,6 +39,9 @@ class MonitoringExpressionUxValidator {
 	static final String MSG_CIRCULAR_ENABLE_WHEN = "circular enableWhen dependency involving ";
 	static final String MSG_READONLY_NO_SOURCE =
 			"readOnly item has no initial, calculatedExpression, or initialExpression";
+	static final String MSG_ENABLE_WHEN_DISPLAY = "enableWhen targets a display item";
+	static final String MSG_ENABLE_WHEN_IMPOSSIBLE =
+			"enableWhen conditions are impossible under enableBehavior all";
 
 	private static final class ItemSite {
 		private final Questionnaire.QuestionnaireItemComponent item;
@@ -62,6 +69,8 @@ class MonitoringExpressionUxValidator {
 		validator.walkItems(theQuestionnaire.getItem(), "Questionnaire");
 		validator.applyScoringTypeRules();
 		validator.applyCircularEnableWhen();
+		validator.applyEnableWhenToDisplay();
+		validator.applyImpossibleEnableWhenAll();
 		validator.applyReadOnlyValueSource();
 		return validator.myIssues;
 	}
@@ -200,6 +209,91 @@ class MonitoringExpressionUxValidator {
 			out.append('\'').append(theCycle.get(i)).append('\'');
 		}
 		return out.toString();
+	}
+
+	private void applyEnableWhenToDisplay() {
+		for (ItemSite site : mySites) {
+			List<Questionnaire.QuestionnaireItemEnableWhenComponent> enableWhens = site.item.getEnableWhen();
+			for (int i = 0; i < enableWhens.size(); i++) {
+				Questionnaire.QuestionnaireItemEnableWhenComponent ew = enableWhens.get(i);
+				if (!ew.hasQuestion() || ew.getQuestion().isBlank()) {
+					continue;
+				}
+				ItemSite target = myByLinkId.get(ew.getQuestion());
+				if (target == null || !target.item.hasType()) {
+					continue;
+				}
+				if (target.item.getType() == Questionnaire.QuestionnaireItemType.DISPLAY) {
+					addIssue(
+							ResultSeverityEnum.ERROR,
+							MSG_ENABLE_WHEN_DISPLAY,
+							site.path + ".enableWhen[" + i + "].question",
+							ew.getQuestion());
+				}
+			}
+		}
+	}
+
+	private void applyImpossibleEnableWhenAll() {
+		for (ItemSite site : mySites) {
+			if (site.item.getEnableBehavior() != Questionnaire.EnableWhenBehavior.ALL) {
+				continue;
+			}
+			List<Questionnaire.QuestionnaireItemEnableWhenComponent> enableWhens = site.item.getEnableWhen();
+			if (enableWhens.size() < 2) {
+				continue;
+			}
+			for (int i = 0; i < enableWhens.size(); i++) {
+				Questionnaire.QuestionnaireItemEnableWhenComponent left = enableWhens.get(i);
+				if (left.getOperator() != Questionnaire.QuestionnaireItemOperator.EQUAL
+						|| !left.hasQuestion()
+						|| left.getQuestion().isBlank()
+						|| left.getAnswer() == null) {
+					continue;
+				}
+				for (int j = i + 1; j < enableWhens.size(); j++) {
+					Questionnaire.QuestionnaireItemEnableWhenComponent right = enableWhens.get(j);
+					if (right.getOperator() != Questionnaire.QuestionnaireItemOperator.EQUAL
+							|| !left.getQuestion().equals(right.getQuestion())
+							|| right.getAnswer() == null) {
+						continue;
+					}
+					if (contradictoryEqualAnswers(left.getAnswer(), right.getAnswer())) {
+						addIssue(
+								ResultSeverityEnum.ERROR,
+								MSG_ENABLE_WHEN_IMPOSSIBLE,
+								site.path + ".enableWhen[" + j + "]",
+								left.getQuestion());
+						return;
+					}
+				}
+			}
+		}
+	}
+
+	private static boolean contradictoryEqualAnswers(Type theLeft, Type theRight) {
+		if (theLeft == null || theRight == null) {
+			return false;
+		}
+		if (!theLeft.fhirType().equals(theRight.fhirType())) {
+			// Different answer types against the same question cannot both hold under "=" + all.
+			return true;
+		}
+		if (theLeft instanceof BooleanType left && theRight instanceof BooleanType right) {
+			return left.hasValue() && right.hasValue() && left.booleanValue() != right.booleanValue();
+		}
+		if (theLeft instanceof IntegerType left && theRight instanceof IntegerType right) {
+			return left.hasValue() && right.hasValue() && !left.getValue().equals(right.getValue());
+		}
+		if (theLeft instanceof DecimalType left && theRight instanceof DecimalType right) {
+			return left.hasValue() && right.hasValue() && left.getValue().compareTo(right.getValue()) != 0;
+		}
+		if (theLeft instanceof StringType left && theRight instanceof StringType right) {
+			String a = left.getValue();
+			String b = right.getValue();
+			return a != null && b != null && !a.equals(b);
+		}
+		return !theLeft.equalsDeep(theRight);
 	}
 
 	private void applyReadOnlyValueSource() {

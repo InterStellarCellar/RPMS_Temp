@@ -25,7 +25,10 @@
       "text": "Q",
       "answerOption": [
         {
-          "valueString": "x"
+          "valueCoding": {
+            "system": "https://csiro.au/CodeSystem/rpms-fixtures",
+            "code": "x"
+          }
         }
       ],
       "code": [

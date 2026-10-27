@@ -16,6 +16,7 @@ import org.hl7.fhir.r4.model.Extension;
 import org.hl7.fhir.r4.model.IntegerType;
 import org.hl7.fhir.r4.model.Quantity;
 import org.hl7.fhir.r4.model.Questionnaire;
+import org.hl7.fhir.r4.model.Resource;
 import org.hl7.fhir.r4.model.StringType;
 import org.hl7.fhir.r4.model.TimeType;
 import org.hl7.fhir.r4.model.Type;
@@ -25,6 +26,9 @@ import org.hl7.fhir.r4.model.ValueSet;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 /**
  * Authoring-time range, unit, and clinical-safety checks on a Questionnaire.
@@ -41,12 +45,15 @@ class RangeAndUnitSafetyValidator {
 	static final String URL_UNIT = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit";
 	static final String URL_UNIT_OPTION = "http://hl7.org/fhir/StructureDefinition/questionnaire-unitOption";
 	static final String URL_UNIT_VALUE_SET = "http://hl7.org/fhir/StructureDefinition/questionnaire-unitValueSet";
+	static final String URL_REGEX = "http://hl7.org/fhir/StructureDefinition/regex";
 	static final String UCUM_SYSTEM = "http://unitsofmeasure.org";
 
 	static final String MSG_MIN_GT_MAX = "minValue is greater than maxValue";
 	static final String MSG_MIN_EQ_MAX = "minValue equals maxValue";
 	static final String MSG_SLIDER = "sliderStepValue is larger than maxValue minus minValue";
 	static final String MSG_VS_UNRESOLVED = "unitValueSet could not be resolved";
+	static final String MSG_ANSWER_VS_UNRESOLVED = "answerValueSet could not be resolved";
+	static final String MSG_INVALID_REGEX = "invalid regex syntax";
 	static final String MSG_UNKNOWN_UCUM_PREFIX = "Unknown UCUM unit '";
 	static final String MSG_DIMENSION = "unit dimension does not match concept (expected ";
 	static final String MSG_PHYS = "declared value range is outside typical physiological bounds for ";
@@ -55,17 +62,21 @@ class RangeAndUnitSafetyValidator {
 	private final JsonElementLocator myLocator;
 	private final IValidationSupport mySupport;
 	private final ValidationSupportContext mySupportContext;
+	private final Questionnaire myQuestionnaire;
 	private final List<ValidationIssueDto> myIssues = new ArrayList<>();
 
-	private RangeAndUnitSafetyValidator(String theJson, IValidationSupport theSupport) {
+	private RangeAndUnitSafetyValidator(
+			Questionnaire theQuestionnaire, String theJson, IValidationSupport theSupport) {
 		myLocator = new JsonElementLocator(theJson);
 		mySupport = theSupport;
 		mySupportContext = theSupport == null ? null : new ValidationSupportContext(theSupport);
+		myQuestionnaire = theQuestionnaire;
 	}
 
 	static List<ValidationIssueDto> validate(
 			Questionnaire theQuestionnaire, String theJson, IValidationSupport theSupport) {
-		RangeAndUnitSafetyValidator validator = new RangeAndUnitSafetyValidator(theJson, theSupport);
+		RangeAndUnitSafetyValidator validator =
+				new RangeAndUnitSafetyValidator(theQuestionnaire, theJson, theSupport);
 		validator.walkItems(theQuestionnaire.getItem(), "Questionnaire");
 		return validator.myIssues;
 	}
@@ -79,6 +90,8 @@ class RangeAndUnitSafetyValidator {
 	private void walkItem(Questionnaire.QuestionnaireItemComponent theItem, String thePath) {
 		applyMinMaxSlider(theItem, thePath);
 		applyUnitValueSet(theItem, thePath);
+		applyAnswerValueSet(theItem, thePath);
+		applyRegex(theItem, thePath);
 		applyUcumValidity(theItem, thePath);
 		applyDimensionAndPhys(theItem, thePath);
 		applyHiddenRequired(theItem, thePath);
@@ -136,12 +149,61 @@ class RangeAndUnitSafetyValidator {
 		if (canonical == null || canonical.isBlank()) {
 			return;
 		}
-		if (fetchValueSet(canonical) == null) {
+		if (resolveValueSet(canonical) == null) {
 			addIssue(
 					ResultSeverityEnum.ERROR,
 					MSG_VS_UNRESOLVED,
 					extensionPath(thePath, theItem.getExtension(), URL_UNIT_VALUE_SET),
 					canonical);
+		}
+	}
+
+	private void applyAnswerValueSet(Questionnaire.QuestionnaireItemComponent theItem, String thePath) {
+		if (!theItem.hasAnswerValueSet() || theItem.getAnswerValueSet().isBlank()) {
+			return;
+		}
+		String canonical = theItem.getAnswerValueSet().trim();
+		if (resolveValueSet(canonical) != null) {
+			return;
+		}
+		// Missing #contained fragments and placeholder example.* URLs are authoring errors.
+		// Other absolute ValueSets (e.g. LOINC) are often remote-only — warn, do not fail.
+		ResultSeverityEnum severity =
+				canonical.startsWith("#") || isPlaceholderCanonical(canonical)
+						? ResultSeverityEnum.ERROR
+						: ResultSeverityEnum.WARNING;
+		addIssue(severity, MSG_ANSWER_VS_UNRESOLVED, thePath + ".answerValueSet", canonical);
+	}
+
+	private static boolean isPlaceholderCanonical(String theCanonical) {
+		String lower = theCanonical.toLowerCase(Locale.ROOT);
+		return lower.contains("://example.org/")
+				|| lower.contains("://example.com/")
+				|| lower.contains("://www.example.org/")
+				|| lower.contains("://www.example.com/");
+	}
+
+	private void applyRegex(Questionnaire.QuestionnaireItemComponent theItem, String thePath) {
+		List<Extension> extensions = theItem.getExtension();
+		for (int i = 0; i < extensions.size(); i++) {
+			Extension extension = extensions.get(i);
+			if (!URL_REGEX.equals(extension.getUrl())) {
+				continue;
+			}
+			Type value = extension.getValue();
+			if (!(value instanceof StringType stringType) || !stringType.hasValue()) {
+				continue;
+			}
+			String pattern = stringType.getValue();
+			try {
+				Pattern.compile(pattern);
+			} catch (PatternSyntaxException e) {
+				addIssue(
+						ResultSeverityEnum.ERROR,
+						MSG_INVALID_REGEX,
+						thePath + ".extension[" + i + "]",
+						pattern);
+			}
 		}
 	}
 
@@ -250,8 +312,14 @@ class RangeAndUnitSafetyValidator {
 				URL_HIDDEN);
 	}
 
-	private IBaseResource fetchValueSet(String theCanonical) {
+	private IBaseResource resolveValueSet(String theCanonical) {
 		String url = theCanonical.trim();
+		if (url.startsWith("#")) {
+			return resolveContainedValueSet(url.substring(1));
+		}
+		if (mySupport == null) {
+			return null;
+		}
 		IBaseResource resource = safeFetchValueSet(url);
 		if (resource != null) {
 			return resource;
@@ -268,6 +336,19 @@ class RangeAndUnitSafetyValidator {
 		} catch (RuntimeException e) {
 			return null;
 		}
+	}
+
+	private IBaseResource resolveContainedValueSet(String theId) {
+		if (myQuestionnaire == null || theId == null || theId.isBlank()) {
+			return null;
+		}
+		for (Resource contained : myQuestionnaire.getContained()) {
+			if (contained instanceof ValueSet valueSet
+					&& theId.equals(valueSet.getIdElement().getIdPart())) {
+				return valueSet;
+			}
+		}
+		return null;
 	}
 
 	private IBaseResource safeFetchValueSet(String theUrl) {

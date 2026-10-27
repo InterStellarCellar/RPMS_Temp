@@ -12,3 +12,5 @@
 05-readOnly-without-initial.json	1	readOnly item has no initial, calculatedExpression, or initialExpression
 06-readOnly-with-calculatedExpression-ok.json	0	readOnly item has no initial, calculatedExpression, or initialExpression
 07-calculatedExpression-unknown-linkId.json	1	unknown linkId
+43-enableWhen-to-display-item.json	1	enableWhen targets a display item
+95-enableWhen-impossible-all-true-and-false.json	1	enableWhen conditions are impossible under enableBehavior all

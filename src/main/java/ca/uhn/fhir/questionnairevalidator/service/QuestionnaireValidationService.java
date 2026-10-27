@@ -151,6 +151,7 @@ public class QuestionnaireValidationService {
 			issues.addAll(RangeAndUnitSafetyValidator.validate(
 					questionnaire, theJson, myLocalValidationSupportChain));
 			issues.addAll(CodingTrendabilityValidator.validate(questionnaire, theJson));
+			issues.addAll(TypeConsistencyValidator.validate(questionnaire, theJson));
 		}
 		issues = dedupeIssues(issues);
 		response.setIssues(issues);
