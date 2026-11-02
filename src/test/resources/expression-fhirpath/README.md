@@ -26,7 +26,7 @@ Moved from the previous `known-gaps` `expression-not-compiled` / related bands:
 |-------|------|
 | 00–08 | Invalid `text/fhirpath` (and implied constraint `valueString`) |
 | 52–53 | `itemPopulationContext` / `itemExtractionContext` bad FHIRPath |
-| 71 | Missing `linkId` literal (also rejected as unknown function `.sum()`) |
+| 71 | Missing `linkId` literal; SDC function `.sum()` is reported as information (not parsed), not as an error |
 | 74 | `enableWhenExpression` only, invalid FHIRPath |
 | 80 | Combo: type mismatch + bad FHIRPath |
 | 89 | Variable `%name` self-reference |

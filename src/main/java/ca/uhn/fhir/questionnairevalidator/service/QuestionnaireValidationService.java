@@ -7,6 +7,8 @@ import ca.uhn.fhir.parser.IParser;
 import ca.uhn.fhir.questionnairevalidator.config.ValidationBeansConfig;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidateResponse;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidationIssueDto;
+import ca.uhn.fhir.sl.cache.Cache;
+import ca.uhn.fhir.sl.cache.CacheFactory;
 import ca.uhn.fhir.validation.FhirValidator;
 import ca.uhn.fhir.validation.ResultSeverityEnum;
 import ca.uhn.fhir.validation.SingleValidationMessage;
@@ -22,6 +24,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -50,6 +53,15 @@ public class QuestionnaireValidationService {
 
 	private final FhirContext myFhirContext;
 	private final ValidationSupportChain myLocalValidationSupportChain;
+	/**
+	 * One validator per terminology target (key "" = local only). {@link FhirValidator} and
+	 * {@link FhirInstanceValidator} are thread-safe for concurrent reuse; building a new one per
+	 * request (validator, support chain with its terminology cache, remote client) costs ~800 ms.
+	 * Bounded and expiring because the key is a caller-supplied URL: the host is allow-listed but
+	 * the path and query are free, so an unbounded map could be grown by a client.
+	 */
+	private final Cache<String, FhirValidator> myValidators =
+			CacheFactory.build(TimeUnit.HOURS.toMillis(1), 16);
 
 	public QuestionnaireValidationService(
 			FhirContext theFhirContext, ValidationSupportChain theLocalValidationSupportChain) {
@@ -131,13 +143,8 @@ public class QuestionnaireValidationService {
 			return response;
 		}
 
-		IValidationSupport support = ValidationBeansConfig.withOptionalRemote(
-				myFhirContext, myLocalValidationSupportChain, theRemoteTerminologyUrl);
-
-		FhirValidator validator = myFhirContext.newValidator();
-		FhirInstanceValidator instanceValidator = new FhirInstanceValidator(myFhirContext);
-		instanceValidator.setValidationSupport(support);
-		validator.registerValidatorModule(instanceValidator);
+		FhirValidator validator = myValidators.get(
+				theRemoteTerminologyUrl == null ? "" : theRemoteTerminologyUrl.trim(), this::newValidator);
 
 		ValidationResult result = validator.validateWithResult(resource);
 		for (SingleValidationMessage next : result.getMessages()) {
@@ -157,6 +164,21 @@ public class QuestionnaireValidationService {
 		response.setIssues(issues);
 		response.setOk(result.isSuccessful() && !hasErrorOrFatal(issues));
 		return response;
+	}
+
+	/** Drop cached validators (and their terminology result caches). Used by tests that change server behaviour. */
+	void clearValidatorCache() {
+		myValidators.invalidateAll();
+	}
+
+	private FhirValidator newValidator(String theRemoteTerminologyUrl) {
+		IValidationSupport support = ValidationBeansConfig.withOptionalRemote(
+				myFhirContext, myLocalValidationSupportChain, theRemoteTerminologyUrl);
+		FhirValidator validator = myFhirContext.newValidator();
+		FhirInstanceValidator instanceValidator = new FhirInstanceValidator(myFhirContext);
+		instanceValidator.setValidationSupport(support);
+		validator.registerValidatorModule(instanceValidator);
+		return validator;
 	}
 
 	/**

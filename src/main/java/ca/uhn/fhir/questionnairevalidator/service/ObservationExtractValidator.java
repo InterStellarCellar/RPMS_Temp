@@ -1,5 +1,6 @@
 package ca.uhn.fhir.questionnairevalidator.service;
 
+import static ca.uhn.fhir.questionnairevalidator.service.ValidatorSupport.*;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidationIssueDto;
 import ca.uhn.fhir.validation.ResultSeverityEnum;
 import org.hl7.fhir.r4.model.BooleanType;
@@ -277,32 +278,6 @@ class ObservationExtractValidator {
 		return theItem.getType() == Questionnaire.QuestionnaireItemType.DISPLAY;
 	}
 
-	private static Extension firstExt(List<Extension> theExtensions, String theUrl) {
-		for (Extension extension : theExtensions) {
-			if (theUrl.equals(extension.getUrl())) {
-				return extension;
-			}
-		}
-		return null;
-	}
-
-	private static int extensionIndex(List<Extension> theExtensions, String theUrl) {
-		for (int i = 0; i < theExtensions.size(); i++) {
-			if (theUrl.equals(theExtensions.get(i).getUrl())) {
-				return i;
-			}
-		}
-		return -1;
-	}
-
-	private static String extensionPath(String theParentPath, List<Extension> theExtensions, String theUrl) {
-		int index = extensionIndex(theExtensions, theUrl);
-		if (index >= 0) {
-			return theParentPath + ".extension[" + index + "]";
-		}
-		return theParentPath;
-	}
-
 	private static String codeOrExtractPath(Questionnaire.QuestionnaireItemComponent theItem, String thePath) {
 		if (theItem.hasCode() && !theItem.getCode().isEmpty()) {
 			return thePath + ".code[0]";
@@ -322,22 +297,6 @@ class ObservationExtractValidator {
 	}
 
 	private void addIssue(ResultSeverityEnum theSeverity, String theMessage, String thePath, String theValue) {
-		ValidationIssueDto dto = new ValidationIssueDto();
-		dto.setSeverity(theSeverity.getCode());
-		dto.setMessage(theMessage);
-		JsonElementLocator.Occurrence occurrence = myLocator.locate(thePath);
-		if (occurrence == null && theValue != null) {
-			occurrence = myLocator.locateByValueText(theValue);
-		}
-		if (occurrence != null) {
-			dto.setLine(occurrence.line());
-			dto.setColumn(occurrence.column());
-			dto.setLocation(thePath);
-		} else {
-			dto.setLine(1);
-			dto.setColumn(1);
-			dto.setLocation(thePath == null || thePath.isBlank() ? "Questionnaire" : thePath);
-		}
-		myIssues.add(dto);
+		myIssues.add(newIssue(myLocator, theSeverity, theMessage, thePath, theValue));
 	}
 }

@@ -22,7 +22,7 @@ class CodingTrendabilityValidatorTest {
 	}
 
 	@Test
-	void valueItemMissingCode_withMonitoringIntent_isErrorWithLocation() {
+	void valueItemMissingCode_withUrlAndVersionOnly_isWarningWithLocation() {
 		String json = """
 				{
 				  "resourceType": "Questionnaire",
@@ -35,8 +35,24 @@ class CodingTrendabilityValidatorTest {
 				}
 				""";
 		List<ValidationIssueDto> issues = validate(json);
-		assertTrue(hasSeverityMessage(issues, "error", "value-producing item requires item.code"), describe(issues));
+		assertTrue(hasSeverityMessage(issues, "warning", "value-producing item requires item.code"), describe(issues));
 		assertTrue(issues.stream().anyMatch(i -> i.getLine() != null && i.getLine() > 1), describe(issues));
+	}
+
+	@Test
+	void valueItemMissingCode_withObservationExtract_isError() {
+		String json = """
+				{
+				  "resourceType": "Questionnaire",
+				  "status": "draft",
+				  "item": [
+				    { "linkId": "q1", "type": "decimal", "text": "Weight",
+				      "extension": [ { "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract", "valueBoolean": true } ] }
+				  ]
+				}
+				""";
+		List<ValidationIssueDto> issues = validate(json);
+		assertTrue(hasSeverityMessage(issues, "error", "value-producing item requires item.code"), describe(issues));
 	}
 
 	@Test

@@ -1,5 +1,6 @@
 package ca.uhn.fhir.questionnairevalidator.service;
 
+import static ca.uhn.fhir.questionnairevalidator.service.ValidatorSupport.*;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidationIssueDto;
 import ca.uhn.fhir.validation.ResultSeverityEnum;
 import org.hl7.fhir.r4.model.Coding;
@@ -68,6 +69,7 @@ class CodingTrendabilityValidator {
 	private final List<ItemSite> mySites = new ArrayList<>();
 	private final Map<String, ItemSite> myByLinkId = new LinkedHashMap<>();
 	private boolean myRequireItemCode;
+	private ResultSeverityEnum myItemCodeSeverity;
 
 	private CodingTrendabilityValidator(String theJson) {
 		myLocator = new JsonElementLocator(theJson);
@@ -76,6 +78,11 @@ class CodingTrendabilityValidator {
 	static List<ValidationIssueDto> validate(Questionnaire theQuestionnaire, String theJson) {
 		CodingTrendabilityValidator validator = new CodingTrendabilityValidator(theJson);
 		validator.myRequireItemCode = hasMonitoringIntent(theQuestionnaire);
+		// url+version alone is how every published Questionnaire looks, not an RPM signal: warn only.
+		// Observation-extract extensions or ordinal scoring are explicit monitoring intent: error.
+		validator.myItemCodeSeverity = hasStrongMonitoringIntent(theQuestionnaire)
+				? ResultSeverityEnum.ERROR
+				: ResultSeverityEnum.WARNING;
 		validator.walkItems(theQuestionnaire.getItem(), "Questionnaire");
 		validator.applyOrdinalScoring();
 		return validator.myIssues;
@@ -98,6 +105,13 @@ class CodingTrendabilityValidator {
 			return true;
 		}
 		return hasMonitoringIntentInItems(theQuestionnaire.getItem());
+	}
+
+	/** Monitoring intent from extensions or scoring expressions, ignoring the weak url+version signal. */
+	static boolean hasStrongMonitoringIntent(Questionnaire theQuestionnaire) {
+		return theQuestionnaire != null
+				&& (hasMonitoringExtension(theQuestionnaire.getExtension())
+						|| hasMonitoringIntentInItems(theQuestionnaire.getItem()));
 	}
 
 	private static boolean hasMonitoringIntentInItems(List<Questionnaire.QuestionnaireItemComponent> theItems) {
@@ -175,7 +189,7 @@ class CodingTrendabilityValidator {
 		}
 		if (myRequireItemCode && valueProducing && !hasUsable) {
 			addIssue(
-					ResultSeverityEnum.ERROR,
+					myItemCodeSeverity,
 					MSG_MISSING_ITEM_CODE,
 					theSite.path + (item.hasLinkId() ? ".linkId" : ""),
 					item.hasLinkId() ? item.getLinkId() : null);
@@ -357,32 +371,7 @@ class CodingTrendabilityValidator {
 				|| type == Questionnaire.QuestionnaireItemType.OPENCHOICE;
 	}
 
-	private static Extension firstExt(List<Extension> theExtensions, String theUrl) {
-		for (Extension extension : theExtensions) {
-			if (theUrl.equals(extension.getUrl())) {
-				return extension;
-			}
-		}
-		return null;
-	}
-
 	private void addIssue(ResultSeverityEnum theSeverity, String theMessage, String thePath, String theValue) {
-		ValidationIssueDto dto = new ValidationIssueDto();
-		dto.setSeverity(theSeverity.getCode());
-		dto.setMessage(theMessage);
-		JsonElementLocator.Occurrence occurrence = myLocator.locate(thePath);
-		if (occurrence == null && theValue != null) {
-			occurrence = myLocator.locateByValueText(theValue);
-		}
-		if (occurrence != null) {
-			dto.setLine(occurrence.line());
-			dto.setColumn(occurrence.column());
-			dto.setLocation(thePath);
-		} else {
-			dto.setLine(1);
-			dto.setColumn(1);
-			dto.setLocation(thePath == null || thePath.isBlank() ? "Questionnaire" : thePath);
-		}
-		myIssues.add(dto);
+		myIssues.add(newIssue(myLocator, theSeverity, theMessage, thePath, theValue));
 	}
 }

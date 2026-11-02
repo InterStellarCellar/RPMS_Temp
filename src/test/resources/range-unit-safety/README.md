@@ -42,6 +42,9 @@ are allowed.
 | 09 | HR sane range control |
 | 10 | unresolved answerValueSet (from known-gaps `81`) |
 | 11 | hidden+required + bad regex (from known-gaps `82`) |
+| 12 | respiratory rate max 500 /min, outside physiological bounds |
+| 13 | glucose 2339-0 in mg/dL 40–400, sane control |
+| 14 | glucose mass code 2339-0 declared in mmol/L, dimension mismatch |
 | 22 | invalid regex syntax (from known-gaps `22`) |
 | 30 | unresolved answerValueSet (from known-gaps `30`) |
 | 37 | missing `#contained` answerValueSet (from known-gaps `37`) |

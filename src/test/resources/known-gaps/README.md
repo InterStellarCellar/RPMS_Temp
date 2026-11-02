@@ -36,10 +36,10 @@ terminology packages match the webapp.
 | 20–29 | `extension-semantics-unchecked` | Extension present and typed OK, but meaningless (never-matching regex, wrong itemControl, …). **Invalid regex syntax, min/max order, slider, hidden+required, answerValueSet resolution** are now enforced — see `range-unit-safety/` |
 | 30–39 | `unresolved-reference` | Missing definition / Library / derivedFrom / Tx — no hard error. **`unitValueSet` / `answerValueSet` resolution are now errors** — see `range-unit-safety/` |
 | 40–49 | `authoring-soft-rule` | Spec SHOULD / HAPI-dropped authoring rules (`sdc-rend-1`, prefix dupes, …). **Circular / display / impossible `enableWhen`** — see `monitoring-expression-ux/` |
-| 50–59 | `sdc-runtime-not-executed` | Populate / extract / launch / assemble semantics not run at validate time |
+| 50–59 | `sdc-runtime-not-executed` | Populate / extract / launch / assemble semantics not run at validate time. `55` (unresolved `targetStructureMap`) is keyed `unresolved-reference`: it is a reference the validator could check, not runtime behaviour |
 | 60–69 | `authoring-soft-rule` | More soft smells (opaque linkIds, deep nesting, …). **`item.code` example systems are now errors** — see `coding-trendability/`. **Bare `readOnly` without value source is now a warning** — see `monitoring-expression-ux/` |
 | 70–79 | `expression-or-sdc-gap` | Query languages (`application/x-fhir-query`) not executed; leftover SDC authoring smells |
-| 80–95 | `combo-gap` / soft rules | Combinations of independent gaps still pass. **code-only `answerOption.valueCoding` is now an error** — see `coding-trendability/`. **`83` reduced to prefix-dup only** (circular enableWhen is now an error) |
+| 80–95 | `combo-gap` / soft rules | Combinations of independent gaps still pass (`83` is now `authoring-soft-rule`, only the prefix duplicate remains). **code-only `answerOption.valueCoding` is now an error** — see `coding-trendability/`. **`83` reduced to prefix-dup only** (circular enableWhen is now an error) |
 
 ## Sources
 
@@ -57,7 +57,7 @@ terminology packages match the webapp.
 - `69` / `90` moved to `coding-trendability/` (example CodeSystem / coding without system)
 - `44` / `65` moved to `monitoring-expression-ux/` (circular enableWhen / readOnly without value source)
 - `83` reduced to prefix-dup only (circular enableWhen is now an error)
-- `70-isSubject-true-without-subjectType` moved to `subject-identity/` once isSubject⇒subjectType landed
+- `70-isSubject-true-without-subjectType` removed; no isSubject⇒subjectType rule or `subject-identity/` corpus was implemented
 - `67` empty `subjectType` remains here (`max_error_fatal=0`); rule 19 now warns that Patient is missing
 
 ## Explicitly *not* gaps (removed after probing)
@@ -86,5 +86,4 @@ Fixtures that **do** produce `error`/`fatal` were deleted rather than weakened, 
 | Must fail type agreement authoring | `type-consistency/` |
 | Must fail coding / terminology for trendability | `coding-trendability/` |
 | Must fail monitoring expression UX authoring | `monitoring-expression-ux/` |
-| Must fail subject / identity / longitudinal authoring | `subject-identity/` |
 | Location line/col quality | `location-quality/` |

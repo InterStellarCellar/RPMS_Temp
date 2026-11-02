@@ -9,3 +9,17 @@ http://loinc.org	8302-2	Body height	length	cm,m,[in_i]	20	250	cm
 http://loinc.org	39156-5	Body mass index	ratio	kg/m2	10	80	kg/m2
 http://loinc.org	8480-6	Systolic blood pressure	pressure	mm[Hg]	40	250	mm[Hg]
 http://loinc.org	8462-4	Diastolic blood pressure	pressure	mm[Hg]	20	160	mm[Hg]
+# Added 2026-11-02: common remote-monitoring concepts (respiration, glucose, pain, activity, extra BP/temp/weight codes).
+# dimension also: mass-concentration | molar-concentration | score | count (no unit conversion; bounds compared only when the declared unit equals physUnit)
+http://loinc.org	9279-1	Respiratory rate	frequency	/min,{breaths}/min	0	60	/min
+http://loinc.org	2708-6	Oxygen saturation in Arterial blood	fraction	%	50	100	%
+http://loinc.org	8478-0	Mean blood pressure	pressure	mm[Hg]	30	200	mm[Hg]
+http://loinc.org	3141-9	Body weight Measured	mass	kg,g,[lb_av]	0.5	500	kg
+http://loinc.org	8331-1	Oral temperature	temperature	Cel,[degF],K	30	45	Cel
+http://loinc.org	8280-0	Waist Circumference at umbilicus by Tape measure	length	cm,m,[in_i]	30	250	cm
+http://loinc.org	2339-0	Glucose [Mass/volume] in Blood	mass-concentration	mg/dL	10	1000	mg/dL
+http://loinc.org	41653-7	Glucose [Mass/volume] in Capillary blood by Glucometer	mass-concentration	mg/dL	10	1000	mg/dL
+http://loinc.org	15074-8	Glucose [Moles/volume] in Blood	molar-concentration	mmol/L	0.5	55	mmol/L
+http://loinc.org	14743-9	Glucose [Moles/volume] in Capillary blood by Glucometer	molar-concentration	mmol/L	0.5	55	mmol/L
+http://loinc.org	72514-3	Pain severity 0-10 verbal numeric rating	score	{score}	0	10	{score}
+http://loinc.org	55423-8	Number of steps in unspecified time Pedometer	count	{steps}	0	200000	{steps}

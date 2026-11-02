@@ -76,6 +76,8 @@ class RemoteTerminologyCorpusTest {
 	void resetMock() {
 		ourMockTx.setMode(MockFhirTerminologyServer.Mode.DEFAULT);
 		ourMockTx.clearRequestLog();
+		// Cached validators hold terminology results; the mock changes behaviour per case.
+		ourService.clearValidatorCache();
 	}
 
 	record Case(String filename, int minIssues, String messageSubstring, MockFhirTerminologyServer.Mode mockMode) {}

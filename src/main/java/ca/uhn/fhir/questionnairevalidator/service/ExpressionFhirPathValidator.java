@@ -1,5 +1,6 @@
 package ca.uhn.fhir.questionnairevalidator.service;
 
+import static ca.uhn.fhir.questionnairevalidator.service.ValidatorSupport.*;
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.fhirpath.IFhirPath;
 import ca.uhn.fhir.questionnairevalidator.dto.ValidationIssueDto;
@@ -306,6 +307,9 @@ class ExpressionFhirPathValidator {
 		checkUndeclaredEnv(theExpr, thePath);
 	}
 
+	private static final Pattern SDC_CUSTOM_FUNCTION =
+			Pattern.compile("The name (weight|ordinal|answers|sum) is not a valid function name");
+
 	private void parseFhirPath(String theExpr, String theLabel, String thePath) {
 		try {
 			myFhirPath.parse(theExpr);
@@ -313,6 +317,14 @@ class ExpressionFhirPathValidator {
 			String detail = t.getMessage();
 			if (detail == null || detail.isBlank()) {
 				detail = t.getClass().getSimpleName();
+			}
+			Matcher sdcFunction = SDC_CUSTOM_FUNCTION.matcher(detail);
+			if (sdcFunction.find()) {
+				// SDC defines these FHIRPath functions; HAPI's parser does not know them, so the
+				// expression cannot be checked here. Say so instead of reporting a false error.
+				addIssue(ResultSeverityEnum.INFORMATION, "SDC function " + sdcFunction.group(1)
+						+ "() in " + theLabel + " is not checked (not supported by the FHIRPath parser)", thePath, theExpr);
+				return;
 			}
 			addIssue(ResultSeverityEnum.ERROR, "Invalid FHIRPath in " + theLabel + ": " + detail, thePath, theExpr);
 		}
@@ -369,23 +381,7 @@ class ExpressionFhirPathValidator {
 	// ---------------------------------------------------------- location / helpers
 
 	private void addIssue(ResultSeverityEnum theSeverity, String theMessage, String thePath, String theValue) {
-		ValidationIssueDto dto = new ValidationIssueDto();
-		dto.setSeverity(theSeverity.getCode());
-		dto.setMessage(theMessage);
-		JsonElementLocator.Occurrence occurrence = myLocator.locate(thePath);
-		if (occurrence == null && theValue != null) {
-			occurrence = myLocator.locateByValueText(theValue);
-		}
-		if (occurrence != null) {
-			dto.setLine(occurrence.line());
-			dto.setColumn(occurrence.column());
-			dto.setLocation(thePath);
-		} else {
-			dto.setLine(1);
-			dto.setColumn(1);
-			dto.setLocation(thePath == null || thePath.isBlank() ? "Questionnaire" : thePath);
-		}
-		myIssues.add(dto);
+		myIssues.add(newIssue(myLocator, theSeverity, theMessage, thePath, theValue));
 	}
 
 	private static boolean isImpliedFhirPathString(String theUrl, String theParentUrl) {

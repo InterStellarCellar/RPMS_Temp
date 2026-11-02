@@ -24,7 +24,7 @@
 50-observationExtract-true-no-mapping.json	0	sdc-runtime-not-executed
 51-launchContext-unused.json	0	sdc-runtime-not-executed
 54-assembleContext-unused.json	0	sdc-runtime-not-executed
-55-targetStructureMap-unresolved-no-extract-profile.json	0	sdc-runtime-not-executed
+55-targetStructureMap-unresolved-no-extract-profile.json	0	unresolved-reference
 60-name-missing-machine-id-ok.json	0	authoring-soft-rule
 61-linkId-guid-opaque.json	0	authoring-soft-rule
 62-deeply-nested-groups.json	0	authoring-soft-rule
@@ -35,7 +35,7 @@
 68-jurisdiction-example-coding-unchecked.json	0	authoring-soft-rule
 72-initialExpression-fhir-query-not-executed.json	0	expression-or-sdc-gap
 73-answerExpression-fhir-query-not-executed.json	0	expression-or-sdc-gap
-83-combo-circular-ew-and-prefix-dup.json	0	combo-gap
+83-combo-circular-ew-and-prefix-dup.json	0	authoring-soft-rule
 84-combo-mime-on-string-and-definition-missing.json	0	combo-gap
 87-constraint-key-duplicate.json	0	combo-gap
 88-signatureRequired-no-guidance.json	0	combo-gap

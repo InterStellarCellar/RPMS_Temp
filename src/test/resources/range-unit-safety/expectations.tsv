@@ -18,3 +18,7 @@
 22-regex-invalid-syntax.json	1	invalid regex syntax
 30-answerValueSet-unresolved.json	1	answerValueSet could not be resolved
 37-answerValueSet-fragment-missing-contained.json	1	answerValueSet could not be resolved
+12-rr-max-over-bounds.json	1	declared value range is outside typical physiological bounds
+13-glucose-mgdl-sane-ok.json	0	unit dimension does not match concept
+13-glucose-mgdl-sane-ok.json	0	declared value range is outside typical physiological bounds
+14-glucose-mass-code-with-molar-unit.json	1	unit dimension does not match concept

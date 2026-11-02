@@ -48,6 +48,14 @@ public class ValidationBeansConfig {
 	private static final Pattern CORE_FHIR_CODE_SYSTEM_URL =
 			Pattern.compile("^https?://hl7\\.org/fhir/[A-Za-z0-9.-]+$");
 
+	/**
+	 * R5-only CodeSystems under a core-looking URL that R4 does not define; SDC 4.0.0 binds to them
+	 * (e.g. {@code disabledDisplay}), so they must survive the xver filter.
+	 * ponytail: hand-kept list; derive from DefaultProfileValidationSupport if it grows.
+	 */
+	private static final Set<String> KEEP_FROM_XVER = Set.of(
+			"http://hl7.org/fhir/questionnaire-disabled-display");
+
 	/** Always skip these from packages — R4 core / DefaultProfile owns them. */
 	private static final Set<String> ALWAYS_SKIP_PACKAGE_CODE_SYSTEMS = Set.of(
 			"http://hl7.org/fhir/item-type");
@@ -189,6 +197,9 @@ public class ValidationBeansConfig {
 		}
 		if (ALWAYS_SKIP_PACKAGE_CODE_SYSTEMS.contains(url)) {
 			return true;
+		}
+		if (KEEP_FROM_XVER.contains(url)) {
+			return false;
 		}
 		// xver ships many R5 copies of core FHIR CodeSystems under the same URLs as R4
 		if (thePackageFilename != null
